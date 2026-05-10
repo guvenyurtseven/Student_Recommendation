@@ -110,6 +110,19 @@ Important fields:
 - `department_program_id`
 - `source_document_id`
 
+Operational notes:
+
+- Offering facts are loaded from processed SAIS offering JSON files.
+- The processed JSON may keep all SAIS rows, but the SQLite loader currently
+  loads only undergraduate offerings for the student planner product.
+- The planner treats offering coverage conservatively. If a subject has no
+  loaded offering coverage for the target semester, its courses remain
+  recommendation candidates with an availability warning rather than being
+  falsely excluded.
+- If a subject has loaded coverage and a course is absent from that subject's
+  target-semester offerings, the course is excluded from recommendation
+  scenarios.
+
 ## Recommended SQLite Schema
 
 See [student_planner/db/schema.sql](../student_planner/db/schema.sql).
@@ -123,4 +136,3 @@ Use these values consistently:
 - `reviewed`: human checked and accepted.
 - `corrected`: human corrected automated output.
 - `deprecated`: old version, kept for history.
-

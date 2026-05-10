@@ -252,6 +252,16 @@ class SQLiteRepositoryTests(unittest.TestCase):
         self.assertEqual(edges_by_course["CENG 213"][0].prerequisite_course_code, "CENG 140")
         self.assertEqual(edges_by_course["ENG 101"], [])
 
+    def test_fetch_all_prerequisite_edges(self) -> None:
+        edges = self.repository.fetch_all_prerequisite_edges()
+        pairs = {(edge.prerequisite_course_code, edge.course_code) for edge in edges}
+        self.assertIn(("MATH 119", "MATH 120"), pairs)
+        self.assertIn(("MATH 120", "MATH 219"), pairs)
+        self.assertIn(("CENG 140", "CENG 213"), pairs)
+
+    def test_count_offerings(self) -> None:
+        self.assertEqual(self.repository.count_offerings(), 0)
+
     def test_fetch_latest_curriculum_returns_requirements_and_options(self) -> None:
         curriculum = self.repository.fetch_latest_curriculum("ceng")
         self.assertEqual(curriculum.program.abbr, "CENG")

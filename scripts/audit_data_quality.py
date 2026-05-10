@@ -659,12 +659,32 @@ def audit_prerequisite_files(
                     "DB prerequisite edge count does not match engineering graph JSON.",
                     [f"db={db_edges}, json={len(engineering_graph.get('edges', []))}"],
                 )
-            if db_courses != len(engineering_graph.get("nodes", [])):
+            graph_node_codes = {
+                str(node.get("id", "")).strip()
+                for node in engineering_graph.get("nodes", [])
+                if str(node.get("id", "")).strip()
+            }
+            db_numeric_codes = {
+                row["numeric_code"]
+                for row in query_rows(
+                    connection,
+                    "SELECT numeric_code FROM courses WHERE numeric_code IS NOT NULL",
+                )
+            }
+            missing_graph_nodes = sorted(graph_node_codes.difference(db_numeric_codes))
+            extra_db_courses = sorted(db_numeric_codes.difference(graph_node_codes))
+            audit.metrics["prerequisite_db_course_coverage"] = {
+                "graph_node_count": len(graph_node_codes),
+                "db_course_count": db_courses,
+                "missing_graph_node_count": len(missing_graph_nodes),
+                "extra_db_course_count": len(extra_db_courses),
+            }
+            if missing_graph_nodes:
                 audit.add(
-                    "warning",
+                    "fatal",
                     "prerequisite_db",
-                    "DB course count does not match engineering graph node count.",
-                    [f"db={db_courses}, json={len(engineering_graph.get('nodes', []))}"],
+                    "DB courses do not cover all engineering graph nodes.",
+                    missing_graph_nodes[:25],
                 )
 
     per_program_metrics = {}
@@ -945,7 +965,7 @@ def write_report(audit: Audit, report_path: Path) -> None:
             "",
             "1. Fix all fatal findings before trusting generated data.",
             "2. Treat warnings as review queue items before production recommendation logic.",
-            "3. Keep `offerings` empty status visible until the offerings pipeline is implemented.",
+            "3. Keep offering coverage visible; partial offering data must not be treated as complete.",
             "4. Resolve course identity warnings before showing graph nodes directly to students.",
             "",
         ]

@@ -308,6 +308,91 @@ class SQLiteStudentPlannerRepository:
             edges_by_course[canonicalize_course_code(row["course_code"], aliases)].append(edge)
         return edges_by_course
 
+    def fetch_all_prerequisite_edges(self) -> list[PrerequisiteEdge]:
+        with closing(self.connect()) as connection:
+            rows = list(
+                connection.execute(
+                    """
+                    SELECT prereq.display_code AS prerequisite_course_code,
+                           course.display_code AS course_code,
+                           pe.set_no,
+                           pe.min_grade,
+                           pe.edge_type,
+                           pe.position
+                    FROM prerequisite_edges pe
+                    JOIN courses prereq ON prereq.id = pe.prerequisite_course_id
+                    JOIN courses course ON course.id = pe.course_id
+                    ORDER BY prereq.display_code, course.display_code, CAST(pe.set_no AS INTEGER), pe.set_no
+                    """
+                )
+            )
+        return [
+            PrerequisiteEdge(
+                prerequisite_course_code=row["prerequisite_course_code"],
+                course_code=row["course_code"],
+                set_no=row["set_no"],
+                min_grade=row["min_grade"] or "DD",
+                edge_type=row["edge_type"] or "",
+                position=row["position"] or "",
+            )
+            for row in rows
+        ]
+
+    def count_offerings(self, semester_no: str | None = None) -> int:
+        with closing(self.connect()) as connection:
+            if semester_no is None:
+                return int(connection.execute("SELECT COUNT(*) FROM offerings").fetchone()[0])
+            return int(
+                connection.execute(
+                    "SELECT COUNT(*) FROM offerings WHERE semester_no = ?",
+                    (semester_no,),
+                ).fetchone()[0]
+            )
+
+    def fetch_offered_course_codes(
+        self,
+        semester_no: str,
+        aliases: CourseAliases | None = None,
+    ) -> tuple[str, ...]:
+        aliases = aliases or self.fetch_alias_map()
+        with closing(self.connect()) as connection:
+            rows = list(
+                connection.execute(
+                    """
+                    SELECT DISTINCT c.display_code
+                    FROM offerings o
+                    JOIN courses c ON c.id = o.course_id
+                    WHERE o.semester_no = ?
+                    ORDER BY c.display_code
+                    """,
+                    (semester_no,),
+                )
+            )
+        return tuple(
+            sorted(
+                {
+                    canonicalize_course_code(row["display_code"], aliases)
+                    for row in rows
+                }
+            )
+        )
+
+    def fetch_offering_subject_codes(self, semester_no: str) -> tuple[str, ...]:
+        with closing(self.connect()) as connection:
+            rows = list(
+                connection.execute(
+                    """
+                    SELECT DISTINCT c.subject_code
+                    FROM offerings o
+                    JOIN courses c ON c.id = o.course_id
+                    WHERE o.semester_no = ?
+                    ORDER BY c.subject_code
+                    """,
+                    (semester_no,),
+                )
+            )
+        return tuple(row["subject_code"] for row in rows)
+
     def evaluate_course_eligibility(
         self,
         target_course_code: str,

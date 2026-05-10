@@ -1,0 +1,21 @@
+{
+  "program_abbr": "CENG",
+  "completed_courses": [
+    {
+      "course_code": "MATH 119",
+      "grade": "DD",
+      "completed_semester_no": "20241",
+      "attempt_order": 1
+    },
+    {
+      "course_code": "CENG 140",
+      "grade": "CC",
+      "completed_semester_no": "20241",
+      "attempt_order": 2
+    }
+  ],
+  "goal": {
+    "target_semester_no": "20252",
+    "difficulty_preference": "balanced"
+  }
+}

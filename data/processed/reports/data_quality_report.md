@@ -1,6 +1,6 @@
 # Data Quality Report
 
-Generated at UTC: `2026-05-10T18:45:56+00:00`
+Generated at UTC: `2026-05-10T19:45:09+00:00`
 Status: `PASS_WITH_WARNINGS`
 
 ## Summary
@@ -14,15 +14,15 @@ Status: `PASS_WITH_WARNINGS`
 | Table | Rows |
 | --- | ---: |
 | `course_aliases` | 0 |
-| `courses` | 393 |
+| `courses` | 408 |
 | `curriculum_requirements` | 696 |
 | `curriculum_versions` | 13 |
 | `manual_correction_log` | 0 |
-| `offerings` | 0 |
+| `offerings` | 31 |
 | `prerequisite_edges` | 504 |
 | `programs` | 14 |
 | `requirement_options` | 652 |
-| `source_documents` | 16 |
+| `source_documents` | 17 |
 | `student_completed_courses` | 0 |
 | `student_profiles` | 0 |
 
@@ -41,7 +41,7 @@ Active undergraduate programs: 13
   "courses_level_not_undergraduate": 0,
   "display_code_without_space": 0,
   "numeric_subject_code_courses": 35,
-  "course_number_5xx_999": 0,
+  "course_number_5xx_999": 1,
   "course_number_over_999": 4
 }
 ```
@@ -156,7 +156,8 @@ None.
    - 384 264 (3840264): MECHANICS OF MATERIALS
    - 389 140 (3890140): PROGRAMMING
    - 430 210 (4300210): PROGRAMMING LANGUAGES I
-5. **course_identity**: NCC prerequisite alternatives are present and need product semantics.
+5. **courses**: 5xx-999 course numbers are present in undergraduate course table.
+6. **course_identity**: NCC prerequisite alternatives are present and need product semantics.
    - 355 140 -> 355 213 (set 1, min DD)
    - 389 140 -> 355 213 (set 2, min DD)
    - 355 230 -> 355 301 (set 1, min DD)
@@ -212,8 +213,6 @@ None.
    - 374 220 -> PETE 343 (set 2, min DD)
    - 357 219 -> PETE 343 (set 3, min DD)
    - 374 216 -> PETE 343 (set 3, min DD)
-6. **offerings**: offerings is empty.
-   - This is expected before the corresponding product phase, but not ready for recommendations.
 7. **student_profiles**: student_profiles is empty.
    - This is expected before the corresponding product phase, but not ready for recommendations.
 8. **student_completed_courses**: student_completed_courses is empty.
@@ -300,5 +299,5 @@ None.
 
 1. Fix all fatal findings before trusting generated data.
 2. Treat warnings as review queue items before production recommendation logic.
-3. Keep `offerings` empty status visible until the offerings pipeline is implemented.
+3. Keep offering coverage visible; partial offering data must not be treated as complete.
 4. Resolve course identity warnings before showing graph nodes directly to students.

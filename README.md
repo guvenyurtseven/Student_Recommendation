@@ -7,12 +7,14 @@ offerings, and prerequisite graph.
 
 Current state:
 
-- Course offering CSV scrapers exist for METU SAIS.
+- A reusable METU SAIS source adapter and offering ingestion pipeline exist.
 - Prerequisite DAG extraction exists for two semester CSV inputs.
 - Latest curriculum ingestion exists for 13 active Ankara-campus engineering
   undergraduate programs from METU Academic Catalog.
 - Recursive prerequisite closure exists for the combined engineering curriculum
   and for each of the 13 active engineering programs.
+- Deterministic next-semester recommendation CLI exists, with conservative
+  offering-aware filtering when offering data has been loaded.
 
 Planned data layers:
 
@@ -74,6 +76,24 @@ python .\scripts\audit_data_quality.py
 python .\scripts\generate_course_identity_review.py
 ```
 
+Scrape and load SAIS course offerings:
+
+```powershell
+python .\scripts\scrape_offerings.py --programs CENG EEE ME --semesters 20241 20242
+python .\scripts\load_offerings.py
+```
+
+Run the deterministic planner CLI:
+
+```powershell
+python .\scripts\recommend_next_semester.py --input .\examples\students\ceng_sample_planning_input.json
+```
+
+If offering data is missing, the planner keeps recommendations available but
+emits an explicit warning. If target-semester offering coverage is loaded for a
+subject, known not-offered courses are excluded from recommendation scenarios.
+The SQLite loader currently keeps undergraduate offerings for the planner DB.
+
 Important outputs:
 
 - `data/processed/curricula/*-latest.curriculum.json`
@@ -84,6 +104,9 @@ Important outputs:
 - `data/processed/prerequisites/engineering-latest-prerequisite-closure-edges.csv`
 - `data/processed/prerequisites/engineering-latest-prerequisite-closure-nodes.csv`
 - `data/processed/prerequisites/engineering-latest-prerequisite-closure-unresolved.csv`
+- `data/raw/sais/offerings/<semester>/<program>/...`
+- `data/processed/offerings/<semester>/<program>.offerings.json`
+- `data/processed/offerings/all_engineering_offerings.csv`
 - `data/processed/reports/data_quality_report.md`
 - `data/processed/reports/course_identity_review.md`
 - `data/manual/corrections/*.json`

@@ -27,8 +27,8 @@ Mevcut veri durumu:
 - Foreign keys: iyi.
 - Curriculum/prerequisite processed dosyaları: teknik olarak tutarlı.
 - Review status: hâlâ `scraped`.
-- Offerings: boş.
-- Student planning logic: başlamadı.
+- Offerings: pilot olarak CENG 20242 yüklendi; kapsam hâlâ kısmi.
+- Student planning logic: deterministic CLI ve ilk recommendation pipeline tamamlandı.
 
 Bu yüzden sıradaki hedef, recommendation engine yazmadan önce veri anlamını
 sertleştirmek ve sonra domain servislerini katmanlı biçimde kurmak olmalı.
@@ -261,15 +261,35 @@ Amaç:
 Next-semester recommendation için dersin hedef dönemde açılıp açılmadığını
 bilmek.
 
-Şu an:
+Onceki durum:
 
 ```text
 offerings: 0
 ```
 
-Bu, personal recommendation için en kritik eksiklerden biri.
+Guncel pilot durum:
+
+```text
+offerings: 31 undergraduate rows (CENG 20242 pilot)
+```
+
+Bu katman personal recommendation için en kritik parçalardan biri olmaya devam
+ediyor; su an sadece pilot coverage var.
 
 ### Phase 2.6A: SAIS Source Adapter
+
+Durum: Ilk altyapi tamamlandi.
+
+Tamamlanan dosyalar:
+
+```text
+student_planner/sources/sais.py
+tests/test_sais_source.py
+```
+
+Bu adapter eski tek amacli scraper'lardaki login, form parsing, table parsing,
+`env.local` okuma ve course-details app acma mantigini yeniden kullanilabilir
+bir kaynak katmanina tasidi.
 
 Mevcut durum:
 
@@ -302,6 +322,8 @@ client'ı kullanmalı.
 
 ### Phase 2.6B: Offering Scraper
 
+Durum: Ilk CLI tamamlandi.
+
 Yeni script:
 
 ```text
@@ -333,7 +355,19 @@ data/processed/offerings/all_engineering_offerings.csv
 - Semester
 - Level/type
 
+Tamamlanan dosyalar:
+
+```text
+scripts/scrape_offerings.py
+```
+
+Script `env.local` veya environment variable uzerinden `METU_USERNAME` ve
+`METU_PASSWORD` okur. Her program/donem icin raw SAIS HTML snapshot'i,
+processed offering JSON'u ve combined CSV uretir.
+
 ### Phase 2.6C: Offering Loader
+
+Durum: Ilk CLI tamamlandi.
 
 Yeni script:
 
@@ -353,6 +387,17 @@ Kabul kriteri:
 - Aynı ders/dönem/program duplicate olmamalı.
 - Source document hash kontrolü çalışmalı.
 - Audit report offerings sayısını göstermeli.
+
+Tamamlanan dosyalar:
+
+```text
+scripts/load_offerings.py
+tests/test_load_offerings.py
+```
+
+Loader processed offering JSON dosyalarini SQLite `offerings` tablosuna
+idempotent olarak yukler. Course eslemesini oncelikle numeric code ile yapar;
+bu sayede SAIS display tahminleri mevcut canonical course kayitlarini bozmaz.
 
 ### Phase 2.6D: Historical Offering Signal
 
@@ -634,6 +679,40 @@ Sonraki is:
 
 ### Phase 3E: Unlock Analysis
 
+Durum: Ilk altyapi tamamlandi.
+
+Tamamlanan dosyalar:
+
+```text
+student_planner/services/unlock_analysis.py
+tests/test_unlock_analysis.py
+```
+
+Repository destegi:
+
+```text
+SQLiteStudentPlannerRepository.fetch_all_prerequisite_edges()
+```
+
+Bu katman graph yonunu `prerequisite -> course` olarak kullanir ve aday dersler
+icin downstream dependency potansiyelini hesaplar. Cikti su metrikleri icerir:
+
+- Direct unlock course listesi/count
+- Transitive unlock course listesi/count
+- Curriculum-relevant unlock course listesi/count
+- Longest unlock chain length
+- Basit critical path score
+
+Onemli semantik not:
+
+- Bu servis "ders kesin acilir" karari vermez.
+- Bir dependent course baska prerequisite'ler de isteyebilir.
+- Kesin eligibility Candidate Course Generator / Prerequisite Evaluator
+  tarafindan hesaplanir.
+
+Gercek DB kontrolunde CENG orneginde `MATH 120` yuksek unlock skoruyla one
+cikmistir; bu beklenen servis dersi zinciri davranisidir.
+
 Önerilen dosya:
 
 ```text
@@ -660,7 +739,125 @@ Kabul kriteri:
 - Sadece graph node sayısı değil, öğrencinin curriculum'ına relevant dersler de
   hesaba katılmalı.
 
+Ilk unit testlerde direct/transitive/curriculum-relevant unlock, alias
+normalizasyonu ve ranking davranisi dogrulandi.
+
+Sonraki is:
+
+- Unlock skorunu ECTS, recommended semester ve difficulty preference ile
+  birlestiren load/difficulty scoring katmani yazilmali.
+
+### Phase 3E.5: Load and Difficulty Scoring
+
+Durum: Ilk altyapi tamamlandi.
+
+Tamamlanan dosyalar:
+
+```text
+student_planner/services/difficulty.py
+tests/test_difficulty.py
+```
+
+Bu katman recommendation engine'den once aday derslere sayisal sinyaller ekler.
+Henuz ders sepeti olusturmaz; sadece ders bazli skor uretir.
+
+Urettigi ana modeller:
+
+```text
+SemesterLoadTarget
+CourseLoadScore
+CourseScoringResult
+CourseScoringService
+```
+
+Hesaplanan sinyaller:
+
+- `difficulty_score`: ECTS, course level ve major-course sinyalinden tureyen
+  yaklasik ders yuku.
+- `priority_score`: unlock score, recommended semester alignment ve ogrencinin
+  `easy` / `balanced` / `hard` tercihini birlestiren oncelik skoru.
+- `SemesterLoadTarget`: hedef zorluk tercihine gore min/target/max ECTS araligi.
+
+Varsayilan load target'lari:
+
+```text
+easy:     18 / 21 / 24 ECTS
+balanced: 26 / 30 / 34 ECTS
+hard:     32 / 36 / 42 ECTS
+```
+
+Ogrenci input'unda `min_ects`, `target_ects` veya `max_ects` verilirse bu
+varsayilanlar override edilir.
+
+Onemli semantik notlar:
+
+- Bu servis tek basina final tavsiye uretmez.
+- `priority_score`, recommendation basket builder icin siralama sinyalidir.
+- ECTS bilgisi eksikse ders bazinda gecici olarak `5.0` varsayilir ve rationale
+  icinde belirtilir.
+- METU semester suffix'i ilk versiyonda su sekilde yorumlanir:
+  `1 = fall`, `2 = spring`, `3 = summer`.
+
+Gercek DB kontrolunde CENG orneginde:
+
+- `easy` tercihinde dusuk yuklu dersler daha yukari cikti.
+- `balanced` ve `hard` tercihlerinde unlock etkisi yuksek dersler daha baskin
+  hale geldi.
+- `MATH 120`, servis prerequisite zinciri etkisi nedeniyle her modda ust sirada
+  kaldi.
+
+Sonraki is:
+
+- Bu ders bazli skorlardan kolay/dengeli/agresif ders sepeti senaryolari ureten
+  Recommendation v1 katmani yazilmali.
+
 ### Phase 3F: Recommendation v1
+
+Durum: Ilk altyapi tamamlandi.
+
+Tamamlanan dosyalar:
+
+```text
+student_planner/services/recommendation.py
+tests/test_recommendation.py
+```
+
+Bu katman `CourseScoringResult` girdisini alir ve ders bazli skorlardan uc
+senaryo uretir:
+
+```text
+Easy Load
+Balanced Progress
+Aggressive Progress
+```
+
+Urettigi ana modeller:
+
+```text
+ScenarioConfig
+RecommendationResult
+RecommendationService
+```
+
+Senaryo davranisi:
+
+- Easy Load: dusuk zorluk/yuk oncelikli siralama kullanir.
+- Balanced Progress: `priority_score` merkezli dengeli siralama kullanir.
+- Aggressive Progress: unlock etkisini daha one alan siralama kullanir.
+- Her senaryo ECTS cap'e uymaya calisir.
+- Eger eligible ders yoksa sessizce bos tavsiye vermek yerine warning uretir.
+- Eger senaryo minimum yuk hedefinin altinda kalirsa warning uretir.
+
+Onemli semantik notlar:
+
+- Bu servis DB, scraper, prerequisite evaluation veya unlock calculation yapmaz.
+- Input olarak yalnizca daha once hesaplanmis eligible course score'larini alir.
+- Bu standalone recommendation servisi tek basina offering sorgusu yapmaz.
+  Pipeline seviyesinde Phase 3H ile offering-aware filtre eklenmistir.
+- Schedule/timetable optimizasyonu bu katmanda yoktur.
+
+Gercek DB smoke testinde CENG ornegi icin progress -> candidates -> unlock ->
+scoring -> recommendation zinciri uc senaryo uretti.
 
 Önerilen dosya:
 
@@ -697,7 +894,100 @@ Kabul kriteri:
 - Sistem emin olmadığı elective pool alanlarında yanlış öneri vermemeli.
 - Blocked dersler missing prerequisite açıklamasıyla gelmeli.
 
+Ilk unit testlerde uc senaryo uretimi, ECTS cap davranisi, preferred scenario
+secimi, bos input warning'i ve rationale tasinmasi dogrulandi.
+
+Sonraki is:
+
+- Bu pipeline'i kullanici input'u ile calistiracak CLI prototype yazilmali.
+- CLI, JSON input alip PlanningReport benzeri deterministik cikti uretmeli.
+- Target semester icin offering coverage yoksa CLI ciktisinda availability
+  uyarisi acikca yer almali.
+
 ### Phase 3G: CLI Prototype
+
+Durum: Ilk altyapi tamamlandi.
+
+Tamamlanan dosyalar:
+
+```text
+student_planner/services/planning_io.py
+student_planner/services/planning_pipeline.py
+scripts/recommend_next_semester.py
+examples/students/ceng_sample_planning_input.json
+tests/test_planning_io.py
+tests/test_planning_pipeline.py
+```
+
+Bu adimda kullanici input'u ile tum deterministic pipeline'i calistiran ince bir
+CLI kabugu eklendi. CLI'nin icine akademik karar mantigi gomulmedi; CLI sadece
+JSON input okur, `SemesterPlanningPipeline` servisini cagirir ve JSON report
+uretir.
+
+Pipeline sirasi:
+
+```text
+StudentPlanningInput JSON
+-> latest curriculum
+-> curriculum progress
+-> candidate course generation
+-> unlock analysis
+-> load/difficulty scoring
+-> recommendation scenarios
+-> PlanningReport JSON
+```
+
+CLI komutu:
+
+```powershell
+python .\scripts\recommend_next_semester.py `
+  --input .\examples\students\ceng_sample_planning_input.json
+```
+
+Opsiyonel dosyaya yazma:
+
+```powershell
+python .\scripts\recommend_next_semester.py `
+  --input .\examples\students\ceng_sample_planning_input.json `
+  --output .\data\processed\reports\ceng_sample_recommendation.json
+```
+
+Input JSON formati:
+
+```json
+{
+  "program_abbr": "CENG",
+  "completed_courses": [
+    {"course_code": "MATH 119", "grade": "DD"}
+  ],
+  "goal": {
+    "target_semester_no": "20252",
+    "difficulty_preference": "balanced"
+  }
+}
+```
+
+Output su bolumleri icerir:
+
+- Curriculum progress
+- Eligible courses
+- Blocked courses
+- Easy / Balanced / Aggressive scenarios
+- Warnings
+- Metadata
+
+Offerings tablosu tamamen bossa CLI output'u `offerings_unavailable` warning'i
+uretir. Offering verisi varsa ama target semester kapsanmiyorsa
+`target_semester_offerings_unavailable` warning'i uretir.
+
+Smoke test sonucu:
+
+```text
+program=CENG scenarios=3 preferred=balanced
+easy 26.0 ECTS
+balanced 31.5 ECTS
+aggressive 33.5 ECTS
+```
 
 Önerilen script:
 
@@ -724,6 +1014,36 @@ Warnings
 ```
 
 Bu UI'dan önce domain servislerinin doğru çalıştığını kanıtlayacak.
+
+### Phase 3H: Offering-Aware Recommendation Pool
+
+Durum: Ilk altyapi tamamlandi.
+
+Tamamlanan dosyalar:
+
+```text
+student_planner/services/offering_availability.py
+student_planner/repositories/sqlite.py
+student_planner/services/planning_pipeline.py
+tests/test_offering_availability.py
+tests/test_planning_pipeline.py
+```
+
+Bu adim recommendation pipeline'ina conservative offering filtresi ekledi.
+Davranis:
+
+- `offerings` tamamen bossa eski davranis korunur ve `offerings_unavailable`
+  warning'i uretir.
+- Target semester icin offering kaydi varsa repository offered course code ve
+  covered subject code listelerini dondurur.
+- Bir subject icin coverage varsa ve ders o donem offering listesinde yoksa,
+  ders recommendation scenario havuzundan cikarilir.
+- Bir subject icin coverage yoksa ders yanlis negatif uretmemek icin havuzda
+  kalir; `offering_coverage_unknown` warning'i uretilebilir.
+
+Bu tasarim su nedenle onemli: henuz MATH/PHYS/CHEM gibi servis bolumlerinin
+offering kaynaklari tam yuklenmemis olabilir. Sistem sadece emin oldugu
+durumlarda "bu ders hedef donemde acilmiyor" karari verir.
 
 ## Phase 4: Student-Facing Product
 
@@ -803,19 +1123,21 @@ truth karışmaz.
 
 ## Near-Term Execution Order
 
-En doğru kısa vadeli sıra:
+Guncel kisa vadeli sira:
 
-1. Manual correction layer tamamlandı.
-2. Course identity review kararlarını manuel olarak vermeye başla.
-3. `course_aliases.json` içine kesin alias kararlarını ekle.
-4. `apply_manual_corrections.py` ve audit ile doğrula.
-5. `student_planner/services/course_identity.py` yaz.
-6. Test altyapısını başlat.
-7. SAIS source adapter refactor yap.
-8. Offerings pipeline yaz.
-9. Prerequisite evaluator yaz.
-10. Curriculum progress service yaz.
-11. Recommendation v1 CLI yaz.
+1. Manual correction layer, grade model, prerequisite evaluator, curriculum
+   progress, unlock analysis, recommendation v1 CLI ve offering-aware filter
+   ilk versiyonlari tamamlandi.
+2. CENG 20242 pilot offering scrape/load tamamlandi; bu pilotu review et.
+3. 13 aktif engineering programi icin son birkac historical semester offering
+   verisini yukle.
+4. `python .\scripts\audit_data_quality.py` ve unit testleri her yuklemeden
+   sonra calistir.
+5. MATH, PHYS, CHEM, HIST, TURK, ENG, OHS, IS gibi servis bolumleri icin SAIS
+   department coverage stratejisini tasarla; aksi halde planner bu dersleri
+   "availability unknown" olarak birakmaya devam edecek.
+6. Elective pool logic ve transcript PDF parsing'e gecmeden once offering
+   coverage raporu uret.
 
 Bu sıra, projenin amacına sadık kalır: önce doğru veri ve doğru anlam, sonra
 öğrenciye faydalı tavsiye.
