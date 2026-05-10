@@ -1,0 +1,2772 @@
+{
+  "metadata": {
+    "department_abbr": "CENG",
+    "department": "Computer Engineering/Bilgisayar Mühendisliği",
+    "department_value": "571",
+    "semesters": [
+      "20241",
+      "20242"
+    ],
+    "csv_files": [
+      "CENG-20241.csv",
+      "CENG-20242.csv"
+    ],
+    "generated_at_utc": "2026-05-07T10:11:07+00:00",
+    "undergraduate_max_course_number": 499,
+    "node_count": 66,
+    "edge_count": 71,
+    "is_dag": true,
+    "edge_direction": "prerequisite -> course"
+  },
+  "nodes": [
+    {
+      "id": "2300200",
+      "course_code": "230 200",
+      "course_number": 200,
+      "course_name": "BASICS OF SCIENTIFIC COMPUTATION",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "3550111",
+      "course_code": "355 111",
+      "course_number": 111,
+      "course_name": "INTRODUCTION TO COMPUTER ENG. CONCEPTS",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate NCC / Lisans KKK"
+    },
+    {
+      "id": "3550213",
+      "course_code": "355 213",
+      "course_number": 213,
+      "course_name": "DATA STRUCTURES",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate NCC / Lisans KKK"
+    },
+    {
+      "id": "3550350",
+      "course_code": "355 350",
+      "course_number": 350,
+      "course_name": "SOFTWARE ENGINEERING",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate NCC / Lisans KKK"
+    },
+    {
+      "id": "3550351",
+      "course_code": "355 351",
+      "course_number": 351,
+      "course_name": "DATA MANAGEMENT AND FILE STRUCTURES",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate NCC / Lisans KKK"
+    },
+    {
+      "id": "3570254",
+      "course_code": "357 254",
+      "course_number": 254,
+      "course_name": "DIFFERENTIAL EQUATIONS",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate NCC / Lisans KKK"
+    },
+    {
+      "id": "3570260",
+      "course_code": "357 260",
+      "course_number": 260,
+      "course_name": "BASIC LINEAR ALGEBRA",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate NCC / Lisans KKK"
+    },
+    {
+      "id": "4300210",
+      "course_code": "430 210",
+      "course_number": 210,
+      "course_name": "PROGRAMMING LANGUAGES I",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710100",
+      "course_code": "CENG 100",
+      "course_number": 100,
+      "course_name": "COMPUTER ENGINEERING ORIENTATION (BİLGİSAYAR MÜHENDİSLİĞİ ORYANTASYONU )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710111",
+      "course_code": "CENG 111",
+      "course_number": 111,
+      "course_name": "INTRODUCTION TO COMPUTER ENG. CONCEPTS (BİLGİSAYAR MÜHENDİSLİĞİ KAVRAMLARINA GİRİŞ )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710140",
+      "course_code": "CENG 140",
+      "course_number": 140,
+      "course_name": "C PROGRAMMING (C PROGRAMLAMA )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710200",
+      "course_code": "CENG 200",
+      "course_number": 200,
+      "course_name": "INTR. TO COMPUTERS & FORTRAN PROG.",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710213",
+      "course_code": "CENG 213",
+      "course_number": 213,
+      "course_name": "DATA STRUCTURES (VERİ YAPILARI )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710222",
+      "course_code": "CENG 222",
+      "course_number": 222,
+      "course_name": "STATISTICAL METHODS FOR COMPUTER ENGINEERING (BİLGİSAYAR MÜHENDİSLİĞİ İÇİN İSTATİSTİKSEL YÖNTEMLER )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710223",
+      "course_code": "CENG 223",
+      "course_number": 223,
+      "course_name": "DISCRETE COMPUTATIONAL STRUCTURES (KESİKLİ HESAPLAMA YAPILARI )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710229",
+      "course_code": "CENG 229",
+      "course_number": 229,
+      "course_name": "C PROGRAMMING",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710230",
+      "course_code": "CENG 230",
+      "course_number": 230,
+      "course_name": "INTRODUCTION TO C PROGRAMMING",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710232",
+      "course_code": "CENG 232",
+      "course_number": 232,
+      "course_name": "LOGIC DESIGN (SAYISAL DEVRE TASARIMI )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710240",
+      "course_code": "CENG 240",
+      "course_number": 240,
+      "course_name": "PROGRAMMING WITH PYTHON FOR ENGINEERS (MÜHENDİSLER İÇİN PYTHON İLE PROGRAMLAMA )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710242",
+      "course_code": "CENG 242",
+      "course_number": 242,
+      "course_name": "PROGRAMMING LANGUAGE CONCEPTS (PROGRAMLAMA DİLİ KAVRAMLARI )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710280",
+      "course_code": "CENG 280",
+      "course_number": 280,
+      "course_name": "FORMAL LANGU.AND ABSTRACT MACHINES (FORMEL DİLLER VE SOYUT MAKİNELER )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710300",
+      "course_code": "CENG 300",
+      "course_number": 300,
+      "course_name": "SUMMER PRACTICE I (YAZ STAJI I )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate Practice / Lisans Staj"
+    },
+    {
+      "id": "5710301",
+      "course_code": "CENG 301",
+      "course_number": 301,
+      "course_name": "ALGORITHMS AND DATA STRUCTURES (ALGORİTMALAR VE VERİ YAPILARI )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710302",
+      "course_code": "CENG 302",
+      "course_number": 302,
+      "course_name": "INTR. TO DATABASE MANAGEMENT SYSTEMS (VERİTABANI YÖNETİM SİSTEMLERİNE GİRİŞ )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710305",
+      "course_code": "CENG 305",
+      "course_number": 305,
+      "course_name": "OBJECT ORIENTED PROGRAMMING WITH JAVA (JAVA İLE NESNE YÖNELİMLİ PROGRAMLAMA )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710310",
+      "course_code": "CENG 310",
+      "course_number": 310,
+      "course_name": "ALGORITHMS AND DATA STRUCTURES WITH PYTHON (PYTHON İLE ALGORİTMALAR VE VERİ YAPILARI )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710315",
+      "course_code": "CENG 315",
+      "course_number": 315,
+      "course_name": "ALGORITHMS (ALGORİTMALAR )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710316",
+      "course_code": "CENG 316",
+      "course_number": 316,
+      "course_name": "PRACTICE OF ALGORITHMS (ALGORİTMA UYGULAMALARI )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710331",
+      "course_code": "CENG 331",
+      "course_number": 331,
+      "course_name": "COMPUTER ORGANIZATION (BİLGİSAYAR MİMARİSİ )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710334",
+      "course_code": "CENG 334",
+      "course_number": 334,
+      "course_name": "INTRODUCTION TO OPERATING SYSTEMS (İŞLETİM SİSTEMLERİNE GİRİŞ )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710336",
+      "course_code": "CENG 336",
+      "course_number": 336,
+      "course_name": "INTRO.TO EMBEDDED SYSTEMS DEVELOPMENT (GÖMÜLÜ SİSTEM GELİŞTİRMEYE GİRİŞ )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710350",
+      "course_code": "CENG 350",
+      "course_number": 350,
+      "course_name": "SOFTWARE ENGINEERING (YAZILIM MÜHENDİSLİĞİ )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710351",
+      "course_code": "CENG 351",
+      "course_number": 351,
+      "course_name": "DATA MANAGEMENT AND FILE STRUCTURES (VERİ YÖNETİMİ VE DOSYA YAPILARI )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710352",
+      "course_code": "CENG 352",
+      "course_number": 352,
+      "course_name": "DATABASE MANAGEMENT SYSTEMS (VERİ TABANI YÖNETİM SİSTEMLERİ )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710371",
+      "course_code": "CENG 371",
+      "course_number": 371,
+      "course_name": "SCIENTIFIC COMPUTING (BİLİMSEL HESAPLAMA )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Elective / Seçmeli"
+    },
+    {
+      "id": "5710382",
+      "course_code": "CENG 382",
+      "course_number": 382,
+      "course_name": "ANALYSIS OF DYNAMIC SYSTEMS (DİNAMİK SİSTEMLERİN ANALİZİ )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710384",
+      "course_code": "CENG 384",
+      "course_number": 384,
+      "course_name": "SIGNALS AND SYSTEMS FOR COMPUTER ENGINEERS (BİLGİSAYAR MÜHENDİSLERİ İÇİN SİNYAL VE SİSTEMLER )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710400",
+      "course_code": "CENG 400",
+      "course_number": 400,
+      "course_name": "SUMMER PRACTICE II (YAZ STAJI II )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate Practice / Lisans Staj"
+    },
+    {
+      "id": "5710403",
+      "course_code": "CENG 403",
+      "course_number": 403,
+      "course_name": "SPECIAL TOPICS IN COMPUTER ENGINEERING: INTRODUCTION TO DEEP LEARNING (BİLGİSAYAR MÜHENDİSLİĞİ ÖZEL KONULAR : DERİN ÖĞRENMEYE GİRİŞ )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710414",
+      "course_code": "CENG 414",
+      "course_number": 414,
+      "course_name": "INTRODUCTION TO DATA MINING ( VERİ MADENCİLİĞİNE GİRİŞ )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710424",
+      "course_code": "CENG 424",
+      "course_number": 424,
+      "course_name": "LOGIC FOR COMPUTER SCIENCE (BİLGİSAYAR BİLİMLERİ İÇİN MANTIK )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710435",
+      "course_code": "CENG 435",
+      "course_number": 435,
+      "course_name": "DATA COMMUNICATIONS AND NETWORKING (VERİ İLETİŞİMİ VE BİLGİSAYAR AĞLARI )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710443",
+      "course_code": "CENG 443",
+      "course_number": 443,
+      "course_name": "INTRODUCTION TO OBJECT-ORIENTED PROG. LANG. AND SYSTEMS (NESNE YÖNELİMLİ PROGRAMLAMA DİLLERİ VE SİSTEMLERİNE GİRİŞ )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710444",
+      "course_code": "CENG 444",
+      "course_number": 444,
+      "course_name": "LANGUAGE PROCESSORS (DİL İŞLEMCİLERİ )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710445",
+      "course_code": "CENG 445",
+      "course_number": 445,
+      "course_name": "SOFTWARE DEVELOPMENT WITH SCRIPTING LANGUAGES (BETİK DİLLERİ İLE YAZILIM GELİŞTİRME )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710453",
+      "course_code": "CENG 453",
+      "course_number": 453,
+      "course_name": "SPECIAL TOPICS IN COMPUTER ENGINEERING: SOFTWARE CONSTRUCTION (BİLG. MÜH. ÖZEL KONULAR: YAZILIM İNŞASI )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710454",
+      "course_code": "CENG 454",
+      "course_number": 454,
+      "course_name": "SPECIAL TOPICS IN COMPUTER ENGINEERING: INTRODUCTION TO SOFTWARE ARCHITECTURE (BİLGİSAYAR MÜHENDİSLİĞİ ÖZEL KONULAR: YAZILIM MİMARİSİNE GİRİŞ )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710460",
+      "course_code": "CENG 460",
+      "course_number": 460,
+      "course_name": "SPECIAL TOPICS IN COMPUTER ENGINEERING: INTRODUCTION TO ROBOTICS FOR COMPUTER ENGINEERING (BİLG. MÜH. ÖZEL KONULAR: BİLGİSAYAR MÜHENDİSLİĞİ İÇİN ROBOTİĞE GİRİŞ )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710462",
+      "course_code": "CENG 462",
+      "course_number": 462,
+      "course_name": "ARTIFICIAL INTELLIGENCE (YAPAY ZEKA )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710463",
+      "course_code": "CENG 463",
+      "course_number": 463,
+      "course_name": "INTRODUCTION TO NATURAL LANGU. PROCESSING (DOĞAL DİL İŞLEMEYE GİRİŞ )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710466",
+      "course_code": "CENG 466",
+      "course_number": 466,
+      "course_name": "FUNDAMENTALS OF IMAGE PROCESSING (GÖRÜNTÜ İŞLEMENİN TEMELLERİ )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710469",
+      "course_code": "CENG 469",
+      "course_number": 469,
+      "course_name": "COMPUTER GRAPHICS II (BİLGİSAYARLI GRAFİK II )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710477",
+      "course_code": "CENG 477",
+      "course_number": 477,
+      "course_name": "INTRODUCTION TO COMPUTER GRAPHICS (BİLGİSAYARLI GRAFİĞE GİRİŞ )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710488",
+      "course_code": "CENG 488",
+      "course_number": 488,
+      "course_name": "GUIDED RESEARCH (YÖNLENDİRMELİ ARAŞTIRMA )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710489",
+      "course_code": "CENG 489",
+      "course_number": 489,
+      "course_name": "SPECIAL TOPICS IN COMP. ENG. : INTRO.TO COMP.SECURITY (BİLG. MÜH. ÖZEL KONULAR: BİLGİSAYAR GÜVENLİĞİNE GİRİŞ )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710491",
+      "course_code": "CENG 491",
+      "course_number": 491,
+      "course_name": "COMPUTER ENGINEERING DESIGN I (BİLGİSAYAR MÜHENDİSLİĞİ TASARIMI I )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710492",
+      "course_code": "CENG 492",
+      "course_number": 492,
+      "course_name": "COMPUTER ENGINEERING DESIGN II (BİLGİSAYAR MÜHENDİSLİĞİ TASARIMI II )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710495",
+      "course_code": "CENG 495",
+      "course_number": 495,
+      "course_name": "CLOUD COMPUTING (BULUT HESAPLAMA )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710499",
+      "course_code": "CENG 499",
+      "course_number": 499,
+      "course_name": "SPECIAL TOPICS: INTRODUCTION TO MACHINE LEARNING (BİLG. MÜH. ÖZEL KONULAR: MAKİNE ÖĞRENMESİNE GİRİŞ )",
+      "department": "Computer Engineering/Bilgisayar Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2360120",
+      "course_code": "MATH 120",
+      "course_number": 120,
+      "course_name": "CALCULUS OF FUNCTIONS OF SEVERAL VARIABLES",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2360219",
+      "course_code": "MATH 219",
+      "course_number": 219,
+      "course_name": "INTRODUCTION TO DIFFERENTIAL EQUATIONS",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2360253",
+      "course_code": "MATH 253",
+      "course_number": 253,
+      "course_name": "INTRO.TO ORDINARY DIFFERENTIAL EQNS.",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2360260",
+      "course_code": "MATH 260",
+      "course_number": 260,
+      "course_name": "BASIC LINEAR ALGEBRA",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "8770101",
+      "course_code": "OHS 101",
+      "course_number": 101,
+      "course_name": "OCCUPATIONAL HEALTH AND SAFETY-I",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "8770301",
+      "course_code": "OHS 301",
+      "course_number": 301,
+      "course_name": "OCCUPATIONAL HEALTH AND SAFETY - II",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460221",
+      "course_code": "STAT 221",
+      "course_number": 221,
+      "course_name": "FUNDAMENTALS OF STATISTICS",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    }
+  ],
+  "edges": [
+    {
+      "from": "5710140",
+      "to": "5710213",
+      "from_course_code": "CENG 140",
+      "to_course_code": "CENG 213",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360120",
+      "to": "5710222",
+      "from_course_code": "MATH 120",
+      "to_course_code": "CENG 222",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710111",
+      "to": "5710242",
+      "from_course_code": "CENG 111",
+      "to_course_code": "CENG 242",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710213",
+      "to": "5710242",
+      "from_course_code": "CENG 213",
+      "to_course_code": "CENG 242",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3550111",
+      "to": "5710242",
+      "from_course_code": "355 111",
+      "to_course_code": "CENG 242",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3550213",
+      "to": "5710242",
+      "from_course_code": "355 213",
+      "to_course_code": "CENG 242",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710223",
+      "to": "5710280",
+      "from_course_code": "CENG 223",
+      "to_course_code": "CENG 280",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "8770101",
+      "to": "5710300",
+      "from_course_code": "OHS 101",
+      "to_course_code": "CENG 300",
+      "set_no": "1",
+      "min_grade": "S",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710230",
+      "to": "5710301",
+      "from_course_code": "CENG 230",
+      "to_course_code": "CENG 301",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "5710229",
+      "to": "5710301",
+      "from_course_code": "CENG 229",
+      "to_course_code": "CENG 301",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "5710240",
+      "to": "5710301",
+      "from_course_code": "CENG 240",
+      "to_course_code": "CENG 301",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "4300210",
+      "to": "5710301",
+      "from_course_code": "430 210",
+      "to_course_code": "CENG 301",
+      "set_no": "4",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2300200",
+      "to": "5710301",
+      "from_course_code": "230 200",
+      "to_course_code": "CENG 301",
+      "set_no": "5",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710230",
+      "to": "5710305",
+      "from_course_code": "CENG 230",
+      "to_course_code": "CENG 305",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "5710200",
+      "to": "5710305",
+      "from_course_code": "CENG 200",
+      "to_course_code": "CENG 305",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "5710229",
+      "to": "5710305",
+      "from_course_code": "CENG 229",
+      "to_course_code": "CENG 305",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "5710240",
+      "to": "5710305",
+      "from_course_code": "CENG 240",
+      "to_course_code": "CENG 305",
+      "set_no": "4",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "4300210",
+      "to": "5710305",
+      "from_course_code": "430 210",
+      "to_course_code": "CENG 305",
+      "set_no": "5",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2300200",
+      "to": "5710305",
+      "from_course_code": "230 200",
+      "to_course_code": "CENG 305",
+      "set_no": "6",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710240",
+      "to": "5710310",
+      "from_course_code": "CENG 240",
+      "to_course_code": "CENG 310",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "4300210",
+      "to": "5710310",
+      "from_course_code": "430 210",
+      "to_course_code": "CENG 310",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2300200",
+      "to": "5710310",
+      "from_course_code": "230 200",
+      "to_course_code": "CENG 310",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710213",
+      "to": "5710315",
+      "from_course_code": "CENG 213",
+      "to_course_code": "CENG 315",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710315",
+      "to": "5710316",
+      "from_course_code": "CENG 315",
+      "to_course_code": "CENG 316",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710232",
+      "to": "5710331",
+      "from_course_code": "CENG 232",
+      "to_course_code": "CENG 331",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710331",
+      "to": "5710334",
+      "from_course_code": "CENG 331",
+      "to_course_code": "CENG 334",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710232",
+      "to": "5710336",
+      "from_course_code": "CENG 232",
+      "to_course_code": "CENG 336",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710213",
+      "to": "5710350",
+      "from_course_code": "CENG 213",
+      "to_course_code": "CENG 350",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710301",
+      "to": "5710350",
+      "from_course_code": "CENG 301",
+      "to_course_code": "CENG 350",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710310",
+      "to": "5710350",
+      "from_course_code": "CENG 310",
+      "to_course_code": "CENG 350",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710213",
+      "to": "5710351",
+      "from_course_code": "CENG 213",
+      "to_course_code": "CENG 351",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710301",
+      "to": "5710351",
+      "from_course_code": "CENG 301",
+      "to_course_code": "CENG 351",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710310",
+      "to": "5710351",
+      "from_course_code": "CENG 310",
+      "to_course_code": "CENG 351",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710351",
+      "to": "5710352",
+      "from_course_code": "CENG 351",
+      "to_course_code": "CENG 352",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3550351",
+      "to": "5710352",
+      "from_course_code": "355 351",
+      "to_course_code": "CENG 352",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360120",
+      "to": "5710371",
+      "from_course_code": "MATH 120",
+      "to_course_code": "CENG 371",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360260",
+      "to": "5710371",
+      "from_course_code": "MATH 260",
+      "to_course_code": "CENG 371",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360253",
+      "to": "5710382",
+      "from_course_code": "MATH 253",
+      "to_course_code": "CENG 382",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2360260",
+      "to": "5710382",
+      "from_course_code": "MATH 260",
+      "to_course_code": "CENG 382",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360219",
+      "to": "5710382",
+      "from_course_code": "MATH 219",
+      "to_course_code": "CENG 382",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360260",
+      "to": "5710382",
+      "from_course_code": "MATH 260",
+      "to_course_code": "CENG 382",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3570254",
+      "to": "5710382",
+      "from_course_code": "357 254",
+      "to_course_code": "CENG 382",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3570260",
+      "to": "5710382",
+      "from_course_code": "357 260",
+      "to_course_code": "CENG 382",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360219",
+      "to": "5710384",
+      "from_course_code": "MATH 219",
+      "to_course_code": "CENG 384",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360260",
+      "to": "5710384",
+      "from_course_code": "MATH 260",
+      "to_course_code": "CENG 384",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "8770301",
+      "to": "5710400",
+      "from_course_code": "OHS 301",
+      "to_course_code": "CENG 400",
+      "set_no": "1",
+      "min_grade": "S",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710222",
+      "to": "5710403",
+      "from_course_code": "CENG 222",
+      "to_course_code": "CENG 403",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360120",
+      "to": "5710403",
+      "from_course_code": "MATH 120",
+      "to_course_code": "CENG 403",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360260",
+      "to": "5710403",
+      "from_course_code": "MATH 260",
+      "to_course_code": "CENG 403",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710222",
+      "to": "5710414",
+      "from_course_code": "CENG 222",
+      "to_course_code": "CENG 414",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360260",
+      "to": "5710414",
+      "from_course_code": "MATH 260",
+      "to_course_code": "CENG 414",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710223",
+      "to": "5710424",
+      "from_course_code": "CENG 223",
+      "to_course_code": "CENG 424",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710242",
+      "to": "5710445",
+      "from_course_code": "CENG 242",
+      "to_course_code": "CENG 445",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710350",
+      "to": "5710453",
+      "from_course_code": "CENG 350",
+      "to_course_code": "CENG 453",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710350",
+      "to": "5710454",
+      "from_course_code": "CENG 350",
+      "to_course_code": "CENG 454",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360219",
+      "to": "5710460",
+      "from_course_code": "MATH 219",
+      "to_course_code": "CENG 460",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360260",
+      "to": "5710460",
+      "from_course_code": "MATH 260",
+      "to_course_code": "CENG 460",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710280",
+      "to": "5710463",
+      "from_course_code": "CENG 280",
+      "to_course_code": "CENG 463",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710477",
+      "to": "5710469",
+      "from_course_code": "CENG 477",
+      "to_course_code": "CENG 469",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710334",
+      "to": "5710489",
+      "from_course_code": "CENG 334",
+      "to_course_code": "CENG 489",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710350",
+      "to": "5710491",
+      "from_course_code": "CENG 350",
+      "to_course_code": "CENG 491",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3550350",
+      "to": "5710491",
+      "from_course_code": "355 350",
+      "to_course_code": "CENG 491",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710491",
+      "to": "5710492",
+      "from_course_code": "CENG 491",
+      "to_course_code": "CENG 492",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710331",
+      "to": "5710495",
+      "from_course_code": "CENG 331",
+      "to_course_code": "CENG 495",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710351",
+      "to": "5710495",
+      "from_course_code": "CENG 351",
+      "to_course_code": "CENG 495",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710223",
+      "to": "5710499",
+      "from_course_code": "CENG 223",
+      "to_course_code": "CENG 499",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360260",
+      "to": "5710499",
+      "from_course_code": "MATH 260",
+      "to_course_code": "CENG 499",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460221",
+      "to": "5710499",
+      "from_course_code": "STAT 221",
+      "to_course_code": "CENG 499",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710222",
+      "to": "5710499",
+      "from_course_code": "CENG 222",
+      "to_course_code": "CENG 499",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710223",
+      "to": "5710499",
+      "from_course_code": "CENG 223",
+      "to_course_code": "CENG 499",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360260",
+      "to": "5710499",
+      "from_course_code": "MATH 260",
+      "to_course_code": "CENG 499",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    }
+  ],
+  "prerequisites_by_course": {
+    "5710213": [
+      "5710140"
+    ],
+    "5710222": [
+      "2360120"
+    ],
+    "5710242": [
+      "3550111",
+      "3550213",
+      "5710111",
+      "5710213"
+    ],
+    "5710280": [
+      "5710223"
+    ],
+    "5710300": [
+      "8770101"
+    ],
+    "5710301": [
+      "2300200",
+      "4300210",
+      "5710229",
+      "5710230",
+      "5710240"
+    ],
+    "5710305": [
+      "2300200",
+      "4300210",
+      "5710200",
+      "5710229",
+      "5710230",
+      "5710240"
+    ],
+    "5710310": [
+      "2300200",
+      "4300210",
+      "5710240"
+    ],
+    "5710315": [
+      "5710213"
+    ],
+    "5710316": [
+      "5710315"
+    ],
+    "5710331": [
+      "5710232"
+    ],
+    "5710334": [
+      "5710331"
+    ],
+    "5710336": [
+      "5710232"
+    ],
+    "5710350": [
+      "5710213",
+      "5710301",
+      "5710310"
+    ],
+    "5710351": [
+      "5710213",
+      "5710301",
+      "5710310"
+    ],
+    "5710352": [
+      "3550351",
+      "5710351"
+    ],
+    "5710371": [
+      "2360120",
+      "2360260"
+    ],
+    "5710382": [
+      "3570254",
+      "3570260",
+      "2360219",
+      "2360253",
+      "2360260"
+    ],
+    "5710384": [
+      "2360219",
+      "2360260"
+    ],
+    "5710400": [
+      "8770301"
+    ],
+    "5710403": [
+      "5710222",
+      "2360120",
+      "2360260"
+    ],
+    "5710414": [
+      "5710222",
+      "2360260"
+    ],
+    "5710424": [
+      "5710223"
+    ],
+    "5710445": [
+      "5710242"
+    ],
+    "5710453": [
+      "5710350"
+    ],
+    "5710454": [
+      "5710350"
+    ],
+    "5710460": [
+      "2360219",
+      "2360260"
+    ],
+    "5710463": [
+      "5710280"
+    ],
+    "5710469": [
+      "5710477"
+    ],
+    "5710489": [
+      "5710334"
+    ],
+    "5710491": [
+      "3550350",
+      "5710350"
+    ],
+    "5710492": [
+      "5710491"
+    ],
+    "5710495": [
+      "5710331",
+      "5710351"
+    ],
+    "5710499": [
+      "5710222",
+      "5710223",
+      "2360260",
+      "2460221"
+    ]
+  },
+  "prerequisites_by_course_code": {
+    "CENG 213": [
+      "CENG 140"
+    ],
+    "CENG 222": [
+      "MATH 120"
+    ],
+    "CENG 242": [
+      "355 111",
+      "355 213",
+      "CENG 111",
+      "CENG 213"
+    ],
+    "CENG 280": [
+      "CENG 223"
+    ],
+    "CENG 300": [
+      "OHS 101"
+    ],
+    "CENG 301": [
+      "230 200",
+      "430 210",
+      "CENG 229",
+      "CENG 230",
+      "CENG 240"
+    ],
+    "CENG 305": [
+      "230 200",
+      "430 210",
+      "CENG 200",
+      "CENG 229",
+      "CENG 230",
+      "CENG 240"
+    ],
+    "CENG 310": [
+      "230 200",
+      "430 210",
+      "CENG 240"
+    ],
+    "CENG 315": [
+      "CENG 213"
+    ],
+    "CENG 316": [
+      "CENG 315"
+    ],
+    "CENG 331": [
+      "CENG 232"
+    ],
+    "CENG 334": [
+      "CENG 331"
+    ],
+    "CENG 336": [
+      "CENG 232"
+    ],
+    "CENG 350": [
+      "CENG 213",
+      "CENG 301",
+      "CENG 310"
+    ],
+    "CENG 351": [
+      "CENG 213",
+      "CENG 301",
+      "CENG 310"
+    ],
+    "CENG 352": [
+      "355 351",
+      "CENG 351"
+    ],
+    "CENG 371": [
+      "MATH 120",
+      "MATH 260"
+    ],
+    "CENG 382": [
+      "357 254",
+      "357 260",
+      "MATH 219",
+      "MATH 253",
+      "MATH 260"
+    ],
+    "CENG 384": [
+      "MATH 219",
+      "MATH 260"
+    ],
+    "CENG 400": [
+      "OHS 301"
+    ],
+    "CENG 403": [
+      "CENG 222",
+      "MATH 120",
+      "MATH 260"
+    ],
+    "CENG 414": [
+      "CENG 222",
+      "MATH 260"
+    ],
+    "CENG 424": [
+      "CENG 223"
+    ],
+    "CENG 445": [
+      "CENG 242"
+    ],
+    "CENG 453": [
+      "CENG 350"
+    ],
+    "CENG 454": [
+      "CENG 350"
+    ],
+    "CENG 460": [
+      "MATH 219",
+      "MATH 260"
+    ],
+    "CENG 463": [
+      "CENG 280"
+    ],
+    "CENG 469": [
+      "CENG 477"
+    ],
+    "CENG 489": [
+      "CENG 334"
+    ],
+    "CENG 491": [
+      "355 350",
+      "CENG 350"
+    ],
+    "CENG 492": [
+      "CENG 491"
+    ],
+    "CENG 495": [
+      "CENG 331",
+      "CENG 351"
+    ],
+    "CENG 499": [
+      "CENG 222",
+      "CENG 223",
+      "MATH 260",
+      "STAT 221"
+    ]
+  },
+  "dependents_by_course": {
+    "5710140": [
+      "5710213"
+    ],
+    "2360120": [
+      "5710222",
+      "5710371",
+      "5710403"
+    ],
+    "5710111": [
+      "5710242"
+    ],
+    "5710213": [
+      "5710242",
+      "5710315",
+      "5710350",
+      "5710351"
+    ],
+    "3550111": [
+      "5710242"
+    ],
+    "3550213": [
+      "5710242"
+    ],
+    "5710223": [
+      "5710280",
+      "5710424",
+      "5710499"
+    ],
+    "8770101": [
+      "5710300"
+    ],
+    "5710230": [
+      "5710301",
+      "5710305"
+    ],
+    "5710229": [
+      "5710301",
+      "5710305"
+    ],
+    "5710240": [
+      "5710301",
+      "5710305",
+      "5710310"
+    ],
+    "4300210": [
+      "5710301",
+      "5710305",
+      "5710310"
+    ],
+    "2300200": [
+      "5710301",
+      "5710305",
+      "5710310"
+    ],
+    "5710200": [
+      "5710305"
+    ],
+    "5710315": [
+      "5710316"
+    ],
+    "5710232": [
+      "5710331",
+      "5710336"
+    ],
+    "5710331": [
+      "5710334",
+      "5710495"
+    ],
+    "5710301": [
+      "5710350",
+      "5710351"
+    ],
+    "5710310": [
+      "5710350",
+      "5710351"
+    ],
+    "5710351": [
+      "5710352",
+      "5710495"
+    ],
+    "3550351": [
+      "5710352"
+    ],
+    "2360260": [
+      "5710371",
+      "5710382",
+      "5710384",
+      "5710403",
+      "5710414",
+      "5710460",
+      "5710499"
+    ],
+    "2360253": [
+      "5710382"
+    ],
+    "2360219": [
+      "5710382",
+      "5710384",
+      "5710460"
+    ],
+    "3570254": [
+      "5710382"
+    ],
+    "3570260": [
+      "5710382"
+    ],
+    "8770301": [
+      "5710400"
+    ],
+    "5710222": [
+      "5710403",
+      "5710414",
+      "5710499"
+    ],
+    "5710242": [
+      "5710445"
+    ],
+    "5710350": [
+      "5710453",
+      "5710454",
+      "5710491"
+    ],
+    "5710280": [
+      "5710463"
+    ],
+    "5710477": [
+      "5710469"
+    ],
+    "5710334": [
+      "5710489"
+    ],
+    "3550350": [
+      "5710491"
+    ],
+    "5710491": [
+      "5710492"
+    ],
+    "2460221": [
+      "5710499"
+    ]
+  },
+  "dependents_by_course_code": {
+    "CENG 140": [
+      "CENG 213"
+    ],
+    "MATH 120": [
+      "CENG 222",
+      "CENG 371",
+      "CENG 403"
+    ],
+    "CENG 111": [
+      "CENG 242"
+    ],
+    "CENG 213": [
+      "CENG 242",
+      "CENG 315",
+      "CENG 350",
+      "CENG 351"
+    ],
+    "355 111": [
+      "CENG 242"
+    ],
+    "355 213": [
+      "CENG 242"
+    ],
+    "CENG 223": [
+      "CENG 280",
+      "CENG 424",
+      "CENG 499"
+    ],
+    "OHS 101": [
+      "CENG 300"
+    ],
+    "CENG 230": [
+      "CENG 301",
+      "CENG 305"
+    ],
+    "CENG 229": [
+      "CENG 301",
+      "CENG 305"
+    ],
+    "CENG 240": [
+      "CENG 301",
+      "CENG 305",
+      "CENG 310"
+    ],
+    "430 210": [
+      "CENG 301",
+      "CENG 305",
+      "CENG 310"
+    ],
+    "230 200": [
+      "CENG 301",
+      "CENG 305",
+      "CENG 310"
+    ],
+    "CENG 200": [
+      "CENG 305"
+    ],
+    "CENG 315": [
+      "CENG 316"
+    ],
+    "CENG 232": [
+      "CENG 331",
+      "CENG 336"
+    ],
+    "CENG 331": [
+      "CENG 334",
+      "CENG 495"
+    ],
+    "CENG 301": [
+      "CENG 350",
+      "CENG 351"
+    ],
+    "CENG 310": [
+      "CENG 350",
+      "CENG 351"
+    ],
+    "CENG 351": [
+      "CENG 352",
+      "CENG 495"
+    ],
+    "355 351": [
+      "CENG 352"
+    ],
+    "MATH 260": [
+      "CENG 371",
+      "CENG 382",
+      "CENG 384",
+      "CENG 403",
+      "CENG 414",
+      "CENG 460",
+      "CENG 499"
+    ],
+    "MATH 253": [
+      "CENG 382"
+    ],
+    "MATH 219": [
+      "CENG 382",
+      "CENG 384",
+      "CENG 460"
+    ],
+    "357 254": [
+      "CENG 382"
+    ],
+    "357 260": [
+      "CENG 382"
+    ],
+    "OHS 301": [
+      "CENG 400"
+    ],
+    "CENG 222": [
+      "CENG 403",
+      "CENG 414",
+      "CENG 499"
+    ],
+    "CENG 242": [
+      "CENG 445"
+    ],
+    "CENG 350": [
+      "CENG 453",
+      "CENG 454",
+      "CENG 491"
+    ],
+    "CENG 280": [
+      "CENG 463"
+    ],
+    "CENG 477": [
+      "CENG 469"
+    ],
+    "CENG 334": [
+      "CENG 489"
+    ],
+    "355 350": [
+      "CENG 491"
+    ],
+    "CENG 491": [
+      "CENG 492"
+    ],
+    "STAT 221": [
+      "CENG 499"
+    ]
+  },
+  "prerequisite_sets_by_course": {
+    "5710213": {
+      "1": [
+        "5710140"
+      ]
+    },
+    "5710222": {
+      "1": [
+        "2360120"
+      ]
+    },
+    "5710242": {
+      "1": [
+        "5710111",
+        "5710213"
+      ],
+      "2": [
+        "3550111",
+        "3550213"
+      ]
+    },
+    "5710280": {
+      "1": [
+        "5710223"
+      ]
+    },
+    "5710300": {
+      "1": [
+        "8770101"
+      ]
+    },
+    "5710301": {
+      "1": [
+        "5710230"
+      ],
+      "2": [
+        "5710229"
+      ],
+      "3": [
+        "5710240"
+      ],
+      "4": [
+        "4300210"
+      ],
+      "5": [
+        "2300200"
+      ]
+    },
+    "5710305": {
+      "1": [
+        "5710230"
+      ],
+      "2": [
+        "5710200"
+      ],
+      "3": [
+        "5710229"
+      ],
+      "4": [
+        "5710240"
+      ],
+      "5": [
+        "4300210"
+      ],
+      "6": [
+        "2300200"
+      ]
+    },
+    "5710310": {
+      "1": [
+        "5710240"
+      ],
+      "2": [
+        "4300210"
+      ],
+      "3": [
+        "2300200"
+      ]
+    },
+    "5710315": {
+      "1": [
+        "5710213"
+      ]
+    },
+    "5710331": {
+      "1": [
+        "5710232"
+      ]
+    },
+    "5710334": {
+      "2": [
+        "5710331"
+      ]
+    },
+    "5710336": {
+      "1": [
+        "5710232"
+      ]
+    },
+    "5710351": {
+      "1": [
+        "5710213"
+      ],
+      "2": [
+        "5710301"
+      ],
+      "3": [
+        "5710310"
+      ]
+    },
+    "5710371": {
+      "1": [
+        "2360120",
+        "2360260"
+      ]
+    },
+    "5710382": {
+      "1": [
+        "2360253",
+        "2360260"
+      ],
+      "2": [
+        "2360219",
+        "2360260"
+      ],
+      "3": [
+        "3570254",
+        "3570260"
+      ]
+    },
+    "5710400": {
+      "1": [
+        "8770301"
+      ]
+    },
+    "5710414": {
+      "1": [
+        "5710222",
+        "2360260"
+      ]
+    },
+    "5710424": {
+      "1": [
+        "5710223"
+      ]
+    },
+    "5710445": {
+      "1": [
+        "5710242"
+      ]
+    },
+    "5710454": {
+      "1": [
+        "5710350"
+      ]
+    },
+    "5710460": {
+      "1": [
+        "2360219",
+        "2360260"
+      ]
+    },
+    "5710463": {
+      "1": [
+        "5710280"
+      ]
+    },
+    "5710489": {
+      "1": [
+        "5710334"
+      ]
+    },
+    "5710491": {
+      "1": [
+        "5710350"
+      ],
+      "2": [
+        "3550350"
+      ]
+    },
+    "5710499": {
+      "1": [
+        "5710223",
+        "2360260",
+        "2460221"
+      ],
+      "2": [
+        "5710222",
+        "5710223",
+        "2360260"
+      ]
+    },
+    "5710316": {
+      "1": [
+        "5710315"
+      ]
+    },
+    "5710350": {
+      "1": [
+        "5710213"
+      ],
+      "2": [
+        "5710301"
+      ],
+      "3": [
+        "5710310"
+      ]
+    },
+    "5710352": {
+      "2": [
+        "5710351"
+      ],
+      "3": [
+        "3550351"
+      ]
+    },
+    "5710384": {
+      "1": [
+        "2360219",
+        "2360260"
+      ]
+    },
+    "5710403": {
+      "1": [
+        "5710222",
+        "2360120",
+        "2360260"
+      ]
+    },
+    "5710453": {
+      "1": [
+        "5710350"
+      ]
+    },
+    "5710469": {
+      "1": [
+        "5710477"
+      ]
+    },
+    "5710492": {
+      "2": [
+        "5710491"
+      ]
+    },
+    "5710495": {
+      "1": [
+        "5710331",
+        "5710351"
+      ]
+    }
+  },
+  "prerequisite_sets_by_course_code": {
+    "CENG 213": {
+      "1": [
+        "CENG 140"
+      ]
+    },
+    "CENG 222": {
+      "1": [
+        "MATH 120"
+      ]
+    },
+    "CENG 242": {
+      "1": [
+        "CENG 111",
+        "CENG 213"
+      ],
+      "2": [
+        "355 111",
+        "355 213"
+      ]
+    },
+    "CENG 280": {
+      "1": [
+        "CENG 223"
+      ]
+    },
+    "CENG 300": {
+      "1": [
+        "OHS 101"
+      ]
+    },
+    "CENG 301": {
+      "1": [
+        "CENG 230"
+      ],
+      "2": [
+        "CENG 229"
+      ],
+      "3": [
+        "CENG 240"
+      ],
+      "4": [
+        "430 210"
+      ],
+      "5": [
+        "230 200"
+      ]
+    },
+    "CENG 305": {
+      "1": [
+        "CENG 230"
+      ],
+      "2": [
+        "CENG 200"
+      ],
+      "3": [
+        "CENG 229"
+      ],
+      "4": [
+        "CENG 240"
+      ],
+      "5": [
+        "430 210"
+      ],
+      "6": [
+        "230 200"
+      ]
+    },
+    "CENG 310": {
+      "1": [
+        "CENG 240"
+      ],
+      "2": [
+        "430 210"
+      ],
+      "3": [
+        "230 200"
+      ]
+    },
+    "CENG 315": {
+      "1": [
+        "CENG 213"
+      ]
+    },
+    "CENG 331": {
+      "1": [
+        "CENG 232"
+      ]
+    },
+    "CENG 334": {
+      "2": [
+        "CENG 331"
+      ]
+    },
+    "CENG 336": {
+      "1": [
+        "CENG 232"
+      ]
+    },
+    "CENG 351": {
+      "1": [
+        "CENG 213"
+      ],
+      "2": [
+        "CENG 301"
+      ],
+      "3": [
+        "CENG 310"
+      ]
+    },
+    "CENG 371": {
+      "1": [
+        "MATH 120",
+        "MATH 260"
+      ]
+    },
+    "CENG 382": {
+      "1": [
+        "MATH 253",
+        "MATH 260"
+      ],
+      "2": [
+        "MATH 219",
+        "MATH 260"
+      ],
+      "3": [
+        "357 254",
+        "357 260"
+      ]
+    },
+    "CENG 400": {
+      "1": [
+        "OHS 301"
+      ]
+    },
+    "CENG 414": {
+      "1": [
+        "CENG 222",
+        "MATH 260"
+      ]
+    },
+    "CENG 424": {
+      "1": [
+        "CENG 223"
+      ]
+    },
+    "CENG 445": {
+      "1": [
+        "CENG 242"
+      ]
+    },
+    "CENG 454": {
+      "1": [
+        "CENG 350"
+      ]
+    },
+    "CENG 460": {
+      "1": [
+        "MATH 219",
+        "MATH 260"
+      ]
+    },
+    "CENG 463": {
+      "1": [
+        "CENG 280"
+      ]
+    },
+    "CENG 489": {
+      "1": [
+        "CENG 334"
+      ]
+    },
+    "CENG 491": {
+      "1": [
+        "CENG 350"
+      ],
+      "2": [
+        "355 350"
+      ]
+    },
+    "CENG 499": {
+      "1": [
+        "CENG 223",
+        "MATH 260",
+        "STAT 221"
+      ],
+      "2": [
+        "CENG 222",
+        "CENG 223",
+        "MATH 260"
+      ]
+    },
+    "CENG 316": {
+      "1": [
+        "CENG 315"
+      ]
+    },
+    "CENG 350": {
+      "1": [
+        "CENG 213"
+      ],
+      "2": [
+        "CENG 301"
+      ],
+      "3": [
+        "CENG 310"
+      ]
+    },
+    "CENG 352": {
+      "2": [
+        "CENG 351"
+      ],
+      "3": [
+        "355 351"
+      ]
+    },
+    "CENG 384": {
+      "1": [
+        "MATH 219",
+        "MATH 260"
+      ]
+    },
+    "CENG 403": {
+      "1": [
+        "CENG 222",
+        "MATH 120",
+        "MATH 260"
+      ]
+    },
+    "CENG 453": {
+      "1": [
+        "CENG 350"
+      ]
+    },
+    "CENG 469": {
+      "1": [
+        "CENG 477"
+      ]
+    },
+    "CENG 492": {
+      "2": [
+        "CENG 491"
+      ]
+    },
+    "CENG 495": {
+      "1": [
+        "CENG 331",
+        "CENG 351"
+      ]
+    }
+  },
+  "topological_order": [
+    "2300200",
+    "2360120",
+    "2360219",
+    "2360253",
+    "2360260",
+    "2460221",
+    "3550111",
+    "3550213",
+    "3550350",
+    "3550351",
+    "3570254",
+    "3570260",
+    "4300210",
+    "5710100",
+    "5710111",
+    "5710140",
+    "5710200",
+    "5710223",
+    "5710229",
+    "5710230",
+    "5710232",
+    "5710240",
+    "5710302",
+    "5710435",
+    "5710443",
+    "5710444",
+    "5710462",
+    "5710466",
+    "5710477",
+    "5710488",
+    "8770101",
+    "8770301",
+    "5710222",
+    "5710371",
+    "5710384",
+    "5710460",
+    "5710382",
+    "5710213",
+    "5710280",
+    "5710424",
+    "5710331",
+    "5710336",
+    "5710301",
+    "5710305",
+    "5710310",
+    "5710469",
+    "5710300",
+    "5710400",
+    "5710403",
+    "5710414",
+    "5710499",
+    "5710242",
+    "5710315",
+    "5710463",
+    "5710334",
+    "5710350",
+    "5710351",
+    "5710445",
+    "5710316",
+    "5710489",
+    "5710453",
+    "5710454",
+    "5710491",
+    "5710352",
+    "5710495",
+    "5710492"
+  ],
+  "topological_order_course_code": [
+    "230 200",
+    "MATH 120",
+    "MATH 219",
+    "MATH 253",
+    "MATH 260",
+    "STAT 221",
+    "355 111",
+    "355 213",
+    "355 350",
+    "355 351",
+    "357 254",
+    "357 260",
+    "430 210",
+    "CENG 100",
+    "CENG 111",
+    "CENG 140",
+    "CENG 200",
+    "CENG 223",
+    "CENG 229",
+    "CENG 230",
+    "CENG 232",
+    "CENG 240",
+    "CENG 302",
+    "CENG 435",
+    "CENG 443",
+    "CENG 444",
+    "CENG 462",
+    "CENG 466",
+    "CENG 477",
+    "CENG 488",
+    "OHS 101",
+    "OHS 301",
+    "CENG 222",
+    "CENG 371",
+    "CENG 384",
+    "CENG 460",
+    "CENG 382",
+    "CENG 213",
+    "CENG 280",
+    "CENG 424",
+    "CENG 331",
+    "CENG 336",
+    "CENG 301",
+    "CENG 305",
+    "CENG 310",
+    "CENG 469",
+    "CENG 300",
+    "CENG 400",
+    "CENG 403",
+    "CENG 414",
+    "CENG 499",
+    "CENG 242",
+    "CENG 315",
+    "CENG 463",
+    "CENG 334",
+    "CENG 350",
+    "CENG 351",
+    "CENG 445",
+    "CENG 316",
+    "CENG 489",
+    "CENG 453",
+    "CENG 454",
+    "CENG 491",
+    "CENG 352",
+    "CENG 495",
+    "CENG 492"
+  ]
+}

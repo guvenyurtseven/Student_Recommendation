@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "description": "Manual course metadata overrides. Entries are applied only when review_status is reviewed or corrected.",
+  "overrides": []
+}

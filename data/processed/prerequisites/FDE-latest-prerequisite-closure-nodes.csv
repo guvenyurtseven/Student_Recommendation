@@ -1,0 +1,81 @@
+﻿id,course_code,course_number,course_name,sources,curriculum_programs,requirement_types,scrape_status,found_semester
+2190103,219 103,103,MOLECULAR AND CELLULAR BIOLOGY I,prerequisite_closure,,,scraped,20251
+2190104,219 104,104,MOLECULAR AND CELLULAR BIOLOGY II,prerequisite_closure,,,scraped,20252
+3570100,357 100,100,PRECALCULUS,prerequisite_closure,,,scraped,20252
+3570119,357 119,119,CALCULUS WITH ANALYTIC GEOMETRY,prerequisite_closure,,,scraped,20252
+3570120,357 120,120,CALCULUS FOR FUNCTIONS OF SEVERAL VARIABLES,prerequisite_closure,,,scraped,20252
+3590101,359 101,101,DEVELOPMENT OF READING AND WRITING SKILLS I,prerequisite_closure,,,scraped,20252
+3590102,359 102,102,DEVELOPMENT OF READING AND WRITING SKILLS II,prerequisite_closure,,,scraped,20252
+3600111,360 111,111,GENERAL CHEMISTRY I,prerequisite_closure,,,scraped,20251
+3620201,362 201,201,PRINCIPLES OF KEMAL ATATÜRK I,prerequisite_closure,,,scraped,20252
+3120100,BA 100,100,CAREER PLANNING,curriculum,FDE,required_course,scraped,20252
+2380107,BIOL 107,107,CONCEPTS IN BIOLOGY,curriculum;prerequisite_closure,FDE,required_course,scraped,20251
+5710240,CENG 240,240,PROGRAMMING WITH PYTHON FOR ENGINEERS,curriculum,FDE,required_course,scraped,20252
+5630204,CHE 204,204,THERMODYNAMICS I,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+5630423,CHE 423,423,CHEMICAL ENGINEERING ECONOMICS,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+2340101,CHEM 101,101,GENERAL CHEMISTRY I,prerequisite_closure,,,scraped,20251
+2340102,CHEM 102,102,GENERAL CHEMISTRY II,prerequisite_closure,,,scraped,20252
+2340105,CHEM 105,105,GENERAL CHEMISTRY I,prerequisite_closure,,,scraped,20252
+2340106,CHEM 106,106,GENERAL CHEMISTRY II,prerequisite_closure,,,scraped,20252
+2340107,CHEM 107,107,GENERAL CHEMISTRY,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+2340109,CHEM 109,109,GENERAL CHEMISTRY FOR HONOUR PROG. I,prerequisite_closure,,,not_found_in_searched_offerings,
+2340110,CHEM 110,110,GENERAL CHEMISTRY FOR HONOUR PROG. II,prerequisite_closure,,,not_found_in_searched_offerings,
+2340111,CHEM 111,111,GENERAL CHEMISTRY I,prerequisite_closure,,,scraped,20251
+2340112,CHEM 112,112,GENERAL CHEMISTRY II,prerequisite_closure,,,scraped,20252
+2340229,CHEM 229,229,ORGANIC CHEMISTRY FOR ENGINEERS,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+2340230,CHEM 230,230,ANALYTICAL CHEMISTRY FOR ENGINEERS,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+2340252,CHEM 252,252,PHYSICAL CHEMISTRY I,prerequisite_closure,,,scraped,20252
+2340257,CHEM 257,257,MATHEMATICS FOR CHEMISTS,prerequisite_closure,,,scraped,20252
+3110210,ECON 210,210,PRINCIPLES OF ECONOMICS,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+6390101,ENG 101,101,ENGLISH FOR ACADEMIC PURPOSES I,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+6390102,ENG 102,102,ENGLISH FOR ACADEMIC PURPOSES II,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+6390211,ENG 211,211,ACADEMIC SPEAKING SKILLS,curriculum,FDE,required_course,scraped,20252
+5610303,ES 303,303,STATISTICAL METHODS FOR ENGINEERS,curriculum,FDE,required_course,scraped,20252
+5730101,FDE 101,101,INTRODUCTION TO FOOD ENGINEERING,curriculum,FDE,required_course,scraped,20251
+5730201,FDE 201,201,MATERIAL AND ENERGY BALANCES,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+5730224,FDE 224,224,FOOD ENGINEERING OPERATIONS I,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+5730300,FDE 300,300,SUMMER PRACTICE I,curriculum;prerequisite_closure,FDE,summer_practice,scraped,20252
+5730305,FDE 305,305,FOOD MICROBIOLOGY LAB.,curriculum,FDE,required_course,scraped,20251
+5730310,FDE 310,310,FOOD MATERIALS LAB.,curriculum,FDE,required_course,scraped,20252
+5730311,FDE 311,311,FOOD MICROBIOLOGY,curriculum,FDE,required_course,scraped,20251
+5730313,FDE 313,313,FOOD CHEMISTRY,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+5730314,FDE 314,314,PHYSICAL PROPERTIES OF FOOD MATERIALS,curriculum,FDE,required_course,scraped,20252
+5730320,FDE 320,320,APPLIED KINETICS,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+5730321,FDE 321,321,FOOD ENGINEERING OPERATIONS II,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+5730324,FDE 324,324,FOOD ENGINEERING OPERATIONS III,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+5730400,FDE 400,400,SUMMER PRACTICE II,curriculum,FDE,summer_practice,scraped,20252
+5730413,FDE 413,413,FOOD TECHNOLOGY,curriculum,FDE,required_course,scraped,20252
+5730416,FDE 416,416,FOOD ENG.OPERATIONS LAB.,curriculum,FDE,required_course,scraped,20252
+5730425,FDE 425,425,FOOD ENGINEERING DESIGN,curriculum,FDE,required_course,scraped,20251
+5730426,FDE 426,426,FOOD PRODUCT AND PLANT DESIGN,curriculum,FDE,required_course,scraped,20252
+2402201,HIST 2201,2201,PRINCIPLES OF KEMAL ATATÜRK I,curriculum;prerequisite_closure,FDE,course_choice,scraped,20252
+2402202,HIST 2202,2202,,curriculum,FDE,course_choice,scraped,20252
+2402205,HIST 2205,2205,HISTORY OF THE TURKISH REVOLUTION I,curriculum;prerequisite_closure,FDE,course_choice,scraped,20252
+2402206,HIST 2206,2206,HISTORY OF THE TURKISH REVOLUTION II,curriculum,FDE,course_choice,scraped,20252
+9010100,IS 100,100,INTRODUCTION TO INFORMATION TECHNOLOGIES AND APPLICATIONS,curriculum,FDE,required_course,scraped,20252
+2360117,MATH 117,117,CALCULUS I,prerequisite_closure,,,scraped,20252
+2360118,MATH 118,118,CALCULUS II,prerequisite_closure,,,scraped,20252
+2360119,MATH 119,119,CALCULUS WITH ANALYTIC GEOMETRY,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+2360120,MATH 120,120,CALCULUS OF FUNCTIONS OF SEVERAL VARIABLES,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+2360129,MATH 129,129,SINGLE VARIABLE CALCULUS,prerequisite_closure,,,scraped,20251
+2360130,MATH 130,130,MULTIVARIABLE AND VECTOR CALCULUS,prerequisite_closure,,,scraped,20252
+2360151,MATH 151,151,CALCULUS I,prerequisite_closure,,,not_found_in_searched_offerings,
+2360152,MATH 152,152,CALCULUS II,prerequisite_closure,,,not_found_in_searched_offerings,
+2360155,MATH 155,155,CALCULUS I (ACCELERATED),prerequisite_closure,,,not_found_in_searched_offerings,
+2360156,MATH 156,156,CALCULUS II (ACCELERATED),prerequisite_closure,,,not_found_in_searched_offerings,
+2360157,MATH 157,157,BASIC CALCULUS I,prerequisite_closure,,,not_found_in_searched_offerings,
+2360219,MATH 219,219,INTRODUCTION TO DIFFERENTIAL EQUATIONS,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+2360253,MATH 253,253,INTRO.TO ORDINARY DIFFERENTIAL EQNS.,prerequisite_closure,,,not_found_in_searched_offerings,
+2360257,MATH 257,257,MATHEMATICS OF CHEMISTRY,prerequisite_closure,,,not_found_in_searched_offerings,
+5690105,ME 105,105,COMPUTER AIDED ENGINEERING GRAPHICS,curriculum,FDE,required_course,scraped,20252
+8770101,OHS 101,101,OCCUPATIONAL HEALTH AND SAFETY-I,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+8770301,OHS 301,301,OCCUPATIONAL HEALTH AND SAFETY - II,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+2300105,PHYS 105,105,GENERAL PHYSICS I,curriculum;prerequisite_closure,FDE,required_course,scraped,20251
+2300106,PHYS 106,106,GENERAL PHYSICS II,curriculum,FDE,required_course,scraped,20252
+2300111,PHYS 111,111,PHYSICS I (MECHANICS),prerequisite_closure,,,scraped,20251
+6420105,TURK 105,105,TURKISH I,curriculum;prerequisite_closure,FDE,course_choice,scraped,20251
+6420106,TURK 106,106,TURKISH II,curriculum,FDE,course_choice,scraped,20252
+6420201,TURK 201,201,ELEMENTARY TURKISH I,curriculum;prerequisite_closure,FDE,course_choice,scraped,20252
+6420202,TURK 202,202,INTERMEDIATE TURKISH I,curriculum,FDE,course_choice,scraped,20252
+6420303,TURK 303,303,TURKISH I,curriculum;prerequisite_closure,FDE,course_choice,scraped,20252
+6420304,TURK 304,304,TURKISH II,curriculum,FDE,course_choice,scraped,20252

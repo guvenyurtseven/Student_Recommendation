@@ -1,0 +1,59 @@
+﻿id,course_code,course_number,course_name,sources,curriculum_programs,requirement_types,scrape_status,found_semester
+3570100,357 100,100,PRECALCULUS,prerequisite_closure,,,scraped,20252
+3570119,357 119,119,CALCULUS WITH ANALYTIC GEOMETRY,prerequisite_closure,,,scraped,20252
+3570120,357 120,120,CALCULUS FOR FUNCTIONS OF SEVERAL VARIABLES,prerequisite_closure,,,scraped,20252
+3590101,359 101,101,DEVELOPMENT OF READING AND WRITING SKILLS I,prerequisite_closure,,,scraped,20252
+3590102,359 102,102,DEVELOPMENT OF READING AND WRITING SKILLS II,prerequisite_closure,,,scraped,20252
+3620201,362 201,201,PRINCIPLES OF KEMAL ATATÜRK I,prerequisite_closure,,,scraped,20252
+3120100,BA 100,100,CAREER PLANNING,curriculum,EEE,required_course,scraped,20252
+5710240,CENG 240,240,PROGRAMMING WITH PYTHON FOR ENGINEERS,curriculum,EEE,required_course,scraped,20252
+2340107,CHEM 107,107,GENERAL CHEMISTRY,curriculum,EEE,required_course,scraped,20252
+5670101,EE 101,101,INTRODUCTION TO ELECTRICAL AND ELECTRONICS ENGINEERING,curriculum,EEE,required_course,scraped,20252
+5670201,EE 201,201,CIRCUIT THEORY I,curriculum;prerequisite_closure,EEE,required_course,scraped,20252
+5670202,EE 202,202,CIRCUIT THEORY II,curriculum;prerequisite_closure,EEE,required_course,scraped,20252
+5670212,EE 212,212,SEMICONDUCTOR DEVICES& MODELING,curriculum,EEE,required_course,scraped,20252
+5670213,EE 213,213,ELECTRICAL CIRCUITS LABORATORY,curriculum,EEE,required_course,scraped,20251
+5670214,EE 214,214,ELECTRONIC CIRCUITS LABORATORY,curriculum,EEE,required_course,scraped,20252
+5670224,EE 224,224,ELECTROMAGNETIC THEORY,curriculum;prerequisite_closure,EEE,required_course,scraped,20252
+5670230,EE 230,230,PROBABILITY AND RANDOM VARIABLES,curriculum,EEE,required_course,scraped,20252
+5670300,EE 300,300,SUMMER PRACTICE I,curriculum,EEE,summer_practice,scraped,20252
+5670301,EE 301,301,SIGNALS AND SYSTEMS I,curriculum;prerequisite_closure,EEE,required_course,scraped,20251
+5670302,EE 302,302,FEEDBACK SYSTEMS,curriculum;prerequisite_closure,EEE,required_course,scraped,20252
+5670303,EE 303,303,ELECTROMAGNETIC WAVES,curriculum,EEE,required_course,scraped,20251
+5670311,EE 311,311,ANALOG ELECTRONICS,curriculum,EEE,required_course,scraped,20251
+5670313,EE 313,313,ANALOG ELECTRONICS LABORATORY,curriculum;prerequisite_closure,EEE,required_course,scraped,20251
+5670314,EE 314,314,DIGITAL CIRCUITS LABORATORY,curriculum;prerequisite_closure,EEE,required_course,scraped,20252
+5670348,EE 348,348,INTRODUCTION TO LOGIC DESIGN,curriculum,EEE,required_course,scraped,20252
+5670361,EE 361,361,ELECTROMECHANICAL ENERGY CONVERSION I,curriculum;prerequisite_closure,EEE,required_course,scraped,20251
+5670400,EE 400,400,SUMMER PRACTICE II,curriculum,EEE,summer_practice,scraped,20252
+5670493,EE 493,493,ENGINEERING DESIGN I,curriculum;prerequisite_closure,EEE,required_course,scraped,20251
+5670494,EE 494,494,ENGINEERING DESIGN II,curriculum,EEE,required_course,scraped,20252
+6390101,ENG 101,101,ENGLISH FOR ACADEMIC PURPOSES I,curriculum;prerequisite_closure,EEE,required_course,scraped,20252
+6390102,ENG 102,102,ENGLISH FOR ACADEMIC PURPOSES II,curriculum;prerequisite_closure,EEE,required_course,scraped,20252
+6390211,ENG 211,211,ACADEMIC SPEAKING SKILLS,curriculum,EEE,required_course,scraped,20252
+2402201,HIST 2201,2201,PRINCIPLES OF KEMAL ATATÜRK I,curriculum;prerequisite_closure,EEE,course_choice,scraped,20252
+2402202,HIST 2202,2202,,curriculum,EEE,course_choice,scraped,20252
+2402205,HIST 2205,2205,HISTORY OF THE TURKISH REVOLUTION I,curriculum;prerequisite_closure,EEE,course_choice,scraped,20252
+2402206,HIST 2206,2206,HISTORY OF THE TURKISH REVOLUTION II,curriculum,EEE,course_choice,scraped,20252
+9010100,IS 100,100,INTRODUCTION TO INFORMATION TECHNOLOGIES AND APPLICATIONS,curriculum,EEE,required_course,scraped,20252
+2360117,MATH 117,117,CALCULUS I,prerequisite_closure,,,scraped,20252
+2360118,MATH 118,118,CALCULUS II,prerequisite_closure,,,scraped,20252
+2360119,MATH 119,119,CALCULUS WITH ANALYTIC GEOMETRY,prerequisite_closure,,,scraped,20252
+2360120,MATH 120,120,CALCULUS OF FUNCTIONS OF SEVERAL VARIABLES,prerequisite_closure,,,scraped,20252
+2360129,MATH 129,129,SINGLE VARIABLE CALCULUS,curriculum;prerequisite_closure,EEE,required_course,scraped,20251
+2360130,MATH 130,130,MULTIVARIABLE AND VECTOR CALCULUS,curriculum;prerequisite_closure,EEE,required_course,scraped,20252
+2360151,MATH 151,151,CALCULUS I,prerequisite_closure,,,not_found_in_searched_offerings,
+2360219,MATH 219,219,INTRODUCTION TO DIFFERENTIAL EQUATIONS,curriculum;prerequisite_closure,EEE,required_course,scraped,20252
+2360260,MATH 260,260,BASIC LINEAR ALGEBRA,curriculum;prerequisite_closure,EEE,required_course,scraped,20252
+5690105,ME 105,105,COMPUTER AIDED ENGINEERING GRAPHICS,curriculum,EEE,required_course,scraped,20252
+8770101,OHS 101,101,OCCUPATIONAL HEALTH AND SAFETY-I,curriculum;prerequisite_closure,EEE,required_course,scraped,20252
+8770301,OHS 301,301,OCCUPATIONAL HEALTH AND SAFETY - II,curriculum;prerequisite_closure,EEE,required_course,scraped,20252
+2300105,PHYS 105,105,GENERAL PHYSICS I,curriculum;prerequisite_closure,EEE,required_course,scraped,20251
+2300106,PHYS 106,106,GENERAL PHYSICS II,curriculum;prerequisite_closure,EEE,required_course,scraped,20252
+2300213,PHYS 213,213,GENERAL PHYSICS III,curriculum,EEE,required_course,scraped,20252
+6420105,TURK 105,105,TURKISH I,curriculum;prerequisite_closure,EEE,course_choice,scraped,20251
+6420106,TURK 106,106,TURKISH II,curriculum,EEE,course_choice,scraped,20252
+6420201,TURK 201,201,ELEMENTARY TURKISH I,curriculum;prerequisite_closure,EEE,course_choice,scraped,20252
+6420202,TURK 202,202,INTERMEDIATE TURKISH I,curriculum,EEE,course_choice,scraped,20252
+6420303,TURK 303,303,TURKISH I,curriculum;prerequisite_closure,EEE,course_choice,scraped,20252
+6420304,TURK 304,304,TURKISH II,curriculum,EEE,course_choice,scraped,20252

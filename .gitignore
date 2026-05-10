@@ -1,0 +1,6 @@
+env.local
+__pycache__/
+*.py[cod]
+data/db/*.sqlite
+data/db/*.sqlite3
+data/db/*.db

@@ -1,0 +1,122 @@
+{
+  "source": {
+    "name": "METU Undergraduate Programs and Academic Catalog",
+    "undergraduate_programs_url": "https://www.metu.edu.tr/tr/lisans-programlari",
+    "catalog_base_url": "https://catalog.metu.edu.tr"
+  },
+  "programs": [
+    {
+      "abbr": "CENG",
+      "catalog_program_id": "571",
+      "name_en": "Computer Engineering",
+      "name_tr": "Bilgisayar Mühendisliği",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "ENVE",
+      "catalog_program_id": "560",
+      "name_en": "Environmental Engineering",
+      "name_tr": "Çevre Mühendisliği",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "EEE",
+      "catalog_program_id": "567",
+      "name_en": "Electrical and Electronics Engineering",
+      "name_tr": "Elektrik ve Elektronik Mühendisliği",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "IE",
+      "catalog_program_id": "568",
+      "name_en": "Industrial Engineering",
+      "name_tr": "Endüstri Mühendisliği",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "FDE",
+      "catalog_program_id": "573",
+      "name_en": "Food Engineering",
+      "name_tr": "Gıda Mühendisliği",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "AE",
+      "catalog_program_id": "572",
+      "name_en": "Aerospace Engineering",
+      "name_tr": "Havacılık ve Uzay Mühendisliği",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "CE",
+      "catalog_program_id": "562",
+      "name_en": "Civil Engineering",
+      "name_tr": "İnşaat Mühendisliği",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "GEOE",
+      "catalog_program_id": "564",
+      "name_en": "Geological Engineering",
+      "name_tr": "Jeoloji Mühendisliği",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "CHE",
+      "catalog_program_id": "563",
+      "name_en": "Chemical Engineering",
+      "name_tr": "Kimya Mühendisliği",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "MINE",
+      "catalog_program_id": "565",
+      "name_en": "Mining Engineering",
+      "name_tr": "Maden Mühendisliği",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "ME",
+      "catalog_program_id": "569",
+      "name_en": "Mechanical Engineering",
+      "name_tr": "Makina Mühendisliği",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "METE",
+      "catalog_program_id": "570",
+      "name_en": "Metallurgical and Materials Engineering",
+      "name_tr": "Metalurji ve Malzeme Mühendisliği",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "PETE",
+      "catalog_program_id": "566",
+      "name_en": "Petroleum and Natural Gas Engineering",
+      "name_tr": "Petrol ve Doğal Gaz Mühendisliği",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "ES",
+      "catalog_program_id": "561",
+      "name_en": "Engineering Sciences",
+      "name_tr": "Mühendislik Bilimleri",
+      "faculty": "Engineering",
+      "is_active_undergraduate": false,
+      "notes": "Included as a faculty department placeholder; verify undergraduate curriculum target before scraping."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "source_name": "METU Academic Catalog",
+  "source_url": "https://catalog.metu.edu.tr/program.php?fac_prog=560",
+  "retrieved_at_utc": "2026-05-08T05:02:28+00:00",
+  "content_sha256": "097e02f122745aa5f3ba76a53b71e57808319daafa992a624a3d857ee5ce2e64",
+  "parser_version": "metu_catalog_curriculum_v1"
+}

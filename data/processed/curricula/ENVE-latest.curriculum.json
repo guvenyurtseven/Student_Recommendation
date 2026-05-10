@@ -1,0 +1,1275 @@
+{
+  "program": {
+    "abbr": "ENVE",
+    "catalog_program_id": "560",
+    "name_en": "Environmental Engineering",
+    "name_tr": "Çevre Mühendisliği",
+    "faculty": "Engineering"
+  },
+  "curriculum": {
+    "version_label": "latest",
+    "is_latest": true,
+    "review_status": "scraped",
+    "parser_version": "metu_catalog_curriculum_v1"
+  },
+  "source": {
+    "source_name": "METU Academic Catalog",
+    "source_url": "https://catalog.metu.edu.tr/program.php?fac_prog=560",
+    "retrieved_at_utc": "2026-05-08T05:03:25+00:00",
+    "content_path": "data\\raw\\catalog\\ENVE\\20260508T050325Z\\program.html",
+    "content_sha256": "097e02f122745aa5f3ba76a53b71e57808319daafa992a624a3d857ee5ce2e64"
+  },
+  "requirements": [
+    {
+      "requirement_id": "REQ-0001",
+      "requirement_type": "required_course",
+      "label": "PHYS 105",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "PHYS 105",
+          "numeric_code": "2300105",
+          "course_title": "GENERAL PHYSICS I",
+          "metu_credit": "4",
+          "contact_hours": "3",
+          "lab_hours": "2",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "3",
+      "lab_hours": "2",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0002",
+      "requirement_type": "required_course",
+      "label": "CHEM 107",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "CHEM 107",
+          "numeric_code": "2340107",
+          "course_title": "GENERAL CHEMISTRY",
+          "metu_credit": "4",
+          "contact_hours": "3",
+          "lab_hours": "2",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "3",
+      "lab_hours": "2",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0003",
+      "requirement_type": "required_course",
+      "label": "MATH 119",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MATH 119",
+          "numeric_code": "2360119",
+          "course_title": "CALCULUS WITH ANALYTIC GEOMETRY",
+          "metu_credit": "5",
+          "contact_hours": "4",
+          "lab_hours": "2",
+          "ects": "7.0"
+        }
+      ],
+      "metu_credit": "5",
+      "contact_hours": "4",
+      "lab_hours": "2",
+      "ects": "7.0"
+    },
+    {
+      "requirement_id": "REQ-0004",
+      "requirement_type": "required_course",
+      "label": "ENVE 101",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENVE 101",
+          "numeric_code": "5600101",
+          "course_title": "INTRODUCTION TO ENVIRONMENTAL ENG.",
+          "metu_credit": "2",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "3.0"
+        }
+      ],
+      "metu_credit": "2",
+      "contact_hours": "2",
+      "lab_hours": "0",
+      "ects": "3.0"
+    },
+    {
+      "requirement_id": "REQ-0005",
+      "requirement_type": "required_course",
+      "label": "ENG 101",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENG 101",
+          "numeric_code": "6390101",
+          "course_title": "ENGLISH FOR ACADEMIC PURPOSES I",
+          "metu_credit": "4",
+          "contact_hours": "4",
+          "lab_hours": "1",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "4",
+      "lab_hours": "1",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0006",
+      "requirement_type": "required_course",
+      "label": "OHS 101",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "OHS 101",
+          "numeric_code": "8770101",
+          "course_title": "OCCUPATIONAL HEALTH AND SAFETY-I",
+          "metu_credit": "0",
+          "contact_hours": "0",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "0",
+      "lab_hours": "0",
+      "ects": "2.0"
+    },
+    {
+      "requirement_id": "REQ-0007",
+      "requirement_type": "required_course",
+      "label": "IS 100",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IS 100",
+          "numeric_code": "9010100",
+          "course_title": "INTRODUCTION TO INFORMATION TECHNOLOGIES AND APPLICATIONS",
+          "metu_credit": "0",
+          "contact_hours": "0",
+          "lab_hours": "2",
+          "ects": "1.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "0",
+      "lab_hours": "2",
+      "ects": "1.0"
+    },
+    {
+      "requirement_id": "REQ-0008",
+      "requirement_type": "required_course",
+      "label": "PHYS 106",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "PHYS 106",
+          "numeric_code": "2300106",
+          "course_title": "GENERAL PHYSICS II",
+          "metu_credit": "4",
+          "contact_hours": "3",
+          "lab_hours": "2",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "3",
+      "lab_hours": "2",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0009",
+      "requirement_type": "required_course",
+      "label": "MATH 120",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MATH 120",
+          "numeric_code": "2360120",
+          "course_title": "CALCULUS OF FUNCTIONS OF SEVERAL VARIABLES",
+          "metu_credit": "5",
+          "contact_hours": "4",
+          "lab_hours": "2",
+          "ects": "7.5"
+        }
+      ],
+      "metu_credit": "5",
+      "contact_hours": "4",
+      "lab_hours": "2",
+      "ects": "7.5"
+    },
+    {
+      "requirement_id": "REQ-0010",
+      "requirement_type": "required_course",
+      "label": "BA 100",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "BA 100",
+          "numeric_code": "3120100",
+          "course_title": "CAREER PLANNING",
+          "metu_credit": "0",
+          "contact_hours": "1",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "1",
+      "lab_hours": "0",
+      "ects": "2.0"
+    },
+    {
+      "requirement_id": "REQ-0011",
+      "requirement_type": "required_course",
+      "label": "ENVE 102",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENVE 102",
+          "numeric_code": "5600102",
+          "course_title": "ENVIRONMENTAL CHEMISTRY I",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0012",
+      "requirement_type": "required_course",
+      "label": "CE 101",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "CE 101",
+          "numeric_code": "5620101",
+          "course_title": "CIVIL ENGINEERING DRAWING",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "4.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "4.0"
+    },
+    {
+      "requirement_id": "REQ-0013",
+      "requirement_type": "required_course",
+      "label": "CENG 240",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "CENG 240",
+          "numeric_code": "5710240",
+          "course_title": "PROGRAMMING WITH PYTHON FOR ENGINEERS",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "4.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "4.0"
+    },
+    {
+      "requirement_id": "REQ-0014",
+      "requirement_type": "required_course",
+      "label": "ENG 102",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENG 102",
+          "numeric_code": "6390102",
+          "course_title": "ENGLISH FOR ACADEMIC PURPOSES II",
+          "metu_credit": "4",
+          "contact_hours": "4",
+          "lab_hours": "1",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "4",
+      "lab_hours": "1",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0015",
+      "requirement_type": "required_course",
+      "label": "CHEM 229",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "CHEM 229",
+          "numeric_code": "2340229",
+          "course_title": "ORGANIC CHEMISTRY FOR ENGINEERS",
+          "metu_credit": "4",
+          "contact_hours": "3",
+          "lab_hours": "2",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "3",
+      "lab_hours": "2",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0016",
+      "requirement_type": "required_course",
+      "label": "MATH 219",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MATH 219",
+          "numeric_code": "2360219",
+          "course_title": "INTRODUCTION TO DIFFERENTIAL EQUATIONS",
+          "metu_credit": "4",
+          "contact_hours": "4",
+          "lab_hours": "0",
+          "ects": "7.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "4",
+      "lab_hours": "0",
+      "ects": "7.0"
+    },
+    {
+      "requirement_id": "REQ-0017",
+      "requirement_type": "required_course",
+      "label": "ENVE 201",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENVE 201",
+          "numeric_code": "5600201",
+          "course_title": "FUNDAMENTALS OF ENVIRONMENTAL ENG.PRO.",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0018",
+      "requirement_type": "required_course",
+      "label": "ENVE 208",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENVE 208",
+          "numeric_code": "5600208",
+          "course_title": "ENVIRONMENTAL CHEMISTRY LABORATORY",
+          "metu_credit": "3",
+          "contact_hours": "1",
+          "lab_hours": "4",
+          "ects": "3.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "1",
+      "lab_hours": "4",
+      "ects": "3.0"
+    },
+    {
+      "requirement_id": "REQ-0019",
+      "requirement_type": "required_course",
+      "label": "ES 223",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ES 223",
+          "numeric_code": "5610223",
+          "course_title": "STATICS AND STRENGTH OF MATERIALS",
+          "metu_credit": "4",
+          "contact_hours": "4",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "4",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0020",
+      "requirement_type": "required_course",
+      "label": "ENG 211",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENG 211",
+          "numeric_code": "6390211",
+          "course_title": "ACADEMIC SPEAKING SKILLS",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "1",
+          "ects": "4.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "1",
+      "ects": "4.0"
+    },
+    {
+      "requirement_id": "REQ-0021",
+      "requirement_type": "course_choice",
+      "label": "Any 1 of the following set ..",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "HIST 2201",
+          "numeric_code": "2402201",
+          "course_title": "",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        },
+        {
+          "course_code": "HIST 2205",
+          "numeric_code": "2402205",
+          "course_title": "HISTORY OF THE TURKISH REVOLUTION I",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": ""
+    },
+    {
+      "requirement_id": "REQ-0022",
+      "requirement_type": "required_course",
+      "label": "ENVE 202",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENVE 202",
+          "numeric_code": "5600202",
+          "course_title": "ENVIRONMENTAL MICROBIOLOGY",
+          "metu_credit": "4",
+          "contact_hours": "3",
+          "lab_hours": "2",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "3",
+      "lab_hours": "2",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0023",
+      "requirement_type": "required_course",
+      "label": "ENVE 206",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENVE 206",
+          "numeric_code": "5600206",
+          "course_title": "PHYSICO-CHEMICAL PRIN.OF ENVIRON.ENG.",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0024",
+      "requirement_type": "required_course",
+      "label": "ENVE 307",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENVE 307",
+          "numeric_code": "5600307",
+          "course_title": "AIR POLLUTION",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0025",
+      "requirement_type": "required_course",
+      "label": "ES 303",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ES 303",
+          "numeric_code": "5610303",
+          "course_title": "STATISTICAL METHODS FOR ENGINEERS",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0026",
+      "requirement_type": "required_course",
+      "label": "CHE 204",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "CHE 204",
+          "numeric_code": "5630204",
+          "course_title": "THERMODYNAMICS I",
+          "metu_credit": "4",
+          "contact_hours": "4",
+          "lab_hours": "0",
+          "ects": "7.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "4",
+      "lab_hours": "0",
+      "ects": "7.0"
+    },
+    {
+      "requirement_id": "REQ-0027",
+      "requirement_type": "course_choice",
+      "label": "Any 1 of the following set ..",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "HIST 2202",
+          "numeric_code": "2402202",
+          "course_title": "",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        },
+        {
+          "course_code": "HIST 2206",
+          "numeric_code": "2402206",
+          "course_title": "HISTORY OF THE TURKISH REVOLUTION II",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": ""
+    },
+    {
+      "requirement_id": "REQ-0028",
+      "requirement_type": "summer_practice",
+      "label": "ENVE 300",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENVE 300",
+          "numeric_code": "5600300",
+          "course_title": "SUMMER PRACTICE I",
+          "metu_credit": "0",
+          "contact_hours": "0",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "0",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0029",
+      "requirement_type": "required_course",
+      "label": "ENVE 303",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENVE 303",
+          "numeric_code": "5600303",
+          "course_title": "UNIT OP. & PROCES. OF WATER TREAT.",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0030",
+      "requirement_type": "required_course",
+      "label": "ENVE 309",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENVE 309",
+          "numeric_code": "5600309",
+          "course_title": "FUNDAMENTALS OF BIOLOGICAL TREATMENT",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0031",
+      "requirement_type": "required_course",
+      "label": "CE 374",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "CE 374",
+          "numeric_code": "5620374",
+          "course_title": "FLUID MECHANICS",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0032",
+      "requirement_type": "required_course",
+      "label": "CE 375",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "CE 375",
+          "numeric_code": "5620375",
+          "course_title": "ENVIRONMENTAL ENGINEERING HYDROLOGY",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0033",
+      "requirement_type": "required_course",
+      "label": "OHS 301",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "OHS 301",
+          "numeric_code": "8770301",
+          "course_title": "OCCUPATIONAL HEALTH AND SAFETY - II",
+          "metu_credit": "0",
+          "contact_hours": "0",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "0",
+      "lab_hours": "0",
+      "ects": "2.0"
+    },
+    {
+      "requirement_id": "REQ-0034",
+      "requirement_type": "course_choice",
+      "label": "Any 1 of the following set ..",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "TURK 105",
+          "numeric_code": "6420105",
+          "course_title": "TURKISH I",
+          "metu_credit": "0",
+          "contact_hours": "4",
+          "lab_hours": "0",
+          "ects": "5.0"
+        },
+        {
+          "course_code": "TURK 201",
+          "numeric_code": "6420201",
+          "course_title": "ELEMENTARY TURKISH I",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "3.0"
+        },
+        {
+          "course_code": "TURK 303",
+          "numeric_code": "6420303",
+          "course_title": "TURKISH I",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": ""
+    },
+    {
+      "requirement_id": "REQ-0035",
+      "requirement_type": "nontechnical_elective_pool",
+      "label": "NONTECHNICAL ELECTIVE",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0036",
+      "requirement_type": "required_course",
+      "label": "ENVE 304",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENVE 304",
+          "numeric_code": "5600304",
+          "course_title": "UNIT OP. & PROCES.OF WASTEWATER TREAT.",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0037",
+      "requirement_type": "required_course",
+      "label": "ENVE 312",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENVE 312",
+          "numeric_code": "5600312",
+          "course_title": "WATER SUPPLY AND URBAN DRAINAGE",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0038",
+      "requirement_type": "required_course",
+      "label": "ENVE 322",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENVE 322",
+          "numeric_code": "5600322",
+          "course_title": "TRANSPORT PROCESSES IN ENVIRONMENTAL ENGINEERING",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0039",
+      "requirement_type": "required_course",
+      "label": "ES 361",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ES 361",
+          "numeric_code": "5610361",
+          "course_title": "COMPUTING METHODS IN ENGINEERING",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0040",
+      "requirement_type": "course_choice",
+      "label": "Any 1 of the following set ..",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "TURK 106",
+          "numeric_code": "6420106",
+          "course_title": "TURKISH II",
+          "metu_credit": "0",
+          "contact_hours": "4",
+          "lab_hours": "0",
+          "ects": "5.0"
+        },
+        {
+          "course_code": "TURK 202",
+          "numeric_code": "6420202",
+          "course_title": "INTERMEDIATE TURKISH I",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "3.0"
+        },
+        {
+          "course_code": "TURK 304",
+          "numeric_code": "6420304",
+          "course_title": "TURKISH II",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": ""
+    },
+    {
+      "requirement_id": "REQ-0041",
+      "requirement_type": "restricted_elective_pool",
+      "label": "RESTRICTED ELECTIVE",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0042",
+      "requirement_type": "nontechnical_elective_pool",
+      "label": "NONTECHNICAL ELECTIVE",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0043",
+      "requirement_type": "summer_practice",
+      "label": "ENVE 400",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENVE 400",
+          "numeric_code": "5600400",
+          "course_title": "SUMMER PRACTICE II",
+          "metu_credit": "0",
+          "contact_hours": "0",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "0",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0044",
+      "requirement_type": "required_course",
+      "label": "ENVE 404",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENVE 404",
+          "numeric_code": "5600404",
+          "course_title": "ENVIRONMENTAL MODELING",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0045",
+      "requirement_type": "required_course",
+      "label": "ENVE 407",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENVE 407",
+          "numeric_code": "5600407",
+          "course_title": "ENVIRONMENTAL ENGINEERING DESIGN I",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "7.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "7.0"
+    },
+    {
+      "requirement_id": "REQ-0046",
+      "requirement_type": "required_course",
+      "label": "ENVE 412",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENVE 412",
+          "numeric_code": "5600412",
+          "course_title": "SOLID WASTE MANAGEMENT",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0047",
+      "requirement_type": "technical_elective_pool",
+      "label": "TECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0048",
+      "requirement_type": "technical_elective_pool",
+      "label": "TECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0049",
+      "requirement_type": "required_course",
+      "label": "ENVE 408",
+      "year": 4,
+      "semester_index": 8,
+      "semester_label": "Eighth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENVE 408",
+          "numeric_code": "5600408",
+          "course_title": "ENVIRONMENTAL ENGINEERING DESIGN II",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "7.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "7.0"
+    },
+    {
+      "requirement_id": "REQ-0050",
+      "requirement_type": "free_elective_pool",
+      "label": "FREE ELECTIVE",
+      "year": 4,
+      "semester_index": 8,
+      "semester_label": "Eighth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0051",
+      "requirement_type": "technical_elective_pool",
+      "label": "TECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 8,
+      "semester_label": "Eighth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0052",
+      "requirement_type": "technical_elective_pool",
+      "label": "TECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 8,
+      "semester_label": "Eighth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0053",
+      "requirement_type": "technical_elective_pool",
+      "label": "TECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 8,
+      "semester_label": "Eighth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    }
+  ],
+  "summary": {
+    "requirement_count": 53,
+    "course_option_count": 50,
+    "unique_course_count": 50,
+    "placeholder_requirement_count": 9,
+    "counts_by_type": {
+      "required_course": 38,
+      "course_choice": 4,
+      "summer_practice": 2,
+      "nontechnical_elective_pool": 2,
+      "restricted_elective_pool": 1,
+      "technical_elective_pool": 5,
+      "free_elective_pool": 1
+    }
+  }
+}

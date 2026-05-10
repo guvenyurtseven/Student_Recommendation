@@ -1,0 +1,14 @@
+﻿program,node_count,edge_count,unresolved_count,is_dag,json
+AE,67,47,13,True,AE-latest-prerequisite-closure.json
+CE,63,50,4,True,CE-latest-prerequisite-closure.json
+CENG,77,93,3,True,CENG-latest-prerequisite-closure.json
+CHE,75,133,6,True,CHE-latest-prerequisite-closure.json
+EEE,58,73,1,True,EEE-latest-prerequisite-closure.json
+ENVE,74,84,5,True,ENVE-latest-prerequisite-closure.json
+FDE,80,126,9,True,FDE-latest-prerequisite-closure.json
+GEOE,72,78,4,True,GEOE-latest-prerequisite-closure.json
+IE,74,65,7,True,IE-latest-prerequisite-closure.json
+ME,68,69,1,True,ME-latest-prerequisite-closure.json
+METE,69,64,5,True,METE-latest-prerequisite-closure.json
+MINE,72,72,4,True,MINE-latest-prerequisite-closure.json
+PETE,88,113,7,True,PETE-latest-prerequisite-closure.json

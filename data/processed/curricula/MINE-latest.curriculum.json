@@ -1,0 +1,1295 @@
+{
+  "program": {
+    "abbr": "MINE",
+    "catalog_program_id": "565",
+    "name_en": "Mining Engineering",
+    "name_tr": "Maden Mühendisliği",
+    "faculty": "Engineering"
+  },
+  "curriculum": {
+    "version_label": "latest",
+    "is_latest": true,
+    "review_status": "scraped",
+    "parser_version": "metu_catalog_curriculum_v1"
+  },
+  "source": {
+    "source_name": "METU Academic Catalog",
+    "source_url": "https://catalog.metu.edu.tr/program.php?fac_prog=565",
+    "retrieved_at_utc": "2026-05-08T05:03:26+00:00",
+    "content_path": "data\\raw\\catalog\\MINE\\20260508T050326Z\\program.html",
+    "content_sha256": "10cd507c435407d44449e60fe3696e6d567d7c9f5615690ce8ad94df15bffc99"
+  },
+  "requirements": [
+    {
+      "requirement_id": "REQ-0001",
+      "requirement_type": "required_course",
+      "label": "PHYS 105",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "PHYS 105",
+          "numeric_code": "2300105",
+          "course_title": "GENERAL PHYSICS I",
+          "metu_credit": "4",
+          "contact_hours": "3",
+          "lab_hours": "2",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "3",
+      "lab_hours": "2",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0002",
+      "requirement_type": "required_course",
+      "label": "CHEM 111",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "CHEM 111",
+          "numeric_code": "2340111",
+          "course_title": "GENERAL CHEMISTRY I",
+          "metu_credit": "4",
+          "contact_hours": "3",
+          "lab_hours": "2",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "3",
+      "lab_hours": "2",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0003",
+      "requirement_type": "required_course",
+      "label": "MATH 119",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MATH 119",
+          "numeric_code": "2360119",
+          "course_title": "CALCULUS WITH ANALYTIC GEOMETRY",
+          "metu_credit": "5",
+          "contact_hours": "4",
+          "lab_hours": "2",
+          "ects": "7.0"
+        }
+      ],
+      "metu_credit": "5",
+      "contact_hours": "4",
+      "lab_hours": "2",
+      "ects": "7.0"
+    },
+    {
+      "requirement_id": "REQ-0004",
+      "requirement_type": "required_course",
+      "label": "ME 105",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ME 105",
+          "numeric_code": "5690105",
+          "course_title": "COMPUTER AIDED ENGINEERING GRAPHICS",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0005",
+      "requirement_type": "required_course",
+      "label": "ENG 101",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENG 101",
+          "numeric_code": "6390101",
+          "course_title": "ENGLISH FOR ACADEMIC PURPOSES I",
+          "metu_credit": "4",
+          "contact_hours": "4",
+          "lab_hours": "1",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "4",
+      "lab_hours": "1",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0006",
+      "requirement_type": "required_course",
+      "label": "OHS 101",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "OHS 101",
+          "numeric_code": "8770101",
+          "course_title": "OCCUPATIONAL HEALTH AND SAFETY-I",
+          "metu_credit": "0",
+          "contact_hours": "0",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "0",
+      "lab_hours": "0",
+      "ects": "2.0"
+    },
+    {
+      "requirement_id": "REQ-0007",
+      "requirement_type": "required_course",
+      "label": "IS 100",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IS 100",
+          "numeric_code": "9010100",
+          "course_title": "INTRODUCTION TO INFORMATION TECHNOLOGIES AND APPLICATIONS",
+          "metu_credit": "0",
+          "contact_hours": "0",
+          "lab_hours": "2",
+          "ects": "1.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "0",
+      "lab_hours": "2",
+      "ects": "1.0"
+    },
+    {
+      "requirement_id": "REQ-0008",
+      "requirement_type": "required_course",
+      "label": "PHYS 106",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "PHYS 106",
+          "numeric_code": "2300106",
+          "course_title": "GENERAL PHYSICS II",
+          "metu_credit": "4",
+          "contact_hours": "3",
+          "lab_hours": "2",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "3",
+      "lab_hours": "2",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0009",
+      "requirement_type": "required_course",
+      "label": "CHEM 112",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "CHEM 112",
+          "numeric_code": "2340112",
+          "course_title": "GENERAL CHEMISTRY II",
+          "metu_credit": "4",
+          "contact_hours": "3",
+          "lab_hours": "2",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "3",
+      "lab_hours": "2",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0010",
+      "requirement_type": "required_course",
+      "label": "MATH 120",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MATH 120",
+          "numeric_code": "2360120",
+          "course_title": "CALCULUS OF FUNCTIONS OF SEVERAL VARIABLES",
+          "metu_credit": "5",
+          "contact_hours": "4",
+          "lab_hours": "2",
+          "ects": "7.5"
+        }
+      ],
+      "metu_credit": "5",
+      "contact_hours": "4",
+      "lab_hours": "2",
+      "ects": "7.5"
+    },
+    {
+      "requirement_id": "REQ-0011",
+      "requirement_type": "required_course",
+      "label": "BA 100",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "BA 100",
+          "numeric_code": "3120100",
+          "course_title": "CAREER PLANNING",
+          "metu_credit": "0",
+          "contact_hours": "1",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "1",
+      "lab_hours": "0",
+      "ects": "2.0"
+    },
+    {
+      "requirement_id": "REQ-0012",
+      "requirement_type": "required_course",
+      "label": "MINE 102",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MINE 102",
+          "numeric_code": "5650102",
+          "course_title": "INTRODUCTION TO MINERAL INDUSTRIES",
+          "metu_credit": "2",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "4.0"
+        }
+      ],
+      "metu_credit": "2",
+      "contact_hours": "2",
+      "lab_hours": "0",
+      "ects": "4.0"
+    },
+    {
+      "requirement_id": "REQ-0013",
+      "requirement_type": "required_course",
+      "label": "ENG 102",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENG 102",
+          "numeric_code": "6390102",
+          "course_title": "ENGLISH FOR ACADEMIC PURPOSES II",
+          "metu_credit": "4",
+          "contact_hours": "4",
+          "lab_hours": "1",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "4",
+      "lab_hours": "1",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0014",
+      "requirement_type": "required_course",
+      "label": "MATH 219",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MATH 219",
+          "numeric_code": "2360219",
+          "course_title": "INTRODUCTION TO DIFFERENTIAL EQUATIONS",
+          "metu_credit": "4",
+          "contact_hours": "4",
+          "lab_hours": "0",
+          "ects": "7.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "4",
+      "lab_hours": "0",
+      "ects": "7.0"
+    },
+    {
+      "requirement_id": "REQ-0015",
+      "requirement_type": "required_course",
+      "label": "ECON 210",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ECON 210",
+          "numeric_code": "3110210",
+          "course_title": "PRINCIPLES OF ECONOMICS",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0016",
+      "requirement_type": "required_course",
+      "label": "ES 225",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ES 225",
+          "numeric_code": "5610225",
+          "course_title": "ENGINEERING MECHANICS",
+          "metu_credit": "4",
+          "contact_hours": "4",
+          "lab_hours": "0",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "4",
+      "lab_hours": "0",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0017",
+      "requirement_type": "required_course",
+      "label": "GEOE 207",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "GEOE 207",
+          "numeric_code": "5640207",
+          "course_title": "PRINCIPLES OF MINERALOGY &PETROGRAPHY",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0018",
+      "requirement_type": "required_course",
+      "label": "GEOE 231",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "GEOE 231",
+          "numeric_code": "5640231",
+          "course_title": "ELEMENTS OF GEOLOGY",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0019",
+      "requirement_type": "required_course",
+      "label": "MINE 201",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MINE 201",
+          "numeric_code": "5650201",
+          "course_title": "UNDERGROUND MINING",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0020",
+      "requirement_type": "course_choice",
+      "label": "Any 1 of the following set ..",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "HIST 2201",
+          "numeric_code": "2402201",
+          "course_title": "",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        },
+        {
+          "course_code": "HIST 2205",
+          "numeric_code": "2402205",
+          "course_title": "HISTORY OF THE TURKISH REVOLUTION I",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": ""
+    },
+    {
+      "requirement_id": "REQ-0021",
+      "requirement_type": "required_course",
+      "label": "ES 224",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ES 224",
+          "numeric_code": "5610224",
+          "course_title": "STRENGTH OF MATERIALS",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0022",
+      "requirement_type": "required_course",
+      "label": "GEOE 215",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "GEOE 215",
+          "numeric_code": "5640215",
+          "course_title": "PRINCIPLES OF STRUCTURAL GEOLOGY",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0023",
+      "requirement_type": "required_course",
+      "label": "MINE 202",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MINE 202",
+          "numeric_code": "5650202",
+          "course_title": "SURFACE MINING",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0024",
+      "requirement_type": "required_course",
+      "label": "CENG 240",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "CENG 240",
+          "numeric_code": "5710240",
+          "course_title": "PROGRAMMING WITH PYTHON FOR ENGINEERS",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "4.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "4.0"
+    },
+    {
+      "requirement_id": "REQ-0025",
+      "requirement_type": "required_course",
+      "label": "ENG 211",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENG 211",
+          "numeric_code": "6390211",
+          "course_title": "ACADEMIC SPEAKING SKILLS",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "1",
+          "ects": "4.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "1",
+      "ects": "4.0"
+    },
+    {
+      "requirement_id": "REQ-0026",
+      "requirement_type": "course_choice",
+      "label": "Any 1 of the following set ..",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "HIST 2202",
+          "numeric_code": "2402202",
+          "course_title": "",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        },
+        {
+          "course_code": "HIST 2206",
+          "numeric_code": "2402206",
+          "course_title": "HISTORY OF THE TURKISH REVOLUTION II",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": ""
+    },
+    {
+      "requirement_id": "REQ-0027",
+      "requirement_type": "nontechnical_elective_pool",
+      "label": "NONTECHNICAL ELECTIVE",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0028",
+      "requirement_type": "required_course",
+      "label": "ES 303",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ES 303",
+          "numeric_code": "5610303",
+          "course_title": "STATISTICAL METHODS FOR ENGINEERS",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0029",
+      "requirement_type": "summer_practice",
+      "label": "MINE 300",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MINE 300",
+          "numeric_code": "5650300",
+          "course_title": "SUMMER PRACTICE I",
+          "metu_credit": "0",
+          "contact_hours": "0",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "0",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0030",
+      "requirement_type": "required_course",
+      "label": "MINE 309",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MINE 309",
+          "numeric_code": "5650309",
+          "course_title": "MINERAL PROCESSING I",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0031",
+      "requirement_type": "required_course",
+      "label": "MINE 317",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MINE 317",
+          "numeric_code": "5650317",
+          "course_title": "INTRODUCTION TO ROCK MECHANICS",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0032",
+      "requirement_type": "required_course",
+      "label": "ME 351",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ME 351",
+          "numeric_code": "5690351",
+          "course_title": "THERMODYNAMICS OF HEAT POWER",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0033",
+      "requirement_type": "course_choice",
+      "label": "Any 1 of the following set ..",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "TURK 105",
+          "numeric_code": "6420105",
+          "course_title": "TURKISH I",
+          "metu_credit": "0",
+          "contact_hours": "4",
+          "lab_hours": "0",
+          "ects": "5.0"
+        },
+        {
+          "course_code": "TURK 201",
+          "numeric_code": "6420201",
+          "course_title": "ELEMENTARY TURKISH I",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "3.0"
+        },
+        {
+          "course_code": "TURK 303",
+          "numeric_code": "6420303",
+          "course_title": "TURKISH I",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": ""
+    },
+    {
+      "requirement_id": "REQ-0034",
+      "requirement_type": "free_elective_pool",
+      "label": "FREE ELECTIVE",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0035",
+      "requirement_type": "nontechnical_elective_pool",
+      "label": "NONTECHNICAL ELECTIVE",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0036",
+      "requirement_type": "required_course",
+      "label": "CE 374",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "CE 374",
+          "numeric_code": "5620374",
+          "course_title": "FLUID MECHANICS",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0037",
+      "requirement_type": "required_course",
+      "label": "MINE 302",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MINE 302",
+          "numeric_code": "5650302",
+          "course_title": "MINE POWER AND MACHINERY",
+          "metu_credit": "2",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "3.0"
+        }
+      ],
+      "metu_credit": "2",
+      "contact_hours": "2",
+      "lab_hours": "0",
+      "ects": "3.0"
+    },
+    {
+      "requirement_id": "REQ-0038",
+      "requirement_type": "required_course",
+      "label": "MINE 310",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MINE 310",
+          "numeric_code": "5650310",
+          "course_title": "MINERAL PROCESSING II",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0039",
+      "requirement_type": "required_course",
+      "label": "MINE 312",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MINE 312",
+          "numeric_code": "5650312",
+          "course_title": "MINE SURVEYING",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0040",
+      "requirement_type": "required_course",
+      "label": "MINE 324",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MINE 324",
+          "numeric_code": "5650324",
+          "course_title": "ROCK FRAGMENTATION",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0041",
+      "requirement_type": "required_course",
+      "label": "MINE 332",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MINE 332",
+          "numeric_code": "5650332",
+          "course_title": "MINE SYSTEM ANALYSIS",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0042",
+      "requirement_type": "course_choice",
+      "label": "Any 1 of the following set ..",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "TURK 106",
+          "numeric_code": "6420106",
+          "course_title": "TURKISH II",
+          "metu_credit": "0",
+          "contact_hours": "4",
+          "lab_hours": "0",
+          "ects": "5.0"
+        },
+        {
+          "course_code": "TURK 202",
+          "numeric_code": "6420202",
+          "course_title": "INTERMEDIATE TURKISH I",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "3.0"
+        },
+        {
+          "course_code": "TURK 304",
+          "numeric_code": "6420304",
+          "course_title": "TURKISH II",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": ""
+    },
+    {
+      "requirement_id": "REQ-0043",
+      "requirement_type": "summer_practice",
+      "label": "MINE 400",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MINE 400",
+          "numeric_code": "5650400",
+          "course_title": "SUMMER PRACTICE II",
+          "metu_credit": "0",
+          "contact_hours": "0",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "0",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0044",
+      "requirement_type": "required_course",
+      "label": "MINE 407",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MINE 407",
+          "numeric_code": "5650407",
+          "course_title": "MINE VALUATION",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0045",
+      "requirement_type": "required_course",
+      "label": "MINE 417",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MINE 417",
+          "numeric_code": "5650417",
+          "course_title": "MINE VENTILATION",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0046",
+      "requirement_type": "required_course",
+      "label": "MINE 419",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MINE 419",
+          "numeric_code": "5650419",
+          "course_title": "MATERIALS HANDLING &MINE TRANSPORT",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0047",
+      "requirement_type": "required_course",
+      "label": "MINE 427",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MINE 427",
+          "numeric_code": "5650427",
+          "course_title": "MINERAL PROCESSING DESIGN",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "7.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "7.0"
+    },
+    {
+      "requirement_id": "REQ-0048",
+      "requirement_type": "technical_elective_pool",
+      "label": "TECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0049",
+      "requirement_type": "technical_elective_pool",
+      "label": "TECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0050",
+      "requirement_type": "required_course",
+      "label": "MINE 416",
+      "year": 4,
+      "semester_index": 8,
+      "semester_label": "Eighth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MINE 416",
+          "numeric_code": "5650416",
+          "course_title": "MINE DESIGN",
+          "metu_credit": "3",
+          "contact_hours": "1",
+          "lab_hours": "4",
+          "ects": "7.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "1",
+      "lab_hours": "4",
+      "ects": "7.0"
+    },
+    {
+      "requirement_id": "REQ-0051",
+      "requirement_type": "required_course",
+      "label": "MINE 422",
+      "year": 4,
+      "semester_index": 8,
+      "semester_label": "Eighth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MINE 422",
+          "numeric_code": "5650422",
+          "course_title": "MINE HEALTH . SAFETY AND ETHICS",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0052",
+      "requirement_type": "restricted_elective_pool",
+      "label": "RESTRICTED ELECTIVE",
+      "year": 4,
+      "semester_index": 8,
+      "semester_label": "Eighth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0053",
+      "requirement_type": "technical_elective_pool",
+      "label": "TECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 8,
+      "semester_label": "Eighth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    }
+  ],
+  "summary": {
+    "requirement_count": 53,
+    "course_option_count": 52,
+    "unique_course_count": 52,
+    "placeholder_requirement_count": 7,
+    "counts_by_type": {
+      "required_course": 40,
+      "course_choice": 4,
+      "nontechnical_elective_pool": 2,
+      "summer_practice": 2,
+      "free_elective_pool": 1,
+      "technical_elective_pool": 3,
+      "restricted_elective_pool": 1
+    }
+  }
+}

@@ -1,0 +1,2069 @@
+{
+  "metadata": {
+    "department_abbr": "STAT",
+    "department": "Statistics/İstatistik",
+    "department_value": "246",
+    "semesters": [
+      "20241",
+      "20242"
+    ],
+    "csv_files": [
+      "STAT-20241.csv",
+      "STAT-20242.csv"
+    ],
+    "generated_at_utc": "2026-05-07T10:44:46+00:00",
+    "undergraduate_max_course_number": 499,
+    "node_count": 44,
+    "edge_count": 62,
+    "is_dag": true,
+    "edge_direction": "prerequisite -> course"
+  },
+  "nodes": [
+    {
+      "id": "5710230",
+      "course_code": "CENG 230",
+      "course_number": 230,
+      "course_name": "INTRODUCTION TO C PROGRAMMING",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5710240",
+      "course_code": "CENG 240",
+      "course_number": 240,
+      "course_name": "PROGRAMMING WITH PYTHON FOR ENGINEERS",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2360113",
+      "course_code": "MATH 113",
+      "course_number": 113,
+      "course_name": "CALCULUS I",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2360114",
+      "course_code": "MATH 114",
+      "course_number": 114,
+      "course_name": "CALCULUS II",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2360119",
+      "course_code": "MATH 119",
+      "course_number": 119,
+      "course_name": "CALCULUS WITH ANALYTIC GEOMETRY",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2360120",
+      "course_code": "MATH 120",
+      "course_number": 120,
+      "course_name": "CALCULUS OF FUNCTIONS OF SEVERAL VARIABLES",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2360260",
+      "course_code": "MATH 260",
+      "course_number": 260,
+      "course_name": "BASIC LINEAR ALGEBRA",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460101",
+      "course_code": "STAT 101",
+      "course_number": 101,
+      "course_name": "INTRODUCTION TO STATISTICS AND DATA SCIENCE I (İSTATİSTİK VE VERİ BİLİMİNE GİRİŞ I )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460102",
+      "course_code": "STAT 102",
+      "course_number": 102,
+      "course_name": "INTRODUCTION TO STATISTICS AND DATA SCIENCE II (İSTATİSTİK VE VERİ BİLİMİNE GİRİŞ II )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460112",
+      "course_code": "STAT 112",
+      "course_number": 112,
+      "course_name": "INTRODUCTION TO DATA PROCESSING AND VISUALIZATION (VERİ İŞLEME VE GÖRSELLEŞTİRMEYE GİRİŞ )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460153",
+      "course_code": "STAT 153",
+      "course_number": 153,
+      "course_name": "PROBABILITY I",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460154",
+      "course_code": "STAT 154",
+      "course_number": 154,
+      "course_name": "PROBABILITY II",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460155",
+      "course_code": "STAT 155",
+      "course_number": 155,
+      "course_name": "STATISTICAL METHODS",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460156",
+      "course_code": "STAT 156",
+      "course_number": 156,
+      "course_name": "STATISTICAL METHODS",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460201",
+      "course_code": "STAT 201",
+      "course_number": 201,
+      "course_name": "INTRODUCTION TO PROBABILITY &STAT. I (OLASILIK VE İSTATİSTİĞE GİRİŞ I )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460202",
+      "course_code": "STAT 202",
+      "course_number": 202,
+      "course_name": "INTRODUCTION TO PROBABILITY &STAT.II (OLASILIK VE İSTATİSTİĞE GİRİŞ II )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460203",
+      "course_code": "STAT 203",
+      "course_number": 203,
+      "course_name": "PROBABILITY I (OLASILIK I )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460204",
+      "course_code": "STAT 204",
+      "course_number": 204,
+      "course_name": "PROBABILITY II (OLASILIK II )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460250",
+      "course_code": "STAT 250",
+      "course_number": 250,
+      "course_name": "APPLIED STATISTICS (UYGULAMALI İSTATİSTİK )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460271",
+      "course_code": "STAT 271",
+      "course_number": 271,
+      "course_name": "MATHEMATICAL STATISTICS I",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460291",
+      "course_code": "STAT 291",
+      "course_number": 291,
+      "course_name": "STATISTICAL PROGRAMMING (İSTATİSTİKSEL PROGRAMLAMA )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460295",
+      "course_code": "STAT 295",
+      "course_number": 295,
+      "course_name": "OBJECT ORIENTED PROGRAMMING (NESNE YÖNELİMLİ PROGRAMLAMA )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460303",
+      "course_code": "STAT 303",
+      "course_number": 303,
+      "course_name": "MATHEMATICAL STATISTICS I (MATEMATİKSEL İSTATİSTİK I )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460304",
+      "course_code": "STAT 304",
+      "course_number": 304,
+      "course_name": "MATHEMATICAL STATISTICS II (MATEMATİKSEL İSTATİSTİK II )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460311",
+      "course_code": "STAT 311",
+      "course_number": 311,
+      "course_name": "MODERN DATABASE SYSTEMS (MODERN VERİTABANI SİSTEMLERİ )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460333",
+      "course_code": "STAT 333",
+      "course_number": 333,
+      "course_name": "DATA STRUCTURES AND ALGORITHMS (VERİ YAPILARI VE ALGORİTMALAR )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460361",
+      "course_code": "STAT 361",
+      "course_number": 361,
+      "course_name": "COMPUTATIONAL STATISTICS (HESAPLAMALI İSTATİSTİK )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460363",
+      "course_code": "STAT 363",
+      "course_number": 363,
+      "course_name": "LINEAR MODELS I (DOĞRUSAL MODELLER I )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460364",
+      "course_code": "STAT 364",
+      "course_number": 364,
+      "course_name": "LINEAR MODELS II (DOĞRUSAL MODELLER II )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460365",
+      "course_code": "STAT 365",
+      "course_number": 365,
+      "course_name": "SAMPLING AND SURVEY TECHNIQUES (ÖRNEKLEME VE ANKET TEKNİKLERİ )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460376",
+      "course_code": "STAT 376",
+      "course_number": 376,
+      "course_name": "STOCHASTIC PROCESSES (STOKASTİK SÜREÇLER )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460412",
+      "course_code": "STAT 412",
+      "course_number": 412,
+      "course_name": "STATISTICAL DATA ANALYSIS (İSTATİSTİKSEL VERİ ANALİZİ )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460444",
+      "course_code": "STAT 444",
+      "course_number": 444,
+      "course_name": "ADVANCED STATISTICAL COMPUTING (İLERİ İSTATİSTİKSEL HESAPLAMA )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460457",
+      "course_code": "STAT 457",
+      "course_number": 457,
+      "course_name": "STATISTICAL DESIGN OF EXPERIMENTS (İSTATİSTİKSEL DENEY TASARIMI )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460462",
+      "course_code": "STAT 462",
+      "course_number": 462,
+      "course_name": "BIOSTATISTICS (BİYOİSTATİSTİK )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460467",
+      "course_code": "STAT 467",
+      "course_number": 467,
+      "course_name": "MULTIVARIATE ANALYSIS (ÇOK DEĞİŞKENLİ ANALİZ )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460472",
+      "course_code": "STAT 472",
+      "course_number": 472,
+      "course_name": "STATISTICAL DECISION ANALYSIS (İSTATİSTİKSEL KARAR ANALİZİ )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460480",
+      "course_code": "STAT 480",
+      "course_number": 480,
+      "course_name": "APPL.OF STAT.TECH.IN SOCIO-ECON.RESEARCH (İSTATİSTİKSEL YÖNTEMLERİN SOSYO-EKONOMİK ARAŞTIRMALARDA UYGULAMALARI )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460486",
+      "course_code": "STAT 486",
+      "course_number": 486,
+      "course_name": "APPLIED STATISTICS AND ECONOMETRICS (UYGULAMALI İSTATİSTİK VE EKONOMETRİ )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460487",
+      "course_code": "STAT 487",
+      "course_number": 487,
+      "course_name": "INSURANCE AND ACTUARIAL ANALYSIS (SİGORTA VE AKTÜERYA ANALİZİ )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460493",
+      "course_code": "STAT 493",
+      "course_number": 493,
+      "course_name": "NEW HORIZONS IN STATISTICS (İSTATİSTİKTE YENİ UFUKLAR )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460495",
+      "course_code": "STAT 495",
+      "course_number": 495,
+      "course_name": "APPLICATIONS IN STATISTICS (İSTATİSTİK UYGULAMALARI )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460497",
+      "course_code": "STAT 497",
+      "course_number": 497,
+      "course_name": "APPLIED TIME SERIES ANALYSIS (UYGULAMALI ZAMAN SERİSİ ANALİZİ )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2460499",
+      "course_code": "STAT 499",
+      "course_number": 499,
+      "course_name": "UNDERGRADUATE RESEARCH (LİSANS ARAŞTIRMALARI )",
+      "department": "Statistics/İstatistik",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    }
+  ],
+  "edges": [
+    {
+      "from": "2460101",
+      "to": "2460102",
+      "from_course_code": "STAT 101",
+      "to_course_code": "STAT 102",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460155",
+      "to": "2460102",
+      "from_course_code": "STAT 155",
+      "to_course_code": "STAT 102",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2460201",
+      "to": "2460202",
+      "from_course_code": "STAT 201",
+      "to_course_code": "STAT 202",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460153",
+      "to": "2460204",
+      "from_course_code": "STAT 153",
+      "to_course_code": "STAT 204",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2360119",
+      "to": "2460204",
+      "from_course_code": "MATH 119",
+      "to_course_code": "STAT 204",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460203",
+      "to": "2460204",
+      "from_course_code": "STAT 203",
+      "to_course_code": "STAT 204",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360113",
+      "to": "2460204",
+      "from_course_code": "MATH 113",
+      "to_course_code": "STAT 204",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460203",
+      "to": "2460204",
+      "from_course_code": "STAT 203",
+      "to_course_code": "STAT 204",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460156",
+      "to": "2460250",
+      "from_course_code": "STAT 156",
+      "to_course_code": "STAT 250",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2460102",
+      "to": "2460250",
+      "from_course_code": "STAT 102",
+      "to_course_code": "STAT 250",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710230",
+      "to": "2460291",
+      "from_course_code": "CENG 230",
+      "to_course_code": "STAT 291",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2460156",
+      "to": "2460291",
+      "from_course_code": "STAT 156",
+      "to_course_code": "STAT 291",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "5710240",
+      "to": "2460291",
+      "from_course_code": "CENG 240",
+      "to_course_code": "STAT 291",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460156",
+      "to": "2460291",
+      "from_course_code": "STAT 156",
+      "to_course_code": "STAT 291",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "5710230",
+      "to": "2460291",
+      "from_course_code": "CENG 230",
+      "to_course_code": "STAT 291",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2460102",
+      "to": "2460291",
+      "from_course_code": "STAT 102",
+      "to_course_code": "STAT 291",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710240",
+      "to": "2460291",
+      "from_course_code": "CENG 240",
+      "to_course_code": "STAT 291",
+      "set_no": "4",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460102",
+      "to": "2460291",
+      "from_course_code": "STAT 102",
+      "to_course_code": "STAT 291",
+      "set_no": "4",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5710230",
+      "to": "2460295",
+      "from_course_code": "CENG 230",
+      "to_course_code": "STAT 295",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "5710240",
+      "to": "2460295",
+      "from_course_code": "CENG 240",
+      "to_course_code": "STAT 295",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360120",
+      "to": "2460303",
+      "from_course_code": "MATH 120",
+      "to_course_code": "STAT 303",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460154",
+      "to": "2460303",
+      "from_course_code": "STAT 154",
+      "to_course_code": "STAT 303",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2360120",
+      "to": "2460303",
+      "from_course_code": "MATH 120",
+      "to_course_code": "STAT 303",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460204",
+      "to": "2460303",
+      "from_course_code": "STAT 204",
+      "to_course_code": "STAT 303",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360114",
+      "to": "2460303",
+      "from_course_code": "MATH 114",
+      "to_course_code": "STAT 303",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460154",
+      "to": "2460303",
+      "from_course_code": "STAT 154",
+      "to_course_code": "STAT 303",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2360114",
+      "to": "2460303",
+      "from_course_code": "MATH 114",
+      "to_course_code": "STAT 303",
+      "set_no": "4",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460204",
+      "to": "2460303",
+      "from_course_code": "STAT 204",
+      "to_course_code": "STAT 303",
+      "set_no": "4",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460271",
+      "to": "2460304",
+      "from_course_code": "STAT 271",
+      "to_course_code": "STAT 304",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2460303",
+      "to": "2460304",
+      "from_course_code": "STAT 303",
+      "to_course_code": "STAT 304",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460291",
+      "to": "2460311",
+      "from_course_code": "STAT 291",
+      "to_course_code": "STAT 311",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460295",
+      "to": "2460333",
+      "from_course_code": "STAT 295",
+      "to_course_code": "STAT 333",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460291",
+      "to": "2460361",
+      "from_course_code": "STAT 291",
+      "to_course_code": "STAT 361",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360260",
+      "to": "2460363",
+      "from_course_code": "MATH 260",
+      "to_course_code": "STAT 363",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460156",
+      "to": "2460363",
+      "from_course_code": "STAT 156",
+      "to_course_code": "STAT 363",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2360260",
+      "to": "2460363",
+      "from_course_code": "MATH 260",
+      "to_course_code": "STAT 363",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460102",
+      "to": "2460363",
+      "from_course_code": "STAT 102",
+      "to_course_code": "STAT 363",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460363",
+      "to": "2460364",
+      "from_course_code": "STAT 363",
+      "to_course_code": "STAT 364",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460156",
+      "to": "2460365",
+      "from_course_code": "STAT 156",
+      "to_course_code": "STAT 365",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2460102",
+      "to": "2460365",
+      "from_course_code": "STAT 102",
+      "to_course_code": "STAT 365",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360260",
+      "to": "2460376",
+      "from_course_code": "MATH 260",
+      "to_course_code": "STAT 376",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460204",
+      "to": "2460376",
+      "from_course_code": "STAT 204",
+      "to_course_code": "STAT 376",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360260",
+      "to": "2460376",
+      "from_course_code": "MATH 260",
+      "to_course_code": "STAT 376",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460154",
+      "to": "2460376",
+      "from_course_code": "STAT 154",
+      "to_course_code": "STAT 376",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2460291",
+      "to": "2460412",
+      "from_course_code": "STAT 291",
+      "to_course_code": "STAT 412",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460363",
+      "to": "2460412",
+      "from_course_code": "STAT 363",
+      "to_course_code": "STAT 412",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460156",
+      "to": "2460444",
+      "from_course_code": "STAT 156",
+      "to_course_code": "STAT 444",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2460102",
+      "to": "2460444",
+      "from_course_code": "STAT 102",
+      "to_course_code": "STAT 444",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460363",
+      "to": "2460457",
+      "from_course_code": "STAT 363",
+      "to_course_code": "STAT 457",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460156",
+      "to": "2460462",
+      "from_course_code": "STAT 156",
+      "to_course_code": "STAT 462",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2460102",
+      "to": "2460462",
+      "from_course_code": "STAT 102",
+      "to_course_code": "STAT 462",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360260",
+      "to": "2460467",
+      "from_course_code": "MATH 260",
+      "to_course_code": "STAT 467",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460156",
+      "to": "2460467",
+      "from_course_code": "STAT 156",
+      "to_course_code": "STAT 467",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2360260",
+      "to": "2460467",
+      "from_course_code": "MATH 260",
+      "to_course_code": "STAT 467",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460102",
+      "to": "2460467",
+      "from_course_code": "STAT 102",
+      "to_course_code": "STAT 467",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460250",
+      "to": "2460480",
+      "from_course_code": "STAT 250",
+      "to_course_code": "STAT 480",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460102",
+      "to": "2460486",
+      "from_course_code": "STAT 102",
+      "to_course_code": "STAT 486",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460363",
+      "to": "2460486",
+      "from_course_code": "STAT 363",
+      "to_course_code": "STAT 486",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460156",
+      "to": "2460486",
+      "from_course_code": "STAT 156",
+      "to_course_code": "STAT 486",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2460363",
+      "to": "2460486",
+      "from_course_code": "STAT 363",
+      "to_course_code": "STAT 486",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2460156",
+      "to": "2460495",
+      "from_course_code": "STAT 156",
+      "to_course_code": "STAT 495",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2460102",
+      "to": "2460495",
+      "from_course_code": "STAT 102",
+      "to_course_code": "STAT 495",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    }
+  ],
+  "prerequisites_by_course": {
+    "2460102": [
+      "2460101",
+      "2460155"
+    ],
+    "2460202": [
+      "2460201"
+    ],
+    "2460204": [
+      "2360113",
+      "2360119",
+      "2460153",
+      "2460203"
+    ],
+    "2460250": [
+      "2460102",
+      "2460156"
+    ],
+    "2460291": [
+      "5710230",
+      "5710240",
+      "2460102",
+      "2460156"
+    ],
+    "2460295": [
+      "5710230",
+      "5710240"
+    ],
+    "2460303": [
+      "2360114",
+      "2360120",
+      "2460154",
+      "2460204"
+    ],
+    "2460304": [
+      "2460271",
+      "2460303"
+    ],
+    "2460311": [
+      "2460291"
+    ],
+    "2460333": [
+      "2460295"
+    ],
+    "2460361": [
+      "2460291"
+    ],
+    "2460363": [
+      "2360260",
+      "2460102",
+      "2460156"
+    ],
+    "2460364": [
+      "2460363"
+    ],
+    "2460365": [
+      "2460102",
+      "2460156"
+    ],
+    "2460376": [
+      "2360260",
+      "2460154",
+      "2460204"
+    ],
+    "2460412": [
+      "2460291",
+      "2460363"
+    ],
+    "2460444": [
+      "2460102",
+      "2460156"
+    ],
+    "2460457": [
+      "2460363"
+    ],
+    "2460462": [
+      "2460102",
+      "2460156"
+    ],
+    "2460467": [
+      "2360260",
+      "2460102",
+      "2460156"
+    ],
+    "2460480": [
+      "2460250"
+    ],
+    "2460486": [
+      "2460102",
+      "2460156",
+      "2460363"
+    ],
+    "2460495": [
+      "2460102",
+      "2460156"
+    ]
+  },
+  "prerequisites_by_course_code": {
+    "STAT 102": [
+      "STAT 101",
+      "STAT 155"
+    ],
+    "STAT 202": [
+      "STAT 201"
+    ],
+    "STAT 204": [
+      "MATH 113",
+      "MATH 119",
+      "STAT 153",
+      "STAT 203"
+    ],
+    "STAT 250": [
+      "STAT 102",
+      "STAT 156"
+    ],
+    "STAT 291": [
+      "CENG 230",
+      "CENG 240",
+      "STAT 102",
+      "STAT 156"
+    ],
+    "STAT 295": [
+      "CENG 230",
+      "CENG 240"
+    ],
+    "STAT 303": [
+      "MATH 114",
+      "MATH 120",
+      "STAT 154",
+      "STAT 204"
+    ],
+    "STAT 304": [
+      "STAT 271",
+      "STAT 303"
+    ],
+    "STAT 311": [
+      "STAT 291"
+    ],
+    "STAT 333": [
+      "STAT 295"
+    ],
+    "STAT 361": [
+      "STAT 291"
+    ],
+    "STAT 363": [
+      "MATH 260",
+      "STAT 102",
+      "STAT 156"
+    ],
+    "STAT 364": [
+      "STAT 363"
+    ],
+    "STAT 365": [
+      "STAT 102",
+      "STAT 156"
+    ],
+    "STAT 376": [
+      "MATH 260",
+      "STAT 154",
+      "STAT 204"
+    ],
+    "STAT 412": [
+      "STAT 291",
+      "STAT 363"
+    ],
+    "STAT 444": [
+      "STAT 102",
+      "STAT 156"
+    ],
+    "STAT 457": [
+      "STAT 363"
+    ],
+    "STAT 462": [
+      "STAT 102",
+      "STAT 156"
+    ],
+    "STAT 467": [
+      "MATH 260",
+      "STAT 102",
+      "STAT 156"
+    ],
+    "STAT 480": [
+      "STAT 250"
+    ],
+    "STAT 486": [
+      "STAT 102",
+      "STAT 156",
+      "STAT 363"
+    ],
+    "STAT 495": [
+      "STAT 102",
+      "STAT 156"
+    ]
+  },
+  "dependents_by_course": {
+    "2460101": [
+      "2460102"
+    ],
+    "2460155": [
+      "2460102"
+    ],
+    "2460201": [
+      "2460202"
+    ],
+    "2460153": [
+      "2460204"
+    ],
+    "2360119": [
+      "2460204"
+    ],
+    "2460203": [
+      "2460204"
+    ],
+    "2360113": [
+      "2460204"
+    ],
+    "2460156": [
+      "2460250",
+      "2460291",
+      "2460363",
+      "2460365",
+      "2460444",
+      "2460462",
+      "2460467",
+      "2460486",
+      "2460495"
+    ],
+    "2460102": [
+      "2460250",
+      "2460291",
+      "2460363",
+      "2460365",
+      "2460444",
+      "2460462",
+      "2460467",
+      "2460486",
+      "2460495"
+    ],
+    "5710230": [
+      "2460291",
+      "2460295"
+    ],
+    "5710240": [
+      "2460291",
+      "2460295"
+    ],
+    "2360120": [
+      "2460303"
+    ],
+    "2460154": [
+      "2460303",
+      "2460376"
+    ],
+    "2460204": [
+      "2460303",
+      "2460376"
+    ],
+    "2360114": [
+      "2460303"
+    ],
+    "2460271": [
+      "2460304"
+    ],
+    "2460303": [
+      "2460304"
+    ],
+    "2460291": [
+      "2460311",
+      "2460361",
+      "2460412"
+    ],
+    "2460295": [
+      "2460333"
+    ],
+    "2360260": [
+      "2460363",
+      "2460376",
+      "2460467"
+    ],
+    "2460363": [
+      "2460364",
+      "2460412",
+      "2460457",
+      "2460486"
+    ],
+    "2460250": [
+      "2460480"
+    ]
+  },
+  "dependents_by_course_code": {
+    "STAT 101": [
+      "STAT 102"
+    ],
+    "STAT 155": [
+      "STAT 102"
+    ],
+    "STAT 201": [
+      "STAT 202"
+    ],
+    "STAT 153": [
+      "STAT 204"
+    ],
+    "MATH 119": [
+      "STAT 204"
+    ],
+    "STAT 203": [
+      "STAT 204"
+    ],
+    "MATH 113": [
+      "STAT 204"
+    ],
+    "STAT 156": [
+      "STAT 250",
+      "STAT 291",
+      "STAT 363",
+      "STAT 365",
+      "STAT 444",
+      "STAT 462",
+      "STAT 467",
+      "STAT 486",
+      "STAT 495"
+    ],
+    "STAT 102": [
+      "STAT 250",
+      "STAT 291",
+      "STAT 363",
+      "STAT 365",
+      "STAT 444",
+      "STAT 462",
+      "STAT 467",
+      "STAT 486",
+      "STAT 495"
+    ],
+    "CENG 230": [
+      "STAT 291",
+      "STAT 295"
+    ],
+    "CENG 240": [
+      "STAT 291",
+      "STAT 295"
+    ],
+    "MATH 120": [
+      "STAT 303"
+    ],
+    "STAT 154": [
+      "STAT 303",
+      "STAT 376"
+    ],
+    "STAT 204": [
+      "STAT 303",
+      "STAT 376"
+    ],
+    "MATH 114": [
+      "STAT 303"
+    ],
+    "STAT 271": [
+      "STAT 304"
+    ],
+    "STAT 303": [
+      "STAT 304"
+    ],
+    "STAT 291": [
+      "STAT 311",
+      "STAT 361",
+      "STAT 412"
+    ],
+    "STAT 295": [
+      "STAT 333"
+    ],
+    "MATH 260": [
+      "STAT 363",
+      "STAT 376",
+      "STAT 467"
+    ],
+    "STAT 363": [
+      "STAT 364",
+      "STAT 412",
+      "STAT 457",
+      "STAT 486"
+    ],
+    "STAT 250": [
+      "STAT 480"
+    ]
+  },
+  "prerequisite_sets_by_course": {
+    "2460204": {
+      "1": [
+        "2460153"
+      ],
+      "2": [
+        "2360119",
+        "2460203"
+      ],
+      "3": [
+        "2360113",
+        "2460203"
+      ]
+    },
+    "2460291": {
+      "1": [
+        "5710230",
+        "2460156"
+      ],
+      "2": [
+        "5710240",
+        "2460156"
+      ],
+      "3": [
+        "5710230",
+        "2460102"
+      ],
+      "4": [
+        "5710240",
+        "2460102"
+      ]
+    },
+    "2460303": {
+      "1": [
+        "2360120",
+        "2460154"
+      ],
+      "2": [
+        "2360120",
+        "2460204"
+      ],
+      "3": [
+        "2360114",
+        "2460154"
+      ],
+      "4": [
+        "2360114",
+        "2460204"
+      ]
+    },
+    "2460304": {
+      "1": [
+        "2460271"
+      ],
+      "2": [
+        "2460303"
+      ]
+    },
+    "2460311": {
+      "1": [
+        "2460291"
+      ]
+    },
+    "2460361": {
+      "1": [
+        "2460291"
+      ]
+    },
+    "2460363": {
+      "1": [
+        "2360260",
+        "2460156"
+      ],
+      "2": [
+        "2360260",
+        "2460102"
+      ]
+    },
+    "2460364": {
+      "1": [
+        "2460363"
+      ]
+    },
+    "2460365": {
+      "1": [
+        "2460156"
+      ],
+      "2": [
+        "2460102"
+      ]
+    },
+    "2460376": {
+      "1": [
+        "2360260",
+        "2460204"
+      ],
+      "2": [
+        "2360260",
+        "2460154"
+      ]
+    },
+    "2460412": {
+      "1": [
+        "2460291",
+        "2460363"
+      ]
+    },
+    "2460457": {
+      "1": [
+        "2460363"
+      ]
+    },
+    "2460467": {
+      "1": [
+        "2360260",
+        "2460156"
+      ],
+      "2": [
+        "2360260",
+        "2460102"
+      ]
+    },
+    "2460480": {
+      "1": [
+        "2460250"
+      ]
+    },
+    "2460486": {
+      "1": [
+        "2460102",
+        "2460363"
+      ],
+      "2": [
+        "2460156",
+        "2460363"
+      ]
+    },
+    "2460495": {
+      "1": [
+        "2460156"
+      ],
+      "2": [
+        "2460102"
+      ]
+    },
+    "2460102": {
+      "1": [
+        "2460101"
+      ],
+      "2": [
+        "2460155"
+      ]
+    },
+    "2460202": {
+      "2": [
+        "2460201"
+      ]
+    },
+    "2460250": {
+      "1": [
+        "2460156"
+      ],
+      "2": [
+        "2460102"
+      ]
+    },
+    "2460295": {
+      "1": [
+        "5710230"
+      ],
+      "2": [
+        "5710240"
+      ]
+    },
+    "2460333": {
+      "1": [
+        "2460295"
+      ]
+    },
+    "2460444": {
+      "1": [
+        "2460156"
+      ],
+      "2": [
+        "2460102"
+      ]
+    },
+    "2460462": {
+      "1": [
+        "2460156"
+      ],
+      "2": [
+        "2460102"
+      ]
+    }
+  },
+  "prerequisite_sets_by_course_code": {
+    "STAT 204": {
+      "1": [
+        "STAT 153"
+      ],
+      "2": [
+        "MATH 119",
+        "STAT 203"
+      ],
+      "3": [
+        "MATH 113",
+        "STAT 203"
+      ]
+    },
+    "STAT 291": {
+      "1": [
+        "CENG 230",
+        "STAT 156"
+      ],
+      "2": [
+        "CENG 240",
+        "STAT 156"
+      ],
+      "3": [
+        "CENG 230",
+        "STAT 102"
+      ],
+      "4": [
+        "CENG 240",
+        "STAT 102"
+      ]
+    },
+    "STAT 303": {
+      "1": [
+        "MATH 120",
+        "STAT 154"
+      ],
+      "2": [
+        "MATH 120",
+        "STAT 204"
+      ],
+      "3": [
+        "MATH 114",
+        "STAT 154"
+      ],
+      "4": [
+        "MATH 114",
+        "STAT 204"
+      ]
+    },
+    "STAT 304": {
+      "1": [
+        "STAT 271"
+      ],
+      "2": [
+        "STAT 303"
+      ]
+    },
+    "STAT 311": {
+      "1": [
+        "STAT 291"
+      ]
+    },
+    "STAT 361": {
+      "1": [
+        "STAT 291"
+      ]
+    },
+    "STAT 363": {
+      "1": [
+        "MATH 260",
+        "STAT 156"
+      ],
+      "2": [
+        "MATH 260",
+        "STAT 102"
+      ]
+    },
+    "STAT 364": {
+      "1": [
+        "STAT 363"
+      ]
+    },
+    "STAT 365": {
+      "1": [
+        "STAT 156"
+      ],
+      "2": [
+        "STAT 102"
+      ]
+    },
+    "STAT 376": {
+      "1": [
+        "MATH 260",
+        "STAT 204"
+      ],
+      "2": [
+        "MATH 260",
+        "STAT 154"
+      ]
+    },
+    "STAT 412": {
+      "1": [
+        "STAT 291",
+        "STAT 363"
+      ]
+    },
+    "STAT 457": {
+      "1": [
+        "STAT 363"
+      ]
+    },
+    "STAT 467": {
+      "1": [
+        "MATH 260",
+        "STAT 156"
+      ],
+      "2": [
+        "MATH 260",
+        "STAT 102"
+      ]
+    },
+    "STAT 480": {
+      "1": [
+        "STAT 250"
+      ]
+    },
+    "STAT 486": {
+      "1": [
+        "STAT 102",
+        "STAT 363"
+      ],
+      "2": [
+        "STAT 156",
+        "STAT 363"
+      ]
+    },
+    "STAT 495": {
+      "1": [
+        "STAT 156"
+      ],
+      "2": [
+        "STAT 102"
+      ]
+    },
+    "STAT 102": {
+      "1": [
+        "STAT 101"
+      ],
+      "2": [
+        "STAT 155"
+      ]
+    },
+    "STAT 202": {
+      "2": [
+        "STAT 201"
+      ]
+    },
+    "STAT 250": {
+      "1": [
+        "STAT 156"
+      ],
+      "2": [
+        "STAT 102"
+      ]
+    },
+    "STAT 295": {
+      "1": [
+        "CENG 230"
+      ],
+      "2": [
+        "CENG 240"
+      ]
+    },
+    "STAT 333": {
+      "1": [
+        "STAT 295"
+      ]
+    },
+    "STAT 444": {
+      "1": [
+        "STAT 156"
+      ],
+      "2": [
+        "STAT 102"
+      ]
+    },
+    "STAT 462": {
+      "1": [
+        "STAT 156"
+      ],
+      "2": [
+        "STAT 102"
+      ]
+    }
+  },
+  "topological_order": [
+    "2360113",
+    "2360114",
+    "2360119",
+    "2360120",
+    "2360260",
+    "2460101",
+    "2460112",
+    "2460153",
+    "2460154",
+    "2460155",
+    "2460156",
+    "2460201",
+    "2460203",
+    "2460271",
+    "2460472",
+    "2460487",
+    "2460493",
+    "2460497",
+    "2460499",
+    "5710230",
+    "5710240",
+    "2460102",
+    "2460202",
+    "2460204",
+    "2460295",
+    "2460250",
+    "2460291",
+    "2460363",
+    "2460365",
+    "2460444",
+    "2460462",
+    "2460467",
+    "2460495",
+    "2460303",
+    "2460376",
+    "2460333",
+    "2460480",
+    "2460311",
+    "2460361",
+    "2460364",
+    "2460412",
+    "2460457",
+    "2460486",
+    "2460304"
+  ],
+  "topological_order_course_code": [
+    "MATH 113",
+    "MATH 114",
+    "MATH 119",
+    "MATH 120",
+    "MATH 260",
+    "STAT 101",
+    "STAT 112",
+    "STAT 153",
+    "STAT 154",
+    "STAT 155",
+    "STAT 156",
+    "STAT 201",
+    "STAT 203",
+    "STAT 271",
+    "STAT 472",
+    "STAT 487",
+    "STAT 493",
+    "STAT 497",
+    "STAT 499",
+    "CENG 230",
+    "CENG 240",
+    "STAT 102",
+    "STAT 202",
+    "STAT 204",
+    "STAT 295",
+    "STAT 250",
+    "STAT 291",
+    "STAT 363",
+    "STAT 365",
+    "STAT 444",
+    "STAT 462",
+    "STAT 467",
+    "STAT 495",
+    "STAT 303",
+    "STAT 376",
+    "STAT 333",
+    "STAT 480",
+    "STAT 311",
+    "STAT 361",
+    "STAT 364",
+    "STAT 412",
+    "STAT 457",
+    "STAT 486",
+    "STAT 304"
+  ]
+}

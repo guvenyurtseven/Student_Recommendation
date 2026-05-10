@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>METU Curriculum Graph Validator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">METU curriculum validation</p>
+        <h1>Ders Agaci Kontrol Arayuzu</h1>
+      </div>
+      <div class="controls" aria-label="Graph controls">
+        <label class="field">
+          <span>Bolum</span>
+          <select id="programSelect"></select>
+        </label>
+        <label class="toggle">
+          <input id="showIsolated" type="checkbox" checked />
+          <span>Baglantisiz dersler</span>
+        </label>
+        <label class="toggle">
+          <input id="showEdgeLabels" type="checkbox" />
+          <span>Min grade</span>
+        </label>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <section class="metrics" aria-label="Selected program metrics">
+        <div class="metric">
+          <span class="metric-label">Ders</span>
+          <strong id="nodeCount">0</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Bag</span>
+          <strong id="edgeCount">0</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Zincir</span>
+          <strong id="chainCount">0</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Baglantisiz</span>
+          <strong id="isolatedCount">0</strong>
+        </div>
+      </section>
+
+      <section class="graph-panel" aria-label="Curriculum graph">
+        <div class="graph-heading">
+          <div>
+            <p id="programName" class="program-name">-</p>
+            <p id="programSource" class="source-line">-</p>
+          </div>
+          <div id="legend" class="legend" aria-label="Chain color legend"></div>
+        </div>
+
+        <div id="graphScroller" class="graph-scroller">
+          <div id="graphBoard" class="graph-board">
+            <svg id="edgeLayer" class="edge-layer" aria-hidden="true"></svg>
+            <div id="semesterGrid" class="semester-grid"></div>
+          </div>
+        </div>
+      </section>
+
+      <aside id="detailsPanel" class="details-panel" aria-label="Course details">
+        <h2>Ders Detayi</h2>
+        <div id="detailsContent" class="details-content"></div>
+      </aside>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

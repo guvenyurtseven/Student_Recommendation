@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "description": "Manual prerequisite overrides. Schema is reserved; this file is validated but not applied by the first correction script version.",
+  "overrides": []
+}

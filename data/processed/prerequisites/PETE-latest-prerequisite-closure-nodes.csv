@@ -1,0 +1,89 @@
+﻿id,course_code,course_number,course_name,sources,curriculum_programs,requirement_types,scrape_status,found_semester
+3570100,357 100,100,PRECALCULUS,prerequisite_closure,,,scraped,20252
+3570119,357 119,119,CALCULUS WITH ANALYTIC GEOMETRY,prerequisite_closure,,,scraped,20252
+3570120,357 120,120,CALCULUS FOR FUNCTIONS OF SEVERAL VARIABLES,prerequisite_closure,,,scraped,20252
+3570219,357 219,219,INTRODUCTION TO DIFFERENTIAL EQUATIONS,prerequisite_closure,,,scraped,20252
+3580105,358 105,105,GENERAL PHYSICS I,prerequisite_closure,,,scraped,20252
+3590101,359 101,101,DEVELOPMENT OF READING AND WRITING SKILLS I,prerequisite_closure,,,scraped,20252
+3590102,359 102,102,DEVELOPMENT OF READING AND WRITING SKILLS II,prerequisite_closure,,,scraped,20252
+3600111,360 111,111,GENERAL CHEMISTRY I,prerequisite_closure,,,scraped,20251
+3620201,362 201,201,PRINCIPLES OF KEMAL ATATÜRK I,prerequisite_closure,,,scraped,20252
+3640221,364 221,221,ENGINEERING MECHANICS I,prerequisite_closure,,,scraped,20251
+3640224,364 224,224,MECHANICS OF MATERIALS,prerequisite_closure,,,scraped,20252
+3650205,365 205,205,STATICS,prerequisite_closure,,,scraped,20252
+3650206,365 206,206,STRENGTH OF MATERIALS,prerequisite_closure,,,scraped,20252
+3740110,374 110,110,INTRODUCTION TO PETROLEUM ENGINEERING,prerequisite_closure,,,scraped,20242
+3740211,374 211,211,INTRODUCTION TO FLUID MECHANICS,prerequisite_closure,,,scraped,20251
+3740216,374 216,216,RESERVOIR ROCK AND FLUID PROPERTIES,prerequisite_closure,,,not_found_in_searched_offerings,
+3740218,374 218,218,RESERVOIR FLUID PROPERTIES,prerequisite_closure,,,scraped,20242
+3740220,374 220,220,RESERVOIR ROCK PROPERTIES,prerequisite_closure,,,scraped,20241
+3740321,374 321,321,DRILLING ENGINEERING I,prerequisite_closure,,,scraped,20251
+3740331,374 331,331,PETROLEUM PRODUCTION ENGINEERING I,prerequisite_closure,,,scraped,20251
+3840261,384 261,261,STATICS,prerequisite_closure,,,scraped,20252
+3840264,384 264,264,MECHANICS OF MATERIALS,prerequisite_closure,,,scraped,20252
+5610225,561 225,225,ENGINEERING MECHANICS,prerequisite_closure,,,scraped,20251
+5720261,AE 261,261,STATICS,prerequisite_closure,,,scraped,20252
+3120100,BA 100,100,CAREER PLANNING,curriculum,PETE,required_course,scraped,20252
+5710240,CENG 240,240,PROGRAMMING WITH PYTHON FOR ENGINEERS,curriculum,PETE,required_course,scraped,20252
+5630204,CHE 204,204,THERMODYNAMICS I,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+2340101,CHEM 101,101,GENERAL CHEMISTRY I,prerequisite_closure,,,scraped,20251
+2340105,CHEM 105,105,GENERAL CHEMISTRY I,prerequisite_closure,,,scraped,20252
+2340109,CHEM 109,109,GENERAL CHEMISTRY FOR HONOUR PROG. I,prerequisite_closure,,,not_found_in_searched_offerings,
+2340111,CHEM 111,111,GENERAL CHEMISTRY I,curriculum;prerequisite_closure,PETE,required_course,scraped,20251
+2340112,CHEM 112,112,GENERAL CHEMISTRY II,curriculum,PETE,required_course,scraped,20252
+3110210,ECON 210,210,PRINCIPLES OF ECONOMICS,curriculum,PETE,required_course,scraped,20252
+6390101,ENG 101,101,ENGLISH FOR ACADEMIC PURPOSES I,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+6390102,ENG 102,102,ENGLISH FOR ACADEMIC PURPOSES II,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+6390211,ENG 211,211,ACADEMIC SPEAKING SKILLS,curriculum,PETE,required_course,scraped,20252
+5610202,ES 202,202,MATHEMATICS FOR ENGINEERS,curriculum,PETE,required_course,scraped,20252
+5610221,ES 221,221,ENGINEERING MECHANICS I,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+5610224,ES 224,224,STRENGTH OF MATERIALS,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+5610303,ES 303,303,STATISTICAL METHODS FOR ENGINEERS,curriculum,PETE,required_course,scraped,20252
+5610361,ES 361,361,COMPUTING METHODS IN ENGINEERING,curriculum,PETE,required_course,scraped,20252
+5640201,GEOE 201,201,GENERAL GEOLOGY,curriculum,PETE,required_course,scraped,20251
+5640410,GEOE 410,410,PETROLEUM GEOLOGY,curriculum,PETE,required_course,scraped,20252
+2402201,HIST 2201,2201,PRINCIPLES OF KEMAL ATATÜRK I,curriculum;prerequisite_closure,PETE,course_choice,scraped,20252
+2402202,HIST 2202,2202,,curriculum,PETE,course_choice,scraped,20252
+2402205,HIST 2205,2205,HISTORY OF THE TURKISH REVOLUTION I,curriculum;prerequisite_closure,PETE,course_choice,scraped,20252
+2402206,HIST 2206,2206,HISTORY OF THE TURKISH REVOLUTION II,curriculum,PETE,course_choice,scraped,20252
+9010100,IS 100,100,INTRODUCTION TO INFORMATION TECHNOLOGIES AND APPLICATIONS,curriculum,PETE,required_course,scraped,20252
+2360117,MATH 117,117,CALCULUS I,prerequisite_closure,,,scraped,20252
+2360118,MATH 118,118,CALCULUS II,prerequisite_closure,,,scraped,20252
+2360119,MATH 119,119,CALCULUS WITH ANALYTIC GEOMETRY,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+2360120,MATH 120,120,CALCULUS OF FUNCTIONS OF SEVERAL VARIABLES,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+2360129,MATH 129,129,SINGLE VARIABLE CALCULUS,prerequisite_closure,,,scraped,20251
+2360130,MATH 130,130,MULTIVARIABLE AND VECTOR CALCULUS,prerequisite_closure,,,scraped,20252
+2360151,MATH 151,151,CALCULUS I,prerequisite_closure,,,not_found_in_searched_offerings,
+2360152,MATH 152,152,CALCULUS II,prerequisite_closure,,,not_found_in_searched_offerings,
+2360155,MATH 155,155,CALCULUS I (ACCELERATED),prerequisite_closure,,,not_found_in_searched_offerings,
+2360157,MATH 157,157,BASIC CALCULUS I,prerequisite_closure,,,not_found_in_searched_offerings,
+2360158,MATH 158,158,BASIC CALCULUS II,prerequisite_closure,,,not_found_in_searched_offerings,
+2360219,MATH 219,219,INTRODUCTION TO DIFFERENTIAL EQUATIONS,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+5690105,ME 105,105,COMPUTER AIDED ENGINEERING GRAPHICS,curriculum,PETE,required_course,scraped,20252
+8770101,OHS 101,101,OCCUPATIONAL HEALTH AND SAFETY-I,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+8770301,OHS 301,301,OCCUPATIONAL HEALTH AND SAFETY - II,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+5660110,PETE 110,110,INTRODUCTION TO PETROLEUM ENGINEERING,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+5660211,PETE 211,211,INTRODUCTION TO FLUID MECHANICS,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+5660218,PETE 218,218,RESERVOIR FLUID PROPERTIES,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+5660220,PETE 220,220,RESERVOIR ROCK PROPERTIES,curriculum;prerequisite_closure,PETE,required_course,scraped,20251
+5660300,PETE 300,300,SUMMER PRACTICE I,curriculum,PETE,summer_practice,scraped,20252
+5660321,PETE 321,321,DRILLING ENGINEERING I,curriculum;prerequisite_closure,PETE,required_course,scraped,20251
+5660322,PETE 322,322,DRILLING ENGINEERING II,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+5660331,PETE 331,331,PETROLEUM PRODUCTION ENGINEERING I,curriculum;prerequisite_closure,PETE,required_course,scraped,20251
+5660332,PETE 332,332,PETROLEUM PRODUCTION ENGINEERING II,curriculum,PETE,required_course,scraped,20252
+5660343,PETE 343,343,PETROLEUM RESERVOIR ENGINEERING I,curriculum;prerequisite_closure,PETE,required_course,scraped,20251
+5660344,PETE 344,344,PETROLEUM RESERVOIR ENGINEERING II,curriculum,PETE,required_course,scraped,20252
+5660352,PETE 352,352,WELL LOGGING,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+5660400,PETE 400,400,SUMMER PRACTICE II,curriculum,PETE,summer_practice,scraped,20252
+5660411,PETE 411,411,PETROLEUM PROPERTY VALUATION,curriculum,PETE,required_course,scraped,20251
+5660417,PETE 417,417,PETROLEUM ENGINEERING DESIGN I,curriculum;prerequisite_closure,PETE,required_course,scraped,20251
+5660418,PETE 418,418,PETROLEUM ENGINEERING DESIGN II,curriculum,PETE,required_course,scraped,20252
+5660461,PETE 461,461,NATURAL GAS ENGINEERING,curriculum,PETE,required_course,scraped,20251
+2300105,PHYS 105,105,GENERAL PHYSICS I,curriculum;prerequisite_closure,PETE,required_course,scraped,20251
+2300106,PHYS 106,106,GENERAL PHYSICS II,curriculum,PETE,required_course,scraped,20252
+6420105,TURK 105,105,TURKISH I,curriculum;prerequisite_closure,PETE,course_choice,scraped,20251
+6420106,TURK 106,106,TURKISH II,curriculum,PETE,course_choice,scraped,20252
+6420201,TURK 201,201,ELEMENTARY TURKISH I,curriculum;prerequisite_closure,PETE,course_choice,scraped,20252
+6420202,TURK 202,202,INTERMEDIATE TURKISH I,curriculum,PETE,course_choice,scraped,20252
+6420303,TURK 303,303,TURKISH I,curriculum;prerequisite_closure,PETE,course_choice,scraped,20252
+6420304,TURK 304,304,TURKISH II,curriculum,PETE,course_choice,scraped,20252

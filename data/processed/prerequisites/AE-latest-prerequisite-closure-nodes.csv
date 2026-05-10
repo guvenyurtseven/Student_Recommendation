@@ -1,0 +1,68 @@
+﻿id,course_code,course_number,course_name,sources,curriculum_programs,requirement_types,scrape_status,found_semester
+3570100,357 100,100,PRECALCULUS,prerequisite_closure,,,scraped,20252
+3570119,357 119,119,CALCULUS WITH ANALYTIC GEOMETRY,prerequisite_closure,,,scraped,20252
+3570120,357 120,120,CALCULUS FOR FUNCTIONS OF SEVERAL VARIABLES,prerequisite_closure,,,scraped,20252
+3590101,359 101,101,DEVELOPMENT OF READING AND WRITING SKILLS I,prerequisite_closure,,,scraped,20252
+3590102,359 102,102,DEVELOPMENT OF READING AND WRITING SKILLS II,prerequisite_closure,,,scraped,20252
+3620201,362 201,201,PRINCIPLES OF KEMAL ATATÜRK I,prerequisite_closure,,,scraped,20252
+5610361,561 361,361,COMPUTING METHODS IN ENGINEERING,prerequisite_closure,,,scraped,20252
+5720122,AE 122,122,STATICS,prerequisite_closure,,,not_found_in_searched_offerings,
+5720241,AE 241,241,FLUID MECHANICS,prerequisite_closure,,,not_found_in_searched_offerings,
+5720264,AE 264,264,MECHANICS OF MATERIALS,prerequisite_closure,,,scraped,20252
+5720341,AE 341,341,AERODYNAMICS I,prerequisite_closure,,,scraped,20251
+5720101,AEE 101,101,INTRODUCTION TO AEROSPACE ENGINEERING,curriculum,AE,required_course,scraped,20251
+5720202,AEE 202,202,MATHEMATICS FOR AEROSPACE ENGINEERS,curriculum;prerequisite_closure,AE,required_course,not_found_in_searched_offerings,
+5720231,AEE 231,231,THERMODYNAMICS,curriculum,AE,required_course,scraped,20251
+5720244,AEE 244,244,FLUID MECHANICS,curriculum;prerequisite_closure,AE,required_course,scraped,20252
+5720261,AEE 261,261,STATICS,curriculum;prerequisite_closure,AE,required_course,scraped,20252
+5720262,AEE 262,262,DYNAMICS,curriculum,AE,required_course,scraped,20252
+5720266,AEE 266,266,MECHANICS OF MATERIALS,curriculum;prerequisite_closure,AE,required_course,not_found_in_searched_offerings,
+5720300,AEE 300,300,SUMMER PRACTICE II,curriculum,AE,summer_practice,scraped,20252
+5720301,AEE 301,301,MEASUREMENT TECHNIQUES I,curriculum,AE,required_course,not_found_in_searched_offerings,
+5720302,AEE 302,302,MEASUREMENT TECHNIQUES II,curriculum,AE,required_course,not_found_in_searched_offerings,
+5720305,AEE 305,305,NUMERICAL METHODS,curriculum,AE,required_course,scraped,20252
+5720331,AEE 331,331,HEAT TRANSFER,curriculum,AE,required_course,scraped,20251
+5720338,AEE 338,338,PROPULSION SYSTEMS I,curriculum,AE,required_course,not_found_in_searched_offerings,
+5720345,AEE 345,345,AERODYNAMICS I,curriculum;prerequisite_closure,AE,required_course,not_found_in_searched_offerings,
+5720346,AEE 346,346,AERODYNAMICS II,curriculum,AE,required_course,not_found_in_searched_offerings,
+5720361,AEE 361,361,APPLIED ELASTICITY,curriculum,AE,required_course,scraped,20251
+5720364,AEE 364,364,AEROSPACE STRUCTURES,curriculum,AE,required_course,not_found_in_searched_offerings,
+5720371,AEE 371,371,AIRCRAFT PERFORMANCE,curriculum,AE,required_course,not_found_in_searched_offerings,
+5720372,AEE 372,372,FLIGHT MECHANICS,curriculum,AE,required_course,scraped,20252
+5720385,AEE 385,385,SYSTEM DYNAMICS AND CONTROL,curriculum,AE,required_course,not_found_in_searched_offerings,
+5720400,AEE 400,400,SUMMER PRACTICE III,curriculum,AE,summer_practice,scraped,20252
+5720451,AEE 451,451,AEROSPACE ENGINEERING DESIGN,curriculum,AE,required_course,scraped,20251
+3120100,BA 100,100,CAREER PLANNING,curriculum,AE,required_course,scraped,20252
+5710240,CENG 240,240,PROGRAMMING WITH PYTHON FOR ENGINEERS,curriculum,AE,required_course,scraped,20252
+2340107,CHEM 107,107,GENERAL CHEMISTRY,curriculum,AE,required_course,scraped,20252
+5670209,EE 209,209,FUNDAMENTALS OF ELECTRICAL&ELECTRO. EN,curriculum,AE,required_course,scraped,20252
+6390101,ENG 101,101,ENGLISH FOR ACADEMIC PURPOSES I,curriculum;prerequisite_closure,AE,required_course,scraped,20252
+6390102,ENG 102,102,ENGLISH FOR ACADEMIC PURPOSES II,curriculum;prerequisite_closure,AE,required_course,scraped,20252
+6390211,ENG 211,211,ACADEMIC SPEAKING SKILLS,curriculum,AE,required_course,scraped,20252
+2402201,HIST 2201,2201,PRINCIPLES OF KEMAL ATATÜRK I,curriculum;prerequisite_closure,AE,course_choice,scraped,20252
+2402202,HIST 2202,2202,,curriculum,AE,course_choice,scraped,20252
+2402205,HIST 2205,2205,HISTORY OF THE TURKISH REVOLUTION I,curriculum;prerequisite_closure,AE,course_choice,scraped,20252
+2402206,HIST 2206,2206,HISTORY OF THE TURKISH REVOLUTION II,curriculum,AE,course_choice,scraped,20252
+9010100,IS 100,100,INTRODUCTION TO INFORMATION TECHNOLOGIES AND APPLICATIONS,curriculum,AE,required_course,scraped,20252
+2360117,MATH 117,117,CALCULUS I,prerequisite_closure,,,scraped,20252
+2360118,MATH 118,118,CALCULUS II,prerequisite_closure,,,scraped,20252
+2360119,MATH 119,119,CALCULUS WITH ANALYTIC GEOMETRY,curriculum;prerequisite_closure,AE,required_course,scraped,20252
+2360120,MATH 120,120,CALCULUS OF FUNCTIONS OF SEVERAL VARIABLES,curriculum;prerequisite_closure,AE,required_course,scraped,20252
+2360129,MATH 129,129,SINGLE VARIABLE CALCULUS,prerequisite_closure,,,scraped,20251
+2360130,MATH 130,130,MULTIVARIABLE AND VECTOR CALCULUS,prerequisite_closure,,,scraped,20252
+2360151,MATH 151,151,CALCULUS I,prerequisite_closure,,,not_found_in_searched_offerings,
+2360219,MATH 219,219,INTRODUCTION TO DIFFERENTIAL EQUATIONS,curriculum,AE,required_course,scraped,20252
+5690105,ME 105,105,COMPUTER AIDED ENGINEERING GRAPHICS,curriculum,AE,required_course,scraped,20252
+5690212,ME 212,212,PRINCIPLES OF PRODUCTION ENGINEERING,curriculum,AE,required_course,scraped,20252
+5700230,METE 230,230,FUNDAMENTALS OF MATERIALS SCIENCE AND ENGINEERING,curriculum,AE,required_course,scraped,20252
+8770101,OHS 101,101,OCCUPATIONAL HEALTH AND SAFETY-I,curriculum;prerequisite_closure,AE,required_course,scraped,20252
+8770301,OHS 301,301,OCCUPATIONAL HEALTH AND SAFETY - II,curriculum,AE,required_course,scraped,20252
+2300105,PHYS 105,105,GENERAL PHYSICS I,curriculum,AE,required_course,scraped,20251
+2300106,PHYS 106,106,GENERAL PHYSICS II,curriculum;prerequisite_closure,AE,required_course,scraped,20252
+2300112,PHYS 112,112,PHYSICS II (ELECTRICITY AND MAGNETISM),prerequisite_closure,,,scraped,20252
+6420105,TURK 105,105,TURKISH I,curriculum;prerequisite_closure,AE,course_choice,scraped,20251
+6420106,TURK 106,106,TURKISH II,curriculum,AE,course_choice,scraped,20252
+6420201,TURK 201,201,ELEMENTARY TURKISH I,curriculum;prerequisite_closure,AE,course_choice,scraped,20252
+6420202,TURK 202,202,INTERMEDIATE TURKISH I,curriculum,AE,course_choice,scraped,20252
+6420303,TURK 303,303,TURKISH I,curriculum;prerequisite_closure,AE,course_choice,scraped,20252
+6420304,TURK 304,304,TURKISH II,curriculum,AE,course_choice,scraped,20252

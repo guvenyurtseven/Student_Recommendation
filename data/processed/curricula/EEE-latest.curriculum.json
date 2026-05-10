@@ -1,0 +1,1259 @@
+{
+  "program": {
+    "abbr": "EEE",
+    "catalog_program_id": "567",
+    "name_en": "Electrical and Electronics Engineering",
+    "name_tr": "Elektrik ve Elektronik Mühendisliği",
+    "faculty": "Engineering"
+  },
+  "curriculum": {
+    "version_label": "latest",
+    "is_latest": true,
+    "review_status": "scraped",
+    "parser_version": "metu_catalog_curriculum_v1"
+  },
+  "source": {
+    "source_name": "METU Academic Catalog",
+    "source_url": "https://catalog.metu.edu.tr/program.php?fac_prog=567",
+    "retrieved_at_utc": "2026-05-08T05:03:25+00:00",
+    "content_path": "data\\raw\\catalog\\EEE\\20260508T050325Z\\program.html",
+    "content_sha256": "ecefa51d643c1a63449949f7066800576d56bbc5a71e98b3d0955af92b40f5ba"
+  },
+  "requirements": [
+    {
+      "requirement_id": "REQ-0001",
+      "requirement_type": "required_course",
+      "label": "PHYS 105",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "PHYS 105",
+          "numeric_code": "2300105",
+          "course_title": "GENERAL PHYSICS I",
+          "metu_credit": "4",
+          "contact_hours": "3",
+          "lab_hours": "2",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "3",
+      "lab_hours": "2",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0002",
+      "requirement_type": "required_course",
+      "label": "CHEM 107",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "CHEM 107",
+          "numeric_code": "2340107",
+          "course_title": "GENERAL CHEMISTRY",
+          "metu_credit": "4",
+          "contact_hours": "3",
+          "lab_hours": "2",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "3",
+      "lab_hours": "2",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0003",
+      "requirement_type": "required_course",
+      "label": "MATH 129",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MATH 129",
+          "numeric_code": "2360129",
+          "course_title": "SINGLE VARIABLE CALCULUS",
+          "metu_credit": "5",
+          "contact_hours": "4",
+          "lab_hours": "2",
+          "ects": "7.0"
+        }
+      ],
+      "metu_credit": "5",
+      "contact_hours": "4",
+      "lab_hours": "2",
+      "ects": "7.0"
+    },
+    {
+      "requirement_id": "REQ-0004",
+      "requirement_type": "required_course",
+      "label": "CENG 240",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "CENG 240",
+          "numeric_code": "5710240",
+          "course_title": "PROGRAMMING WITH PYTHON FOR ENGINEERS",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "4.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "4.0"
+    },
+    {
+      "requirement_id": "REQ-0005",
+      "requirement_type": "required_course",
+      "label": "ENG 101",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENG 101",
+          "numeric_code": "6390101",
+          "course_title": "ENGLISH FOR ACADEMIC PURPOSES I",
+          "metu_credit": "4",
+          "contact_hours": "4",
+          "lab_hours": "1",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "4",
+      "lab_hours": "1",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0006",
+      "requirement_type": "required_course",
+      "label": "OHS 101",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "OHS 101",
+          "numeric_code": "8770101",
+          "course_title": "OCCUPATIONAL HEALTH AND SAFETY-I",
+          "metu_credit": "0",
+          "contact_hours": "0",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "0",
+      "lab_hours": "0",
+      "ects": "2.0"
+    },
+    {
+      "requirement_id": "REQ-0007",
+      "requirement_type": "required_course",
+      "label": "IS 100",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IS 100",
+          "numeric_code": "9010100",
+          "course_title": "INTRODUCTION TO INFORMATION TECHNOLOGIES AND APPLICATIONS",
+          "metu_credit": "0",
+          "contact_hours": "0",
+          "lab_hours": "2",
+          "ects": "1.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "0",
+      "lab_hours": "2",
+      "ects": "1.0"
+    },
+    {
+      "requirement_id": "REQ-0008",
+      "requirement_type": "required_course",
+      "label": "PHYS 106",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "PHYS 106",
+          "numeric_code": "2300106",
+          "course_title": "GENERAL PHYSICS II",
+          "metu_credit": "4",
+          "contact_hours": "3",
+          "lab_hours": "2",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "3",
+      "lab_hours": "2",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0009",
+      "requirement_type": "required_course",
+      "label": "MATH 130",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MATH 130",
+          "numeric_code": "2360130",
+          "course_title": "MULTIVARIABLE AND VECTOR CALCULUS",
+          "metu_credit": "5",
+          "contact_hours": "4",
+          "lab_hours": "2",
+          "ects": "7.5"
+        }
+      ],
+      "metu_credit": "5",
+      "contact_hours": "4",
+      "lab_hours": "2",
+      "ects": "7.5"
+    },
+    {
+      "requirement_id": "REQ-0010",
+      "requirement_type": "required_course",
+      "label": "MATH 260",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MATH 260",
+          "numeric_code": "2360260",
+          "course_title": "BASIC LINEAR ALGEBRA",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0011",
+      "requirement_type": "required_course",
+      "label": "BA 100",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "BA 100",
+          "numeric_code": "3120100",
+          "course_title": "CAREER PLANNING",
+          "metu_credit": "0",
+          "contact_hours": "1",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "1",
+      "lab_hours": "0",
+      "ects": "2.0"
+    },
+    {
+      "requirement_id": "REQ-0012",
+      "requirement_type": "required_course",
+      "label": "EE 101",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 101",
+          "numeric_code": "5670101",
+          "course_title": "INTRODUCTION TO ELECTRICAL AND ELECTRONICS ENGINEERING",
+          "metu_credit": "2",
+          "contact_hours": "1",
+          "lab_hours": "2",
+          "ects": "3.0"
+        }
+      ],
+      "metu_credit": "2",
+      "contact_hours": "1",
+      "lab_hours": "2",
+      "ects": "3.0"
+    },
+    {
+      "requirement_id": "REQ-0013",
+      "requirement_type": "required_course",
+      "label": "ME 105",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ME 105",
+          "numeric_code": "5690105",
+          "course_title": "COMPUTER AIDED ENGINEERING GRAPHICS",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0014",
+      "requirement_type": "required_course",
+      "label": "ENG 102",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENG 102",
+          "numeric_code": "6390102",
+          "course_title": "ENGLISH FOR ACADEMIC PURPOSES II",
+          "metu_credit": "4",
+          "contact_hours": "4",
+          "lab_hours": "1",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "4",
+      "lab_hours": "1",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0015",
+      "requirement_type": "required_course",
+      "label": "PHYS 213",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "PHYS 213",
+          "numeric_code": "2300213",
+          "course_title": "GENERAL PHYSICS III",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0016",
+      "requirement_type": "required_course",
+      "label": "MATH 219",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MATH 219",
+          "numeric_code": "2360219",
+          "course_title": "INTRODUCTION TO DIFFERENTIAL EQUATIONS",
+          "metu_credit": "4",
+          "contact_hours": "4",
+          "lab_hours": "0",
+          "ects": "7.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "4",
+      "lab_hours": "0",
+      "ects": "7.0"
+    },
+    {
+      "requirement_id": "REQ-0017",
+      "requirement_type": "required_course",
+      "label": "EE 201",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 201",
+          "numeric_code": "5670201",
+          "course_title": "CIRCUIT THEORY I",
+          "metu_credit": "4",
+          "contact_hours": "4",
+          "lab_hours": "0",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "4",
+      "lab_hours": "0",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0018",
+      "requirement_type": "required_course",
+      "label": "EE 213",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 213",
+          "numeric_code": "5670213",
+          "course_title": "ELECTRICAL CIRCUITS LABORATORY",
+          "metu_credit": "2",
+          "contact_hours": "0",
+          "lab_hours": "4",
+          "ects": "3.0"
+        }
+      ],
+      "metu_credit": "2",
+      "contact_hours": "0",
+      "lab_hours": "4",
+      "ects": "3.0"
+    },
+    {
+      "requirement_id": "REQ-0019",
+      "requirement_type": "required_course",
+      "label": "ENG 211",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENG 211",
+          "numeric_code": "6390211",
+          "course_title": "ACADEMIC SPEAKING SKILLS",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "1",
+          "ects": "4.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "1",
+      "ects": "4.0"
+    },
+    {
+      "requirement_id": "REQ-0020",
+      "requirement_type": "required_course",
+      "label": "OHS 301",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "OHS 301",
+          "numeric_code": "8770301",
+          "course_title": "OCCUPATIONAL HEALTH AND SAFETY - II",
+          "metu_credit": "0",
+          "contact_hours": "0",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "0",
+      "lab_hours": "0",
+      "ects": "2.0"
+    },
+    {
+      "requirement_id": "REQ-0021",
+      "requirement_type": "course_choice",
+      "label": "Any 1 of the following set ..",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "HIST 2201",
+          "numeric_code": "2402201",
+          "course_title": "",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        },
+        {
+          "course_code": "HIST 2205",
+          "numeric_code": "2402205",
+          "course_title": "HISTORY OF THE TURKISH REVOLUTION I",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": ""
+    },
+    {
+      "requirement_id": "REQ-0022",
+      "requirement_type": "required_course",
+      "label": "EE 202",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 202",
+          "numeric_code": "5670202",
+          "course_title": "CIRCUIT THEORY II",
+          "metu_credit": "4",
+          "contact_hours": "4",
+          "lab_hours": "0",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "4",
+      "lab_hours": "0",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0023",
+      "requirement_type": "required_course",
+      "label": "EE 212",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 212",
+          "numeric_code": "5670212",
+          "course_title": "SEMICONDUCTOR DEVICES& MODELING",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0024",
+      "requirement_type": "required_course",
+      "label": "EE 214",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 214",
+          "numeric_code": "5670214",
+          "course_title": "ELECTRONIC CIRCUITS LABORATORY",
+          "metu_credit": "2",
+          "contact_hours": "0",
+          "lab_hours": "4",
+          "ects": "3.0"
+        }
+      ],
+      "metu_credit": "2",
+      "contact_hours": "0",
+      "lab_hours": "4",
+      "ects": "3.0"
+    },
+    {
+      "requirement_id": "REQ-0025",
+      "requirement_type": "required_course",
+      "label": "EE 224",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 224",
+          "numeric_code": "5670224",
+          "course_title": "ELECTROMAGNETIC THEORY",
+          "metu_credit": "4",
+          "contact_hours": "4",
+          "lab_hours": "0",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "4",
+      "lab_hours": "0",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0026",
+      "requirement_type": "required_course",
+      "label": "EE 230",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 230",
+          "numeric_code": "5670230",
+          "course_title": "PROBABILITY AND RANDOM VARIABLES",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0027",
+      "requirement_type": "course_choice",
+      "label": "Any 1 of the following set ..",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "HIST 2202",
+          "numeric_code": "2402202",
+          "course_title": "",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        },
+        {
+          "course_code": "HIST 2206",
+          "numeric_code": "2402206",
+          "course_title": "HISTORY OF THE TURKISH REVOLUTION II",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": ""
+    },
+    {
+      "requirement_id": "REQ-0028",
+      "requirement_type": "nontechnical_elective_pool",
+      "label": "NONTECHNICAL ELECTIVE",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0029",
+      "requirement_type": "summer_practice",
+      "label": "EE 300",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 300",
+          "numeric_code": "5670300",
+          "course_title": "SUMMER PRACTICE I",
+          "metu_credit": "0",
+          "contact_hours": "0",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "0",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0030",
+      "requirement_type": "required_course",
+      "label": "EE 301",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 301",
+          "numeric_code": "5670301",
+          "course_title": "SIGNALS AND SYSTEMS I",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0031",
+      "requirement_type": "required_course",
+      "label": "EE 303",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 303",
+          "numeric_code": "5670303",
+          "course_title": "ELECTROMAGNETIC WAVES",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0032",
+      "requirement_type": "required_course",
+      "label": "EE 311",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 311",
+          "numeric_code": "5670311",
+          "course_title": "ANALOG ELECTRONICS",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0033",
+      "requirement_type": "required_course",
+      "label": "EE 313",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 313",
+          "numeric_code": "5670313",
+          "course_title": "ANALOG ELECTRONICS LABORATORY",
+          "metu_credit": "2",
+          "contact_hours": "0",
+          "lab_hours": "4",
+          "ects": "3.0"
+        }
+      ],
+      "metu_credit": "2",
+      "contact_hours": "0",
+      "lab_hours": "4",
+      "ects": "3.0"
+    },
+    {
+      "requirement_id": "REQ-0034",
+      "requirement_type": "required_course",
+      "label": "EE 361",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 361",
+          "numeric_code": "5670361",
+          "course_title": "ELECTROMECHANICAL ENERGY CONVERSION I",
+          "metu_credit": "4",
+          "contact_hours": "3",
+          "lab_hours": "2",
+          "ects": "7.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "3",
+      "lab_hours": "2",
+      "ects": "7.0"
+    },
+    {
+      "requirement_id": "REQ-0035",
+      "requirement_type": "course_choice",
+      "label": "Any 1 of the following set ..",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "TURK 105",
+          "numeric_code": "6420105",
+          "course_title": "TURKISH I",
+          "metu_credit": "0",
+          "contact_hours": "4",
+          "lab_hours": "0",
+          "ects": "5.0"
+        },
+        {
+          "course_code": "TURK 201",
+          "numeric_code": "6420201",
+          "course_title": "ELEMENTARY TURKISH I",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "3.0"
+        },
+        {
+          "course_code": "TURK 303",
+          "numeric_code": "6420303",
+          "course_title": "TURKISH I",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": ""
+    },
+    {
+      "requirement_id": "REQ-0036",
+      "requirement_type": "nontechnical_elective_pool",
+      "label": "NONTECHNICAL ELECTIVE",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0037",
+      "requirement_type": "required_course",
+      "label": "EE 302",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 302",
+          "numeric_code": "5670302",
+          "course_title": "FEEDBACK SYSTEMS",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0038",
+      "requirement_type": "required_course",
+      "label": "EE 314",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 314",
+          "numeric_code": "5670314",
+          "course_title": "DIGITAL CIRCUITS LABORATORY",
+          "metu_credit": "2",
+          "contact_hours": "0",
+          "lab_hours": "4",
+          "ects": "3.0"
+        }
+      ],
+      "metu_credit": "2",
+      "contact_hours": "0",
+      "lab_hours": "4",
+      "ects": "3.0"
+    },
+    {
+      "requirement_id": "REQ-0039",
+      "requirement_type": "required_course",
+      "label": "EE 348",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 348",
+          "numeric_code": "5670348",
+          "course_title": "INTRODUCTION TO LOGIC DESIGN",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0040",
+      "requirement_type": "course_choice",
+      "label": "Any 1 of the following set ..",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "TURK 106",
+          "numeric_code": "6420106",
+          "course_title": "TURKISH II",
+          "metu_credit": "0",
+          "contact_hours": "4",
+          "lab_hours": "0",
+          "ects": "5.0"
+        },
+        {
+          "course_code": "TURK 202",
+          "numeric_code": "6420202",
+          "course_title": "INTERMEDIATE TURKISH I",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "3.0"
+        },
+        {
+          "course_code": "TURK 304",
+          "numeric_code": "6420304",
+          "course_title": "TURKISH II",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": ""
+    },
+    {
+      "requirement_id": "REQ-0041",
+      "requirement_type": "restricted_elective_pool",
+      "label": "RESTRICTED ELECTIVE",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0042",
+      "requirement_type": "restricted_elective_pool",
+      "label": "RESTRICTED ELECTIVE",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0043",
+      "requirement_type": "nontechnical_elective_pool",
+      "label": "NONTECHNICAL ELECTIVE",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0044",
+      "requirement_type": "summer_practice",
+      "label": "EE 400",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 400",
+          "numeric_code": "5670400",
+          "course_title": "SUMMER PRACTICE II",
+          "metu_credit": "0",
+          "contact_hours": "0",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "0",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0045",
+      "requirement_type": "required_course",
+      "label": "EE 493",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 493",
+          "numeric_code": "5670493",
+          "course_title": "ENGINEERING DESIGN I",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0046",
+      "requirement_type": "free_elective_pool",
+      "label": "FREE ELECTIVE",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0047",
+      "requirement_type": "technical_elective_pool",
+      "label": "TECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0048",
+      "requirement_type": "technical_elective_pool",
+      "label": "TECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0049",
+      "requirement_type": "technical_elective_pool",
+      "label": "TECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0050",
+      "requirement_type": "required_course",
+      "label": "EE 494",
+      "year": 4,
+      "semester_index": 8,
+      "semester_label": "Eighth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 494",
+          "numeric_code": "5670494",
+          "course_title": "ENGINEERING DESIGN II",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "7.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "7.0"
+    },
+    {
+      "requirement_id": "REQ-0051",
+      "requirement_type": "technical_elective_pool",
+      "label": "TECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 8,
+      "semester_label": "Eighth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0052",
+      "requirement_type": "technical_elective_pool",
+      "label": "TECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 8,
+      "semester_label": "Eighth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0053",
+      "requirement_type": "technical_elective_pool",
+      "label": "TECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 8,
+      "semester_label": "Eighth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0054",
+      "requirement_type": "technical_elective_pool",
+      "label": "TECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 8,
+      "semester_label": "Eighth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    }
+  ],
+  "summary": {
+    "requirement_count": 54,
+    "course_option_count": 47,
+    "unique_course_count": 47,
+    "placeholder_requirement_count": 13,
+    "counts_by_type": {
+      "required_course": 35,
+      "course_choice": 4,
+      "nontechnical_elective_pool": 3,
+      "summer_practice": 2,
+      "restricted_elective_pool": 2,
+      "free_elective_pool": 1,
+      "technical_elective_pool": 7
+    }
+  }
+}

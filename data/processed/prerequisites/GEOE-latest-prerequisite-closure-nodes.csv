@@ -1,0 +1,73 @@
+﻿id,course_code,course_number,course_name,sources,curriculum_programs,requirement_types,scrape_status,found_semester
+3570100,357 100,100,PRECALCULUS,prerequisite_closure,,,scraped,20252
+3570119,357 119,119,CALCULUS WITH ANALYTIC GEOMETRY,prerequisite_closure,,,scraped,20252
+3570120,357 120,120,CALCULUS FOR FUNCTIONS OF SEVERAL VARIABLES,prerequisite_closure,,,scraped,20252
+3590101,359 101,101,DEVELOPMENT OF READING AND WRITING SKILLS I,prerequisite_closure,,,scraped,20252
+3590102,359 102,102,DEVELOPMENT OF READING AND WRITING SKILLS II,prerequisite_closure,,,scraped,20252
+3600111,360 111,111,GENERAL CHEMISTRY I,prerequisite_closure,,,scraped,20251
+3620201,362 201,201,PRINCIPLES OF KEMAL ATATÜRK I,prerequisite_closure,,,scraped,20252
+3640221,364 221,221,ENGINEERING MECHANICS I,prerequisite_closure,,,scraped,20251
+5610223,561 223,223,STATICS AND STRENGTH OF MATERIALS,prerequisite_closure,,,scraped,20252
+5610225,561 225,225,ENGINEERING MECHANICS,prerequisite_closure,,,scraped,20251
+3120100,BA 100,100,CAREER PLANNING,curriculum,GEOE,required_course,scraped,20252
+5620101,CE 101,101,CIVIL ENGINEERING DRAWING,curriculum,GEOE,required_course,scraped,20252
+5620364,CE 364,364,SOIL MECHANICS,curriculum;prerequisite_closure,GEOE,required_course,scraped,20252
+5620374,CE 374,374,FLUID MECHANICS,curriculum;prerequisite_closure,GEOE,required_course,scraped,20252
+5710240,CENG 240,240,PROGRAMMING WITH PYTHON FOR ENGINEERS,curriculum,GEOE,required_course,scraped,20252
+2340101,CHEM 101,101,GENERAL CHEMISTRY I,prerequisite_closure,,,scraped,20251
+2340105,CHEM 105,105,GENERAL CHEMISTRY I,prerequisite_closure,,,scraped,20252
+2340109,CHEM 109,109,GENERAL CHEMISTRY FOR HONOUR PROG. I,prerequisite_closure,,,not_found_in_searched_offerings,
+2340111,CHEM 111,111,GENERAL CHEMISTRY I,curriculum;prerequisite_closure,GEOE,required_course,scraped,20251
+2340112,CHEM 112,112,GENERAL CHEMISTRY II,curriculum;prerequisite_closure,GEOE,required_course,scraped,20252
+6390101,ENG 101,101,ENGLISH FOR ACADEMIC PURPOSES I,curriculum;prerequisite_closure,GEOE,required_course,scraped,20252
+6390102,ENG 102,102,ENGLISH FOR ACADEMIC PURPOSES II,curriculum;prerequisite_closure,GEOE,required_course,scraped,20252
+6390211,ENG 211,211,ACADEMIC SPEAKING SKILLS,curriculum,GEOE,required_course,scraped,20252
+5610221,ES 221,221,ENGINEERING MECHANICS I,curriculum;prerequisite_closure,GEOE,required_course,scraped,20252
+5610224,ES 224,224,STRENGTH OF MATERIALS,curriculum;prerequisite_closure,GEOE,required_course,scraped,20252
+5610303,ES 303,303,STATISTICAL METHODS FOR ENGINEERS,curriculum,GEOE,required_course,scraped,20252
+5640105,GEOE 105,105,INTRODUCTION TO GEOLOGICAL ENGINEERING,curriculum,GEOE,required_course,scraped,20251
+5640208,GEOE 208,208,MAPWORK,curriculum;prerequisite_closure,GEOE,required_course,scraped,20252
+5640209,GEOE 209,209,PHYSICAL GEOLOGY,curriculum;prerequisite_closure,GEOE,required_course,scraped,20251
+5640210,GEOE 210,210,PETROGRAPHY,curriculum,GEOE,required_course,scraped,20252
+5640213,GEOE 213,213,MINERALOGY,curriculum;prerequisite_closure,GEOE,required_course,scraped,20251
+5640214,GEOE 214,214,PRINCIPLES OF STRATIGRAPHY,curriculum;prerequisite_closure,GEOE,required_course,scraped,20252
+5640300,GEOE 300,300,SUMMER PRACTICE I,curriculum,GEOE,summer_practice,scraped,20252
+5640303,GEOE 303,303,GEOPHYSICAL PROSPECTING,curriculum,GEOE,required_course,scraped,20251
+5640309,GEOE 309,309,HISTORICAL GEOLOGY AND PALEONTOLOGY,curriculum,GEOE,required_course,scraped,20251
+5640313,GEOE 313,313,STRUCTURAL GEOLOGY,curriculum;prerequisite_closure,GEOE,required_course,scraped,20251
+5640318,GEOE 318,318,GEOCHEMICAL THERMODYNAMICS,curriculum,GEOE,required_course,scraped,20252
+5640326,GEOE 326,326,FIELD GEOLOGY,curriculum,GEOE,required_course,scraped,20252
+5640327,GEOE 327,327,FIELD GEOLOGICAL MAPPING,curriculum;prerequisite_closure,GEOE,required_course,scraped,20252
+5640400,GEOE 400,400,SUMMER PRACTICE II,curriculum,GEOE,summer_practice,scraped,20252
+5640401,GEOE 401,401,MINERAL DEPOSITS,curriculum;prerequisite_closure,GEOE,required_course,scraped,20251
+5640407,GEOE 407,407,ENGINEERING GEOLOGY,curriculum;prerequisite_closure,GEOE,required_course,scraped,20251
+5640423,GEOE 423,423,HYDROGEOLOGY,curriculum;prerequisite_closure,GEOE,required_course,scraped,20251
+5640425,GEOE 425,425,COMPUTER APPLICATIONS IN GEO.ENG.,curriculum,GEOE,required_course,scraped,20251
+5640491,GEOE 491,491,GEOLOGICAL ENGINEERING DESIGN I,curriculum;prerequisite_closure,GEOE,required_course,scraped,20251
+5640492,GEOE 492,492,GEOLOGICAL ENGINEERING DESIGN II,curriculum,GEOE,required_course,scraped,20252
+2402201,HIST 2201,2201,PRINCIPLES OF KEMAL ATATÜRK I,curriculum;prerequisite_closure,GEOE,course_choice,scraped,20252
+2402202,HIST 2202,2202,,curriculum,GEOE,course_choice,scraped,20252
+2402205,HIST 2205,2205,HISTORY OF THE TURKISH REVOLUTION I,curriculum;prerequisite_closure,GEOE,course_choice,scraped,20252
+2402206,HIST 2206,2206,HISTORY OF THE TURKISH REVOLUTION II,curriculum,GEOE,course_choice,scraped,20252
+9010100,IS 100,100,INTRODUCTION TO INFORMATION TECHNOLOGIES AND APPLICATIONS,curriculum,GEOE,required_course,scraped,20252
+2360117,MATH 117,117,CALCULUS I,prerequisite_closure,,,scraped,20252
+2360118,MATH 118,118,CALCULUS II,prerequisite_closure,,,scraped,20252
+2360119,MATH 119,119,CALCULUS WITH ANALYTIC GEOMETRY,curriculum;prerequisite_closure,GEOE,required_course,scraped,20252
+2360120,MATH 120,120,CALCULUS OF FUNCTIONS OF SEVERAL VARIABLES,curriculum;prerequisite_closure,GEOE,required_course,scraped,20252
+2360129,MATH 129,129,SINGLE VARIABLE CALCULUS,prerequisite_closure,,,scraped,20251
+2360130,MATH 130,130,MULTIVARIABLE AND VECTOR CALCULUS,prerequisite_closure,,,scraped,20252
+2360151,MATH 151,151,CALCULUS I,prerequisite_closure,,,not_found_in_searched_offerings,
+2360155,MATH 155,155,CALCULUS I (ACCELERATED),prerequisite_closure,,,not_found_in_searched_offerings,
+2360157,MATH 157,157,BASIC CALCULUS I,prerequisite_closure,,,not_found_in_searched_offerings,
+2360219,MATH 219,219,INTRODUCTION TO DIFFERENTIAL EQUATIONS,curriculum,GEOE,required_course,scraped,20252
+5650317,MINE 317,317,INTRODUCTION TO ROCK MECHANICS,curriculum,GEOE,required_course,scraped,20251
+8770101,OHS 101,101,OCCUPATIONAL HEALTH AND SAFETY-I,curriculum;prerequisite_closure,GEOE,required_course,scraped,20252
+8770301,OHS 301,301,OCCUPATIONAL HEALTH AND SAFETY - II,curriculum;prerequisite_closure,GEOE,required_course,scraped,20252
+2300105,PHYS 105,105,GENERAL PHYSICS I,curriculum;prerequisite_closure,GEOE,required_course,scraped,20251
+2300106,PHYS 106,106,GENERAL PHYSICS II,curriculum,GEOE,required_course,scraped,20252
+6420105,TURK 105,105,TURKISH I,curriculum;prerequisite_closure,GEOE,course_choice,scraped,20251
+6420106,TURK 106,106,TURKISH II,curriculum,GEOE,course_choice,scraped,20252
+6420201,TURK 201,201,ELEMENTARY TURKISH I,curriculum;prerequisite_closure,GEOE,course_choice,scraped,20252
+6420202,TURK 202,202,INTERMEDIATE TURKISH I,curriculum,GEOE,course_choice,scraped,20252
+6420303,TURK 303,303,TURKISH I,curriculum;prerequisite_closure,GEOE,course_choice,scraped,20252
+6420304,TURK 304,304,TURKISH II,curriculum,GEOE,course_choice,scraped,20252

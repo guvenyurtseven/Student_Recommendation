@@ -1,0 +1,394 @@
+﻿id,course_code,course_number,course_name,sources,curriculum_programs,requirement_types,scrape_status,found_semester
+2190103,219 103,103,MOLECULAR AND CELLULAR BIOLOGY I,prerequisite_closure,,,scraped,20251
+2190104,219 104,104,MOLECULAR AND CELLULAR BIOLOGY II,prerequisite_closure,,,scraped,20252
+3550111,355 111,111,INTRODUCTION TO COMPUTER ENG. CONCEPTS,prerequisite_closure,,,scraped,20251
+3550140,355 140,140,C PROGRAMMING,prerequisite_closure,,,scraped,20252
+3550213,355 213,213,DATA STRUCTURES,prerequisite_closure,,,scraped,20252
+3550230,355 230,230,INTRODUCTION TO C PROGRAMMING,prerequisite_closure,,,scraped,20252
+3550240,355 240,240,PROGRAMMING WITH PYTHON FOR ENGINEERS,prerequisite_closure,,,scraped,20252
+3550301,355 301,301,ALGORITHMS AND DATA STRUCTURES,prerequisite_closure,,,scraped,20252
+3550310,355 310,310,ALGORITHMS AND DATA STRUCTURES WITH PYTHON,prerequisite_closure,,,scraped,20252
+3550350,355 350,350,SOFTWARE ENGINEERING,prerequisite_closure,,,scraped,20252
+3570100,357 100,100,PRECALCULUS,prerequisite_closure,,,scraped,20252
+3570119,357 119,119,CALCULUS WITH ANALYTIC GEOMETRY,prerequisite_closure,,,scraped,20252
+3570120,357 120,120,CALCULUS FOR FUNCTIONS OF SEVERAL VARIABLES,prerequisite_closure,,,scraped,20252
+3570219,357 219,219,INTRODUCTION TO DIFFERENTIAL EQUATIONS,prerequisite_closure,,,scraped,20252
+3580105,358 105,105,GENERAL PHYSICS I,prerequisite_closure,,,scraped,20252
+3590101,359 101,101,DEVELOPMENT OF READING AND WRITING SKILLS I,prerequisite_closure,,,scraped,20252
+3590102,359 102,102,DEVELOPMENT OF READING AND WRITING SKILLS II,prerequisite_closure,,,scraped,20252
+3600111,360 111,111,GENERAL CHEMISTRY I,prerequisite_closure,,,scraped,20251
+3620201,362 201,201,PRINCIPLES OF KEMAL ATATÜRK I,prerequisite_closure,,,scraped,20252
+3640221,364 221,221,ENGINEERING MECHANICS I,prerequisite_closure,,,scraped,20251
+3640224,364 224,224,MECHANICS OF MATERIALS,prerequisite_closure,,,scraped,20252
+3650205,365 205,205,STATICS,prerequisite_closure,,,scraped,20252
+3650206,365 206,206,STRENGTH OF MATERIALS,prerequisite_closure,,,scraped,20252
+3650208,365 208,208,DYNAMICS,prerequisite_closure,,,scraped,20252
+3740110,374 110,110,INTRODUCTION TO PETROLEUM ENGINEERING,prerequisite_closure,,,scraped,20242
+3740211,374 211,211,INTRODUCTION TO FLUID MECHANICS,prerequisite_closure,,,scraped,20251
+3740216,374 216,216,RESERVOIR ROCK AND FLUID PROPERTIES,prerequisite_closure,,,not_found_in_searched_offerings,
+3740218,374 218,218,RESERVOIR FLUID PROPERTIES,prerequisite_closure,,,scraped,20242
+3740220,374 220,220,RESERVOIR ROCK PROPERTIES,prerequisite_closure,,,scraped,20241
+3740321,374 321,321,DRILLING ENGINEERING I,prerequisite_closure,,,scraped,20251
+3740331,374 331,331,PETROLEUM PRODUCTION ENGINEERING I,prerequisite_closure,,,scraped,20251
+3840261,384 261,261,STATICS,prerequisite_closure,,,scraped,20252
+3840264,384 264,264,MECHANICS OF MATERIALS,prerequisite_closure,,,scraped,20252
+3890140,389 140,140,PROGRAMMING,prerequisite_closure,,,scraped,20232
+4300210,430 210,210,PROGRAMMING LANGUAGES I,prerequisite_closure,,,scraped,20251
+5720122,AE 122,122,STATICS,prerequisite_closure,,,not_found_in_searched_offerings,
+5720241,AE 241,241,FLUID MECHANICS,prerequisite_closure,,,not_found_in_searched_offerings,
+5720264,AE 264,264,MECHANICS OF MATERIALS,prerequisite_closure,,,scraped,20252
+5720341,AE 341,341,AERODYNAMICS I,prerequisite_closure,,,scraped,20251
+5720101,AEE 101,101,INTRODUCTION TO AEROSPACE ENGINEERING,curriculum,AE,required_course,scraped,20251
+5720202,AEE 202,202,MATHEMATICS FOR AEROSPACE ENGINEERS,curriculum;prerequisite_closure,AE,required_course,not_found_in_searched_offerings,
+5720231,AEE 231,231,THERMODYNAMICS,curriculum,AE,required_course,scraped,20251
+5720244,AEE 244,244,FLUID MECHANICS,curriculum;prerequisite_closure,AE,required_course,scraped,20252
+5720261,AEE 261,261,STATICS,curriculum;prerequisite_closure,AE,required_course,scraped,20252
+5720262,AEE 262,262,DYNAMICS,curriculum,AE,required_course,scraped,20252
+5720266,AEE 266,266,MECHANICS OF MATERIALS,curriculum;prerequisite_closure,AE,required_course,not_found_in_searched_offerings,
+5720300,AEE 300,300,SUMMER PRACTICE II,curriculum,AE,summer_practice,scraped,20252
+5720301,AEE 301,301,MEASUREMENT TECHNIQUES I,curriculum,AE,required_course,not_found_in_searched_offerings,
+5720302,AEE 302,302,MEASUREMENT TECHNIQUES II,curriculum,AE,required_course,not_found_in_searched_offerings,
+5720305,AEE 305,305,NUMERICAL METHODS,curriculum,AE,required_course,scraped,20252
+5720331,AEE 331,331,HEAT TRANSFER,curriculum,AE,required_course,scraped,20251
+5720338,AEE 338,338,PROPULSION SYSTEMS I,curriculum,AE,required_course,not_found_in_searched_offerings,
+5720345,AEE 345,345,AERODYNAMICS I,curriculum;prerequisite_closure,AE,required_course,not_found_in_searched_offerings,
+5720346,AEE 346,346,AERODYNAMICS II,curriculum,AE,required_course,not_found_in_searched_offerings,
+5720361,AEE 361,361,APPLIED ELASTICITY,curriculum,AE,required_course,scraped,20251
+5720364,AEE 364,364,AEROSPACE STRUCTURES,curriculum,AE,required_course,not_found_in_searched_offerings,
+5720371,AEE 371,371,AIRCRAFT PERFORMANCE,curriculum,AE,required_course,not_found_in_searched_offerings,
+5720372,AEE 372,372,FLIGHT MECHANICS,curriculum,AE,required_course,scraped,20252
+5720385,AEE 385,385,SYSTEM DYNAMICS AND CONTROL,curriculum,AE,required_course,not_found_in_searched_offerings,
+5720400,AEE 400,400,SUMMER PRACTICE III,curriculum,AE,summer_practice,scraped,20252
+5720451,AEE 451,451,AEROSPACE ENGINEERING DESIGN,curriculum,AE,required_course,scraped,20251
+3120100,BA 100,100,CAREER PLANNING,curriculum,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,required_course,scraped,20252
+2380107,BIOL 107,107,CONCEPTS IN BIOLOGY,curriculum;prerequisite_closure,FDE,required_course,scraped,20251
+2380109,BIOL 109,109,INTRODUCTION TO MOLECULAR BIOLOGY,curriculum,CENG,required_course,scraped,20251
+5620101,CE 101,101,CIVIL ENGINEERING DRAWING,curriculum,CE;ENVE;GEOE,required_course,scraped,20252
+5620102,CE 102,102,INTRODUCTION TO CIVIL ENGINEERING,curriculum,CE,required_course,scraped,20252
+5620204,CE 204,204,UNCERTAINTY AND DATA ANALYSIS,curriculum,CE,required_course,scraped,20252
+5620221,CE 221,221,ENGINEERING MECHANICS I,curriculum;prerequisite_closure,CE,required_course,scraped,20252
+5620222,CE 222,222,ENGINEERING MECHANICS II,curriculum,CE,required_course,scraped,20252
+5620224,CE 224,224,MECHANICS OF MATERIALS,curriculum;prerequisite_closure,CE,required_course,scraped,20252
+5620231,CE 231,231,ENGINEERING ECONOMY,curriculum,CE,required_course,scraped,20251
+5620241,CE 241,241,MATERIALS SCIENCE,curriculum,CE,required_course,scraped,20252
+5620272,CE 272,272,FLUID MECHANICS,curriculum;prerequisite_closure,CE,required_course,scraped,20252
+5620300,CE 300,300,SUMMER PRACTICE I,curriculum,CE,summer_practice,scraped,20252
+5620305,CE 305,305,NUMERICAL METHODS FOR ENGINEERS,curriculum,CE,required_course,scraped,20251
+5620332,CE 332,332,CONSTRUCTION ENGINEERING &MANAGEMENT,curriculum,CE,required_course,scraped,20252
+5620344,CE 344,344,MATERIALS OF CONSTRUCTION,curriculum,CE,required_course,scraped,20252
+5620353,CE 353,353,PRINCIPLES OF TRANSPORTATION&TRAFFIC E,curriculum,CE,required_course,scraped,20251
+5620363,CE 363,363,SOIL MECHANICS,curriculum;prerequisite_closure,CE,required_course,scraped,20252
+5620364,CE 364,364,SOIL MECHANICS,curriculum;prerequisite_closure,GEOE,required_course,scraped,20252
+5620366,CE 366,366,FOUNDATION ENGINEERING I,curriculum,CE,required_course,scraped,20252
+5620372,CE 372,372,HYDROMECHANICS,curriculum;prerequisite_closure,CE,required_course,scraped,20252
+5620374,CE 374,374,FLUID MECHANICS,curriculum;prerequisite_closure,ENVE;GEOE;MINE,required_course,scraped,20252
+5620375,CE 375,375,ENVIRONMENTAL ENGINEERING HYDROLOGY,curriculum;prerequisite_closure,ENVE,required_course,scraped,20251
+5620378,CE 378,378,WATER RESOURCES ENGINEERING,curriculum,CE,required_course,scraped,20252
+5620382,CE 382,382,REINFORCED CONCRETE FUNDAMENTALS,curriculum,CE,required_course,scraped,20252
+5620383,CE 383,383,STRUCTURAL ANALYSIS,curriculum,CE,required_course,scraped,20252
+5620388,CE 388,388,FUNDAMENTALS OF STEEL DESIGN,curriculum,CE,required_course,scraped,20252
+5620400,CE 400,400,SUMMER PRACTICE II,curriculum,CE,summer_practice,scraped,20252
+5620410,CE 410,410,CIVIL ENGINEERING DESIGN,curriculum,CE,required_course,scraped,20252
+5710100,CENG 100,100,COMPUTER ENGINEERING ORIENTATION,curriculum,CENG,required_course,scraped,20251
+5710111,CENG 111,111,INTRODUCTION TO COMPUTER ENG. CONCEPTS,curriculum;prerequisite_closure,CENG,required_course,scraped,20251
+5710140,CENG 140,140,C PROGRAMMING,curriculum;prerequisite_closure,CENG,required_course,scraped,20252
+5710213,CENG 213,213,DATA STRUCTURES,curriculum;prerequisite_closure,CENG,required_course,scraped,20252
+5710222,CENG 222,222,STATISTICAL METHODS FOR COMPUTER ENGINEERING,curriculum,CENG,required_course,scraped,20252
+5710223,CENG 223,223,DISCRETE COMPUTATIONAL STRUCTURES,curriculum;prerequisite_closure,CENG,required_course,scraped,20251
+5710229,CENG 229,229,C PROGRAMMING,prerequisite_closure,,,not_found_in_searched_offerings,
+5710230,CENG 230,230,INTRODUCTION TO C PROGRAMMING,prerequisite_closure,,,not_found_in_searched_offerings,
+5710232,CENG 232,232,LOGIC DESIGN,curriculum;prerequisite_closure,CENG,required_course,scraped,20252
+5710240,CENG 240,240,PROGRAMMING WITH PYTHON FOR ENGINEERS,curriculum;prerequisite_closure,AE;CE;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,required_course,scraped,20252
+5710242,CENG 242,242,PROGRAMMING LANGUAGE CONCEPTS,curriculum,CENG,required_course,scraped,20252
+5710280,CENG 280,280,FORMAL LANGU.AND ABSTRACT MACHINES,curriculum,CENG,required_course,scraped,20252
+5710300,CENG 300,300,SUMMER PRACTICE I,curriculum,CENG,summer_practice,scraped,20252
+5710301,CENG 301,301,ALGORITHMS AND DATA STRUCTURES,prerequisite_closure,,,scraped,20251
+5710310,CENG 310,310,ALGORITHMS AND DATA STRUCTURES WITH PYTHON,prerequisite_closure,,,scraped,20252
+5710315,CENG 315,315,ALGORITHMS,curriculum,CENG,required_course,scraped,20251
+5710331,CENG 331,331,COMPUTER ORGANIZATION,curriculum;prerequisite_closure,CENG,required_course,scraped,20251
+5710334,CENG 334,334,INTRODUCTION TO OPERATING SYSTEMS,curriculum,CENG,required_course,scraped,20252
+5710336,CENG 336,336,INTRO.TO EMBEDDED SYSTEMS DEVELOPMENT,curriculum,CENG,required_course,scraped,20252
+5710350,CENG 350,350,SOFTWARE ENGINEERING,curriculum;prerequisite_closure,CENG,required_course,scraped,20252
+5710351,CENG 351,351,DATA MANAGEMENT AND FILE STRUCTURES,curriculum,CENG,required_course,scraped,20251
+5710384,CENG 384,384,SIGNALS AND SYSTEMS FOR COMPUTER ENGINEERS,curriculum,CENG,required_course,scraped,20252
+5710400,CENG 400,400,SUMMER PRACTICE II,curriculum,CENG,summer_practice,scraped,20252
+5710477,CENG 477,477,INTRODUCTION TO COMPUTER GRAPHICS,curriculum,CENG,required_course,scraped,20251
+5710491,CENG 491,491,COMPUTER ENGINEERING DESIGN I,curriculum;prerequisite_closure,CENG,required_course,scraped,20251
+5710492,CENG 492,492,COMPUTER ENGINEERING DESIGN II,curriculum,CENG,required_course,scraped,20252
+5630102,CHE 102,102,INTRODUCTION TO CHEMICAL ENGINEERING,curriculum;prerequisite_closure,CHE,required_course,scraped,20252
+5630203,CHE 203,203,CHEMICAL PROCESS CALCULATIONS,curriculum;prerequisite_closure,CHE,required_course,scraped,20251
+5630204,CHE 204,204,THERMODYNAMICS I,curriculum;prerequisite_closure,CHE;ENVE;FDE;PETE,required_course,scraped,20252
+5630222,CHE 222,222,FLUID MECHANICS,curriculum;prerequisite_closure,CHE,required_course,scraped,20252
+5630300,CHE 300,300,SUMMER PRACTICE,curriculum,CHE,summer_practice,scraped,20252
+5630305,CHE 305,305,THERMODYNAMICS II,curriculum;prerequisite_closure,CHE,required_course,scraped,20252
+5630311,CHE 311,311,CHEMICAL REACTION ENGINEERING,curriculum;prerequisite_closure,CHE,required_course,scraped,20252
+5630320,CHE 320,320,CHEMICAL ENGINEERING LABORATORY I,curriculum;prerequisite_closure,CHE,required_course,scraped,20252
+5630327,CHE 327,327,HEAT & MASS TRANSFER OPERATIONS,curriculum;prerequisite_closure,CHE,required_course,scraped,20251
+5630328,CHE 328,328,SEPARATION PROCESSES,curriculum;prerequisite_closure,CHE,required_course,scraped,20252
+5630352,CHE 352,352,MATHEMATICAL MODELING IN CHEMICAL ENG.,curriculum,CHE,required_course,scraped,20252
+5630400,CHE 400,400,SUMMER PRACTICE II,curriculum,CHE,summer_practice,scraped,20252
+5630407,CHE 407,407,PROCESS CONTROL,curriculum,CHE,required_course,scraped,20251
+5630410,CHE 410,410,CHEMICAL ENGINEERING LABORATORY II,curriculum;prerequisite_closure,CHE,required_course,scraped,20251
+5630417,CHE 417,417,CHEMICAL ENGINEERING DESIGN I,curriculum;prerequisite_closure,CHE,required_course,scraped,20251
+5630418,CHE 418,418,CHEMICAL ENGINEERING DESIGN II,curriculum,CHE,required_course,scraped,20252
+5630420,CHE 420,420,CHEMICAL ENGINEERING LABORATORY III,curriculum,CHE,required_course,scraped,20252
+5630423,CHE 423,423,CHEMICAL ENGINEERING ECONOMICS,curriculum;prerequisite_closure,CHE;FDE,required_course,scraped,20252
+2340101,CHEM 101,101,GENERAL CHEMISTRY I,prerequisite_closure,,,scraped,20251
+2340102,CHEM 102,102,GENERAL CHEMISTRY II,prerequisite_closure,,,scraped,20252
+2340105,CHEM 105,105,GENERAL CHEMISTRY I,prerequisite_closure,,,scraped,20252
+2340106,CHEM 106,106,GENERAL CHEMISTRY II,prerequisite_closure,,,scraped,20252
+2340107,CHEM 107,107,GENERAL CHEMISTRY,curriculum;prerequisite_closure,AE;CE;EEE;ENVE;FDE;IE;ME,required_course,scraped,20252
+2340109,CHEM 109,109,GENERAL CHEMISTRY FOR HONOUR PROG. I,prerequisite_closure,,,not_found_in_searched_offerings,
+2340110,CHEM 110,110,GENERAL CHEMISTRY FOR HONOUR PROG. II,prerequisite_closure,,,not_found_in_searched_offerings,
+2340111,CHEM 111,111,GENERAL CHEMISTRY I,curriculum;prerequisite_closure,CHE;GEOE;METE;MINE;PETE,required_course,scraped,20251
+2340112,CHEM 112,112,GENERAL CHEMISTRY II,curriculum;prerequisite_closure,CHE;GEOE;METE;MINE;PETE,required_course,scraped,20252
+2340220,CHEM 220,220,ORGANIC CHEMISTRY,curriculum;prerequisite_closure,CHE,required_course,scraped,20252
+2340229,CHEM 229,229,ORGANIC CHEMISTRY FOR ENGINEERS,curriculum;prerequisite_closure,ENVE;FDE,required_course,scraped,20252
+2340230,CHEM 230,230,ANALYTICAL CHEMISTRY FOR ENGINEERS,curriculum;prerequisite_closure,CHE;FDE,required_course,scraped,20252
+2340252,CHEM 252,252,PHYSICAL CHEMISTRY I,prerequisite_closure,,,scraped,20252
+2340257,CHEM 257,257,MATHEMATICS FOR CHEMISTS,prerequisite_closure,,,scraped,20252
+2340353,CHEM 353,353,PHYSICAL CHEMISTRY II,curriculum;prerequisite_closure,CHE,required_course,scraped,20252
+3110210,ECON 210,210,PRINCIPLES OF ECONOMICS,curriculum;prerequisite_closure,CHE;FDE;ME;MINE;PETE,required_course,scraped,20252
+3110211,ECON 211,211,PRIN OF.ECONOMICS I,curriculum,IE,required_course,scraped,20251
+3110212,ECON 212,212,PRINCIPLES OF ECONOMICS II,curriculum,IE,required_course,scraped,20252
+5670101,EE 101,101,INTRODUCTION TO ELECTRICAL AND ELECTRONICS ENGINEERING,curriculum,EEE,required_course,scraped,20252
+5670201,EE 201,201,CIRCUIT THEORY I,curriculum;prerequisite_closure,EEE,required_course,scraped,20252
+5670202,EE 202,202,CIRCUIT THEORY II,curriculum;prerequisite_closure,EEE,required_course,scraped,20252
+5670209,EE 209,209,FUNDAMENTALS OF ELECTRICAL&ELECTRO. EN,curriculum,AE;ME,required_course,scraped,20252
+5670212,EE 212,212,SEMICONDUCTOR DEVICES& MODELING,curriculum,EEE,required_course,scraped,20252
+5670213,EE 213,213,ELECTRICAL CIRCUITS LABORATORY,curriculum,EEE,required_course,scraped,20251
+5670214,EE 214,214,ELECTRONIC CIRCUITS LABORATORY,curriculum,EEE,required_course,scraped,20252
+5670224,EE 224,224,ELECTROMAGNETIC THEORY,curriculum;prerequisite_closure,EEE,required_course,scraped,20252
+5670230,EE 230,230,PROBABILITY AND RANDOM VARIABLES,curriculum,EEE,required_course,scraped,20252
+5670281,EE 281,281,ELECTRICAL CIRCUITS,curriculum,CENG,required_course,scraped,20251
+5670300,EE 300,300,SUMMER PRACTICE I,curriculum,EEE,summer_practice,scraped,20252
+5670301,EE 301,301,SIGNALS AND SYSTEMS I,curriculum;prerequisite_closure,EEE,required_course,scraped,20251
+5670302,EE 302,302,FEEDBACK SYSTEMS,curriculum;prerequisite_closure,EEE,required_course,scraped,20252
+5670303,EE 303,303,ELECTROMAGNETIC WAVES,curriculum,EEE,required_course,scraped,20251
+5670311,EE 311,311,ANALOG ELECTRONICS,curriculum,EEE,required_course,scraped,20251
+5670313,EE 313,313,ANALOG ELECTRONICS LABORATORY,curriculum;prerequisite_closure,EEE,required_course,scraped,20251
+5670314,EE 314,314,DIGITAL CIRCUITS LABORATORY,curriculum;prerequisite_closure,EEE,required_course,scraped,20252
+5670348,EE 348,348,INTRODUCTION TO LOGIC DESIGN,curriculum,EEE,required_course,scraped,20252
+5670361,EE 361,361,ELECTROMECHANICAL ENERGY CONVERSION I,curriculum;prerequisite_closure,EEE,required_course,scraped,20251
+5670381,EE 381,381,SYSTEMS AND CONTROL,curriculum,IE,required_course,scraped,20251
+5670400,EE 400,400,SUMMER PRACTICE II,curriculum,EEE,summer_practice,scraped,20252
+5670493,EE 493,493,ENGINEERING DESIGN I,curriculum;prerequisite_closure,EEE,required_course,scraped,20251
+5670494,EE 494,494,ENGINEERING DESIGN II,curriculum,EEE,required_course,scraped,20252
+6390101,ENG 101,101,ENGLISH FOR ACADEMIC PURPOSES I,curriculum;prerequisite_closure,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,required_course,scraped,20252
+6390102,ENG 102,102,ENGLISH FOR ACADEMIC PURPOSES II,curriculum;prerequisite_closure,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,required_course,scraped,20252
+6390211,ENG 211,211,ACADEMIC SPEAKING SKILLS,curriculum,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,required_course,scraped,20252
+5600101,ENVE 101,101,INTRODUCTION TO ENVIRONMENTAL ENG.,curriculum,ENVE,required_course,scraped,20251
+5600102,ENVE 102,102,ENVIRONMENTAL CHEMISTRY I,curriculum;prerequisite_closure,ENVE,required_course,scraped,20252
+5600201,ENVE 201,201,FUNDAMENTALS OF ENVIRONMENTAL ENG.PRO.,curriculum;prerequisite_closure,ENVE,required_course,scraped,20251
+5600202,ENVE 202,202,ENVIRONMENTAL MICROBIOLOGY,curriculum;prerequisite_closure,ENVE,required_course,scraped,20252
+5600206,ENVE 206,206,PHYSICO-CHEMICAL PRIN.OF ENVIRON.ENG.,curriculum;prerequisite_closure,ENVE,required_course,scraped,20252
+5600208,ENVE 208,208,ENVIRONMENTAL CHEMISTRY LABORATORY,curriculum,ENVE,required_course,scraped,20251
+5600300,ENVE 300,300,SUMMER PRACTICE I,curriculum,ENVE,summer_practice,scraped,20252
+5600303,ENVE 303,303,UNIT OP. & PROCES. OF WATER TREAT.,curriculum;prerequisite_closure,ENVE,required_course,scraped,20251
+5600304,ENVE 304,304,UNIT OP. & PROCES.OF WASTEWATER TREAT.,curriculum;prerequisite_closure,ENVE,required_course,scraped,20252
+5600307,ENVE 307,307,AIR POLLUTION,curriculum,ENVE,required_course,scraped,20252
+5600309,ENVE 309,309,FUNDAMENTALS OF BIOLOGICAL TREATMENT,curriculum,ENVE,required_course,scraped,20251
+5600312,ENVE 312,312,WATER SUPPLY AND URBAN DRAINAGE,curriculum,ENVE,required_course,scraped,20252
+5600322,ENVE 322,322,TRANSPORT PROCESSES IN ENVIRONMENTAL ENGINEERING,curriculum;prerequisite_closure,ENVE,required_course,scraped,20252
+5600400,ENVE 400,400,SUMMER PRACTICE II,curriculum,ENVE,summer_practice,scraped,20252
+5600404,ENVE 404,404,ENVIRONMENTAL MODELING,curriculum,ENVE,required_course,scraped,20251
+5600407,ENVE 407,407,ENVIRONMENTAL ENGINEERING DESIGN I,curriculum;prerequisite_closure,ENVE,required_course,scraped,20251
+5600408,ENVE 408,408,ENVIRONMENTAL ENGINEERING DESIGN II,curriculum,ENVE,required_course,scraped,20252
+5600412,ENVE 412,412,SOLID WASTE MANAGEMENT,curriculum,ENVE,required_course,scraped,20251
+5610202,ES 202,202,MATHEMATICS FOR ENGINEERS,curriculum;prerequisite_closure,CE;PETE,required_course,scraped,20252
+5610221,ES 221,221,ENGINEERING MECHANICS I,curriculum;prerequisite_closure,GEOE;PETE,required_course,scraped,20252
+5610223,ES 223,223,STATICS AND STRENGTH OF MATERIALS,curriculum;prerequisite_closure,ENVE;METE,required_course,scraped,20252
+5610224,ES 224,224,STRENGTH OF MATERIALS,curriculum;prerequisite_closure,GEOE;MINE;PETE,required_course,scraped,20252
+5610225,ES 225,225,ENGINEERING MECHANICS,curriculum;prerequisite_closure,MINE,required_course,scraped,20251
+5610303,ES 303,303,STATISTICAL METHODS FOR ENGINEERS,curriculum,ENVE;FDE;GEOE;MINE;PETE,required_course,scraped,20252
+5610361,ES 361,361,COMPUTING METHODS IN ENGINEERING,curriculum;prerequisite_closure,CHE;ENVE;METE;PETE,required_course,scraped,20252
+5730101,FDE 101,101,INTRODUCTION TO FOOD ENGINEERING,curriculum,FDE,required_course,scraped,20251
+5730201,FDE 201,201,MATERIAL AND ENERGY BALANCES,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+5730224,FDE 224,224,FOOD ENGINEERING OPERATIONS I,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+5730300,FDE 300,300,SUMMER PRACTICE I,curriculum;prerequisite_closure,FDE,summer_practice,scraped,20252
+5730305,FDE 305,305,FOOD MICROBIOLOGY LAB.,curriculum,FDE,required_course,scraped,20251
+5730310,FDE 310,310,FOOD MATERIALS LAB.,curriculum,FDE,required_course,scraped,20252
+5730311,FDE 311,311,FOOD MICROBIOLOGY,curriculum,FDE,required_course,scraped,20251
+5730313,FDE 313,313,FOOD CHEMISTRY,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+5730314,FDE 314,314,PHYSICAL PROPERTIES OF FOOD MATERIALS,curriculum,FDE,required_course,scraped,20252
+5730320,FDE 320,320,APPLIED KINETICS,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+5730321,FDE 321,321,FOOD ENGINEERING OPERATIONS II,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+5730324,FDE 324,324,FOOD ENGINEERING OPERATIONS III,curriculum;prerequisite_closure,FDE,required_course,scraped,20252
+5730400,FDE 400,400,SUMMER PRACTICE II,curriculum,FDE,summer_practice,scraped,20252
+5730413,FDE 413,413,FOOD TECHNOLOGY,curriculum,FDE,required_course,scraped,20252
+5730416,FDE 416,416,FOOD ENG.OPERATIONS LAB.,curriculum,FDE,required_course,scraped,20252
+5730425,FDE 425,425,FOOD ENGINEERING DESIGN,curriculum,FDE,required_course,scraped,20251
+5730426,FDE 426,426,FOOD PRODUCT AND PLANT DESIGN,curriculum,FDE,required_course,scraped,20252
+5640104,GEOE 104,104,GEOLOGY FOR CIVIL ENGINEERING,curriculum,CE,required_course,scraped,20252
+5640105,GEOE 105,105,INTRODUCTION TO GEOLOGICAL ENGINEERING,curriculum,GEOE,required_course,scraped,20251
+5640201,GEOE 201,201,GENERAL GEOLOGY,curriculum,PETE,required_course,scraped,20251
+5640207,GEOE 207,207,PRINCIPLES OF MINERALOGY &PETROGRAPHY,curriculum,MINE,required_course,scraped,20251
+5640208,GEOE 208,208,MAPWORK,curriculum;prerequisite_closure,GEOE,required_course,scraped,20252
+5640209,GEOE 209,209,PHYSICAL GEOLOGY,curriculum;prerequisite_closure,GEOE,required_course,scraped,20251
+5640210,GEOE 210,210,PETROGRAPHY,curriculum,GEOE,required_course,scraped,20252
+5640213,GEOE 213,213,MINERALOGY,curriculum;prerequisite_closure,GEOE,required_course,scraped,20251
+5640214,GEOE 214,214,PRINCIPLES OF STRATIGRAPHY,curriculum;prerequisite_closure,GEOE,required_course,scraped,20252
+5640215,GEOE 215,215,PRINCIPLES OF STRUCTURAL GEOLOGY,curriculum,MINE,required_course,scraped,20252
+5640231,GEOE 231,231,ELEMENTS OF GEOLOGY,curriculum;prerequisite_closure,MINE,required_course,scraped,20252
+5640300,GEOE 300,300,SUMMER PRACTICE I,curriculum,GEOE,summer_practice,scraped,20252
+5640303,GEOE 303,303,GEOPHYSICAL PROSPECTING,curriculum,GEOE,required_course,scraped,20251
+5640309,GEOE 309,309,HISTORICAL GEOLOGY AND PALEONTOLOGY,curriculum,GEOE,required_course,scraped,20251
+5640313,GEOE 313,313,STRUCTURAL GEOLOGY,curriculum;prerequisite_closure,GEOE,required_course,scraped,20251
+5640318,GEOE 318,318,GEOCHEMICAL THERMODYNAMICS,curriculum,GEOE,required_course,scraped,20252
+5640326,GEOE 326,326,FIELD GEOLOGY,curriculum,GEOE,required_course,scraped,20252
+5640327,GEOE 327,327,FIELD GEOLOGICAL MAPPING,curriculum;prerequisite_closure,GEOE,required_course,scraped,20252
+5640400,GEOE 400,400,SUMMER PRACTICE II,curriculum,GEOE,summer_practice,scraped,20252
+5640401,GEOE 401,401,MINERAL DEPOSITS,curriculum;prerequisite_closure,GEOE,required_course,scraped,20251
+5640407,GEOE 407,407,ENGINEERING GEOLOGY,curriculum;prerequisite_closure,GEOE,required_course,scraped,20251
+5640410,GEOE 410,410,PETROLEUM GEOLOGY,curriculum,PETE,required_course,scraped,20252
+5640423,GEOE 423,423,HYDROGEOLOGY,curriculum;prerequisite_closure,GEOE,required_course,scraped,20251
+5640425,GEOE 425,425,COMPUTER APPLICATIONS IN GEO.ENG.,curriculum,GEOE,required_course,scraped,20251
+5640491,GEOE 491,491,GEOLOGICAL ENGINEERING DESIGN I,curriculum;prerequisite_closure,GEOE,required_course,scraped,20251
+5640492,GEOE 492,492,GEOLOGICAL ENGINEERING DESIGN II,curriculum,GEOE,required_course,scraped,20252
+2402201,HIST 2201,2201,PRINCIPLES OF KEMAL ATATÜRK I,curriculum;prerequisite_closure,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,course_choice,scraped,20252
+2402202,HIST 2202,2202,,curriculum,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,course_choice,scraped,20252
+2402205,HIST 2205,2205,HISTORY OF THE TURKISH REVOLUTION I,curriculum;prerequisite_closure,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,course_choice,scraped,20252
+2402206,HIST 2206,2206,HISTORY OF THE TURKISH REVOLUTION II,curriculum,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,course_choice,scraped,20252
+5680102,IE 102,102,INDUSTRIAL ENGINEERING ORIENTATION,curriculum,IE,required_course,scraped,20252
+5680241,IE 241,241,FINANCIAL AND MANAGERIAL ACCOUNTING FOR ENGINEERS,curriculum,IE,required_course,scraped,20251
+5680251,IE 251,251,LINEAR PROGRAMMING,curriculum;prerequisite_closure,IE,required_course,scraped,20251
+5680252,IE 252,252,NETWORK FLOWS AND INTEGER PROGRAMMING,curriculum,IE,required_course,scraped,20252
+5680262,IE 262,262,ENGINEERING STATISTICS I,prerequisite_closure,,,not_found_in_searched_offerings,
+5680265,IE 265,265,INTRODUCTION TO PROBABILITY,curriculum;prerequisite_closure,IE,required_course,scraped,20251
+5680266,IE 266,266,ENGINEERING STATISTICS,curriculum,IE,required_course,scraped,20252
+5680300,IE 300,300,SUMMER PRACTICE I,curriculum,IE,summer_practice,scraped,20252
+5680304,IE 304,304,PRODUCTION AND SERVICE INFORMATION SYSTEMS,curriculum,IE,required_course,scraped,20252
+5680323,IE 323,323,PRODUCTION AND SERVICE OPERATIONS PLANNING I,curriculum;prerequisite_closure,IE,required_course,scraped,20251
+5680324,IE 324,324,PRODUCTION AND SERVICE OPERATIONS PLANNING II,curriculum,IE,required_course,scraped,20252
+5680333,IE 333,333,WORK SYSTEMS ANALYSIS AND DESIGN,curriculum,IE,required_course,scraped,20251
+5680347,IE 347,347,ENGINEERING ECONOMY,curriculum,IE,required_course,scraped,20251
+5680361,IE 361,361,STOCHASTIC MODELS IN OPERATIONS RESEARCH,curriculum,IE,required_course,scraped,20251
+5680368,IE 368,368,QUALITY PLANNING AND CONTROL,curriculum,IE,required_course,scraped,20252
+5680372,IE 372,372,SIMULATION,curriculum,IE,required_course,scraped,20252
+5680400,IE 400,400,SUMMER PRACTICE II,curriculum,IE,summer_practice,scraped,20252
+5680404,IE 404,404,MANAGEMENT FOR ENGINEERS,curriculum,IE,required_course,scraped,20251
+5680422,IE 422,422,SEMINAR IN INDUSTRIAL ENGINEERING,curriculum,IE,required_course,scraped,20251
+5680489,IE 489,489,SYSTEMS THINKING,curriculum,IE,required_course,scraped,20251
+5680497,IE 497,497,SYSTEMS DESIGN I,curriculum;prerequisite_closure,IE,required_course,scraped,20251
+5680498,IE 498,498,SYSTEMS DESIGN II,curriculum,IE,required_course,scraped,20252
+9010100,IS 100,100,INTRODUCTION TO INFORMATION TECHNOLOGIES AND APPLICATIONS,curriculum,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,required_course,scraped,20252
+2360117,MATH 117,117,CALCULUS I,prerequisite_closure,,,scraped,20252
+2360118,MATH 118,118,CALCULUS II,prerequisite_closure,,,scraped,20252
+2360119,MATH 119,119,CALCULUS WITH ANALYTIC GEOMETRY,curriculum;prerequisite_closure,AE;CE;CENG;CHE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,required_course,scraped,20252
+2360120,MATH 120,120,CALCULUS OF FUNCTIONS OF SEVERAL VARIABLES,curriculum;prerequisite_closure,AE;CE;CENG;CHE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,required_course,scraped,20252
+2360124,MATH 124,124,INTRODUCTION TO LINEAR ALGEBRA AND ANALYTIC GEOMETRY,prerequisite_closure,,,scraped,20252
+2360129,MATH 129,129,SINGLE VARIABLE CALCULUS,curriculum;prerequisite_closure,EEE,required_course,scraped,20251
+2360130,MATH 130,130,MULTIVARIABLE AND VECTOR CALCULUS,curriculum;prerequisite_closure,EEE,required_course,scraped,20252
+2360151,MATH 151,151,CALCULUS I,prerequisite_closure,,,not_found_in_searched_offerings,
+2360152,MATH 152,152,CALCULUS II,prerequisite_closure,,,not_found_in_searched_offerings,
+2360155,MATH 155,155,CALCULUS I (ACCELERATED),prerequisite_closure,,,not_found_in_searched_offerings,
+2360156,MATH 156,156,CALCULUS II (ACCELERATED),prerequisite_closure,,,not_found_in_searched_offerings,
+2360157,MATH 157,157,BASIC CALCULUS I,prerequisite_closure,,,not_found_in_searched_offerings,
+2360158,MATH 158,158,BASIC CALCULUS II,prerequisite_closure,,,not_found_in_searched_offerings,
+2360219,MATH 219,219,INTRODUCTION TO DIFFERENTIAL EQUATIONS,curriculum;prerequisite_closure,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,required_course,scraped,20252
+2360253,MATH 253,253,INTRO.TO ORDINARY DIFFERENTIAL EQNS.,prerequisite_closure,,,not_found_in_searched_offerings,
+2360257,MATH 257,257,MATHEMATICS OF CHEMISTRY,prerequisite_closure,,,not_found_in_searched_offerings,
+2360260,MATH 260,260,BASIC LINEAR ALGEBRA,curriculum;prerequisite_closure,CENG;EEE;IE,required_course,scraped,20252
+2360261,MATH 261,261,LINEAR ALGEBRA I,prerequisite_closure,,,scraped,20252
+5690105,ME 105,105,COMPUTER AIDED ENGINEERING GRAPHICS,curriculum,AE;CHE;EEE;FDE;IE;METE;MINE;PETE,required_course,scraped,20252
+5690110,ME 110,110,INTRODUCTION TO MECHANICAL ENGINEERING,curriculum;prerequisite_closure,ME,required_course,scraped,20252
+5690117,ME 117,117,COMPUTER AIDED ENGINEERING DRAWING,curriculum,ME,required_course,scraped,20252
+5690202,ME 202,202,MANUFACTURING TECHNOLOGIES,curriculum;prerequisite_closure,ME,required_course,scraped,20252
+5690203,ME 203,203,THERMODYNAMICS I,curriculum;prerequisite_closure,ME,required_course,scraped,20251
+5690204,ME 204,204,THERMODYNAMICS II,curriculum,ME,required_course,scraped,20252
+5690205,ME 205,205,STATICS,curriculum;prerequisite_closure,ME,required_course,scraped,20251
+5690206,ME 206,206,STRENGTH OF MATERIALS,curriculum;prerequisite_closure,ME,required_course,scraped,20252
+5690208,ME 208,208,DYNAMICS,curriculum;prerequisite_closure,ME,required_course,scraped,20252
+5690210,ME 210,210,APPLIED MATH. FOR MECHANICAL ENGINEERS,curriculum;prerequisite_closure,ME,required_course,scraped,20252
+5690212,ME 212,212,PRINCIPLES OF PRODUCTION ENGINEERING,curriculum,AE;IE,required_course,scraped,20252
+5690300,ME 300,300,SUMMER PRACTICE I,curriculum,ME,summer_practice,scraped,20252
+5690301,ME 301,301,THEORY OF MACHINES I,curriculum;prerequisite_closure,ME,required_course,scraped,20251
+5690302,ME 302,302,THEORY OF MACHINES II,curriculum,ME,required_course,scraped,20252
+5690303,ME 303,303,MANUFACTURING ENGINEERING,curriculum,ME,required_course,scraped,20252
+5690304,ME 304,304,CONTROL SYSTEMS,curriculum,ME,required_course,scraped,20252
+5690305,ME 305,305,FLUID MECHANICS I,curriculum;prerequisite_closure,ME,required_course,scraped,20251
+5690306,ME 306,306,FLUID MECHANICS II,curriculum,ME,required_course,scraped,20252
+5690307,ME 307,307,MACHINE ELEMENTS I,curriculum;prerequisite_closure,ME,required_course,scraped,20251
+5690308,ME 308,308,MACHINE ELEMENTS II,curriculum,ME,required_course,scraped,20252
+5690310,ME 310,310,NUMERICAL METHODS,curriculum,ME,required_course,scraped,20252
+5690311,ME 311,311,HEAT TRANSFER,curriculum;prerequisite_closure,ME,required_course,scraped,20251
+5690312,ME 312,312,THERMAL ENGINEERING,curriculum,ME,required_course,scraped,20252
+5690351,ME 351,351,THERMODYNAMICS OF HEAT POWER,curriculum,IE;MINE,required_course,scraped,20252
+5690400,ME 400,400,SUMMER PRACTICE II,curriculum,ME,summer_practice,scraped,20252
+5690407,ME 407,407,MECHANICAL ENGINEERING DESIGN,curriculum,ME,required_course,scraped,20252
+5690410,ME 410,410,MECHANICAL ENGINEERING SYSTEMS LAB.,curriculum,ME,required_course,scraped,20252
+5700102,METE 102,102,INTRODUCTION TO METALLURGICAL AND MATERIALS ENGINEERING,curriculum,METE,required_course,scraped,20252
+5700201,METE 201,201,MATERIALS SCIENCE I,curriculum;prerequisite_closure,METE,required_course,scraped,20251
+5700202,METE 202,202,MATERIALS SCIENCE II,curriculum;prerequisite_closure,METE,required_course,scraped,20252
+5700203,METE 203,203,THERMODYNAMICS OF MATERIALS I,curriculum;prerequisite_closure,METE,required_course,scraped,20251
+5700204,METE 204,204,THERMODYNAMICS OF MATERIALS II,curriculum;prerequisite_closure,METE,required_course,scraped,20252
+5700206,METE 206,206,MATERIALS LABORATORY,curriculum;prerequisite_closure,METE,required_course,scraped,20252
+5700215,METE 215,215,MATERIALS PROCESSING LABORATORY,curriculum;prerequisite_closure,METE,required_course,scraped,20251
+5700230,METE 230,230,FUNDAMENTALS OF MATERIALS SCIENCE AND ENGINEERING,curriculum,AE;CHE;IE;ME,required_course,scraped,20252
+5700300,METE 300,300,SUMMER PRACTICE I,curriculum,METE,summer_practice,scraped,20252
+5700301,METE 301,301,PHASE EQUILIBRIA,curriculum;prerequisite_closure,METE,required_course,scraped,20251
+5700302,METE 302,302,PRINCIPLES OF SOLIDIFICATION,curriculum,METE,required_course,scraped,20252
+5700303,METE 303,303,MECHANICAL BEHAVIOR OF MATERIALS,curriculum;prerequisite_closure,METE,required_course,scraped,20251
+5700305,METE 305,305,TRANSPORT PHENOMENA,curriculum,METE,required_course,scraped,20251
+5700306,METE 306,306,CHEMICAL PRINCIPLES OF PRIMARY MATERIALS PROCESSING,curriculum,METE,required_course,scraped,20252
+5700307,METE 307,307,METALLIC MATERIALS AND METALLOGRAPHY,curriculum,METE,required_course,scraped,20252
+5700308,METE 308,308,PHYSICAL FOUNDATIONS OF MATERIALS,curriculum,METE,required_course,scraped,20252
+5700310,METE 310,310,STRUCTURE AND CHARACTERIZATION OF MATERIALS,curriculum,METE,required_course,scraped,20252
+5700349,METE 349,349,ELECTRICAL. MAGNETIC AND OPTICAL PROPERTIES OF MATERIALS,curriculum,METE,required_course,scraped,20251
+5700350,METE 350,350,MULTI-SCALE MODELING AND SIMULATION OF MATERIALS,curriculum,METE,required_course,scraped,20252
+5700400,METE 400,400,SUMMER PRACTICE II,curriculum,METE,summer_practice,scraped,20252
+5700401,METE 401,401,MATERIALS ENGINEERING DESIGN I,curriculum;prerequisite_closure,METE,required_course,scraped,20251
+5700402,METE 402,402,MATERIALS ENGINEERING DESIGN II,curriculum,METE,required_course,scraped,20252
+5700451,METE 451,451,CERAMIC MATERIALS,curriculum,METE,required_course,scraped,20251
+5700453,METE 453,453,POLYMER MATERIALS,curriculum,METE,required_course,scraped,20251
+5650102,MINE 102,102,INTRODUCTION TO MINERAL INDUSTRIES,curriculum,MINE,required_course,scraped,20252
+5650201,MINE 201,201,UNDERGROUND MINING,curriculum;prerequisite_closure,MINE,required_course,scraped,20251
+5650202,MINE 202,202,SURFACE MINING,curriculum;prerequisite_closure,MINE,required_course,scraped,20252
+5650300,MINE 300,300,SUMMER PRACTICE I,curriculum,MINE,summer_practice,scraped,20252
+5650302,MINE 302,302,MINE POWER AND MACHINERY,curriculum,MINE,required_course,scraped,20252
+5650309,MINE 309,309,MINERAL PROCESSING I,curriculum;prerequisite_closure,MINE,required_course,scraped,20251
+5650310,MINE 310,310,MINERAL PROCESSING II,curriculum;prerequisite_closure,MINE,required_course,scraped,20252
+5650312,MINE 312,312,MINE SURVEYING,curriculum,MINE,required_course,scraped,20252
+5650317,MINE 317,317,INTRODUCTION TO ROCK MECHANICS,curriculum;prerequisite_closure,GEOE;MINE,required_course,scraped,20251
+5650324,MINE 324,324,ROCK FRAGMENTATION,curriculum;prerequisite_closure,MINE,required_course,scraped,20252
+5650332,MINE 332,332,MINE SYSTEM ANALYSIS,curriculum,MINE,required_course,scraped,20252
+5650400,MINE 400,400,SUMMER PRACTICE II,curriculum,MINE,summer_practice,scraped,20252
+5650407,MINE 407,407,MINE VALUATION,curriculum;prerequisite_closure,MINE,required_course,scraped,20251
+5650416,MINE 416,416,MINE DESIGN,curriculum,MINE,required_course,scraped,20252
+5650417,MINE 417,417,MINE VENTILATION,curriculum;prerequisite_closure,MINE,required_course,scraped,20251
+5650419,MINE 419,419,MATERIALS HANDLING &MINE TRANSPORT,curriculum;prerequisite_closure,MINE,required_course,scraped,20251
+5650422,MINE 422,422,MINE HEALTH . SAFETY AND ETHICS,curriculum,MINE,required_course,scraped,20252
+5650427,MINE 427,427,MINERAL PROCESSING DESIGN,curriculum,MINE,required_course,scraped,20251
+8770101,OHS 101,101,OCCUPATIONAL HEALTH AND SAFETY-I,curriculum;prerequisite_closure,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,required_course,scraped,20252
+8770301,OHS 301,301,OCCUPATIONAL HEALTH AND SAFETY - II,curriculum;prerequisite_closure,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;PETE,required_course,scraped,20252
+5660110,PETE 110,110,INTRODUCTION TO PETROLEUM ENGINEERING,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+5660211,PETE 211,211,INTRODUCTION TO FLUID MECHANICS,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+5660218,PETE 218,218,RESERVOIR FLUID PROPERTIES,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+5660220,PETE 220,220,RESERVOIR ROCK PROPERTIES,curriculum;prerequisite_closure,PETE,required_course,scraped,20251
+5660300,PETE 300,300,SUMMER PRACTICE I,curriculum,PETE,summer_practice,scraped,20252
+5660321,PETE 321,321,DRILLING ENGINEERING I,curriculum;prerequisite_closure,PETE,required_course,scraped,20251
+5660322,PETE 322,322,DRILLING ENGINEERING II,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+5660331,PETE 331,331,PETROLEUM PRODUCTION ENGINEERING I,curriculum;prerequisite_closure,PETE,required_course,scraped,20251
+5660332,PETE 332,332,PETROLEUM PRODUCTION ENGINEERING II,curriculum,PETE,required_course,scraped,20252
+5660343,PETE 343,343,PETROLEUM RESERVOIR ENGINEERING I,curriculum;prerequisite_closure,PETE,required_course,scraped,20251
+5660344,PETE 344,344,PETROLEUM RESERVOIR ENGINEERING II,curriculum,PETE,required_course,scraped,20252
+5660352,PETE 352,352,WELL LOGGING,curriculum;prerequisite_closure,PETE,required_course,scraped,20252
+5660400,PETE 400,400,SUMMER PRACTICE II,curriculum,PETE,summer_practice,scraped,20252
+5660411,PETE 411,411,PETROLEUM PROPERTY VALUATION,curriculum,PETE,required_course,scraped,20251
+5660417,PETE 417,417,PETROLEUM ENGINEERING DESIGN I,curriculum;prerequisite_closure,PETE,required_course,scraped,20251
+5660418,PETE 418,418,PETROLEUM ENGINEERING DESIGN II,curriculum,PETE,required_course,scraped,20252
+5660461,PETE 461,461,NATURAL GAS ENGINEERING,curriculum,PETE,required_course,scraped,20251
+2300105,PHYS 105,105,GENERAL PHYSICS I,curriculum;prerequisite_closure,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,required_course,scraped,20251
+2300106,PHYS 106,106,GENERAL PHYSICS II,curriculum;prerequisite_closure,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,required_course,scraped,20252
+2300109,PHYS 109,109,MECHANICS,prerequisite_closure,,,scraped,20251
+2300110,PHYS 110,110,ELECTROMAGNETISM,prerequisite_closure,,,scraped,20252
+2300111,PHYS 111,111,PHYSICS I (MECHANICS),prerequisite_closure,,,scraped,20251
+2300112,PHYS 112,112,PHYSICS II (ELECTRICITY AND MAGNETISM),prerequisite_closure,,,scraped,20252
+2300200,PHYS 200,200,BASICS OF SCIENTIFIC COMPUTATION,prerequisite_closure,,,scraped,20252
+2300213,PHYS 213,213,GENERAL PHYSICS III,curriculum,EEE,required_course,scraped,20252
+6420105,TURK 105,105,TURKISH I,curriculum;prerequisite_closure,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,course_choice,scraped,20251
+6420106,TURK 106,106,TURKISH II,curriculum,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,course_choice,scraped,20252
+6420201,TURK 201,201,ELEMENTARY TURKISH I,curriculum;prerequisite_closure,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,course_choice,scraped,20252
+6420202,TURK 202,202,INTERMEDIATE TURKISH I,curriculum,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,course_choice,scraped,20252
+6420303,TURK 303,303,TURKISH I,curriculum;prerequisite_closure,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,course_choice,scraped,20252
+6420304,TURK 304,304,TURKISH II,curriculum,AE;CE;CENG;CHE;EEE;ENVE;FDE;GEOE;IE;ME;METE;MINE;PETE,course_choice,scraped,20252

@@ -1,0 +1,14 @@
+﻿program_abbr,catalog_program_id,requirement_count,unique_course_count,course_option_count,placeholder_requirement_count,json_path,csv_path
+CENG,571,50,46,46,10,data\processed\curricula\CENG-latest.curriculum.json,data\processed\curricula\CENG-latest.curriculum_requirements.csv
+ENVE,560,53,50,50,9,data\processed\curricula\ENVE-latest.curriculum.json,data\processed\curricula\ENVE-latest.curriculum_requirements.csv
+EEE,567,54,47,47,13,data\processed\curricula\EEE-latest.curriculum.json,data\processed\curricula\EEE-latest.curriculum_requirements.csv
+IE,568,56,53,53,9,data\processed\curricula\IE-latest.curriculum.json,data\processed\curricula\IE-latest.curriculum_requirements.csv
+FDE,573,52,49,49,9,data\processed\curricula\FDE-latest.curriculum.json,data\processed\curricula\FDE-latest.curriculum_requirements.csv
+AE,572,55,50,50,11,data\processed\curricula\AE-latest.curriculum.json,data\processed\curricula\AE-latest.curriculum_requirements.csv
+CE,562,54,49,49,11,data\processed\curricula\CE-latest.curriculum.json,data\processed\curricula\CE-latest.curriculum_requirements.csv
+GEOE,564,55,52,52,9,data\processed\curricula\GEOE-latest.curriculum.json,data\processed\curricula\GEOE-latest.curriculum_requirements.csv
+CHE,563,52,50,50,8,data\processed\curricula\CHE-latest.curriculum.json,data\processed\curricula\CHE-latest.curriculum_requirements.csv
+MINE,565,53,52,52,7,data\processed\curricula\MINE-latest.curriculum.json,data\processed\curricula\MINE-latest.curriculum_requirements.csv
+ME,569,54,51,51,9,data\processed\curricula\ME-latest.curriculum.json,data\processed\curricula\ME-latest.curriculum_requirements.csv
+METE,570,54,51,51,9,data\processed\curricula\METE-latest.curriculum.json,data\processed\curricula\METE-latest.curriculum_requirements.csv
+PETE,566,54,52,52,8,data\processed\curricula\PETE-latest.curriculum.json,data\processed\curricula\PETE-latest.curriculum_requirements.csv

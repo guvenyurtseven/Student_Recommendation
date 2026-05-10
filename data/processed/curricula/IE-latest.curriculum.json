@@ -1,0 +1,1347 @@
+{
+  "program": {
+    "abbr": "IE",
+    "catalog_program_id": "568",
+    "name_en": "Industrial Engineering",
+    "name_tr": "Endüstri Mühendisliği",
+    "faculty": "Engineering"
+  },
+  "curriculum": {
+    "version_label": "latest",
+    "is_latest": true,
+    "review_status": "scraped",
+    "parser_version": "metu_catalog_curriculum_v1"
+  },
+  "source": {
+    "source_name": "METU Academic Catalog",
+    "source_url": "https://catalog.metu.edu.tr/program.php?fac_prog=568",
+    "retrieved_at_utc": "2026-05-08T05:03:25+00:00",
+    "content_path": "data\\raw\\catalog\\IE\\20260508T050325Z\\program.html",
+    "content_sha256": "d805cbe8e54be23f2d0f7f8396642ac43f0a06ce0116012d183ba338423d2473"
+  },
+  "requirements": [
+    {
+      "requirement_id": "REQ-0001",
+      "requirement_type": "required_course",
+      "label": "PHYS 105",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "PHYS 105",
+          "numeric_code": "2300105",
+          "course_title": "GENERAL PHYSICS I",
+          "metu_credit": "4",
+          "contact_hours": "3",
+          "lab_hours": "2",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "3",
+      "lab_hours": "2",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0002",
+      "requirement_type": "required_course",
+      "label": "CHEM 107",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "CHEM 107",
+          "numeric_code": "2340107",
+          "course_title": "GENERAL CHEMISTRY",
+          "metu_credit": "4",
+          "contact_hours": "3",
+          "lab_hours": "2",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "3",
+      "lab_hours": "2",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0003",
+      "requirement_type": "required_course",
+      "label": "MATH 119",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MATH 119",
+          "numeric_code": "2360119",
+          "course_title": "CALCULUS WITH ANALYTIC GEOMETRY",
+          "metu_credit": "5",
+          "contact_hours": "4",
+          "lab_hours": "2",
+          "ects": "7.0"
+        }
+      ],
+      "metu_credit": "5",
+      "contact_hours": "4",
+      "lab_hours": "2",
+      "ects": "7.0"
+    },
+    {
+      "requirement_id": "REQ-0004",
+      "requirement_type": "required_course",
+      "label": "CENG 240",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "CENG 240",
+          "numeric_code": "5710240",
+          "course_title": "PROGRAMMING WITH PYTHON FOR ENGINEERS",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "4.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "4.0"
+    },
+    {
+      "requirement_id": "REQ-0005",
+      "requirement_type": "required_course",
+      "label": "ENG 101",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENG 101",
+          "numeric_code": "6390101",
+          "course_title": "ENGLISH FOR ACADEMIC PURPOSES I",
+          "metu_credit": "4",
+          "contact_hours": "4",
+          "lab_hours": "1",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "4",
+      "lab_hours": "1",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0006",
+      "requirement_type": "required_course",
+      "label": "OHS 101",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "OHS 101",
+          "numeric_code": "8770101",
+          "course_title": "OCCUPATIONAL HEALTH AND SAFETY-I",
+          "metu_credit": "0",
+          "contact_hours": "0",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "0",
+      "lab_hours": "0",
+      "ects": "2.0"
+    },
+    {
+      "requirement_id": "REQ-0007",
+      "requirement_type": "required_course",
+      "label": "IS 100",
+      "year": 1,
+      "semester_index": 1,
+      "semester_label": "First Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IS 100",
+          "numeric_code": "9010100",
+          "course_title": "INTRODUCTION TO INFORMATION TECHNOLOGIES AND APPLICATIONS",
+          "metu_credit": "0",
+          "contact_hours": "0",
+          "lab_hours": "2",
+          "ects": "1.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "0",
+      "lab_hours": "2",
+      "ects": "1.0"
+    },
+    {
+      "requirement_id": "REQ-0008",
+      "requirement_type": "required_course",
+      "label": "PHYS 106",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "PHYS 106",
+          "numeric_code": "2300106",
+          "course_title": "GENERAL PHYSICS II",
+          "metu_credit": "4",
+          "contact_hours": "3",
+          "lab_hours": "2",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "3",
+      "lab_hours": "2",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0009",
+      "requirement_type": "required_course",
+      "label": "MATH 120",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MATH 120",
+          "numeric_code": "2360120",
+          "course_title": "CALCULUS OF FUNCTIONS OF SEVERAL VARIABLES",
+          "metu_credit": "5",
+          "contact_hours": "4",
+          "lab_hours": "2",
+          "ects": "7.5"
+        }
+      ],
+      "metu_credit": "5",
+      "contact_hours": "4",
+      "lab_hours": "2",
+      "ects": "7.5"
+    },
+    {
+      "requirement_id": "REQ-0010",
+      "requirement_type": "required_course",
+      "label": "MATH 260",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MATH 260",
+          "numeric_code": "2360260",
+          "course_title": "BASIC LINEAR ALGEBRA",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0011",
+      "requirement_type": "required_course",
+      "label": "BA 100",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "BA 100",
+          "numeric_code": "3120100",
+          "course_title": "CAREER PLANNING",
+          "metu_credit": "0",
+          "contact_hours": "1",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "1",
+      "lab_hours": "0",
+      "ects": "2.0"
+    },
+    {
+      "requirement_id": "REQ-0012",
+      "requirement_type": "required_course",
+      "label": "IE 102",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 102",
+          "numeric_code": "5680102",
+          "course_title": "INDUSTRIAL ENGINEERING ORIENTATION",
+          "metu_credit": "2",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "2",
+      "contact_hours": "2",
+      "lab_hours": "0",
+      "ects": "2.0"
+    },
+    {
+      "requirement_id": "REQ-0013",
+      "requirement_type": "required_course",
+      "label": "ME 105",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ME 105",
+          "numeric_code": "5690105",
+          "course_title": "COMPUTER AIDED ENGINEERING GRAPHICS",
+          "metu_credit": "3",
+          "contact_hours": "2",
+          "lab_hours": "2",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "2",
+      "lab_hours": "2",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0014",
+      "requirement_type": "required_course",
+      "label": "ENG 102",
+      "year": 1,
+      "semester_index": 2,
+      "semester_label": "Second Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENG 102",
+          "numeric_code": "6390102",
+          "course_title": "ENGLISH FOR ACADEMIC PURPOSES II",
+          "metu_credit": "4",
+          "contact_hours": "4",
+          "lab_hours": "1",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "4",
+      "lab_hours": "1",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0015",
+      "requirement_type": "required_course",
+      "label": "MATH 219",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "MATH 219",
+          "numeric_code": "2360219",
+          "course_title": "INTRODUCTION TO DIFFERENTIAL EQUATIONS",
+          "metu_credit": "4",
+          "contact_hours": "4",
+          "lab_hours": "0",
+          "ects": "7.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "4",
+      "lab_hours": "0",
+      "ects": "7.0"
+    },
+    {
+      "requirement_id": "REQ-0016",
+      "requirement_type": "required_course",
+      "label": "ECON 211",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ECON 211",
+          "numeric_code": "3110211",
+          "course_title": "PRIN OF.ECONOMICS I",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0017",
+      "requirement_type": "required_course",
+      "label": "IE 241",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 241",
+          "numeric_code": "5680241",
+          "course_title": "FINANCIAL AND MANAGERIAL ACCOUNTING FOR ENGINEERS",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0018",
+      "requirement_type": "required_course",
+      "label": "IE 251",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 251",
+          "numeric_code": "5680251",
+          "course_title": "LINEAR PROGRAMMING",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0019",
+      "requirement_type": "required_course",
+      "label": "IE 265",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 265",
+          "numeric_code": "5680265",
+          "course_title": "INTRODUCTION TO PROBABILITY",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0020",
+      "requirement_type": "required_course",
+      "label": "ME 212",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ME 212",
+          "numeric_code": "5690212",
+          "course_title": "PRINCIPLES OF PRODUCTION ENGINEERING",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0021",
+      "requirement_type": "course_choice",
+      "label": "Any 1 of the following set ..",
+      "year": 2,
+      "semester_index": 3,
+      "semester_label": "Third Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "HIST 2201",
+          "numeric_code": "2402201",
+          "course_title": "",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        },
+        {
+          "course_code": "HIST 2205",
+          "numeric_code": "2402205",
+          "course_title": "HISTORY OF THE TURKISH REVOLUTION I",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": ""
+    },
+    {
+      "requirement_id": "REQ-0022",
+      "requirement_type": "required_course",
+      "label": "ECON 212",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ECON 212",
+          "numeric_code": "3110212",
+          "course_title": "PRINCIPLES OF ECONOMICS II",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "6.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "6.0"
+    },
+    {
+      "requirement_id": "REQ-0023",
+      "requirement_type": "required_course",
+      "label": "IE 252",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 252",
+          "numeric_code": "5680252",
+          "course_title": "NETWORK FLOWS AND INTEGER PROGRAMMING",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0024",
+      "requirement_type": "required_course",
+      "label": "IE 266",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 266",
+          "numeric_code": "5680266",
+          "course_title": "ENGINEERING STATISTICS",
+          "metu_credit": "4",
+          "contact_hours": "4",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "4",
+      "contact_hours": "4",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0025",
+      "requirement_type": "required_course",
+      "label": "METE 230",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "METE 230",
+          "numeric_code": "5700230",
+          "course_title": "FUNDAMENTALS OF MATERIALS SCIENCE AND ENGINEERING",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0026",
+      "requirement_type": "required_course",
+      "label": "ENG 211",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ENG 211",
+          "numeric_code": "6390211",
+          "course_title": "ACADEMIC SPEAKING SKILLS",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "1",
+          "ects": "4.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "1",
+      "ects": "4.0"
+    },
+    {
+      "requirement_id": "REQ-0027",
+      "requirement_type": "required_course",
+      "label": "OHS 301",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "OHS 301",
+          "numeric_code": "8770301",
+          "course_title": "OCCUPATIONAL HEALTH AND SAFETY - II",
+          "metu_credit": "0",
+          "contact_hours": "0",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "0",
+      "lab_hours": "0",
+      "ects": "2.0"
+    },
+    {
+      "requirement_id": "REQ-0028",
+      "requirement_type": "course_choice",
+      "label": "Any 1 of the following set ..",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "HIST 2202",
+          "numeric_code": "2402202",
+          "course_title": "",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        },
+        {
+          "course_code": "HIST 2206",
+          "numeric_code": "2402206",
+          "course_title": "HISTORY OF THE TURKISH REVOLUTION II",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": ""
+    },
+    {
+      "requirement_id": "REQ-0029",
+      "requirement_type": "restricted_elective_pool",
+      "label": "RESTRICTED ELECTIVE",
+      "year": 2,
+      "semester_index": 4,
+      "semester_label": "Fourth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0030",
+      "requirement_type": "required_course",
+      "label": "EE 381",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "EE 381",
+          "numeric_code": "5670381",
+          "course_title": "SYSTEMS AND CONTROL",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0031",
+      "requirement_type": "summer_practice",
+      "label": "IE 300",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 300",
+          "numeric_code": "5680300",
+          "course_title": "SUMMER PRACTICE I",
+          "metu_credit": "0",
+          "contact_hours": "0",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "0",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0032",
+      "requirement_type": "required_course",
+      "label": "IE 323",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 323",
+          "numeric_code": "5680323",
+          "course_title": "PRODUCTION AND SERVICE OPERATIONS PLANNING I",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0033",
+      "requirement_type": "required_course",
+      "label": "IE 333",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 333",
+          "numeric_code": "5680333",
+          "course_title": "WORK SYSTEMS ANALYSIS AND DESIGN",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0034",
+      "requirement_type": "required_course",
+      "label": "IE 347",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 347",
+          "numeric_code": "5680347",
+          "course_title": "ENGINEERING ECONOMY",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0035",
+      "requirement_type": "required_course",
+      "label": "IE 361",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 361",
+          "numeric_code": "5680361",
+          "course_title": "STOCHASTIC MODELS IN OPERATIONS RESEARCH",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0036",
+      "requirement_type": "course_choice",
+      "label": "Any 1 of the following set ..",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "TURK 105",
+          "numeric_code": "6420105",
+          "course_title": "TURKISH I",
+          "metu_credit": "0",
+          "contact_hours": "4",
+          "lab_hours": "0",
+          "ects": "5.0"
+        },
+        {
+          "course_code": "TURK 201",
+          "numeric_code": "6420201",
+          "course_title": "ELEMENTARY TURKISH I",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "3.0"
+        },
+        {
+          "course_code": "TURK 303",
+          "numeric_code": "6420303",
+          "course_title": "TURKISH I",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": ""
+    },
+    {
+      "requirement_id": "REQ-0037",
+      "requirement_type": "nontechnical_elective_pool",
+      "label": "NONTECHNICAL ELECTIVE",
+      "year": 3,
+      "semester_index": 5,
+      "semester_label": "Fifth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0038",
+      "requirement_type": "required_course",
+      "label": "IE 304",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 304",
+          "numeric_code": "5680304",
+          "course_title": "PRODUCTION AND SERVICE INFORMATION SYSTEMS",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0039",
+      "requirement_type": "required_course",
+      "label": "IE 324",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 324",
+          "numeric_code": "5680324",
+          "course_title": "PRODUCTION AND SERVICE OPERATIONS PLANNING II",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0040",
+      "requirement_type": "required_course",
+      "label": "IE 368",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 368",
+          "numeric_code": "5680368",
+          "course_title": "QUALITY PLANNING AND CONTROL",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0041",
+      "requirement_type": "required_course",
+      "label": "IE 372",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 372",
+          "numeric_code": "5680372",
+          "course_title": "SIMULATION",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0042",
+      "requirement_type": "required_course",
+      "label": "ME 351",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "ME 351",
+          "numeric_code": "5690351",
+          "course_title": "THERMODYNAMICS OF HEAT POWER",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0043",
+      "requirement_type": "course_choice",
+      "label": "Any 1 of the following set ..",
+      "year": 3,
+      "semester_index": 6,
+      "semester_label": "Sixth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "TURK 106",
+          "numeric_code": "6420106",
+          "course_title": "TURKISH II",
+          "metu_credit": "0",
+          "contact_hours": "4",
+          "lab_hours": "0",
+          "ects": "5.0"
+        },
+        {
+          "course_code": "TURK 202",
+          "numeric_code": "6420202",
+          "course_title": "INTERMEDIATE TURKISH I",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "3.0"
+        },
+        {
+          "course_code": "TURK 304",
+          "numeric_code": "6420304",
+          "course_title": "TURKISH II",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "2.0"
+        }
+      ],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": ""
+    },
+    {
+      "requirement_id": "REQ-0044",
+      "requirement_type": "summer_practice",
+      "label": "IE 400",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 400",
+          "numeric_code": "5680400",
+          "course_title": "SUMMER PRACTICE II",
+          "metu_credit": "0",
+          "contact_hours": "0",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "0",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0045",
+      "requirement_type": "required_course",
+      "label": "IE 404",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 404",
+          "numeric_code": "5680404",
+          "course_title": "MANAGEMENT FOR ENGINEERS",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0046",
+      "requirement_type": "required_course",
+      "label": "IE 422",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 422",
+          "numeric_code": "5680422",
+          "course_title": "SEMINAR IN INDUSTRIAL ENGINEERING",
+          "metu_credit": "0",
+          "contact_hours": "2",
+          "lab_hours": "0",
+          "ects": "1.0"
+        }
+      ],
+      "metu_credit": "0",
+      "contact_hours": "2",
+      "lab_hours": "0",
+      "ects": "1.0"
+    },
+    {
+      "requirement_id": "REQ-0047",
+      "requirement_type": "required_course",
+      "label": "IE 489",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 489",
+          "numeric_code": "5680489",
+          "course_title": "SYSTEMS THINKING",
+          "metu_credit": "3",
+          "contact_hours": "3",
+          "lab_hours": "0",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "3",
+      "lab_hours": "0",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0048",
+      "requirement_type": "required_course",
+      "label": "IE 497",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 497",
+          "numeric_code": "5680497",
+          "course_title": "SYSTEMS DESIGN I",
+          "metu_credit": "3",
+          "contact_hours": "1",
+          "lab_hours": "4",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "1",
+      "lab_hours": "4",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0049",
+      "requirement_type": "technical_elective_pool",
+      "label": "TECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0050",
+      "requirement_type": "technical_elective_pool",
+      "label": "TECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0051",
+      "requirement_type": "nontechnical_elective_pool",
+      "label": "NONTECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 7,
+      "semester_label": "Seventh Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0052",
+      "requirement_type": "required_course",
+      "label": "IE 498",
+      "year": 4,
+      "semester_index": 8,
+      "semester_label": "Eighth Semester",
+      "option_min_count": 1,
+      "options": [
+        {
+          "course_code": "IE 498",
+          "numeric_code": "5680498",
+          "course_title": "SYSTEMS DESIGN II",
+          "metu_credit": "3",
+          "contact_hours": "1",
+          "lab_hours": "4",
+          "ects": "5.0"
+        }
+      ],
+      "metu_credit": "3",
+      "contact_hours": "1",
+      "lab_hours": "4",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0053",
+      "requirement_type": "free_elective_pool",
+      "label": "FREE ELECTIVE",
+      "year": 4,
+      "semester_index": 8,
+      "semester_label": "Eighth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0054",
+      "requirement_type": "technical_elective_pool",
+      "label": "TECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 8,
+      "semester_label": "Eighth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0055",
+      "requirement_type": "technical_elective_pool",
+      "label": "TECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 8,
+      "semester_label": "Eighth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    },
+    {
+      "requirement_id": "REQ-0056",
+      "requirement_type": "nontechnical_elective_pool",
+      "label": "NONTECHNICAL ELECTIVE",
+      "year": 4,
+      "semester_index": 8,
+      "semester_label": "Eighth Semester",
+      "option_min_count": 1,
+      "options": [],
+      "metu_credit": "",
+      "contact_hours": "",
+      "lab_hours": "",
+      "ects": "5.0"
+    }
+  ],
+  "summary": {
+    "requirement_count": 56,
+    "course_option_count": 53,
+    "unique_course_count": 53,
+    "placeholder_requirement_count": 9,
+    "counts_by_type": {
+      "required_course": 41,
+      "course_choice": 4,
+      "restricted_elective_pool": 1,
+      "summer_practice": 2,
+      "nontechnical_elective_pool": 3,
+      "technical_elective_pool": 4,
+      "free_elective_pool": 1
+    }
+  }
+}

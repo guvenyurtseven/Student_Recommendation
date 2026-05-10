@@ -1,0 +1,2760 @@
+{
+  "metadata": {
+    "programs": [
+      "PETE"
+    ],
+    "generated_at_utc": "2026-05-08T05:24:47+00:00",
+    "searched_semesters": [
+      "20252",
+      "20251",
+      "20243",
+      "20242",
+      "20241",
+      "20233",
+      "20232",
+      "20231",
+      "20223",
+      "20222",
+      "20221",
+      "20213",
+      "20212",
+      "20211",
+      "20203"
+    ],
+    "node_count": 88,
+    "edge_count": 113,
+    "unresolved_count": 7,
+    "is_dag": true,
+    "edge_direction": "prerequisite -> course"
+  },
+  "nodes": [
+    {
+      "id": "3570100",
+      "course_code": "357 100",
+      "course_number": 100,
+      "course_name": "PRECALCULUS",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "3570119",
+      "course_code": "357 119",
+      "course_number": 119,
+      "course_name": "CALCULUS WITH ANALYTIC GEOMETRY",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "3570120",
+      "course_code": "357 120",
+      "course_number": 120,
+      "course_name": "CALCULUS FOR FUNCTIONS OF SEVERAL VARIABLES",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "3570219",
+      "course_code": "357 219",
+      "course_number": 219,
+      "course_name": "INTRODUCTION TO DIFFERENTIAL EQUATIONS",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "3580105",
+      "course_code": "358 105",
+      "course_number": 105,
+      "course_name": "GENERAL PHYSICS I",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "3590101",
+      "course_code": "359 101",
+      "course_number": 101,
+      "course_name": "DEVELOPMENT OF READING AND WRITING SKILLS I",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "3590102",
+      "course_code": "359 102",
+      "course_number": 102,
+      "course_name": "DEVELOPMENT OF READING AND WRITING SKILLS II",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "3600111",
+      "course_code": "360 111",
+      "course_number": 111,
+      "course_name": "GENERAL CHEMISTRY I",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20251"
+    },
+    {
+      "id": "3620201",
+      "course_code": "362 201",
+      "course_number": 201,
+      "course_name": "PRINCIPLES OF KEMAL ATATÜRK I",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "3640221",
+      "course_code": "364 221",
+      "course_number": 221,
+      "course_name": "ENGINEERING MECHANICS I",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20251"
+    },
+    {
+      "id": "3640224",
+      "course_code": "364 224",
+      "course_number": 224,
+      "course_name": "MECHANICS OF MATERIALS",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "3650205",
+      "course_code": "365 205",
+      "course_number": 205,
+      "course_name": "STATICS",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "3650206",
+      "course_code": "365 206",
+      "course_number": 206,
+      "course_name": "STRENGTH OF MATERIALS",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "3740110",
+      "course_code": "374 110",
+      "course_number": 110,
+      "course_name": "INTRODUCTION TO PETROLEUM ENGINEERING",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20242"
+    },
+    {
+      "id": "3740211",
+      "course_code": "374 211",
+      "course_number": 211,
+      "course_name": "INTRODUCTION TO FLUID MECHANICS",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20251"
+    },
+    {
+      "id": "3740216",
+      "course_code": "374 216",
+      "course_number": 216,
+      "course_name": "RESERVOIR ROCK AND FLUID PROPERTIES",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "not_found_in_searched_offerings",
+      "found_semester": ""
+    },
+    {
+      "id": "3740218",
+      "course_code": "374 218",
+      "course_number": 218,
+      "course_name": "RESERVOIR FLUID PROPERTIES",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20242"
+    },
+    {
+      "id": "3740220",
+      "course_code": "374 220",
+      "course_number": 220,
+      "course_name": "RESERVOIR ROCK PROPERTIES",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20241"
+    },
+    {
+      "id": "3740321",
+      "course_code": "374 321",
+      "course_number": 321,
+      "course_name": "DRILLING ENGINEERING I",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20251"
+    },
+    {
+      "id": "3740331",
+      "course_code": "374 331",
+      "course_number": 331,
+      "course_name": "PETROLEUM PRODUCTION ENGINEERING I",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20251"
+    },
+    {
+      "id": "3840261",
+      "course_code": "384 261",
+      "course_number": 261,
+      "course_name": "STATICS",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "3840264",
+      "course_code": "384 264",
+      "course_number": 264,
+      "course_name": "MECHANICS OF MATERIALS",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5610225",
+      "course_code": "561 225",
+      "course_number": 225,
+      "course_name": "ENGINEERING MECHANICS",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20251"
+    },
+    {
+      "id": "5720261",
+      "course_code": "AE 261",
+      "course_number": 261,
+      "course_name": "STATICS",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "3120100",
+      "course_code": "BA 100",
+      "course_number": 100,
+      "course_name": "CAREER PLANNING",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5710240",
+      "course_code": "CENG 240",
+      "course_number": 240,
+      "course_name": "PROGRAMMING WITH PYTHON FOR ENGINEERS",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5630204",
+      "course_code": "CHE 204",
+      "course_number": 204,
+      "course_name": "THERMODYNAMICS I",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "2340101",
+      "course_code": "CHEM 101",
+      "course_number": 101,
+      "course_name": "GENERAL CHEMISTRY I",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20251"
+    },
+    {
+      "id": "2340105",
+      "course_code": "CHEM 105",
+      "course_number": 105,
+      "course_name": "GENERAL CHEMISTRY I",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "2340109",
+      "course_code": "CHEM 109",
+      "course_number": 109,
+      "course_name": "GENERAL CHEMISTRY FOR HONOUR PROG. I",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "not_found_in_searched_offerings",
+      "found_semester": ""
+    },
+    {
+      "id": "2340111",
+      "course_code": "CHEM 111",
+      "course_number": 111,
+      "course_name": "GENERAL CHEMISTRY I",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20251"
+    },
+    {
+      "id": "2340112",
+      "course_code": "CHEM 112",
+      "course_number": 112,
+      "course_name": "GENERAL CHEMISTRY II",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "3110210",
+      "course_code": "ECON 210",
+      "course_number": 210,
+      "course_name": "PRINCIPLES OF ECONOMICS",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "6390101",
+      "course_code": "ENG 101",
+      "course_number": 101,
+      "course_name": "ENGLISH FOR ACADEMIC PURPOSES I",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "6390102",
+      "course_code": "ENG 102",
+      "course_number": 102,
+      "course_name": "ENGLISH FOR ACADEMIC PURPOSES II",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "6390211",
+      "course_code": "ENG 211",
+      "course_number": 211,
+      "course_name": "ACADEMIC SPEAKING SKILLS",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5610202",
+      "course_code": "ES 202",
+      "course_number": 202,
+      "course_name": "MATHEMATICS FOR ENGINEERS",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5610221",
+      "course_code": "ES 221",
+      "course_number": 221,
+      "course_name": "ENGINEERING MECHANICS I",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5610224",
+      "course_code": "ES 224",
+      "course_number": 224,
+      "course_name": "STRENGTH OF MATERIALS",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5610303",
+      "course_code": "ES 303",
+      "course_number": 303,
+      "course_name": "STATISTICAL METHODS FOR ENGINEERS",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5610361",
+      "course_code": "ES 361",
+      "course_number": 361,
+      "course_name": "COMPUTING METHODS IN ENGINEERING",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5640201",
+      "course_code": "GEOE 201",
+      "course_number": 201,
+      "course_name": "GENERAL GEOLOGY",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20251"
+    },
+    {
+      "id": "5640410",
+      "course_code": "GEOE 410",
+      "course_number": 410,
+      "course_name": "PETROLEUM GEOLOGY",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "2402201",
+      "course_code": "HIST 2201",
+      "course_number": 2201,
+      "course_name": "PRINCIPLES OF KEMAL ATATÜRK I",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "course_choice"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "2402202",
+      "course_code": "HIST 2202",
+      "course_number": 2202,
+      "course_name": "",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "course_choice"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "2402205",
+      "course_code": "HIST 2205",
+      "course_number": 2205,
+      "course_name": "HISTORY OF THE TURKISH REVOLUTION I",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "course_choice"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "2402206",
+      "course_code": "HIST 2206",
+      "course_number": 2206,
+      "course_name": "HISTORY OF THE TURKISH REVOLUTION II",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "course_choice"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "9010100",
+      "course_code": "IS 100",
+      "course_number": 100,
+      "course_name": "INTRODUCTION TO INFORMATION TECHNOLOGIES AND APPLICATIONS",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "2360117",
+      "course_code": "MATH 117",
+      "course_number": 117,
+      "course_name": "CALCULUS I",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "2360118",
+      "course_code": "MATH 118",
+      "course_number": 118,
+      "course_name": "CALCULUS II",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "2360119",
+      "course_code": "MATH 119",
+      "course_number": 119,
+      "course_name": "CALCULUS WITH ANALYTIC GEOMETRY",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "2360120",
+      "course_code": "MATH 120",
+      "course_number": 120,
+      "course_name": "CALCULUS OF FUNCTIONS OF SEVERAL VARIABLES",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "2360129",
+      "course_code": "MATH 129",
+      "course_number": 129,
+      "course_name": "SINGLE VARIABLE CALCULUS",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20251"
+    },
+    {
+      "id": "2360130",
+      "course_code": "MATH 130",
+      "course_number": 130,
+      "course_name": "MULTIVARIABLE AND VECTOR CALCULUS",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "2360151",
+      "course_code": "MATH 151",
+      "course_number": 151,
+      "course_name": "CALCULUS I",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "not_found_in_searched_offerings",
+      "found_semester": ""
+    },
+    {
+      "id": "2360152",
+      "course_code": "MATH 152",
+      "course_number": 152,
+      "course_name": "CALCULUS II",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "not_found_in_searched_offerings",
+      "found_semester": ""
+    },
+    {
+      "id": "2360155",
+      "course_code": "MATH 155",
+      "course_number": 155,
+      "course_name": "CALCULUS I (ACCELERATED)",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "not_found_in_searched_offerings",
+      "found_semester": ""
+    },
+    {
+      "id": "2360157",
+      "course_code": "MATH 157",
+      "course_number": 157,
+      "course_name": "BASIC CALCULUS I",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "not_found_in_searched_offerings",
+      "found_semester": ""
+    },
+    {
+      "id": "2360158",
+      "course_code": "MATH 158",
+      "course_number": 158,
+      "course_name": "BASIC CALCULUS II",
+      "sources": [
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [],
+      "requirement_types": [],
+      "scrape_status": "not_found_in_searched_offerings",
+      "found_semester": ""
+    },
+    {
+      "id": "2360219",
+      "course_code": "MATH 219",
+      "course_number": 219,
+      "course_name": "INTRODUCTION TO DIFFERENTIAL EQUATIONS",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5690105",
+      "course_code": "ME 105",
+      "course_number": 105,
+      "course_name": "COMPUTER AIDED ENGINEERING GRAPHICS",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "8770101",
+      "course_code": "OHS 101",
+      "course_number": 101,
+      "course_name": "OCCUPATIONAL HEALTH AND SAFETY-I",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "8770301",
+      "course_code": "OHS 301",
+      "course_number": 301,
+      "course_name": "OCCUPATIONAL HEALTH AND SAFETY - II",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5660110",
+      "course_code": "PETE 110",
+      "course_number": 110,
+      "course_name": "INTRODUCTION TO PETROLEUM ENGINEERING",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5660211",
+      "course_code": "PETE 211",
+      "course_number": 211,
+      "course_name": "INTRODUCTION TO FLUID MECHANICS",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5660218",
+      "course_code": "PETE 218",
+      "course_number": 218,
+      "course_name": "RESERVOIR FLUID PROPERTIES",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5660220",
+      "course_code": "PETE 220",
+      "course_number": 220,
+      "course_name": "RESERVOIR ROCK PROPERTIES",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20251"
+    },
+    {
+      "id": "5660300",
+      "course_code": "PETE 300",
+      "course_number": 300,
+      "course_name": "SUMMER PRACTICE I",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "summer_practice"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5660321",
+      "course_code": "PETE 321",
+      "course_number": 321,
+      "course_name": "DRILLING ENGINEERING I",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20251"
+    },
+    {
+      "id": "5660322",
+      "course_code": "PETE 322",
+      "course_number": 322,
+      "course_name": "DRILLING ENGINEERING II",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5660331",
+      "course_code": "PETE 331",
+      "course_number": 331,
+      "course_name": "PETROLEUM PRODUCTION ENGINEERING I",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20251"
+    },
+    {
+      "id": "5660332",
+      "course_code": "PETE 332",
+      "course_number": 332,
+      "course_name": "PETROLEUM PRODUCTION ENGINEERING II",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5660343",
+      "course_code": "PETE 343",
+      "course_number": 343,
+      "course_name": "PETROLEUM RESERVOIR ENGINEERING I",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20251"
+    },
+    {
+      "id": "5660344",
+      "course_code": "PETE 344",
+      "course_number": 344,
+      "course_name": "PETROLEUM RESERVOIR ENGINEERING II",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5660352",
+      "course_code": "PETE 352",
+      "course_number": 352,
+      "course_name": "WELL LOGGING",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5660400",
+      "course_code": "PETE 400",
+      "course_number": 400,
+      "course_name": "SUMMER PRACTICE II",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "summer_practice"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5660411",
+      "course_code": "PETE 411",
+      "course_number": 411,
+      "course_name": "PETROLEUM PROPERTY VALUATION",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20251"
+    },
+    {
+      "id": "5660417",
+      "course_code": "PETE 417",
+      "course_number": 417,
+      "course_name": "PETROLEUM ENGINEERING DESIGN I",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20251"
+    },
+    {
+      "id": "5660418",
+      "course_code": "PETE 418",
+      "course_number": 418,
+      "course_name": "PETROLEUM ENGINEERING DESIGN II",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "5660461",
+      "course_code": "PETE 461",
+      "course_number": 461,
+      "course_name": "NATURAL GAS ENGINEERING",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20251"
+    },
+    {
+      "id": "2300105",
+      "course_code": "PHYS 105",
+      "course_number": 105,
+      "course_name": "GENERAL PHYSICS I",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20251"
+    },
+    {
+      "id": "2300106",
+      "course_code": "PHYS 106",
+      "course_number": 106,
+      "course_name": "GENERAL PHYSICS II",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "required_course"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "6420105",
+      "course_code": "TURK 105",
+      "course_number": 105,
+      "course_name": "TURKISH I",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "course_choice"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20251"
+    },
+    {
+      "id": "6420106",
+      "course_code": "TURK 106",
+      "course_number": 106,
+      "course_name": "TURKISH II",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "course_choice"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "6420201",
+      "course_code": "TURK 201",
+      "course_number": 201,
+      "course_name": "ELEMENTARY TURKISH I",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "course_choice"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "6420202",
+      "course_code": "TURK 202",
+      "course_number": 202,
+      "course_name": "INTERMEDIATE TURKISH I",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "course_choice"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "6420303",
+      "course_code": "TURK 303",
+      "course_number": 303,
+      "course_name": "TURKISH I",
+      "sources": [
+        "curriculum",
+        "prerequisite_closure"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "course_choice"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    },
+    {
+      "id": "6420304",
+      "course_code": "TURK 304",
+      "course_number": 304,
+      "course_name": "TURKISH II",
+      "sources": [
+        "curriculum"
+      ],
+      "curriculum_programs": [
+        "PETE"
+      ],
+      "requirement_types": [
+        "course_choice"
+      ],
+      "scrape_status": "scraped",
+      "found_semester": "20252"
+    }
+  ],
+  "edges": [
+    {
+      "from": "3570100",
+      "from_course_code": "357 100",
+      "to": "3570119",
+      "to_course_code": "357 119",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3570119",
+      "from_course_code": "357 119",
+      "to": "3570120",
+      "to_course_code": "357 120",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360119",
+      "from_course_code": "MATH 119",
+      "to": "3570120",
+      "to_course_code": "357 120",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360117",
+      "from_course_code": "MATH 117",
+      "to": "3570120",
+      "to_course_code": "357 120",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3570120",
+      "from_course_code": "357 120",
+      "to": "3570219",
+      "to_course_code": "357 219",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3590101",
+      "from_course_code": "359 101",
+      "to": "3590102",
+      "to_course_code": "359 102",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "6390101",
+      "from_course_code": "ENG 101",
+      "to": "3590102",
+      "to_course_code": "359 102",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3570119",
+      "from_course_code": "357 119",
+      "to": "3640221",
+      "to_course_code": "364 221",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3640221",
+      "from_course_code": "364 221",
+      "to": "3640224",
+      "to_course_code": "364 224",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3650205",
+      "from_course_code": "365 205",
+      "to": "3640224",
+      "to_course_code": "364 224",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3570119",
+      "from_course_code": "357 119",
+      "to": "3650205",
+      "to_course_code": "365 205",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3580105",
+      "from_course_code": "358 105",
+      "to": "3650205",
+      "to_course_code": "365 205",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3650205",
+      "from_course_code": "365 205",
+      "to": "3650206",
+      "to_course_code": "365 206",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720261",
+      "from_course_code": "AE 261",
+      "to": "3650206",
+      "to_course_code": "365 206",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3740110",
+      "from_course_code": "374 110",
+      "to": "3740220",
+      "to_course_code": "374 220",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3640224",
+      "from_course_code": "364 224",
+      "to": "3740321",
+      "to_course_code": "374 321",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3740211",
+      "from_course_code": "374 211",
+      "to": "3740321",
+      "to_course_code": "374 321",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3650206",
+      "from_course_code": "365 206",
+      "to": "3740321",
+      "to_course_code": "374 321",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3740211",
+      "from_course_code": "374 211",
+      "to": "3740321",
+      "to_course_code": "374 321",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3740211",
+      "from_course_code": "374 211",
+      "to": "3740321",
+      "to_course_code": "374 321",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3840264",
+      "from_course_code": "384 264",
+      "to": "3740321",
+      "to_course_code": "374 321",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3740218",
+      "from_course_code": "374 218",
+      "to": "3740331",
+      "to_course_code": "374 331",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3740220",
+      "from_course_code": "374 220",
+      "to": "3740331",
+      "to_course_code": "374 331",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3740216",
+      "from_course_code": "374 216",
+      "to": "3740331",
+      "to_course_code": "374 331",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3570119",
+      "from_course_code": "357 119",
+      "to": "3840261",
+      "to_course_code": "384 261",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3580105",
+      "from_course_code": "358 105",
+      "to": "3840261",
+      "to_course_code": "384 261",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3840261",
+      "from_course_code": "384 261",
+      "to": "3840264",
+      "to_course_code": "384 264",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3650205",
+      "from_course_code": "365 205",
+      "to": "3840264",
+      "to_course_code": "384 264",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360119",
+      "from_course_code": "MATH 119",
+      "to": "5610225",
+      "to_course_code": "561 225",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2300105",
+      "from_course_code": "PHYS 105",
+      "to": "5610225",
+      "to_course_code": "561 225",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2300105",
+      "from_course_code": "PHYS 105",
+      "to": "5630204",
+      "to_course_code": "CHE 204",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2340111",
+      "from_course_code": "CHEM 111",
+      "to": "2340112",
+      "to_course_code": "CHEM 112",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2340101",
+      "from_course_code": "CHEM 101",
+      "to": "2340112",
+      "to_course_code": "CHEM 112",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2340105",
+      "from_course_code": "CHEM 105",
+      "to": "2340112",
+      "to_course_code": "CHEM 112",
+      "set_no": "4",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2340109",
+      "from_course_code": "CHEM 109",
+      "to": "2340112",
+      "to_course_code": "CHEM 112",
+      "set_no": "5",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "3600111",
+      "from_course_code": "360 111",
+      "to": "2340112",
+      "to_course_code": "CHEM 112",
+      "set_no": "6",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "6390101",
+      "from_course_code": "ENG 101",
+      "to": "6390102",
+      "to_course_code": "ENG 102",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3590101",
+      "from_course_code": "359 101",
+      "to": "6390102",
+      "to_course_code": "ENG 102",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "6390101",
+      "from_course_code": "ENG 101",
+      "to": "6390211",
+      "to_course_code": "ENG 211",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "6390102",
+      "from_course_code": "ENG 102",
+      "to": "6390211",
+      "to_course_code": "ENG 211",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3590101",
+      "from_course_code": "359 101",
+      "to": "6390211",
+      "to_course_code": "ENG 211",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3590102",
+      "from_course_code": "359 102",
+      "to": "6390211",
+      "to_course_code": "ENG 211",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360120",
+      "from_course_code": "MATH 120",
+      "to": "5610202",
+      "to_course_code": "ES 202",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360152",
+      "from_course_code": "MATH 152",
+      "to": "5610202",
+      "to_course_code": "ES 202",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2360158",
+      "from_course_code": "MATH 158",
+      "to": "5610202",
+      "to_course_code": "ES 202",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2360155",
+      "from_course_code": "MATH 155",
+      "to": "5610221",
+      "to_course_code": "ES 221",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2360157",
+      "from_course_code": "MATH 157",
+      "to": "5610221",
+      "to_course_code": "ES 221",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2360119",
+      "from_course_code": "MATH 119",
+      "to": "5610221",
+      "to_course_code": "ES 221",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360151",
+      "from_course_code": "MATH 151",
+      "to": "5610221",
+      "to_course_code": "ES 221",
+      "set_no": "4",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "5610221",
+      "from_course_code": "ES 221",
+      "to": "5610224",
+      "to_course_code": "ES 224",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5610225",
+      "from_course_code": "561 225",
+      "to": "5610224",
+      "to_course_code": "ES 224",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3640221",
+      "from_course_code": "364 221",
+      "to": "5610224",
+      "to_course_code": "ES 224",
+      "set_no": "4",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360155",
+      "from_course_code": "MATH 155",
+      "to": "5610303",
+      "to_course_code": "ES 303",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2360157",
+      "from_course_code": "MATH 157",
+      "to": "5610303",
+      "to_course_code": "ES 303",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2360119",
+      "from_course_code": "MATH 119",
+      "to": "5610303",
+      "to_course_code": "ES 303",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360151",
+      "from_course_code": "MATH 151",
+      "to": "5610303",
+      "to_course_code": "ES 303",
+      "set_no": "4",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "3570119",
+      "from_course_code": "357 119",
+      "to": "5610303",
+      "to_course_code": "ES 303",
+      "set_no": "5",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360119",
+      "from_course_code": "MATH 119",
+      "to": "5610361",
+      "to_course_code": "ES 361",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2402201",
+      "from_course_code": "HIST 2201",
+      "to": "2402202",
+      "to_course_code": "HIST 2202",
+      "set_no": "1",
+      "min_grade": "U",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3620201",
+      "from_course_code": "362 201",
+      "to": "2402202",
+      "to_course_code": "HIST 2202",
+      "set_no": "2",
+      "min_grade": "U",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2402205",
+      "from_course_code": "HIST 2205",
+      "to": "2402206",
+      "to_course_code": "HIST 2206",
+      "set_no": "1",
+      "min_grade": "S",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2402205",
+      "from_course_code": "HIST 2205",
+      "to": "2402206",
+      "to_course_code": "HIST 2206",
+      "set_no": "2",
+      "min_grade": "U",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360117",
+      "from_course_code": "MATH 117",
+      "to": "2360118",
+      "to_course_code": "MATH 118",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360119",
+      "from_course_code": "MATH 119",
+      "to": "2360118",
+      "to_course_code": "MATH 118",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360119",
+      "from_course_code": "MATH 119",
+      "to": "2360120",
+      "to_course_code": "MATH 120",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3570119",
+      "from_course_code": "357 119",
+      "to": "2360120",
+      "to_course_code": "MATH 120",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360151",
+      "from_course_code": "MATH 151",
+      "to": "2360120",
+      "to_course_code": "MATH 120",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2360117",
+      "from_course_code": "MATH 117",
+      "to": "2360120",
+      "to_course_code": "MATH 120",
+      "set_no": "4",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360129",
+      "from_course_code": "MATH 129",
+      "to": "2360130",
+      "to_course_code": "MATH 130",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360120",
+      "from_course_code": "MATH 120",
+      "to": "2360219",
+      "to_course_code": "MATH 219",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3570120",
+      "from_course_code": "357 120",
+      "to": "2360219",
+      "to_course_code": "MATH 219",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360118",
+      "from_course_code": "MATH 118",
+      "to": "2360219",
+      "to_course_code": "MATH 219",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360130",
+      "from_course_code": "MATH 130",
+      "to": "2360219",
+      "to_course_code": "MATH 219",
+      "set_no": "4",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "8770101",
+      "from_course_code": "OHS 101",
+      "to": "8770301",
+      "to_course_code": "OHS 301",
+      "set_no": "1",
+      "min_grade": "S",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660110",
+      "from_course_code": "PETE 110",
+      "to": "5660220",
+      "to_course_code": "PETE 220",
+      "set_no": "1",
+      "min_grade": "S",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "8770301",
+      "from_course_code": "OHS 301",
+      "to": "5660300",
+      "to_course_code": "PETE 300",
+      "set_no": "1",
+      "min_grade": "S",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5610224",
+      "from_course_code": "ES 224",
+      "to": "5660321",
+      "to_course_code": "PETE 321",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660211",
+      "from_course_code": "PETE 211",
+      "to": "5660321",
+      "to_course_code": "PETE 321",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660321",
+      "from_course_code": "PETE 321",
+      "to": "5660322",
+      "to_course_code": "PETE 322",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3740321",
+      "from_course_code": "374 321",
+      "to": "5660322",
+      "to_course_code": "PETE 322",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5630204",
+      "from_course_code": "CHE 204",
+      "to": "5660331",
+      "to_course_code": "PETE 331",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660218",
+      "from_course_code": "PETE 218",
+      "to": "5660331",
+      "to_course_code": "PETE 331",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660220",
+      "from_course_code": "PETE 220",
+      "to": "5660331",
+      "to_course_code": "PETE 331",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660331",
+      "from_course_code": "PETE 331",
+      "to": "5660332",
+      "to_course_code": "PETE 332",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3740331",
+      "from_course_code": "374 331",
+      "to": "5660332",
+      "to_course_code": "PETE 332",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360219",
+      "from_course_code": "MATH 219",
+      "to": "5660343",
+      "to_course_code": "PETE 343",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660218",
+      "from_course_code": "PETE 218",
+      "to": "5660343",
+      "to_course_code": "PETE 343",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660220",
+      "from_course_code": "PETE 220",
+      "to": "5660343",
+      "to_course_code": "PETE 343",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3570219",
+      "from_course_code": "357 219",
+      "to": "5660343",
+      "to_course_code": "PETE 343",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3740218",
+      "from_course_code": "374 218",
+      "to": "5660343",
+      "to_course_code": "PETE 343",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3740220",
+      "from_course_code": "374 220",
+      "to": "5660343",
+      "to_course_code": "PETE 343",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3570219",
+      "from_course_code": "357 219",
+      "to": "5660343",
+      "to_course_code": "PETE 343",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "3740216",
+      "from_course_code": "374 216",
+      "to": "5660343",
+      "to_course_code": "PETE 343",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate NCC / Lisans KKK",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660343",
+      "from_course_code": "PETE 343",
+      "to": "5660344",
+      "to_course_code": "PETE 344",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660220",
+      "from_course_code": "PETE 220",
+      "to": "5660352",
+      "to_course_code": "PETE 352",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660322",
+      "from_course_code": "PETE 322",
+      "to": "5660417",
+      "to_course_code": "PETE 417",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660331",
+      "from_course_code": "PETE 331",
+      "to": "5660417",
+      "to_course_code": "PETE 417",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660343",
+      "from_course_code": "PETE 343",
+      "to": "5660417",
+      "to_course_code": "PETE 417",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660322",
+      "from_course_code": "PETE 322",
+      "to": "5660417",
+      "to_course_code": "PETE 417",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660331",
+      "from_course_code": "PETE 331",
+      "to": "5660417",
+      "to_course_code": "PETE 417",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660352",
+      "from_course_code": "PETE 352",
+      "to": "5660417",
+      "to_course_code": "PETE 417",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660322",
+      "from_course_code": "PETE 322",
+      "to": "5660417",
+      "to_course_code": "PETE 417",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660343",
+      "from_course_code": "PETE 343",
+      "to": "5660417",
+      "to_course_code": "PETE 417",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660352",
+      "from_course_code": "PETE 352",
+      "to": "5660417",
+      "to_course_code": "PETE 417",
+      "set_no": "3",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660331",
+      "from_course_code": "PETE 331",
+      "to": "5660417",
+      "to_course_code": "PETE 417",
+      "set_no": "4",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660343",
+      "from_course_code": "PETE 343",
+      "to": "5660417",
+      "to_course_code": "PETE 417",
+      "set_no": "4",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660352",
+      "from_course_code": "PETE 352",
+      "to": "5660417",
+      "to_course_code": "PETE 417",
+      "set_no": "4",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5660417",
+      "from_course_code": "PETE 417",
+      "to": "5660418",
+      "to_course_code": "PETE 418",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "6420105",
+      "from_course_code": "TURK 105",
+      "to": "6420106",
+      "to_course_code": "TURK 106",
+      "set_no": "1",
+      "min_grade": "S",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "6420201",
+      "from_course_code": "TURK 201",
+      "to": "6420106",
+      "to_course_code": "TURK 106",
+      "set_no": "2",
+      "min_grade": "S",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "6420201",
+      "from_course_code": "TURK 201",
+      "to": "6420202",
+      "to_course_code": "TURK 202",
+      "set_no": "1",
+      "min_grade": "S",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "6420105",
+      "from_course_code": "TURK 105",
+      "to": "6420202",
+      "to_course_code": "TURK 202",
+      "set_no": "2",
+      "min_grade": "S",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "6420303",
+      "from_course_code": "TURK 303",
+      "to": "6420304",
+      "to_course_code": "TURK 304",
+      "set_no": "1",
+      "min_grade": "S",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    }
+  ],
+  "unresolved": [
+    {
+      "course_code_numeric": "2340109",
+      "course_code": "CHEM 109",
+      "reason": "not_found_in_searched_offerings"
+    },
+    {
+      "course_code_numeric": "2360151",
+      "course_code": "MATH 151",
+      "reason": "not_found_in_searched_offerings"
+    },
+    {
+      "course_code_numeric": "2360152",
+      "course_code": "MATH 152",
+      "reason": "not_found_in_searched_offerings"
+    },
+    {
+      "course_code_numeric": "2360158",
+      "course_code": "MATH 158",
+      "reason": "not_found_in_searched_offerings"
+    },
+    {
+      "course_code_numeric": "2360155",
+      "course_code": "MATH 155",
+      "reason": "not_found_in_searched_offerings"
+    },
+    {
+      "course_code_numeric": "2360157",
+      "course_code": "MATH 157",
+      "reason": "not_found_in_searched_offerings"
+    },
+    {
+      "course_code_numeric": "3740216",
+      "course_code": "374 216",
+      "reason": "not_found_in_searched_offerings"
+    }
+  ],
+  "topological_order": [
+    "2300105",
+    "2300106",
+    "2340101",
+    "2340105",
+    "2340109",
+    "2340111",
+    "2360117",
+    "2360119",
+    "2360129",
+    "2360151",
+    "2360152",
+    "2360155",
+    "2360157",
+    "2360158",
+    "2402201",
+    "2402205",
+    "3110210",
+    "3120100",
+    "3570100",
+    "3580105",
+    "3590101",
+    "3600111",
+    "3620201",
+    "3740110",
+    "3740211",
+    "3740216",
+    "3740218",
+    "5640201",
+    "5640410",
+    "5660110",
+    "5660211",
+    "5660218",
+    "5660400",
+    "5660411",
+    "5660461",
+    "5690105",
+    "5710240",
+    "5720261",
+    "6390101",
+    "6420105",
+    "6420201",
+    "6420303",
+    "8770101",
+    "9010100",
+    "5630204",
+    "2360118",
+    "5610225",
+    "5610361",
+    "2360130",
+    "5610221",
+    "2402206",
+    "3570119",
+    "2340112",
+    "2402202",
+    "3740220",
+    "5660220",
+    "3590102",
+    "6390102",
+    "6420106",
+    "6420202",
+    "6420304",
+    "8770301",
+    "2360120",
+    "3570120",
+    "3640221",
+    "3650205",
+    "3840261",
+    "5610303",
+    "3740331",
+    "5660331",
+    "5660352",
+    "6390211",
+    "5660300",
+    "5610202",
+    "2360219",
+    "3570219",
+    "5610224",
+    "3640224",
+    "3650206",
+    "3840264",
+    "5660332",
+    "5660343",
+    "5660321",
+    "3740321",
+    "5660344",
+    "5660322",
+    "5660417",
+    "5660418"
+  ],
+  "topological_order_course_code": [
+    "PHYS 105",
+    "PHYS 106",
+    "CHEM 101",
+    "CHEM 105",
+    "CHEM 109",
+    "CHEM 111",
+    "MATH 117",
+    "MATH 119",
+    "MATH 129",
+    "MATH 151",
+    "MATH 152",
+    "MATH 155",
+    "MATH 157",
+    "MATH 158",
+    "HIST 2201",
+    "HIST 2205",
+    "ECON 210",
+    "BA 100",
+    "357 100",
+    "358 105",
+    "359 101",
+    "360 111",
+    "362 201",
+    "374 110",
+    "374 211",
+    "374 216",
+    "374 218",
+    "GEOE 201",
+    "GEOE 410",
+    "PETE 110",
+    "PETE 211",
+    "PETE 218",
+    "PETE 400",
+    "PETE 411",
+    "PETE 461",
+    "ME 105",
+    "CENG 240",
+    "AE 261",
+    "ENG 101",
+    "TURK 105",
+    "TURK 201",
+    "TURK 303",
+    "OHS 101",
+    "IS 100",
+    "CHE 204",
+    "MATH 118",
+    "561 225",
+    "ES 361",
+    "MATH 130",
+    "ES 221",
+    "HIST 2206",
+    "357 119",
+    "CHEM 112",
+    "HIST 2202",
+    "374 220",
+    "PETE 220",
+    "359 102",
+    "ENG 102",
+    "TURK 106",
+    "TURK 202",
+    "TURK 304",
+    "OHS 301",
+    "MATH 120",
+    "357 120",
+    "364 221",
+    "365 205",
+    "384 261",
+    "ES 303",
+    "374 331",
+    "PETE 331",
+    "PETE 352",
+    "ENG 211",
+    "PETE 300",
+    "ES 202",
+    "MATH 219",
+    "357 219",
+    "ES 224",
+    "364 224",
+    "365 206",
+    "384 264",
+    "PETE 332",
+    "PETE 343",
+    "PETE 321",
+    "374 321",
+    "PETE 344",
+    "PETE 322",
+    "PETE 417",
+    "PETE 418"
+  ]
+}

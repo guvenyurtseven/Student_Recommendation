@@ -1,0 +1,69 @@
+﻿id,course_code,course_number,course_name,sources,curriculum_programs,requirement_types,scrape_status,found_semester
+3570100,357 100,100,PRECALCULUS,prerequisite_closure,,,scraped,20252
+3570119,357 119,119,CALCULUS WITH ANALYTIC GEOMETRY,prerequisite_closure,,,scraped,20252
+3570120,357 120,120,CALCULUS FOR FUNCTIONS OF SEVERAL VARIABLES,prerequisite_closure,,,scraped,20252
+3580105,358 105,105,GENERAL PHYSICS I,prerequisite_closure,,,scraped,20252
+3590101,359 101,101,DEVELOPMENT OF READING AND WRITING SKILLS I,prerequisite_closure,,,scraped,20252
+3590102,359 102,102,DEVELOPMENT OF READING AND WRITING SKILLS II,prerequisite_closure,,,scraped,20252
+3620201,362 201,201,PRINCIPLES OF KEMAL ATATÜRK I,prerequisite_closure,,,scraped,20252
+3650205,365 205,205,STATICS,prerequisite_closure,,,scraped,20252
+3650206,365 206,206,STRENGTH OF MATERIALS,prerequisite_closure,,,scraped,20252
+3650208,365 208,208,DYNAMICS,prerequisite_closure,,,scraped,20252
+5720261,AE 261,261,STATICS,prerequisite_closure,,,scraped,20252
+3120100,BA 100,100,CAREER PLANNING,curriculum,ME,required_course,scraped,20252
+5710240,CENG 240,240,PROGRAMMING WITH PYTHON FOR ENGINEERS,curriculum,ME,required_course,scraped,20252
+2340107,CHEM 107,107,GENERAL CHEMISTRY,curriculum,ME,required_course,scraped,20252
+3110210,ECON 210,210,PRINCIPLES OF ECONOMICS,curriculum,ME,required_course,scraped,20252
+5670209,EE 209,209,FUNDAMENTALS OF ELECTRICAL&ELECTRO. EN,curriculum,ME,required_course,scraped,20252
+6390101,ENG 101,101,ENGLISH FOR ACADEMIC PURPOSES I,curriculum;prerequisite_closure,ME,required_course,scraped,20252
+6390102,ENG 102,102,ENGLISH FOR ACADEMIC PURPOSES II,curriculum;prerequisite_closure,ME,required_course,scraped,20252
+6390211,ENG 211,211,ACADEMIC SPEAKING SKILLS,curriculum,ME,required_course,scraped,20252
+2402201,HIST 2201,2201,PRINCIPLES OF KEMAL ATATÜRK I,curriculum;prerequisite_closure,ME,course_choice,scraped,20252
+2402202,HIST 2202,2202,,curriculum,ME,course_choice,scraped,20252
+2402205,HIST 2205,2205,HISTORY OF THE TURKISH REVOLUTION I,curriculum;prerequisite_closure,ME,course_choice,scraped,20252
+2402206,HIST 2206,2206,HISTORY OF THE TURKISH REVOLUTION II,curriculum,ME,course_choice,scraped,20252
+9010100,IS 100,100,INTRODUCTION TO INFORMATION TECHNOLOGIES AND APPLICATIONS,curriculum,ME,required_course,scraped,20252
+2360117,MATH 117,117,CALCULUS I,prerequisite_closure,,,scraped,20252
+2360118,MATH 118,118,CALCULUS II,prerequisite_closure,,,scraped,20252
+2360119,MATH 119,119,CALCULUS WITH ANALYTIC GEOMETRY,curriculum;prerequisite_closure,ME,required_course,scraped,20252
+2360120,MATH 120,120,CALCULUS OF FUNCTIONS OF SEVERAL VARIABLES,curriculum;prerequisite_closure,ME,required_course,scraped,20252
+2360129,MATH 129,129,SINGLE VARIABLE CALCULUS,prerequisite_closure,,,scraped,20251
+2360130,MATH 130,130,MULTIVARIABLE AND VECTOR CALCULUS,prerequisite_closure,,,scraped,20252
+2360151,MATH 151,151,CALCULUS I,prerequisite_closure,,,not_found_in_searched_offerings,
+2360219,MATH 219,219,INTRODUCTION TO DIFFERENTIAL EQUATIONS,curriculum;prerequisite_closure,ME,required_course,scraped,20252
+5690110,ME 110,110,INTRODUCTION TO MECHANICAL ENGINEERING,curriculum;prerequisite_closure,ME,required_course,scraped,20252
+5690117,ME 117,117,COMPUTER AIDED ENGINEERING DRAWING,curriculum,ME,required_course,scraped,20252
+5690202,ME 202,202,MANUFACTURING TECHNOLOGIES,curriculum;prerequisite_closure,ME,required_course,scraped,20252
+5690203,ME 203,203,THERMODYNAMICS I,curriculum;prerequisite_closure,ME,required_course,scraped,20251
+5690204,ME 204,204,THERMODYNAMICS II,curriculum,ME,required_course,scraped,20252
+5690205,ME 205,205,STATICS,curriculum;prerequisite_closure,ME,required_course,scraped,20251
+5690206,ME 206,206,STRENGTH OF MATERIALS,curriculum;prerequisite_closure,ME,required_course,scraped,20252
+5690208,ME 208,208,DYNAMICS,curriculum;prerequisite_closure,ME,required_course,scraped,20252
+5690210,ME 210,210,APPLIED MATH. FOR MECHANICAL ENGINEERS,curriculum;prerequisite_closure,ME,required_course,scraped,20252
+5690300,ME 300,300,SUMMER PRACTICE I,curriculum,ME,summer_practice,scraped,20252
+5690301,ME 301,301,THEORY OF MACHINES I,curriculum;prerequisite_closure,ME,required_course,scraped,20251
+5690302,ME 302,302,THEORY OF MACHINES II,curriculum,ME,required_course,scraped,20252
+5690303,ME 303,303,MANUFACTURING ENGINEERING,curriculum,ME,required_course,scraped,20252
+5690304,ME 304,304,CONTROL SYSTEMS,curriculum,ME,required_course,scraped,20252
+5690305,ME 305,305,FLUID MECHANICS I,curriculum;prerequisite_closure,ME,required_course,scraped,20251
+5690306,ME 306,306,FLUID MECHANICS II,curriculum,ME,required_course,scraped,20252
+5690307,ME 307,307,MACHINE ELEMENTS I,curriculum;prerequisite_closure,ME,required_course,scraped,20251
+5690308,ME 308,308,MACHINE ELEMENTS II,curriculum,ME,required_course,scraped,20252
+5690310,ME 310,310,NUMERICAL METHODS,curriculum,ME,required_course,scraped,20252
+5690311,ME 311,311,HEAT TRANSFER,curriculum;prerequisite_closure,ME,required_course,scraped,20251
+5690312,ME 312,312,THERMAL ENGINEERING,curriculum,ME,required_course,scraped,20252
+5690400,ME 400,400,SUMMER PRACTICE II,curriculum,ME,summer_practice,scraped,20252
+5690407,ME 407,407,MECHANICAL ENGINEERING DESIGN,curriculum,ME,required_course,scraped,20252
+5690410,ME 410,410,MECHANICAL ENGINEERING SYSTEMS LAB.,curriculum,ME,required_course,scraped,20252
+5700230,METE 230,230,FUNDAMENTALS OF MATERIALS SCIENCE AND ENGINEERING,curriculum,ME,required_course,scraped,20252
+8770101,OHS 101,101,OCCUPATIONAL HEALTH AND SAFETY-I,curriculum;prerequisite_closure,ME,required_course,scraped,20252
+8770301,OHS 301,301,OCCUPATIONAL HEALTH AND SAFETY - II,curriculum,ME,required_course,scraped,20252
+2300105,PHYS 105,105,GENERAL PHYSICS I,curriculum;prerequisite_closure,ME,required_course,scraped,20251
+2300106,PHYS 106,106,GENERAL PHYSICS II,curriculum;prerequisite_closure,ME,required_course,scraped,20252
+2300112,PHYS 112,112,PHYSICS II (ELECTRICITY AND MAGNETISM),prerequisite_closure,,,scraped,20252
+6420105,TURK 105,105,TURKISH I,curriculum;prerequisite_closure,ME,course_choice,scraped,20251
+6420106,TURK 106,106,TURKISH II,curriculum,ME,course_choice,scraped,20252
+6420201,TURK 201,201,ELEMENTARY TURKISH I,curriculum;prerequisite_closure,ME,course_choice,scraped,20252
+6420202,TURK 202,202,INTERMEDIATE TURKISH I,curriculum,ME,course_choice,scraped,20252
+6420303,TURK 303,303,TURKISH I,curriculum;prerequisite_closure,ME,course_choice,scraped,20252
+6420304,TURK 304,304,TURKISH II,curriculum,ME,course_choice,scraped,20252

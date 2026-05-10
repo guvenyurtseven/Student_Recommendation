@@ -1,0 +1,73 @@
+﻿id,course_code,course_number,course_name,sources,curriculum_programs,requirement_types,scrape_status,found_semester
+3570100,357 100,100,PRECALCULUS,prerequisite_closure,,,scraped,20252
+3570119,357 119,119,CALCULUS WITH ANALYTIC GEOMETRY,prerequisite_closure,,,scraped,20252
+3570120,357 120,120,CALCULUS FOR FUNCTIONS OF SEVERAL VARIABLES,prerequisite_closure,,,scraped,20252
+3590101,359 101,101,DEVELOPMENT OF READING AND WRITING SKILLS I,prerequisite_closure,,,scraped,20252
+3590102,359 102,102,DEVELOPMENT OF READING AND WRITING SKILLS II,prerequisite_closure,,,scraped,20252
+3600111,360 111,111,GENERAL CHEMISTRY I,prerequisite_closure,,,scraped,20251
+3620201,362 201,201,PRINCIPLES OF KEMAL ATATÜRK I,prerequisite_closure,,,scraped,20252
+3640221,364 221,221,ENGINEERING MECHANICS I,prerequisite_closure,,,scraped,20251
+5610221,561 221,221,ENGINEERING MECHANICS I,prerequisite_closure,,,scraped,20252
+5610223,561 223,223,STATICS AND STRENGTH OF MATERIALS,prerequisite_closure,,,scraped,20252
+3120100,BA 100,100,CAREER PLANNING,curriculum,MINE,required_course,scraped,20252
+5620374,CE 374,374,FLUID MECHANICS,curriculum,MINE,required_course,scraped,20252
+5710240,CENG 240,240,PROGRAMMING WITH PYTHON FOR ENGINEERS,curriculum,MINE,required_course,scraped,20252
+2340101,CHEM 101,101,GENERAL CHEMISTRY I,prerequisite_closure,,,scraped,20251
+2340105,CHEM 105,105,GENERAL CHEMISTRY I,prerequisite_closure,,,scraped,20252
+2340109,CHEM 109,109,GENERAL CHEMISTRY FOR HONOUR PROG. I,prerequisite_closure,,,not_found_in_searched_offerings,
+2340111,CHEM 111,111,GENERAL CHEMISTRY I,curriculum;prerequisite_closure,MINE,required_course,scraped,20251
+2340112,CHEM 112,112,GENERAL CHEMISTRY II,curriculum,MINE,required_course,scraped,20252
+3110210,ECON 210,210,PRINCIPLES OF ECONOMICS,curriculum,MINE,required_course,scraped,20252
+6390101,ENG 101,101,ENGLISH FOR ACADEMIC PURPOSES I,curriculum;prerequisite_closure,MINE,required_course,scraped,20252
+6390102,ENG 102,102,ENGLISH FOR ACADEMIC PURPOSES II,curriculum;prerequisite_closure,MINE,required_course,scraped,20252
+6390211,ENG 211,211,ACADEMIC SPEAKING SKILLS,curriculum,MINE,required_course,scraped,20252
+5610224,ES 224,224,STRENGTH OF MATERIALS,curriculum;prerequisite_closure,MINE,required_course,scraped,20252
+5610225,ES 225,225,ENGINEERING MECHANICS,curriculum;prerequisite_closure,MINE,required_course,scraped,20251
+5610303,ES 303,303,STATISTICAL METHODS FOR ENGINEERS,curriculum,MINE,required_course,scraped,20252
+5640207,GEOE 207,207,PRINCIPLES OF MINERALOGY &PETROGRAPHY,curriculum,MINE,required_course,scraped,20251
+5640215,GEOE 215,215,PRINCIPLES OF STRUCTURAL GEOLOGY,curriculum,MINE,required_course,scraped,20252
+5640231,GEOE 231,231,ELEMENTS OF GEOLOGY,curriculum;prerequisite_closure,MINE,required_course,scraped,20252
+2402201,HIST 2201,2201,PRINCIPLES OF KEMAL ATATÜRK I,curriculum;prerequisite_closure,MINE,course_choice,scraped,20252
+2402202,HIST 2202,2202,,curriculum,MINE,course_choice,scraped,20252
+2402205,HIST 2205,2205,HISTORY OF THE TURKISH REVOLUTION I,curriculum;prerequisite_closure,MINE,course_choice,scraped,20252
+2402206,HIST 2206,2206,HISTORY OF THE TURKISH REVOLUTION II,curriculum,MINE,course_choice,scraped,20252
+9010100,IS 100,100,INTRODUCTION TO INFORMATION TECHNOLOGIES AND APPLICATIONS,curriculum,MINE,required_course,scraped,20252
+2360117,MATH 117,117,CALCULUS I,prerequisite_closure,,,scraped,20252
+2360118,MATH 118,118,CALCULUS II,prerequisite_closure,,,scraped,20252
+2360119,MATH 119,119,CALCULUS WITH ANALYTIC GEOMETRY,curriculum;prerequisite_closure,MINE,required_course,scraped,20252
+2360120,MATH 120,120,CALCULUS OF FUNCTIONS OF SEVERAL VARIABLES,curriculum;prerequisite_closure,MINE,required_course,scraped,20252
+2360129,MATH 129,129,SINGLE VARIABLE CALCULUS,prerequisite_closure,,,scraped,20251
+2360130,MATH 130,130,MULTIVARIABLE AND VECTOR CALCULUS,prerequisite_closure,,,scraped,20252
+2360151,MATH 151,151,CALCULUS I,prerequisite_closure,,,not_found_in_searched_offerings,
+2360155,MATH 155,155,CALCULUS I (ACCELERATED),prerequisite_closure,,,not_found_in_searched_offerings,
+2360157,MATH 157,157,BASIC CALCULUS I,prerequisite_closure,,,not_found_in_searched_offerings,
+2360219,MATH 219,219,INTRODUCTION TO DIFFERENTIAL EQUATIONS,curriculum;prerequisite_closure,MINE,required_course,scraped,20252
+5690105,ME 105,105,COMPUTER AIDED ENGINEERING GRAPHICS,curriculum,MINE,required_course,scraped,20252
+5690351,ME 351,351,THERMODYNAMICS OF HEAT POWER,curriculum,MINE,required_course,scraped,20252
+5650102,MINE 102,102,INTRODUCTION TO MINERAL INDUSTRIES,curriculum,MINE,required_course,scraped,20252
+5650201,MINE 201,201,UNDERGROUND MINING,curriculum;prerequisite_closure,MINE,required_course,scraped,20251
+5650202,MINE 202,202,SURFACE MINING,curriculum;prerequisite_closure,MINE,required_course,scraped,20252
+5650300,MINE 300,300,SUMMER PRACTICE I,curriculum,MINE,summer_practice,scraped,20252
+5650302,MINE 302,302,MINE POWER AND MACHINERY,curriculum,MINE,required_course,scraped,20252
+5650309,MINE 309,309,MINERAL PROCESSING I,curriculum;prerequisite_closure,MINE,required_course,scraped,20251
+5650310,MINE 310,310,MINERAL PROCESSING II,curriculum;prerequisite_closure,MINE,required_course,scraped,20252
+5650312,MINE 312,312,MINE SURVEYING,curriculum,MINE,required_course,scraped,20252
+5650317,MINE 317,317,INTRODUCTION TO ROCK MECHANICS,curriculum;prerequisite_closure,MINE,required_course,scraped,20251
+5650324,MINE 324,324,ROCK FRAGMENTATION,curriculum;prerequisite_closure,MINE,required_course,scraped,20252
+5650332,MINE 332,332,MINE SYSTEM ANALYSIS,curriculum,MINE,required_course,scraped,20252
+5650400,MINE 400,400,SUMMER PRACTICE II,curriculum,MINE,summer_practice,scraped,20252
+5650407,MINE 407,407,MINE VALUATION,curriculum;prerequisite_closure,MINE,required_course,scraped,20251
+5650416,MINE 416,416,MINE DESIGN,curriculum,MINE,required_course,scraped,20252
+5650417,MINE 417,417,MINE VENTILATION,curriculum;prerequisite_closure,MINE,required_course,scraped,20251
+5650419,MINE 419,419,MATERIALS HANDLING &MINE TRANSPORT,curriculum;prerequisite_closure,MINE,required_course,scraped,20251
+5650422,MINE 422,422,MINE HEALTH . SAFETY AND ETHICS,curriculum,MINE,required_course,scraped,20252
+5650427,MINE 427,427,MINERAL PROCESSING DESIGN,curriculum,MINE,required_course,scraped,20251
+8770101,OHS 101,101,OCCUPATIONAL HEALTH AND SAFETY-I,curriculum;prerequisite_closure,MINE,required_course,scraped,20252
+2300105,PHYS 105,105,GENERAL PHYSICS I,curriculum;prerequisite_closure,MINE,required_course,scraped,20251
+2300106,PHYS 106,106,GENERAL PHYSICS II,curriculum;prerequisite_closure,MINE,required_course,scraped,20252
+6420105,TURK 105,105,TURKISH I,curriculum;prerequisite_closure,MINE,course_choice,scraped,20251
+6420106,TURK 106,106,TURKISH II,curriculum,MINE,course_choice,scraped,20252
+6420201,TURK 201,201,ELEMENTARY TURKISH I,curriculum;prerequisite_closure,MINE,course_choice,scraped,20252
+6420202,TURK 202,202,INTERMEDIATE TURKISH I,curriculum,MINE,course_choice,scraped,20252
+6420303,TURK 303,303,TURKISH I,curriculum;prerequisite_closure,MINE,course_choice,scraped,20252
+6420304,TURK 304,304,TURKISH II,curriculum,MINE,course_choice,scraped,20252

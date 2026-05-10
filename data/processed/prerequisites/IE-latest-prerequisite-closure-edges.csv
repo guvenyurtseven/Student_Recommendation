@@ -1,0 +1,66 @@
+﻿from,from_course_code,to,to_course_code,set_no,min_grade,type,position
+3570100,357 100,3570119,357 119,1,DD,Undergraduate NCC / Lisans KKK,Offered Course / A??k Ders
+3570119,357 119,3570120,357 120,1,DD,Undergraduate NCC / Lisans KKK,Offered Course / A??k Ders
+2360119,MATH 119,3570120,357 120,2,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+2360117,MATH 117,3570120,357 120,3,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+3590101,359 101,3590102,359 102,1,DD,Undergraduate NCC / Lisans KKK,Offered Course / A??k Ders
+6390101,ENG 101,3590102,359 102,2,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+2360120,MATH 120,5610202,561 202,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+2360152,MATH 152,5610202,561 202,2,DD,Undergraduate / Lisans,Closed Course / Kapal? Ders
+2360158,MATH 158,5610202,561 202,3,DD,Undergraduate / Lisans,Closed Course / Kapal? Ders
+2360219,MATH 219,5670381,EE 381,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+6390101,ENG 101,6390102,ENG 102,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+3590101,359 101,6390102,ENG 102,2,DD,Undergraduate NCC / Lisans KKK,Offered Course / A??k Ders
+6390101,ENG 101,6390211,ENG 211,2,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+6390102,ENG 102,6390211,ENG 211,2,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+3590101,359 101,6390211,ENG 211,3,DD,Undergraduate NCC / Lisans KKK,Offered Course / A??k Ders
+3590102,359 102,6390211,ENG 211,3,DD,Undergraduate NCC / Lisans KKK,Offered Course / A??k Ders
+2402201,HIST 2201,2402202,HIST 2202,1,U,Undergraduate / Lisans,Offered Course / A??k Ders
+3620201,362 201,2402202,HIST 2202,2,U,Undergraduate NCC / Lisans KKK,Offered Course / A??k Ders
+2402205,HIST 2205,2402206,HIST 2206,1,S,Undergraduate / Lisans,Offered Course / A??k Ders
+2402205,HIST 2205,2402206,HIST 2206,2,U,Undergraduate / Lisans,Offered Course / A??k Ders
+2360124,MATH 124,5680251,IE 251,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+2360260,MATH 260,5680251,IE 251,2,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+2360261,MATH 261,5680251,IE 251,3,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+5610202,561 202,5680251,IE 251,4,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+5690210,ME 210,5680251,IE 251,5,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+5680251,IE 251,5680252,IE 252,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+2360120,MATH 120,5680265,IE 265,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+2360158,MATH 158,5680265,IE 265,2,DD,Undergraduate / Lisans,Closed Course / Kapal? Ders
+2360156,MATH 156,5680265,IE 265,3,DD,Undergraduate / Lisans,Closed Course / Kapal? Ders
+5680265,IE 265,5680266,IE 266,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+5680262,IE 262,5680266,IE 266,2,DD,Undergraduate / Lisans,Closed Course / Kapal? Ders
+8770101,OHS 101,5680300,IE 300,1,S,Undergraduate / Lisans,Offered Course / A??k Ders
+5680251,IE 251,5680323,IE 323,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+5680265,IE 265,5680323,IE 323,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+5680251,IE 251,5680323,IE 323,2,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+5680262,IE 262,5680323,IE 323,2,DD,Undergraduate / Lisans,Closed Course / Kapal? Ders
+5680323,IE 323,5680324,IE 324,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+5680265,IE 265,5680361,IE 361,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+5680265,IE 265,5680368,IE 368,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+5710230,CENG 230,5680372,IE 372,1,DD,Undergraduate / Lisans,Closed Course / Kapal? Ders
+5680265,IE 265,5680372,IE 372,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+5710229,CENG 229,5680372,IE 372,2,DD,Undergraduate / Lisans,Closed Course / Kapal? Ders
+5680265,IE 265,5680372,IE 372,2,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+5710240,CENG 240,5680372,IE 372,3,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+5680265,IE 265,5680372,IE 372,3,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+5680251,IE 251,5680489,IE 489,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+5680497,IE 497,5680498,IE 498,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+2360117,MATH 117,2360118,MATH 118,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+2360119,MATH 119,2360118,MATH 118,2,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+2360119,MATH 119,2360120,MATH 120,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+3570119,357 119,2360120,MATH 120,2,DD,Undergraduate NCC / Lisans KKK,Offered Course / A??k Ders
+2360151,MATH 151,2360120,MATH 120,3,DD,Undergraduate / Lisans,Closed Course / Kapal? Ders
+2360117,MATH 117,2360120,MATH 120,4,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+2360129,MATH 129,2360130,MATH 130,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+2360120,MATH 120,2360219,MATH 219,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+3570120,357 120,2360219,MATH 219,2,DD,Undergraduate NCC / Lisans KKK,Offered Course / A??k Ders
+2360118,MATH 118,2360219,MATH 219,3,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+2360130,MATH 130,2360219,MATH 219,4,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+2360120,MATH 120,5690210,ME 210,1,DD,Undergraduate / Lisans,Offered Course / A??k Ders
+8770101,OHS 101,8770301,OHS 301,1,S,Undergraduate / Lisans,Offered Course / A??k Ders
+6420105,TURK 105,6420106,TURK 106,1,S,Undergraduate / Lisans,Offered Course / A??k Ders
+6420201,TURK 201,6420106,TURK 106,2,S,Undergraduate / Lisans,Offered Course / A??k Ders
+6420201,TURK 201,6420202,TURK 202,1,S,Undergraduate / Lisans,Offered Course / A??k Ders
+6420105,TURK 105,6420202,TURK 202,2,S,Undergraduate / Lisans,Offered Course / A??k Ders
+6420303,TURK 303,6420304,TURK 304,1,S,Undergraduate / Lisans,Offered Course / A??k Ders

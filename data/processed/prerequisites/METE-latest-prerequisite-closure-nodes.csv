@@ -1,0 +1,70 @@
+﻿id,course_code,course_number,course_name,sources,curriculum_programs,requirement_types,scrape_status,found_semester
+3570100,357 100,100,PRECALCULUS,prerequisite_closure,,,scraped,20252
+3570119,357 119,119,CALCULUS WITH ANALYTIC GEOMETRY,prerequisite_closure,,,scraped,20252
+3570120,357 120,120,CALCULUS FOR FUNCTIONS OF SEVERAL VARIABLES,prerequisite_closure,,,scraped,20252
+3590101,359 101,101,DEVELOPMENT OF READING AND WRITING SKILLS I,prerequisite_closure,,,scraped,20252
+3590102,359 102,102,DEVELOPMENT OF READING AND WRITING SKILLS II,prerequisite_closure,,,scraped,20252
+3600111,360 111,111,GENERAL CHEMISTRY I,prerequisite_closure,,,scraped,20251
+3620201,362 201,201,PRINCIPLES OF KEMAL ATATÜRK I,prerequisite_closure,,,scraped,20252
+3120100,BA 100,100,CAREER PLANNING,curriculum,METE,required_course,scraped,20252
+5710230,CENG 230,230,INTRODUCTION TO C PROGRAMMING,prerequisite_closure,,,not_found_in_searched_offerings,
+5710240,CENG 240,240,PROGRAMMING WITH PYTHON FOR ENGINEERS,curriculum;prerequisite_closure,METE,required_course,scraped,20252
+2340101,CHEM 101,101,GENERAL CHEMISTRY I,prerequisite_closure,,,scraped,20251
+2340105,CHEM 105,105,GENERAL CHEMISTRY I,prerequisite_closure,,,scraped,20252
+2340109,CHEM 109,109,GENERAL CHEMISTRY FOR HONOUR PROG. I,prerequisite_closure,,,not_found_in_searched_offerings,
+2340111,CHEM 111,111,GENERAL CHEMISTRY I,curriculum;prerequisite_closure,METE,required_course,scraped,20251
+2340112,CHEM 112,112,GENERAL CHEMISTRY II,curriculum,METE,required_course,scraped,20252
+6390101,ENG 101,101,ENGLISH FOR ACADEMIC PURPOSES I,curriculum;prerequisite_closure,METE,required_course,scraped,20252
+6390102,ENG 102,102,ENGLISH FOR ACADEMIC PURPOSES II,curriculum;prerequisite_closure,METE,required_course,scraped,20252
+6390211,ENG 211,211,ACADEMIC SPEAKING SKILLS,curriculum,METE,required_course,scraped,20252
+5610223,ES 223,223,STATICS AND STRENGTH OF MATERIALS,curriculum;prerequisite_closure,METE,required_course,scraped,20252
+5610361,ES 361,361,COMPUTING METHODS IN ENGINEERING,curriculum;prerequisite_closure,METE,required_course,scraped,20252
+2402201,HIST 2201,2201,PRINCIPLES OF KEMAL ATATÜRK I,curriculum;prerequisite_closure,METE,course_choice,scraped,20252
+2402202,HIST 2202,2202,,curriculum,METE,course_choice,scraped,20252
+2402205,HIST 2205,2205,HISTORY OF THE TURKISH REVOLUTION I,curriculum;prerequisite_closure,METE,course_choice,scraped,20252
+2402206,HIST 2206,2206,HISTORY OF THE TURKISH REVOLUTION II,curriculum,METE,course_choice,scraped,20252
+9010100,IS 100,100,INTRODUCTION TO INFORMATION TECHNOLOGIES AND APPLICATIONS,curriculum,METE,required_course,scraped,20252
+2360117,MATH 117,117,CALCULUS I,prerequisite_closure,,,scraped,20252
+2360118,MATH 118,118,CALCULUS II,prerequisite_closure,,,scraped,20252
+2360119,MATH 119,119,CALCULUS WITH ANALYTIC GEOMETRY,curriculum;prerequisite_closure,METE,required_course,scraped,20252
+2360120,MATH 120,120,CALCULUS OF FUNCTIONS OF SEVERAL VARIABLES,curriculum;prerequisite_closure,METE,required_course,scraped,20252
+2360129,MATH 129,129,SINGLE VARIABLE CALCULUS,prerequisite_closure,,,scraped,20251
+2360130,MATH 130,130,MULTIVARIABLE AND VECTOR CALCULUS,prerequisite_closure,,,scraped,20252
+2360151,MATH 151,151,CALCULUS I,prerequisite_closure,,,not_found_in_searched_offerings,
+2360155,MATH 155,155,CALCULUS I (ACCELERATED),prerequisite_closure,,,not_found_in_searched_offerings,
+2360157,MATH 157,157,BASIC CALCULUS I,prerequisite_closure,,,not_found_in_searched_offerings,
+2360219,MATH 219,219,INTRODUCTION TO DIFFERENTIAL EQUATIONS,curriculum,METE,required_course,scraped,20252
+5690105,ME 105,105,COMPUTER AIDED ENGINEERING GRAPHICS,curriculum,METE,required_course,scraped,20252
+5700102,METE 102,102,INTRODUCTION TO METALLURGICAL AND MATERIALS ENGINEERING,curriculum,METE,required_course,scraped,20252
+5700201,METE 201,201,MATERIALS SCIENCE I,curriculum;prerequisite_closure,METE,required_course,scraped,20251
+5700202,METE 202,202,MATERIALS SCIENCE II,curriculum;prerequisite_closure,METE,required_course,scraped,20252
+5700203,METE 203,203,THERMODYNAMICS OF MATERIALS I,curriculum;prerequisite_closure,METE,required_course,scraped,20251
+5700204,METE 204,204,THERMODYNAMICS OF MATERIALS II,curriculum;prerequisite_closure,METE,required_course,scraped,20252
+5700206,METE 206,206,MATERIALS LABORATORY,curriculum;prerequisite_closure,METE,required_course,scraped,20252
+5700215,METE 215,215,MATERIALS PROCESSING LABORATORY,curriculum;prerequisite_closure,METE,required_course,scraped,20251
+5700300,METE 300,300,SUMMER PRACTICE I,curriculum,METE,summer_practice,scraped,20252
+5700301,METE 301,301,PHASE EQUILIBRIA,curriculum;prerequisite_closure,METE,required_course,scraped,20251
+5700302,METE 302,302,PRINCIPLES OF SOLIDIFICATION,curriculum,METE,required_course,scraped,20252
+5700303,METE 303,303,MECHANICAL BEHAVIOR OF MATERIALS,curriculum;prerequisite_closure,METE,required_course,scraped,20251
+5700305,METE 305,305,TRANSPORT PHENOMENA,curriculum,METE,required_course,scraped,20251
+5700306,METE 306,306,CHEMICAL PRINCIPLES OF PRIMARY MATERIALS PROCESSING,curriculum,METE,required_course,scraped,20252
+5700307,METE 307,307,METALLIC MATERIALS AND METALLOGRAPHY,curriculum,METE,required_course,scraped,20252
+5700308,METE 308,308,PHYSICAL FOUNDATIONS OF MATERIALS,curriculum,METE,required_course,scraped,20252
+5700310,METE 310,310,STRUCTURE AND CHARACTERIZATION OF MATERIALS,curriculum,METE,required_course,scraped,20252
+5700349,METE 349,349,ELECTRICAL. MAGNETIC AND OPTICAL PROPERTIES OF MATERIALS,curriculum,METE,required_course,scraped,20251
+5700350,METE 350,350,MULTI-SCALE MODELING AND SIMULATION OF MATERIALS,curriculum,METE,required_course,scraped,20252
+5700400,METE 400,400,SUMMER PRACTICE II,curriculum,METE,summer_practice,scraped,20252
+5700401,METE 401,401,MATERIALS ENGINEERING DESIGN I,curriculum;prerequisite_closure,METE,required_course,scraped,20251
+5700402,METE 402,402,MATERIALS ENGINEERING DESIGN II,curriculum,METE,required_course,scraped,20252
+5700451,METE 451,451,CERAMIC MATERIALS,curriculum,METE,required_course,scraped,20251
+5700453,METE 453,453,POLYMER MATERIALS,curriculum,METE,required_course,scraped,20251
+8770101,OHS 101,101,OCCUPATIONAL HEALTH AND SAFETY-I,curriculum;prerequisite_closure,METE,required_course,scraped,20252
+8770301,OHS 301,301,OCCUPATIONAL HEALTH AND SAFETY - II,curriculum,METE,required_course,scraped,20252
+2300105,PHYS 105,105,GENERAL PHYSICS I,curriculum,METE,required_course,scraped,20251
+2300106,PHYS 106,106,GENERAL PHYSICS II,curriculum,METE,required_course,scraped,20252
+6420105,TURK 105,105,TURKISH I,curriculum;prerequisite_closure,METE,course_choice,scraped,20251
+6420106,TURK 106,106,TURKISH II,curriculum,METE,course_choice,scraped,20252
+6420201,TURK 201,201,ELEMENTARY TURKISH I,curriculum;prerequisite_closure,METE,course_choice,scraped,20252
+6420202,TURK 202,202,INTERMEDIATE TURKISH I,curriculum,METE,course_choice,scraped,20252
+6420303,TURK 303,303,TURKISH I,curriculum;prerequisite_closure,METE,course_choice,scraped,20252
+6420304,TURK 304,304,TURKISH II,curriculum,METE,course_choice,scraped,20252

@@ -1,0 +1,78 @@
+﻿id,course_code,course_number,course_name,sources,curriculum_programs,requirement_types,scrape_status,found_semester
+3550111,355 111,111,INTRODUCTION TO COMPUTER ENG. CONCEPTS,prerequisite_closure,,,scraped,20251
+3550140,355 140,140,C PROGRAMMING,prerequisite_closure,,,scraped,20252
+3550213,355 213,213,DATA STRUCTURES,prerequisite_closure,,,scraped,20252
+3550230,355 230,230,INTRODUCTION TO C PROGRAMMING,prerequisite_closure,,,scraped,20252
+3550240,355 240,240,PROGRAMMING WITH PYTHON FOR ENGINEERS,prerequisite_closure,,,scraped,20252
+3550301,355 301,301,ALGORITHMS AND DATA STRUCTURES,prerequisite_closure,,,scraped,20252
+3550310,355 310,310,ALGORITHMS AND DATA STRUCTURES WITH PYTHON,prerequisite_closure,,,scraped,20252
+3550350,355 350,350,SOFTWARE ENGINEERING,prerequisite_closure,,,scraped,20252
+3570100,357 100,100,PRECALCULUS,prerequisite_closure,,,scraped,20252
+3570119,357 119,119,CALCULUS WITH ANALYTIC GEOMETRY,prerequisite_closure,,,scraped,20252
+3570120,357 120,120,CALCULUS FOR FUNCTIONS OF SEVERAL VARIABLES,prerequisite_closure,,,scraped,20252
+3590101,359 101,101,DEVELOPMENT OF READING AND WRITING SKILLS I,prerequisite_closure,,,scraped,20252
+3590102,359 102,102,DEVELOPMENT OF READING AND WRITING SKILLS II,prerequisite_closure,,,scraped,20252
+3620201,362 201,201,PRINCIPLES OF KEMAL ATATÜRK I,prerequisite_closure,,,scraped,20252
+3890140,389 140,140,PROGRAMMING,prerequisite_closure,,,scraped,20232
+4300210,430 210,210,PROGRAMMING LANGUAGES I,prerequisite_closure,,,scraped,20251
+3120100,BA 100,100,CAREER PLANNING,curriculum,CENG,required_course,scraped,20252
+2380109,BIOL 109,109,INTRODUCTION TO MOLECULAR BIOLOGY,curriculum,CENG,required_course,scraped,20251
+5710100,CENG 100,100,COMPUTER ENGINEERING ORIENTATION,curriculum,CENG,required_course,scraped,20251
+5710111,CENG 111,111,INTRODUCTION TO COMPUTER ENG. CONCEPTS,curriculum;prerequisite_closure,CENG,required_course,scraped,20251
+5710140,CENG 140,140,C PROGRAMMING,curriculum;prerequisite_closure,CENG,required_course,scraped,20252
+5710213,CENG 213,213,DATA STRUCTURES,curriculum;prerequisite_closure,CENG,required_course,scraped,20252
+5710222,CENG 222,222,STATISTICAL METHODS FOR COMPUTER ENGINEERING,curriculum,CENG,required_course,scraped,20252
+5710223,CENG 223,223,DISCRETE COMPUTATIONAL STRUCTURES,curriculum;prerequisite_closure,CENG,required_course,scraped,20251
+5710229,CENG 229,229,C PROGRAMMING,prerequisite_closure,,,not_found_in_searched_offerings,
+5710230,CENG 230,230,INTRODUCTION TO C PROGRAMMING,prerequisite_closure,,,not_found_in_searched_offerings,
+5710232,CENG 232,232,LOGIC DESIGN,curriculum;prerequisite_closure,CENG,required_course,scraped,20252
+5710240,CENG 240,240,PROGRAMMING WITH PYTHON FOR ENGINEERS,prerequisite_closure,,,scraped,20252
+5710242,CENG 242,242,PROGRAMMING LANGUAGE CONCEPTS,curriculum,CENG,required_course,scraped,20252
+5710280,CENG 280,280,FORMAL LANGU.AND ABSTRACT MACHINES,curriculum,CENG,required_course,scraped,20252
+5710300,CENG 300,300,SUMMER PRACTICE I,curriculum,CENG,summer_practice,scraped,20252
+5710301,CENG 301,301,ALGORITHMS AND DATA STRUCTURES,prerequisite_closure,,,scraped,20251
+5710310,CENG 310,310,ALGORITHMS AND DATA STRUCTURES WITH PYTHON,prerequisite_closure,,,scraped,20252
+5710315,CENG 315,315,ALGORITHMS,curriculum,CENG,required_course,scraped,20251
+5710331,CENG 331,331,COMPUTER ORGANIZATION,curriculum;prerequisite_closure,CENG,required_course,scraped,20251
+5710334,CENG 334,334,INTRODUCTION TO OPERATING SYSTEMS,curriculum,CENG,required_course,scraped,20252
+5710336,CENG 336,336,INTRO.TO EMBEDDED SYSTEMS DEVELOPMENT,curriculum,CENG,required_course,scraped,20252
+5710350,CENG 350,350,SOFTWARE ENGINEERING,curriculum;prerequisite_closure,CENG,required_course,scraped,20252
+5710351,CENG 351,351,DATA MANAGEMENT AND FILE STRUCTURES,curriculum,CENG,required_course,scraped,20251
+5710384,CENG 384,384,SIGNALS AND SYSTEMS FOR COMPUTER ENGINEERS,curriculum,CENG,required_course,scraped,20252
+5710400,CENG 400,400,SUMMER PRACTICE II,curriculum,CENG,summer_practice,scraped,20252
+5710477,CENG 477,477,INTRODUCTION TO COMPUTER GRAPHICS,curriculum,CENG,required_course,scraped,20251
+5710491,CENG 491,491,COMPUTER ENGINEERING DESIGN I,curriculum;prerequisite_closure,CENG,required_course,scraped,20251
+5710492,CENG 492,492,COMPUTER ENGINEERING DESIGN II,curriculum,CENG,required_course,scraped,20252
+5670281,EE 281,281,ELECTRICAL CIRCUITS,curriculum,CENG,required_course,scraped,20251
+6390101,ENG 101,101,ENGLISH FOR ACADEMIC PURPOSES I,curriculum;prerequisite_closure,CENG,required_course,scraped,20252
+6390102,ENG 102,102,ENGLISH FOR ACADEMIC PURPOSES II,curriculum;prerequisite_closure,CENG,required_course,scraped,20252
+6390211,ENG 211,211,ACADEMIC SPEAKING SKILLS,curriculum,CENG,required_course,scraped,20252
+2402201,HIST 2201,2201,PRINCIPLES OF KEMAL ATATÜRK I,curriculum;prerequisite_closure,CENG,course_choice,scraped,20252
+2402202,HIST 2202,2202,,curriculum,CENG,course_choice,scraped,20252
+2402205,HIST 2205,2205,HISTORY OF THE TURKISH REVOLUTION I,curriculum;prerequisite_closure,CENG,course_choice,scraped,20252
+2402206,HIST 2206,2206,HISTORY OF THE TURKISH REVOLUTION II,curriculum,CENG,course_choice,scraped,20252
+9010100,IS 100,100,INTRODUCTION TO INFORMATION TECHNOLOGIES AND APPLICATIONS,curriculum,CENG,required_course,scraped,20252
+2360117,MATH 117,117,CALCULUS I,prerequisite_closure,,,scraped,20252
+2360118,MATH 118,118,CALCULUS II,prerequisite_closure,,,scraped,20252
+2360119,MATH 119,119,CALCULUS WITH ANALYTIC GEOMETRY,curriculum;prerequisite_closure,CENG,required_course,scraped,20252
+2360120,MATH 120,120,CALCULUS OF FUNCTIONS OF SEVERAL VARIABLES,curriculum;prerequisite_closure,CENG,required_course,scraped,20252
+2360129,MATH 129,129,SINGLE VARIABLE CALCULUS,prerequisite_closure,,,scraped,20251
+2360130,MATH 130,130,MULTIVARIABLE AND VECTOR CALCULUS,prerequisite_closure,,,scraped,20252
+2360151,MATH 151,151,CALCULUS I,prerequisite_closure,,,not_found_in_searched_offerings,
+2360219,MATH 219,219,INTRODUCTION TO DIFFERENTIAL EQUATIONS,curriculum;prerequisite_closure,CENG,required_course,scraped,20252
+2360260,MATH 260,260,BASIC LINEAR ALGEBRA,curriculum;prerequisite_closure,CENG,required_course,scraped,20252
+8770101,OHS 101,101,OCCUPATIONAL HEALTH AND SAFETY-I,curriculum;prerequisite_closure,CENG,required_course,scraped,20252
+8770301,OHS 301,301,OCCUPATIONAL HEALTH AND SAFETY - II,curriculum;prerequisite_closure,CENG,required_course,scraped,20252
+2300105,PHYS 105,105,GENERAL PHYSICS I,curriculum;prerequisite_closure,CENG,required_course,scraped,20251
+2300106,PHYS 106,106,GENERAL PHYSICS II,curriculum;prerequisite_closure,CENG,required_course,scraped,20252
+2300109,PHYS 109,109,MECHANICS,prerequisite_closure,,,scraped,20251
+2300110,PHYS 110,110,ELECTROMAGNETISM,prerequisite_closure,,,scraped,20252
+2300111,PHYS 111,111,PHYSICS I (MECHANICS),prerequisite_closure,,,scraped,20251
+2300112,PHYS 112,112,PHYSICS II (ELECTRICITY AND MAGNETISM),prerequisite_closure,,,scraped,20252
+2300200,PHYS 200,200,BASICS OF SCIENTIFIC COMPUTATION,prerequisite_closure,,,scraped,20252
+6420105,TURK 105,105,TURKISH I,curriculum;prerequisite_closure,CENG,course_choice,scraped,20251
+6420106,TURK 106,106,TURKISH II,curriculum,CENG,course_choice,scraped,20252
+6420201,TURK 201,201,ELEMENTARY TURKISH I,curriculum;prerequisite_closure,CENG,course_choice,scraped,20252
+6420202,TURK 202,202,INTERMEDIATE TURKISH I,curriculum,CENG,course_choice,scraped,20252
+6420303,TURK 303,303,TURKISH I,curriculum;prerequisite_closure,CENG,course_choice,scraped,20252
+6420304,TURK 304,304,TURKISH II,curriculum,CENG,course_choice,scraped,20252

@@ -1,0 +1,1919 @@
+{
+  "metadata": {
+    "department_abbr": "AE",
+    "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+    "department_value": "572",
+    "semesters": [
+      "20241",
+      "20242"
+    ],
+    "csv_files": [
+      "AE-20241.csv",
+      "AE-20242.csv"
+    ],
+    "generated_at_utc": "2026-05-07T10:44:20+00:00",
+    "undergraduate_max_course_number": 499,
+    "node_count": 55,
+    "edge_count": 39,
+    "is_dag": true,
+    "edge_direction": "prerequisite -> course"
+  },
+  "nodes": [
+    {
+      "id": "5610361",
+      "course_code": "561 361",
+      "course_number": 361,
+      "course_name": "COMPUTING METHODS IN ENGINEERING",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720101",
+      "course_code": "AE 101",
+      "course_number": 101,
+      "course_name": "INTRODUCTION TO AEROSPACE ENGINEERING (HAVACILIK VE UZAY MÜHENDİSLİĞİNE GİRİŞ )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720122",
+      "course_code": "AE 122",
+      "course_number": 122,
+      "course_name": "STATICS",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720172",
+      "course_code": "AE 172",
+      "course_number": 172,
+      "course_name": "INTRODUCTION TO AIRCRAFT PERFORMANCE (HAVA ARAÇLARI PERFORMANSINA GİRİŞ )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720200",
+      "course_code": "AE 200",
+      "course_number": 200,
+      "course_name": "SUMMER PRACTICE I (YAZ STAJI I )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate Practice / Lisans Staj"
+    },
+    {
+      "id": "5720202",
+      "course_code": "AE 202",
+      "course_number": 202,
+      "course_name": "MATHEMATICS FOR AEROSPACE ENGINEERS",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720223",
+      "course_code": "AE 223",
+      "course_number": 223,
+      "course_name": "DYNAMICS",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720231",
+      "course_code": "AE 231",
+      "course_number": 231,
+      "course_name": "THERMODYNAMICS (TERMODİNAMİK )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720232",
+      "course_code": "AE 232",
+      "course_number": 232,
+      "course_name": "THERMODYNAMICS",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720241",
+      "course_code": "AE 241",
+      "course_number": 241,
+      "course_name": "FLUID MECHANICS",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720242",
+      "course_code": "AE 242",
+      "course_number": 242,
+      "course_name": "AERODYNAMICS I",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720244",
+      "course_code": "AE 244",
+      "course_number": 244,
+      "course_name": "FLUID MECHANICS (AKIŞKANLAR MEKANİĞİ )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720261",
+      "course_code": "AE 261",
+      "course_number": 261,
+      "course_name": "STATICS (STATİK )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720262",
+      "course_code": "AE 262",
+      "course_number": 262,
+      "course_name": "DYNAMICS (DİNAMİK )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720264",
+      "course_code": "AE 264",
+      "course_number": 264,
+      "course_name": "MECHANICS OF MATERIALS (MALZEME MEKANİĞİ )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720266",
+      "course_code": "AE 266",
+      "course_number": 266,
+      "course_name": "MECHANICS OF MATERIALS",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720300",
+      "course_code": "AE 300",
+      "course_number": 300,
+      "course_name": "SUMMER PRACTICE II (YAZ STAJI II )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate Practice / Lisans Staj"
+    },
+    {
+      "id": "5720305",
+      "course_code": "AE 305",
+      "course_number": 305,
+      "course_name": "NUMERICAL METHODS (SAYISAL YÖNTEMLER )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720306",
+      "course_code": "AE 306",
+      "course_number": 306,
+      "course_name": "NUMERICAL METHODS",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720331",
+      "course_code": "AE 331",
+      "course_number": 331,
+      "course_name": "HEAT TRANSFER (ISI TRANSFERİ )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720334",
+      "course_code": "AE 334",
+      "course_number": 334,
+      "course_name": "PROPULSION SYSTEMS I (İTKİ SİSTEMLERİ I )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720341",
+      "course_code": "AE 341",
+      "course_number": 341,
+      "course_name": "AERODYNAMICS I (AERODİNAMİK I )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720342",
+      "course_code": "AE 342",
+      "course_number": 342,
+      "course_name": "AERODYNAMICS II (AERODİNAMİK II )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720343",
+      "course_code": "AE 343",
+      "course_number": 343,
+      "course_name": "AERODYNAMICS II",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720345",
+      "course_code": "AE 345",
+      "course_number": 345,
+      "course_name": "AERODYNAMICS I",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720361",
+      "course_code": "AE 361",
+      "course_number": 361,
+      "course_name": "APPLIED ELASTICITY (UYGULAMALI ELASTİSİTE )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720362",
+      "course_code": "AE 362",
+      "course_number": 362,
+      "course_name": "AEROSPACE STRUCTURES (HAVACILIK VE UZAY YAPILARI )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720372",
+      "course_code": "AE 372",
+      "course_number": 372,
+      "course_name": "FLIGHT MECHANICS (UÇUŞ MEKANİĞİ )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720383",
+      "course_code": "AE 383",
+      "course_number": 383,
+      "course_name": "SYSTEMS DYNAMICS (SİSTEM DİNAMİĞİ )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720384",
+      "course_code": "AE 384",
+      "course_number": 384,
+      "course_name": "AUTOMATIC CONTROL SYSTEMS I (OTOMATİK KONTROL SİSTEMLERİ I )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720400",
+      "course_code": "AE 400",
+      "course_number": 400,
+      "course_name": "SUMMER PRACTICE III (YAZ STAJI III )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate Practice / Lisans Staj"
+    },
+    {
+      "id": "5720402",
+      "course_code": "AE 402",
+      "course_number": 402,
+      "course_name": "AIRCRAFT INSTRUMENTS & MEASUREMENT (HAVA ARACI ENSTRÜMANLARI VE ÖLÇÜM )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720404",
+      "course_code": "AE 404",
+      "course_number": 404,
+      "course_name": "AEROSPACE ENGINEERING PROJECT (HAVACILIK VE UZAY MÜHENDİSLİĞİ PROJESİ )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720410",
+      "course_code": "AE 410",
+      "course_number": 410,
+      "course_name": "AEROSPACE ENGINEERING LABORATORY (HAVACILIK VE UZAY MÜHENDİSLİĞİ LABORATUVARI )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720422",
+      "course_code": "AE 422",
+      "course_number": 422,
+      "course_name": "AEROSPACE SYSTEMS ENGINEERING (HAVACILIK VE UZAY SİSTEMLERİ MÜHENDİSLİĞİ )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720435",
+      "course_code": "AE 435",
+      "course_number": 435,
+      "course_name": "PROPULSIONS SYSTEMS II (İTKİ SİSTEMLERİ II )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720438",
+      "course_code": "AE 438",
+      "course_number": 438,
+      "course_name": "AIRCRAFT ENGINE DESIGN (HAVA ARACI MOTOR TASARIMI )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720442",
+      "course_code": "AE 442",
+      "course_number": 442,
+      "course_name": "INTRODUCTION TO ROCKET TECHNOLOGY (ROKET TEKNOLOJİSİNE GİRİŞ )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720443",
+      "course_code": "AE 443",
+      "course_number": 443,
+      "course_name": "COMPUTATIONAL AERODYNAMICS (HESAPLAMALI AERODİNAMİK )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720445",
+      "course_code": "AE 445",
+      "course_number": 445,
+      "course_name": "HYPERSONIC FLOW (HİPERSONİK AKIŞ )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720446",
+      "course_code": "AE 446",
+      "course_number": 446,
+      "course_name": "INTR. TO HELICOPTER AERODYN. & HEL. DES. (HELİKOPTER AERODİNAMİĞİ VE HELİKOPTER TASARIMINA GİRİŞ )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720451",
+      "course_code": "AE 451",
+      "course_number": 451,
+      "course_name": "AEROSPACE ENGINEERING DESIGN (HAVA VE UZAY ARAÇLARI TASARIMI )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720452",
+      "course_code": "AE 452",
+      "course_number": 452,
+      "course_name": "AERONAUTICAL ENG.DESIGN (HAVA ARAÇLARI TASARIMI )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720453",
+      "course_code": "AE 453",
+      "course_number": 453,
+      "course_name": "INTRODUCTION TO ATMOSPHERIC PHYSICS I (ATMOSFER FİZİĞİNE GİRİŞ I )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720462",
+      "course_code": "AE 462",
+      "course_number": 462,
+      "course_name": "DESIGN OF AEROSPACE STRUCTURES (HAVACILIK VE UZAY YAPILARI TASARIMI )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720463",
+      "course_code": "AE 463",
+      "course_number": 463,
+      "course_name": "MECHANICAL VIBRATIONS (MEKANİK TİTREŞİMLER )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720464",
+      "course_code": "AE 464",
+      "course_number": 464,
+      "course_name": "APPLICATION OF FINITE ELEMENT ANALYSIS IN AEROSPACE STRUCTURES (SONLU ELEMANLAR ANALİZİNİN HAVACILIK VE UZAY YAPILARINA UYGULANMASI )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241",
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720466",
+      "course_code": "AE 466",
+      "course_number": 466,
+      "course_name": "SPECIAL TOPICS IN AEROSPACE ENGINEERING: SPACECRAFT STRUCTURES (HAVACILIK VE UZAY MÜHENDİSLİĞİ ÖZEL KONULAR: UZAY ARACI YAPILARI )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720476",
+      "course_code": "AE 476",
+      "course_number": 476,
+      "course_name": "SPACE VEHICLE DESIGN (UZAY ARAÇLARI TASARIMI )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Elective / Seçmeli"
+    },
+    {
+      "id": "5720483",
+      "course_code": "AE 483",
+      "course_number": 483,
+      "course_name": "AUTOMATIC CONTROL SYSTEMS II (OTOMATİK KONTROL SİSTEMLERİ II )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720484",
+      "course_code": "AE 484",
+      "course_number": 484,
+      "course_name": "INERTIAL NAVIGATION SYSTEMS (ATALETLİ SEYRÜSEFER SİSTEMLERİ )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720486",
+      "course_code": "AE 486",
+      "course_number": 486,
+      "course_name": "SPACECRAFT DYNAMICS (UZAY ARACI DİNAMİĞİ )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20241"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "5720495",
+      "course_code": "AE 495",
+      "course_number": 495,
+      "course_name": "SPECIAL TOPICS IN AERONAUTICAL ENGINEERING: WIND ENERGY AND TURBINE TECHNOLOGY (HAVACILIK MÜHENDİSLİĞİNDE ÖZEL KONULAR : RÜZGAR ENERJİSİ VE TÜRBİN TEKNOLOJİSİ )",
+      "department": "Aerospace Engineering/Havacılık ve Uzay Mühendisliği",
+      "source": "offered_course",
+      "offered_semesters": [
+        "20242"
+      ],
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2360219",
+      "course_code": "MATH 219",
+      "course_number": 219,
+      "course_name": "INTRODUCTION TO DIFFERENTIAL EQUATIONS",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "id": "2360253",
+      "course_code": "MATH 253",
+      "course_number": 253,
+      "course_name": "INTRO.TO ORDINARY DIFFERENTIAL EQNS.",
+      "department": "external_or_not_offered_in_input_csv",
+      "source": "external_prerequisite",
+      "offered_semesters": [],
+      "level": "",
+      "type": "Undergraduate / Lisans"
+    }
+  ],
+  "edges": [
+    {
+      "from": "5720261",
+      "to": "5720262",
+      "from_course_code": "AE 261",
+      "to_course_code": "AE 262",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720122",
+      "to": "5720264",
+      "from_course_code": "AE 122",
+      "to_course_code": "AE 264",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "5720261",
+      "to": "5720264",
+      "from_course_code": "AE 261",
+      "to_course_code": "AE 264",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5610361",
+      "to": "5720305",
+      "from_course_code": "561 361",
+      "to_course_code": "AE 305",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720202",
+      "to": "5720305",
+      "from_course_code": "AE 202",
+      "to_course_code": "AE 305",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720231",
+      "to": "5720334",
+      "from_course_code": "AE 231",
+      "to_course_code": "AE 334",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720232",
+      "to": "5720334",
+      "from_course_code": "AE 232",
+      "to_course_code": "AE 334",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "5720244",
+      "to": "5720341",
+      "from_course_code": "AE 244",
+      "to_course_code": "AE 341",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720241",
+      "to": "5720341",
+      "from_course_code": "AE 241",
+      "to_course_code": "AE 341",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "5720341",
+      "to": "5720342",
+      "from_course_code": "AE 341",
+      "to_course_code": "AE 342",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720242",
+      "to": "5720342",
+      "from_course_code": "AE 242",
+      "to_course_code": "AE 342",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "5720264",
+      "to": "5720361",
+      "from_course_code": "AE 264",
+      "to_course_code": "AE 361",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720266",
+      "to": "5720361",
+      "from_course_code": "AE 266",
+      "to_course_code": "AE 361",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720361",
+      "to": "5720362",
+      "from_course_code": "AE 361",
+      "to_course_code": "AE 362",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "2360253",
+      "to": "5720383",
+      "from_course_code": "MATH 253",
+      "to_course_code": "AE 383",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "2360219",
+      "to": "5720383",
+      "from_course_code": "MATH 219",
+      "to_course_code": "AE 383",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720383",
+      "to": "5720384",
+      "from_course_code": "AE 383",
+      "to_course_code": "AE 384",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720334",
+      "to": "5720435",
+      "from_course_code": "AE 334",
+      "to_course_code": "AE 435",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720435",
+      "to": "5720438",
+      "from_course_code": "AE 435",
+      "to_course_code": "AE 438",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720305",
+      "to": "5720443",
+      "from_course_code": "AE 305",
+      "to_course_code": "AE 443",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720342",
+      "to": "5720443",
+      "from_course_code": "AE 342",
+      "to_course_code": "AE 443",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720306",
+      "to": "5720443",
+      "from_course_code": "AE 306",
+      "to_course_code": "AE 443",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "5720343",
+      "to": "5720443",
+      "from_course_code": "AE 343",
+      "to_course_code": "AE 443",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "5720342",
+      "to": "5720445",
+      "from_course_code": "AE 342",
+      "to_course_code": "AE 445",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720343",
+      "to": "5720445",
+      "from_course_code": "AE 343",
+      "to_course_code": "AE 445",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "5720343",
+      "to": "5720446",
+      "from_course_code": "AE 343",
+      "to_course_code": "AE 446",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "5720342",
+      "to": "5720446",
+      "from_course_code": "AE 342",
+      "to_course_code": "AE 446",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720341",
+      "to": "5720451",
+      "from_course_code": "AE 341",
+      "to_course_code": "AE 451",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720345",
+      "to": "5720451",
+      "from_course_code": "AE 345",
+      "to_course_code": "AE 451",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720451",
+      "to": "5720452",
+      "from_course_code": "AE 451",
+      "to_course_code": "AE 452",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720362",
+      "to": "5720462",
+      "from_course_code": "AE 362",
+      "to_course_code": "AE 462",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720223",
+      "to": "5720463",
+      "from_course_code": "AE 223",
+      "to_course_code": "AE 463",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "5720262",
+      "to": "5720463",
+      "from_course_code": "AE 262",
+      "to_course_code": "AE 463",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720264",
+      "to": "5720464",
+      "from_course_code": "AE 264",
+      "to_course_code": "AE 464",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720362",
+      "to": "5720466",
+      "from_course_code": "AE 362",
+      "to_course_code": "AE 466",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720463",
+      "to": "5720466",
+      "from_course_code": "AE 463",
+      "to_course_code": "AE 466",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720383",
+      "to": "5720483",
+      "from_course_code": "AE 383",
+      "to_course_code": "AE 483",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    },
+    {
+      "from": "5720223",
+      "to": "5720486",
+      "from_course_code": "AE 223",
+      "to_course_code": "AE 486",
+      "set_no": "1",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Closed Course / Kapal? Ders"
+    },
+    {
+      "from": "5720262",
+      "to": "5720486",
+      "from_course_code": "AE 262",
+      "to_course_code": "AE 486",
+      "set_no": "2",
+      "min_grade": "DD",
+      "type": "Undergraduate / Lisans",
+      "position": "Offered Course / A??k Ders"
+    }
+  ],
+  "prerequisites_by_course": {
+    "5720262": [
+      "5720261"
+    ],
+    "5720264": [
+      "5720122",
+      "5720261"
+    ],
+    "5720305": [
+      "5610361",
+      "5720202"
+    ],
+    "5720334": [
+      "5720231",
+      "5720232"
+    ],
+    "5720341": [
+      "5720241",
+      "5720244"
+    ],
+    "5720342": [
+      "5720242",
+      "5720341"
+    ],
+    "5720361": [
+      "5720264",
+      "5720266"
+    ],
+    "5720362": [
+      "5720361"
+    ],
+    "5720383": [
+      "2360219",
+      "2360253"
+    ],
+    "5720384": [
+      "5720383"
+    ],
+    "5720435": [
+      "5720334"
+    ],
+    "5720438": [
+      "5720435"
+    ],
+    "5720443": [
+      "5720305",
+      "5720306",
+      "5720342",
+      "5720343"
+    ],
+    "5720445": [
+      "5720342",
+      "5720343"
+    ],
+    "5720446": [
+      "5720342",
+      "5720343"
+    ],
+    "5720451": [
+      "5720341",
+      "5720345"
+    ],
+    "5720452": [
+      "5720451"
+    ],
+    "5720462": [
+      "5720362"
+    ],
+    "5720463": [
+      "5720223",
+      "5720262"
+    ],
+    "5720464": [
+      "5720264"
+    ],
+    "5720466": [
+      "5720362",
+      "5720463"
+    ],
+    "5720483": [
+      "5720383"
+    ],
+    "5720486": [
+      "5720223",
+      "5720262"
+    ]
+  },
+  "prerequisites_by_course_code": {
+    "AE 262": [
+      "AE 261"
+    ],
+    "AE 264": [
+      "AE 122",
+      "AE 261"
+    ],
+    "AE 305": [
+      "561 361",
+      "AE 202"
+    ],
+    "AE 334": [
+      "AE 231",
+      "AE 232"
+    ],
+    "AE 341": [
+      "AE 241",
+      "AE 244"
+    ],
+    "AE 342": [
+      "AE 242",
+      "AE 341"
+    ],
+    "AE 361": [
+      "AE 264",
+      "AE 266"
+    ],
+    "AE 362": [
+      "AE 361"
+    ],
+    "AE 383": [
+      "MATH 219",
+      "MATH 253"
+    ],
+    "AE 384": [
+      "AE 383"
+    ],
+    "AE 435": [
+      "AE 334"
+    ],
+    "AE 438": [
+      "AE 435"
+    ],
+    "AE 443": [
+      "AE 305",
+      "AE 306",
+      "AE 342",
+      "AE 343"
+    ],
+    "AE 445": [
+      "AE 342",
+      "AE 343"
+    ],
+    "AE 446": [
+      "AE 342",
+      "AE 343"
+    ],
+    "AE 451": [
+      "AE 341",
+      "AE 345"
+    ],
+    "AE 452": [
+      "AE 451"
+    ],
+    "AE 462": [
+      "AE 362"
+    ],
+    "AE 463": [
+      "AE 223",
+      "AE 262"
+    ],
+    "AE 464": [
+      "AE 264"
+    ],
+    "AE 466": [
+      "AE 362",
+      "AE 463"
+    ],
+    "AE 483": [
+      "AE 383"
+    ],
+    "AE 486": [
+      "AE 223",
+      "AE 262"
+    ]
+  },
+  "dependents_by_course": {
+    "5720261": [
+      "5720262",
+      "5720264"
+    ],
+    "5720122": [
+      "5720264"
+    ],
+    "5610361": [
+      "5720305"
+    ],
+    "5720202": [
+      "5720305"
+    ],
+    "5720231": [
+      "5720334"
+    ],
+    "5720232": [
+      "5720334"
+    ],
+    "5720244": [
+      "5720341"
+    ],
+    "5720241": [
+      "5720341"
+    ],
+    "5720341": [
+      "5720342",
+      "5720451"
+    ],
+    "5720242": [
+      "5720342"
+    ],
+    "5720264": [
+      "5720361",
+      "5720464"
+    ],
+    "5720266": [
+      "5720361"
+    ],
+    "5720361": [
+      "5720362"
+    ],
+    "2360253": [
+      "5720383"
+    ],
+    "2360219": [
+      "5720383"
+    ],
+    "5720383": [
+      "5720384",
+      "5720483"
+    ],
+    "5720334": [
+      "5720435"
+    ],
+    "5720435": [
+      "5720438"
+    ],
+    "5720305": [
+      "5720443"
+    ],
+    "5720342": [
+      "5720443",
+      "5720445",
+      "5720446"
+    ],
+    "5720306": [
+      "5720443"
+    ],
+    "5720343": [
+      "5720443",
+      "5720445",
+      "5720446"
+    ],
+    "5720345": [
+      "5720451"
+    ],
+    "5720451": [
+      "5720452"
+    ],
+    "5720362": [
+      "5720462",
+      "5720466"
+    ],
+    "5720223": [
+      "5720463",
+      "5720486"
+    ],
+    "5720262": [
+      "5720463",
+      "5720486"
+    ],
+    "5720463": [
+      "5720466"
+    ]
+  },
+  "dependents_by_course_code": {
+    "AE 261": [
+      "AE 262",
+      "AE 264"
+    ],
+    "AE 122": [
+      "AE 264"
+    ],
+    "561 361": [
+      "AE 305"
+    ],
+    "AE 202": [
+      "AE 305"
+    ],
+    "AE 231": [
+      "AE 334"
+    ],
+    "AE 232": [
+      "AE 334"
+    ],
+    "AE 244": [
+      "AE 341"
+    ],
+    "AE 241": [
+      "AE 341"
+    ],
+    "AE 341": [
+      "AE 342",
+      "AE 451"
+    ],
+    "AE 242": [
+      "AE 342"
+    ],
+    "AE 264": [
+      "AE 361",
+      "AE 464"
+    ],
+    "AE 266": [
+      "AE 361"
+    ],
+    "AE 361": [
+      "AE 362"
+    ],
+    "MATH 253": [
+      "AE 383"
+    ],
+    "MATH 219": [
+      "AE 383"
+    ],
+    "AE 383": [
+      "AE 384",
+      "AE 483"
+    ],
+    "AE 334": [
+      "AE 435"
+    ],
+    "AE 435": [
+      "AE 438"
+    ],
+    "AE 305": [
+      "AE 443"
+    ],
+    "AE 342": [
+      "AE 443",
+      "AE 445",
+      "AE 446"
+    ],
+    "AE 306": [
+      "AE 443"
+    ],
+    "AE 343": [
+      "AE 443",
+      "AE 445",
+      "AE 446"
+    ],
+    "AE 345": [
+      "AE 451"
+    ],
+    "AE 451": [
+      "AE 452"
+    ],
+    "AE 362": [
+      "AE 462",
+      "AE 466"
+    ],
+    "AE 223": [
+      "AE 463",
+      "AE 486"
+    ],
+    "AE 262": [
+      "AE 463",
+      "AE 486"
+    ],
+    "AE 463": [
+      "AE 466"
+    ]
+  },
+  "prerequisite_sets_by_course": {
+    "5720262": {
+      "1": [
+        "5720261"
+      ]
+    },
+    "5720264": {
+      "1": [
+        "5720122"
+      ],
+      "2": [
+        "5720261"
+      ]
+    },
+    "5720305": {
+      "1": [
+        "5610361"
+      ],
+      "2": [
+        "5720202"
+      ]
+    },
+    "5720341": {
+      "1": [
+        "5720244"
+      ],
+      "2": [
+        "5720241"
+      ]
+    },
+    "5720361": {
+      "1": [
+        "5720264"
+      ],
+      "2": [
+        "5720266"
+      ]
+    },
+    "5720362": {
+      "1": [
+        "5720361"
+      ]
+    },
+    "5720383": {
+      "1": [
+        "2360253"
+      ],
+      "2": [
+        "2360219"
+      ]
+    },
+    "5720435": {
+      "1": [
+        "5720334"
+      ]
+    },
+    "5720451": {
+      "1": [
+        "5720341"
+      ],
+      "2": [
+        "5720345"
+      ]
+    },
+    "5720463": {
+      "1": [
+        "5720223"
+      ],
+      "2": [
+        "5720262"
+      ]
+    },
+    "5720464": {
+      "1": [
+        "5720264"
+      ]
+    },
+    "5720486": {
+      "1": [
+        "5720223"
+      ],
+      "2": [
+        "5720262"
+      ]
+    },
+    "5720334": {
+      "1": [
+        "5720231"
+      ],
+      "2": [
+        "5720232"
+      ]
+    },
+    "5720342": {
+      "1": [
+        "5720341"
+      ],
+      "2": [
+        "5720242"
+      ]
+    },
+    "5720384": {
+      "1": [
+        "5720383"
+      ]
+    },
+    "5720438": {
+      "1": [
+        "5720435"
+      ]
+    },
+    "5720443": {
+      "1": [
+        "5720305",
+        "5720342"
+      ],
+      "2": [
+        "5720306",
+        "5720343"
+      ]
+    },
+    "5720445": {
+      "1": [
+        "5720342"
+      ],
+      "2": [
+        "5720343"
+      ]
+    },
+    "5720446": {
+      "1": [
+        "5720343"
+      ],
+      "2": [
+        "5720342"
+      ]
+    },
+    "5720452": {
+      "1": [
+        "5720451"
+      ]
+    },
+    "5720462": {
+      "1": [
+        "5720362"
+      ]
+    },
+    "5720466": {
+      "1": [
+        "5720362",
+        "5720463"
+      ]
+    },
+    "5720483": {
+      "1": [
+        "5720383"
+      ]
+    }
+  },
+  "prerequisite_sets_by_course_code": {
+    "AE 262": {
+      "1": [
+        "AE 261"
+      ]
+    },
+    "AE 264": {
+      "1": [
+        "AE 122"
+      ],
+      "2": [
+        "AE 261"
+      ]
+    },
+    "AE 305": {
+      "1": [
+        "561 361"
+      ],
+      "2": [
+        "AE 202"
+      ]
+    },
+    "AE 341": {
+      "1": [
+        "AE 244"
+      ],
+      "2": [
+        "AE 241"
+      ]
+    },
+    "AE 361": {
+      "1": [
+        "AE 264"
+      ],
+      "2": [
+        "AE 266"
+      ]
+    },
+    "AE 362": {
+      "1": [
+        "AE 361"
+      ]
+    },
+    "AE 383": {
+      "1": [
+        "MATH 253"
+      ],
+      "2": [
+        "MATH 219"
+      ]
+    },
+    "AE 435": {
+      "1": [
+        "AE 334"
+      ]
+    },
+    "AE 451": {
+      "1": [
+        "AE 341"
+      ],
+      "2": [
+        "AE 345"
+      ]
+    },
+    "AE 463": {
+      "1": [
+        "AE 223"
+      ],
+      "2": [
+        "AE 262"
+      ]
+    },
+    "AE 464": {
+      "1": [
+        "AE 264"
+      ]
+    },
+    "AE 486": {
+      "1": [
+        "AE 223"
+      ],
+      "2": [
+        "AE 262"
+      ]
+    },
+    "AE 334": {
+      "1": [
+        "AE 231"
+      ],
+      "2": [
+        "AE 232"
+      ]
+    },
+    "AE 342": {
+      "1": [
+        "AE 341"
+      ],
+      "2": [
+        "AE 242"
+      ]
+    },
+    "AE 384": {
+      "1": [
+        "AE 383"
+      ]
+    },
+    "AE 438": {
+      "1": [
+        "AE 435"
+      ]
+    },
+    "AE 443": {
+      "1": [
+        "AE 305",
+        "AE 342"
+      ],
+      "2": [
+        "AE 306",
+        "AE 343"
+      ]
+    },
+    "AE 445": {
+      "1": [
+        "AE 342"
+      ],
+      "2": [
+        "AE 343"
+      ]
+    },
+    "AE 446": {
+      "1": [
+        "AE 343"
+      ],
+      "2": [
+        "AE 342"
+      ]
+    },
+    "AE 452": {
+      "1": [
+        "AE 451"
+      ]
+    },
+    "AE 462": {
+      "1": [
+        "AE 362"
+      ]
+    },
+    "AE 466": {
+      "1": [
+        "AE 362",
+        "AE 463"
+      ]
+    },
+    "AE 483": {
+      "1": [
+        "AE 383"
+      ]
+    }
+  },
+  "topological_order": [
+    "2360219",
+    "2360253",
+    "5610361",
+    "5720101",
+    "5720122",
+    "5720172",
+    "5720200",
+    "5720202",
+    "5720223",
+    "5720231",
+    "5720232",
+    "5720241",
+    "5720242",
+    "5720244",
+    "5720261",
+    "5720266",
+    "5720300",
+    "5720306",
+    "5720331",
+    "5720343",
+    "5720345",
+    "5720372",
+    "5720400",
+    "5720402",
+    "5720404",
+    "5720410",
+    "5720422",
+    "5720442",
+    "5720453",
+    "5720476",
+    "5720484",
+    "5720495",
+    "5720383",
+    "5720305",
+    "5720334",
+    "5720341",
+    "5720262",
+    "5720264",
+    "5720384",
+    "5720483",
+    "5720435",
+    "5720342",
+    "5720451",
+    "5720463",
+    "5720486",
+    "5720361",
+    "5720464",
+    "5720438",
+    "5720443",
+    "5720445",
+    "5720446",
+    "5720452",
+    "5720362",
+    "5720462",
+    "5720466"
+  ],
+  "topological_order_course_code": [
+    "MATH 219",
+    "MATH 253",
+    "561 361",
+    "AE 101",
+    "AE 122",
+    "AE 172",
+    "AE 200",
+    "AE 202",
+    "AE 223",
+    "AE 231",
+    "AE 232",
+    "AE 241",
+    "AE 242",
+    "AE 244",
+    "AE 261",
+    "AE 266",
+    "AE 300",
+    "AE 306",
+    "AE 331",
+    "AE 343",
+    "AE 345",
+    "AE 372",
+    "AE 400",
+    "AE 402",
+    "AE 404",
+    "AE 410",
+    "AE 422",
+    "AE 442",
+    "AE 453",
+    "AE 476",
+    "AE 484",
+    "AE 495",
+    "AE 383",
+    "AE 305",
+    "AE 334",
+    "AE 341",
+    "AE 262",
+    "AE 264",
+    "AE 384",
+    "AE 483",
+    "AE 435",
+    "AE 342",
+    "AE 451",
+    "AE 463",
+    "AE 486",
+    "AE 361",
+    "AE 464",
+    "AE 438",
+    "AE 443",
+    "AE 445",
+    "AE 446",
+    "AE 452",
+    "AE 362",
+    "AE 462",
+    "AE 466"
+  ]
+}

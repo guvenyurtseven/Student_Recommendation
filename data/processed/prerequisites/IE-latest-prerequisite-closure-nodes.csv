@@ -1,0 +1,75 @@
+﻿id,course_code,course_number,course_name,sources,curriculum_programs,requirement_types,scrape_status,found_semester
+3570100,357 100,100,PRECALCULUS,prerequisite_closure,,,scraped,20252
+3570119,357 119,119,CALCULUS WITH ANALYTIC GEOMETRY,prerequisite_closure,,,scraped,20252
+3570120,357 120,120,CALCULUS FOR FUNCTIONS OF SEVERAL VARIABLES,prerequisite_closure,,,scraped,20252
+3590101,359 101,101,DEVELOPMENT OF READING AND WRITING SKILLS I,prerequisite_closure,,,scraped,20252
+3590102,359 102,102,DEVELOPMENT OF READING AND WRITING SKILLS II,prerequisite_closure,,,scraped,20252
+3620201,362 201,201,PRINCIPLES OF KEMAL ATATÜRK I,prerequisite_closure,,,scraped,20252
+5610202,561 202,202,MATHEMATICS FOR ENGINEERS,prerequisite_closure,,,scraped,20252
+3120100,BA 100,100,CAREER PLANNING,curriculum,IE,required_course,scraped,20252
+5710229,CENG 229,229,C PROGRAMMING,prerequisite_closure,,,not_found_in_searched_offerings,
+5710230,CENG 230,230,INTRODUCTION TO C PROGRAMMING,prerequisite_closure,,,not_found_in_searched_offerings,
+5710240,CENG 240,240,PROGRAMMING WITH PYTHON FOR ENGINEERS,curriculum;prerequisite_closure,IE,required_course,scraped,20252
+2340107,CHEM 107,107,GENERAL CHEMISTRY,curriculum,IE,required_course,scraped,20252
+3110211,ECON 211,211,PRIN OF.ECONOMICS I,curriculum,IE,required_course,scraped,20251
+3110212,ECON 212,212,PRINCIPLES OF ECONOMICS II,curriculum,IE,required_course,scraped,20252
+5670381,EE 381,381,SYSTEMS AND CONTROL,curriculum,IE,required_course,scraped,20251
+6390101,ENG 101,101,ENGLISH FOR ACADEMIC PURPOSES I,curriculum;prerequisite_closure,IE,required_course,scraped,20252
+6390102,ENG 102,102,ENGLISH FOR ACADEMIC PURPOSES II,curriculum;prerequisite_closure,IE,required_course,scraped,20252
+6390211,ENG 211,211,ACADEMIC SPEAKING SKILLS,curriculum,IE,required_course,scraped,20252
+2402201,HIST 2201,2201,PRINCIPLES OF KEMAL ATATÜRK I,curriculum;prerequisite_closure,IE,course_choice,scraped,20252
+2402202,HIST 2202,2202,,curriculum,IE,course_choice,scraped,20252
+2402205,HIST 2205,2205,HISTORY OF THE TURKISH REVOLUTION I,curriculum;prerequisite_closure,IE,course_choice,scraped,20252
+2402206,HIST 2206,2206,HISTORY OF THE TURKISH REVOLUTION II,curriculum,IE,course_choice,scraped,20252
+5680102,IE 102,102,INDUSTRIAL ENGINEERING ORIENTATION,curriculum,IE,required_course,scraped,20252
+5680241,IE 241,241,FINANCIAL AND MANAGERIAL ACCOUNTING FOR ENGINEERS,curriculum,IE,required_course,scraped,20251
+5680251,IE 251,251,LINEAR PROGRAMMING,curriculum;prerequisite_closure,IE,required_course,scraped,20251
+5680252,IE 252,252,NETWORK FLOWS AND INTEGER PROGRAMMING,curriculum,IE,required_course,scraped,20252
+5680262,IE 262,262,ENGINEERING STATISTICS I,prerequisite_closure,,,not_found_in_searched_offerings,
+5680265,IE 265,265,INTRODUCTION TO PROBABILITY,curriculum;prerequisite_closure,IE,required_course,scraped,20251
+5680266,IE 266,266,ENGINEERING STATISTICS,curriculum,IE,required_course,scraped,20252
+5680300,IE 300,300,SUMMER PRACTICE I,curriculum,IE,summer_practice,scraped,20252
+5680304,IE 304,304,PRODUCTION AND SERVICE INFORMATION SYSTEMS,curriculum,IE,required_course,scraped,20252
+5680323,IE 323,323,PRODUCTION AND SERVICE OPERATIONS PLANNING I,curriculum;prerequisite_closure,IE,required_course,scraped,20251
+5680324,IE 324,324,PRODUCTION AND SERVICE OPERATIONS PLANNING II,curriculum,IE,required_course,scraped,20252
+5680333,IE 333,333,WORK SYSTEMS ANALYSIS AND DESIGN,curriculum,IE,required_course,scraped,20251
+5680347,IE 347,347,ENGINEERING ECONOMY,curriculum,IE,required_course,scraped,20251
+5680361,IE 361,361,STOCHASTIC MODELS IN OPERATIONS RESEARCH,curriculum,IE,required_course,scraped,20251
+5680368,IE 368,368,QUALITY PLANNING AND CONTROL,curriculum,IE,required_course,scraped,20252
+5680372,IE 372,372,SIMULATION,curriculum,IE,required_course,scraped,20252
+5680400,IE 400,400,SUMMER PRACTICE II,curriculum,IE,summer_practice,scraped,20252
+5680404,IE 404,404,MANAGEMENT FOR ENGINEERS,curriculum,IE,required_course,scraped,20251
+5680422,IE 422,422,SEMINAR IN INDUSTRIAL ENGINEERING,curriculum,IE,required_course,scraped,20251
+5680489,IE 489,489,SYSTEMS THINKING,curriculum,IE,required_course,scraped,20251
+5680497,IE 497,497,SYSTEMS DESIGN I,curriculum;prerequisite_closure,IE,required_course,scraped,20251
+5680498,IE 498,498,SYSTEMS DESIGN II,curriculum,IE,required_course,scraped,20252
+9010100,IS 100,100,INTRODUCTION TO INFORMATION TECHNOLOGIES AND APPLICATIONS,curriculum,IE,required_course,scraped,20252
+2360117,MATH 117,117,CALCULUS I,prerequisite_closure,,,scraped,20252
+2360118,MATH 118,118,CALCULUS II,prerequisite_closure,,,scraped,20252
+2360119,MATH 119,119,CALCULUS WITH ANALYTIC GEOMETRY,curriculum;prerequisite_closure,IE,required_course,scraped,20252
+2360120,MATH 120,120,CALCULUS OF FUNCTIONS OF SEVERAL VARIABLES,curriculum;prerequisite_closure,IE,required_course,scraped,20252
+2360124,MATH 124,124,INTRODUCTION TO LINEAR ALGEBRA AND ANALYTIC GEOMETRY,prerequisite_closure,,,scraped,20252
+2360129,MATH 129,129,SINGLE VARIABLE CALCULUS,prerequisite_closure,,,scraped,20251
+2360130,MATH 130,130,MULTIVARIABLE AND VECTOR CALCULUS,prerequisite_closure,,,scraped,20252
+2360151,MATH 151,151,CALCULUS I,prerequisite_closure,,,not_found_in_searched_offerings,
+2360152,MATH 152,152,CALCULUS II,prerequisite_closure,,,not_found_in_searched_offerings,
+2360156,MATH 156,156,CALCULUS II (ACCELERATED),prerequisite_closure,,,not_found_in_searched_offerings,
+2360158,MATH 158,158,BASIC CALCULUS II,prerequisite_closure,,,not_found_in_searched_offerings,
+2360219,MATH 219,219,INTRODUCTION TO DIFFERENTIAL EQUATIONS,curriculum;prerequisite_closure,IE,required_course,scraped,20252
+2360260,MATH 260,260,BASIC LINEAR ALGEBRA,curriculum;prerequisite_closure,IE,required_course,scraped,20252
+2360261,MATH 261,261,LINEAR ALGEBRA I,prerequisite_closure,,,scraped,20252
+5690105,ME 105,105,COMPUTER AIDED ENGINEERING GRAPHICS,curriculum,IE,required_course,scraped,20252
+5690210,ME 210,210,APPLIED MATH. FOR MECHANICAL ENGINEERS,prerequisite_closure,,,scraped,20252
+5690212,ME 212,212,PRINCIPLES OF PRODUCTION ENGINEERING,curriculum,IE,required_course,scraped,20252
+5690351,ME 351,351,THERMODYNAMICS OF HEAT POWER,curriculum,IE,required_course,scraped,20252
+5700230,METE 230,230,FUNDAMENTALS OF MATERIALS SCIENCE AND ENGINEERING,curriculum,IE,required_course,scraped,20252
+8770101,OHS 101,101,OCCUPATIONAL HEALTH AND SAFETY-I,curriculum;prerequisite_closure,IE,required_course,scraped,20252
+8770301,OHS 301,301,OCCUPATIONAL HEALTH AND SAFETY - II,curriculum,IE,required_course,scraped,20252
+2300105,PHYS 105,105,GENERAL PHYSICS I,curriculum,IE,required_course,scraped,20251
+2300106,PHYS 106,106,GENERAL PHYSICS II,curriculum,IE,required_course,scraped,20252
+6420105,TURK 105,105,TURKISH I,curriculum;prerequisite_closure,IE,course_choice,scraped,20251
+6420106,TURK 106,106,TURKISH II,curriculum,IE,course_choice,scraped,20252
+6420201,TURK 201,201,ELEMENTARY TURKISH I,curriculum;prerequisite_closure,IE,course_choice,scraped,20252
+6420202,TURK 202,202,INTERMEDIATE TURKISH I,curriculum,IE,course_choice,scraped,20252
+6420303,TURK 303,303,TURKISH I,curriculum;prerequisite_closure,IE,course_choice,scraped,20252
+6420304,TURK 304,304,TURKISH II,curriculum,IE,course_choice,scraped,20252
