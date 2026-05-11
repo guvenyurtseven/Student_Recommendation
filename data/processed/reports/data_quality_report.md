@@ -1,12 +1,12 @@
 # Data Quality Report
 
-Generated at UTC: `2026-05-10T19:45:09+00:00`
+Generated at UTC: `2026-05-11T17:26:30+00:00`
 Status: `PASS_WITH_WARNINGS`
 
 ## Summary
 
 - Fatal findings: 0
-- Warnings: 23
+- Warnings: 22
 - Info items: 2
 
 ## Database Table Counts
@@ -14,15 +14,15 @@ Status: `PASS_WITH_WARNINGS`
 | Table | Rows |
 | --- | ---: |
 | `course_aliases` | 0 |
-| `courses` | 408 |
+| `courses` | 971 |
 | `curriculum_requirements` | 696 |
 | `curriculum_versions` | 13 |
 | `manual_correction_log` | 0 |
-| `offerings` | 31 |
+| `offerings` | 654 |
 | `prerequisite_edges` | 504 |
 | `programs` | 14 |
 | `requirement_options` | 652 |
-| `source_documents` | 17 |
+| `source_documents` | 80 |
 | `student_completed_courses` | 0 |
 | `student_profiles` | 0 |
 
@@ -37,12 +37,12 @@ Active undergraduate programs: 13
 ```json
 {
   "courses_with_null_numeric_code": 0,
-  "courses_with_empty_title": 1,
+  "courses_with_empty_title": 0,
   "courses_level_not_undergraduate": 0,
   "display_code_without_space": 0,
   "numeric_subject_code_courses": 35,
-  "course_number_5xx_999": 1,
-  "course_number_over_999": 4
+  "course_number_5xx_999": 32,
+  "course_number_over_999": 58
 }
 ```
 
@@ -118,9 +118,7 @@ None.
    - scraped: 13
 2. **review**: curriculum_requirements still contains automatically scraped records.
    - scraped: 696
-3. **courses**: Some courses have empty English titles.
-   - HIST 2202 (2402202)
-4. **course_identity**: Some courses have numeric subject display codes.
+3. **course_identity**: Some courses have numeric subject display codes.
    - 219 103 (2190103): MOLECULAR AND CELLULAR BIOLOGY I
    - 219 104 (2190104): MOLECULAR AND CELLULAR BIOLOGY II
    - 355 111 (3550111): INTRODUCTION TO COMPUTER ENG. CONCEPTS
@@ -156,8 +154,8 @@ None.
    - 384 264 (3840264): MECHANICS OF MATERIALS
    - 389 140 (3890140): PROGRAMMING
    - 430 210 (4300210): PROGRAMMING LANGUAGES I
-5. **courses**: 5xx-999 course numbers are present in undergraduate course table.
-6. **course_identity**: NCC prerequisite alternatives are present and need product semantics.
+4. **courses**: 5xx-999 course numbers are present in undergraduate course table.
+5. **course_identity**: NCC prerequisite alternatives are present and need product semantics.
    - 355 140 -> 355 213 (set 1, min DD)
    - 389 140 -> 355 213 (set 2, min DD)
    - 355 230 -> 355 301 (set 1, min DD)
@@ -213,13 +211,13 @@ None.
    - 374 220 -> PETE 343 (set 2, min DD)
    - 357 219 -> PETE 343 (set 3, min DD)
    - 374 216 -> PETE 343 (set 3, min DD)
-7. **student_profiles**: student_profiles is empty.
+6. **student_profiles**: student_profiles is empty.
    - This is expected before the corresponding product phase, but not ready for recommendations.
-8. **student_completed_courses**: student_completed_courses is empty.
+7. **student_completed_courses**: student_completed_courses is empty.
    - This is expected before the corresponding product phase, but not ready for recommendations.
-9. **course_identity**: Prerequisite graph contains numeric display course codes.
+8. **course_identity**: Prerequisite graph contains numeric display course codes.
    - data\processed\prerequisites\engineering-latest-prerequisite-closure.json numeric_display_nodes=35
-10. **prerequisites**: Engineering prerequisite closure has unresolved courses.
+9. **prerequisites**: Engineering prerequisite closure has unresolved courses.
    - AEE 202 (5720202): not_found_in_searched_offerings
    - AEE 266 (5720266): not_found_in_searched_offerings
    - AEE 301 (5720301): not_found_in_searched_offerings
@@ -246,40 +244,94 @@ None.
    - MATH 257 (2360257): not_found_in_searched_offerings
    - AE 122 (5720122): not_found_in_searched_offerings
    - AE 241 (5720241): not_found_in_searched_offerings
-11. **course_identity**: Prerequisite graph contains numeric display course codes.
+10. **course_identity**: Prerequisite graph contains numeric display course codes.
    - data\processed\prerequisites\AE-latest-prerequisite-closure.json numeric_display_nodes=7
-12. **course_identity**: Prerequisite graph contains numeric display course codes.
+11. **course_identity**: Prerequisite graph contains numeric display course codes.
    - data\processed\prerequisites\CE-latest-prerequisite-closure.json numeric_display_nodes=6
-13. **course_identity**: Prerequisite graph contains numeric display course codes.
+12. **course_identity**: Prerequisite graph contains numeric display course codes.
    - data\processed\prerequisites\CENG-latest-prerequisite-closure.json numeric_display_nodes=16
-14. **course_identity**: Prerequisite graph contains numeric display course codes.
+13. **course_identity**: Prerequisite graph contains numeric display course codes.
    - data\processed\prerequisites\CHE-latest-prerequisite-closure.json numeric_display_nodes=7
-15. **course_identity**: Prerequisite graph contains numeric display course codes.
+14. **course_identity**: Prerequisite graph contains numeric display course codes.
    - data\processed\prerequisites\EEE-latest-prerequisite-closure.json numeric_display_nodes=6
-16. **course_identity**: Prerequisite graph contains numeric display course codes.
+15. **course_identity**: Prerequisite graph contains numeric display course codes.
    - data\processed\prerequisites\ENVE-latest-prerequisite-closure.json numeric_display_nodes=9
-17. **course_identity**: Prerequisite graph contains numeric display course codes.
+16. **course_identity**: Prerequisite graph contains numeric display course codes.
    - data\processed\prerequisites\FDE-latest-prerequisite-closure.json numeric_display_nodes=9
-18. **course_identity**: Prerequisite graph contains numeric display course codes.
+17. **course_identity**: Prerequisite graph contains numeric display course codes.
    - data\processed\prerequisites\GEOE-latest-prerequisite-closure.json numeric_display_nodes=10
-19. **course_identity**: Prerequisite graph contains numeric display course codes.
+18. **course_identity**: Prerequisite graph contains numeric display course codes.
    - data\processed\prerequisites\IE-latest-prerequisite-closure.json numeric_display_nodes=7
-20. **course_identity**: Prerequisite graph contains numeric display course codes.
+19. **course_identity**: Prerequisite graph contains numeric display course codes.
    - data\processed\prerequisites\ME-latest-prerequisite-closure.json numeric_display_nodes=10
-21. **course_identity**: Prerequisite graph contains numeric display course codes.
+20. **course_identity**: Prerequisite graph contains numeric display course codes.
    - data\processed\prerequisites\METE-latest-prerequisite-closure.json numeric_display_nodes=7
-22. **course_identity**: Prerequisite graph contains numeric display course codes.
+21. **course_identity**: Prerequisite graph contains numeric display course codes.
    - data\processed\prerequisites\MINE-latest-prerequisite-closure.json numeric_display_nodes=10
-23. **course_identity**: Prerequisite graph contains numeric display course codes.
+22. **course_identity**: Prerequisite graph contains numeric display course codes.
    - data\processed\prerequisites\PETE-latest-prerequisite-closure.json numeric_display_nodes=23
 
 ## Info
 
 1. **courses**: Course numbers above 999 are present. These may be valid undergraduate service courses.
-   - HIST 2201 (2402201): PRINCIPLES OF KEMAL ATATÜRK I
-   - HIST 2202 (2402202): 
-   - HIST 2205 (2402205): HISTORY OF THE TURKISH REVOLUTION I
-   - HIST 2206 (2402206): HISTORY OF THE TURKISH REVOLUTION II
+   - AE 4903 (5724903): SPECIAL TOPICS IN AEROSPACE ENGINEERING: APPLIED TOPICS IN MODERN GAS TURBINE COMPONENTS ( )
+   - AE 4905 (5724905): SPECIAL TOPICS IN AEROSPACE ENGINEERING: INTRODUCTION TO SPACE TECHNOLOGIES AND INSTRUMENTATION (HAVACILIK VE UZAY MÜHENDİSLİĞİNDE ÖZEL KONULAR: UZAY TEKNOLOJİLERİ VE ENSTRÜMANTASYONUNA GİRİŞ )
+   - BA 1502 (3121502): BUSINESS STATISTICS (İşletme için İstatistik )
+   - BA 2204 (3122204): HUMAN RESOURCE MANAGEMENT (İnsan Kaynakları Yönetimi )
+   - BA 2206 (3122206): ORGANIZATION THEORY ( Örgüt Kuramı )
+   - BA 2802 (3122802): PRINCIPLES OF FINANCE (Finansın İlkeleri )
+   - BA 3504 (3123504): MANAGEMENT SCIENCE (Yönetim Bilimi )
+   - BA 4098 (3124098): HONORS SEMINAR (Onur Öğrencileri için Seminer )
+   - BA 4099 (3124099): INDEPENDENT STUDY (Bireysel Çalışma )
+   - BA 4104 (3124104): MANAGERIAL SKILLS LABORATORY II (Yönetim Becerileri Laboratuvarı II )
+   - BA 4106 (3124106): BUSINESS LAW (İşletme Hukuku )
+   - BA 4115 (3124115): BUSINESS ETHICS (İş Etiği )
+   - BA 4137 (3124137): ENTREPRENEURSHIP (Girişimcilik )
+   - BA 4140 (3124140): STRATEGIC BEHAVIOR AND EXPERIMENTS (Stratejik Davranış ve Deneyler )
+   - BA 4144 (3124144): THE NEW ECONOMY OF INDUSTRY 4.0 (Endüstri 4.0ın Yeni Ekonomisi )
+   - BA 4149 (3124149): SUSTAINABILITY AND BUSINESS VALUE CREATION (Sürdürülebilirlik ve İşletme Değeri Yaratma )
+   - BA 4150 (3124150): CLIMATE ISSUES IN BUSINESS (İKLİM SORUNLARI VE İŞLETMECİLİK )
+   - BA 4151 (3124151): ESSENTIAL LEADERSHIP SKILLS (TEMEL LİDERLİK YETENEKLERİ )
+   - BA 4154 (3124154): NEUROSCIENCE APPLICATIONS FOR BUSINESS (İŞLETME İÇİN SİNİRBİLİM UYGULAMALARI )
+   - BA 4155 (3124155): AI IN BUSINESS AND DIGITAL TRANSFORMATION (İŞLETMELERDE YAPAY ZEKÂ VE DİJİTAL DÖNÜŞÜM )
+   - BA 4156 (3124156): SUSTAINABLE TRANSITIONS MANAGEMENT AND ENERGY GOVERNANCE (SÜRDÜRÜLEBİLİRLİK GEÇİŞLERİ YÖNETİMİ VE ENERJİ YÖNETİŞİMİ )
+   - BA 4216 (3124216): CROSS CULTURAL STUDIES IN ORGANIZATIONS (Örgütlerde Kültürlerarası Çalışmalar )
+   - BA 4224 (3124224): CURRENT ISSUES IN INDUS. RELATIONS (Endüstriyel İlişkilerde Güncel Konular )
+   - BA 4230 (3124230): LEADING BY ENNEAGRAM (ENNEAGRAM İLE LİDERLİK )
+   - BA 4312 (3124312): TOPICS IN MIS (Bilgi Sistemlerinde Konular )
+   - BA 4314 (3124314): COMPUTER APPLICATIONS IN MANAGEMENT ( )
+   - BA 4416 (3124416): MANAGERIAL ACCOUNTING (Yönetim Muhasebesi )
+   - BA 4519 (3124519): SIMULATION & QUANTITATIVE MODELS IN BUSINESS (İşletmecilikte Simülasyon ve Nicel Modeller )
+   - BA 4616 (3124616): SERVICES MANAGEMENT (Hizmet Yönetimi )
+   - BA 4618 (3124618): PROJECT MANAGEMENT (Proje Yönetimi )
+   - BA 4621 (3124621): SUPPLY CHAIN MANAGEMENT (Tedarik Zinciri Yönetimi )
+   - BA 4714 (3124714): CONSUMER BEHAVIOR (Tüketici Davranışı )
+   - BA 4717 (3124717): MARKETING RESEARCH (Pazarlama Araştırması )
+   - BA 4725 (3124725): BRAND MANAGEMENT (Marka Yönetimi )
+   - BA 4817 (3124817): INTERNATIONAL FINANCE (Uluslararası Finans )
+   - BA 4819 (3124819): FINANCIAL INSTITUTIONS AND MARKETS (Finansal Kurumlar ve Piyasalar )
+   - BA 4825 (3124825): FINANCIAL DERIVATIVES (Finansal Türevler )
+   - BA 4827 (3124827): FIXED INCOME ANALYSIS (Sabit Gelir Analizi )
+   - BA 4834 (3124834): FINANCIAL ISSUES IN CORPORATE GOVERNANCE (Kurumsal Yönetişimde Finansal Konular )
+   - BA 4837 (3124837): FINANCIAL MACROECONOMICS (Finansal Makroekonomi )
+   - BA 4841 (3124841): INTERNATIONAL FINANCIAL INTEGRATION (Uluslararası Finansal Bütünleşme )
+   - BA 4849 (3124849): PROJECT FINANCE (Proje Finansmanı )
+   - BA 5097 (3125097): TERM PROJECT (Dönem Projesi )
+   - BA 5099 (3125099): MASTERS THESIS (Yüksek Lisans Tezi )
+   - BA 5841 (3125841): INTERNATIONAL FINANCIAL INTEGRATION (Uluslararası Finansal Bütünleşme )
+   - CE 4001 (5624001): SPECIAL TOPICS IN CIVIL ENGINEERING INTRODUCTION TO PAVEMENT DESIGN (YOL ÜSTYAPISI TASARIMINA GIRIŞ )
+   - CE 4002 (5624002): BUILDING INFORMATION MODELING AND ITS APPLICATIONS IN CONSTRUCTION (YAPI BILGI MODELLEMESI VE İNŞAATTAKI UYGULAMALARI )
+   - CE 4003 (5624003): NONDESTRUCTIVE TESTING OF CONCRETE (BETONDA TAHRIBATSIZ MUAYENE YÖNTEMLERI )
+   - CE 4006 (5624006): INTRODUCTION TO COMPUTATIONAL MECHANICS OF MATERIALS (MALZEMELERIN HESAPLAMALI MEKANIĞINE GIRIŞ )
+   - CE 4008 (5624008): DESIGN OF TIMBER STRUCTURES (AHŞAP YAPILARIN TASARIMI )
+   - CE 4010 (5624010): SPECIAL TOPICS IN CIVIL ENGINEERING: HYDRODYNAMICS OF OFFSHORE PLATFORMS (İNŞAAT MÜHENDİSLİĞİNDE ÖZEL KONULAR: AÇIK DENİZ PLATFORMLARININ HİDRODİNAMİĞİ )
+   - CE 4011 (5624011): SPECIAL TOPICS IN CIVIL ENGINEERING: STRUCTURAL ANALYSIS SOFTWARE DEVELOPMENT (İNŞAAT MÜHENDİSLİĞİNDE ÖZEL KONULAR: YAPISAL ANALİZ YAZILIMI GELİŞTİRME )
+   - CHE 5555 (5635555): INTERNATIONAL STUDENT PRACTICE (ULUSLARARASI ÖĞRENCİ EGZERSİZLERİ )
+   - CHEM 5555 (2345555): INTERNATIONAL STUDENT PRACTICE (ULUSLARARASI ÖĞRENCİ STAJI )
+   - HIST 2201 (2402201): PRINCIPLES OF KEMAL ATATÜRK I (KEMAL ATATÜRK İLKELERİ I )
+   - HIST 2202 (2402202): PRINCIPLES OF KEMAL ATATÜRK II (KEMAL ATATÜRK İLKELERİ II )
+   - HIST 2205 (2402205): HISTORY OF THE TURKISH REVOLUTION I (TÜRK DEVRİM TARİHİ I )
+   - HIST 2206 (2402206): HISTORY OF THE TURKISH REVOLUTION II (TÜRK DEVRİM TARİHİ II )
 2. **raw_catalog**: Multiple raw catalog snapshots are present for some programs.
    - AE: 2
    - CE: 2

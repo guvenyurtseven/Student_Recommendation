@@ -1,0 +1,9 @@
+{
+  "source_name": "METU SAIS Course Details",
+  "source_url": "https://student.metu.edu.tr/proxy/View_Program_Course_Details_64/main.php",
+  "retrieved_at_utc": "2026-05-11T10:32:35+00:00",
+  "content_sha256": "b7c187cc95e9d0a48d5c6d548d0d8dd76811380aac2a81d138ee79c3c303c0e7",
+  "parser_version": "metu_sais_offerings_v1",
+  "program_abbr": "CENG",
+  "semester_no": "20241"
+}

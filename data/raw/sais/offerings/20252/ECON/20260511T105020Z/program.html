@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="favicon.ico">
+        <style type="text/css" title="currentStyle" media="screen">
+            @import "css/bootstrap.css";
+            @import "css/metu.css";
+            @import "css/bootstrap-tour.css";
+            @import "css/slider.css";
+            @import "css/dataTables.bootstrap.css";
+        </style>
+        <style type="text/css">
+            
+            div.DTTT { margin-bottom: 0.5em; float: right; }
+            div.dataTables_wrapper { clear: both; }
+            .dataTables_filter { float : left; }
+            td { border-color: #cccccc !important; padding: 4px; }
+            
+            
+</style>
+        <link href="css/datepicker.css" rel="stylesheet">
+        <!-- JavaScript -->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+                    <script src="js/localization/messages_en.js"></script>
+                <script src="js/jquery.bootstrap.wizard.js"></script>
+        <script src="js/validator.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/locales/bootstrap-datepicker.tr.js"></script>
+        <script src="js/bootstrap-tour.js"></script>
+        <script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap-slider.js"></script>
+	<script language="JavaScript" type="text/javascript" src="js/readmore.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/script.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/dataTables/js/jquery.dataTables.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/dataTables/js/dataTables.tableTools.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/dataTables/js/dataTables.bootstrap.js"></script>
+        <script>document.domain = 'metu.edu.tr';</script>
+        <title> </title>
+            </head>
+    <body>
+        <nav class="navbar navbar-default" role="navigation" id="top-navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="."><img src="img/logo.png" alt=""/></a>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-main">
+                    <h3></h3>
+			                </div>
+            </div>
+		
+        </nav>
+        <script>if (window.self !== window.top) document.getElementById('top-navbar').style.display = "none";</script>
+            <div class="container-fluid container-top noscriptClass">
+            <div class="row-fluid clearfix">
+
+<div id="single_content">
+
+
+
+<div id="formmessage">
+    <font size=3 color="red"><b></b></font>
+</div>
+
+<br />
+<b></b>
+<form method="POST" action="main.php">
+<BR>
+<BR>
+<TABLE ALIGN="CENTER" BORDER="0">
+  <TR>
+        <TD><FONT FACE=ARIAL><B>Department : </B>Economics/İktisat</FONT></TD>
+        <TD><FONT FACE=ARIAL><B>Semester : </B>20252</FONT></TD>
+  </TR>
+</TABLE>
+
+<TABLE ALIGN="Center">
+        <TR>
+                <TD><INPUT TYPE="submit" NAME="SubmitCourseInfo" VALUE="Course Info"></TD>
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="DersBilgisi"></TD> -->
+                <TD><INPUT TYPE="submit" NAME="SubmitPrerequisite" VALUE="Prerequisite"></TD>
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="OnkosulDersler"></TD> -->
+                <TD><INPUT TYPE="submit" NAME="SubmitReplacement" VALUE="Auto Replacement"></TD>
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="DenkDersler"></TD> -->
+                 <TD ALIGN="Center">
+                <INPUT TYPE="submit" NAME="SubmitBack" VALUE="Back">
+			    <!--INPUT TYPE="Submit"  NAME="SubmitName" VALUE="Back"-->
+                
+				</TD>   
+
+				<!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="GeriDon"></TD> -->
+                <TD><INPUT TYPE="reset" VALUE="Clear"></TD>
+                <!-- <TD><INPUT TYPE="submit" VALUE="Temizle"></TD> -->
+        </TR>
+</TABLE>
+<TABLE ALIGN="Center">
+        <TR>
+             <TD><INPUT TYPE="submit" NAME="SubmitThesisWork" VALUE="Thesis Work Courses"></TD>
+        </TR>
+
+</TABLE>
+<TABLE BORDER=1 ALIGN="Center" cellspacing=0  cellpadding=2>
+<TR>
+        <TD>&nbsp;</TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><B>Code </B></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><B>Name </B></FONT></TD>
+         <TD ALIGN="Center"><FONT FACE=ARIAL><B>ECTS Credit </B></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><B>Credit </B></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><B>Level </B></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><B>Type </B></FONT></TD>
+</TR>
+ <TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110101" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110101</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INTRODUCTION TO ECONOMICS I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     (İKTİSADA GİRİŞ I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.00 (4.00,2.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110102" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110102</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INTRODUCTION TO ECONOMICS II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    (İKTİSADA GİRİŞ II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.00 (4.00,2.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110106" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110106</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INTRODUCTION TO RESEARCH METHODS II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             (ARAŞTIRMA METODLARINA GİRİŞ II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (2.00,2.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110108" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110108</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ECONOMY, SOCIETY, AND CIVILIZATION II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           (İKTİSAT, TOPLUM VE MEDENİYET TARİHİ II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110122" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110122</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>PRINCIPLES OF MACROECONOMICS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    (MAKROİKTİSADIN TEMELLERİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110201" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110201</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>MICROECONOMIC THEORY I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          (MİKROİKTİSAT KURAMI I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (3.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110202" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110202</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>MACROECONOMIC THEORY I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          (MAKROİKTİSAT KURAMI I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (3.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110203" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110203</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>MICROECONOMIC THEORY II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         (MİKROİKTİSAT KURAMI II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (3.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110204" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110204</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>MACROECONOMIC THEORY II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         (MAKROİKTİSAT KURAMI II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (3.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110205" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110205</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>STATISTICS FOR ECONOMISTS I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     (İKTİSATÇILAR İÇİN İSTATİSTİK I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110206" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110206</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>STATISTICS FOR ECONOMISTS II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    (İKTİSATÇILAR İÇİN İSTATİSTİK II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110208" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110208</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>SOCIAL AND ECONOMIC HISTORY II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  (SOSYAL VE İKTİSADİ TARİH II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110210" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110210</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>PRINCIPLES OF ECONOMICS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         (GİRİŞ İKTİSADI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110212" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110212</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>PRINCIPLES OF ECONOMICS II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      (İKTİSADIN TEMELLERİ II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110301" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110301</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INTRODUCTION TO ECONOMETRICS I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  (EKONOMETRİYE GİRİŞ I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (3.00,2.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110302" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110302</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INTRODUCTION TO ECONOMETRICS II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 (EKONOMETRİYE GİRİŞ II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (3.00,2.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110312" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110312</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>FISCAL POLICY AND PUBLIC FINANCE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                (KAMU MALİYESİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.5                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110314" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110314</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ECON.OF GROWTH AND DEVELOPMENT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  (BÜYÜME VE KALKINMA EKONOMİSİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110353" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110353</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INTRODUCT.TO INTERNATIONAL ECONOMICS I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          (ULUSLARARASI İKTİSAT I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.5                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110354" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110354</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INTRODUCT. TO INTERNATIONAL ECONOMICS II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        (ULUSLARARASI İKTİSAT II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.5                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110361" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110361</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>HISTORY OF ECONOMIC THOUGHT I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   (İKTİSADİ DÜŞÜNCE TARİHİ I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110362" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110362</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>HISTORY OF ECONOMIC THOUGHT II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  (İKTİSADİ DÜŞÜNCE TARİHİ II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110400" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110400</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>SEMINAR IN ECONOMICS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            (EKONOMİ SEMİNERİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>10.0                                    </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (0.00,6.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Seminar / Seminer</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110402" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110402</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>PRACTICAL TRAINING IN ECONOMICS II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              (İKTİSATTA PRATİK UYGULAMALAR II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110411" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110411</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ECON.OF NETWORK AND THE INTERNET                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                (AĞ VE İNTERNET EKONOMİSİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110426" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110426</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ECONOMICS OF NATURAL RESOURCES                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  (DOĞAL KAYNAKLAR EKONOMİSİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110442" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110442</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>TOPICS IN MONETARY MACROECONOMICS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               (PARASAL MAKROEKONOMİ KONULARI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110444" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110444</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ECONOMICS OF INNOVATION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         (İNOVASYON İKTİSADI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110451" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110451</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INDUSTRIAL ECONOMICS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            (SANAYİ İKTİSADI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110460" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110460</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>STRUCTURE OF THE TURKISH ECONOMY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                (TÜRKİYE EKONOMİSİNİN YAPISI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110465" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110465</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>DEVELOPMENT ECONOMICS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           (KALKINMA İKTİSADI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110466" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110466</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ECONOMICS OF GROWTH                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             (BÜYÜME İKTİSADI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110469" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110469</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ECONOMICS OF LABOR                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              (ÇALIŞMA EKONOMİSİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110476" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110476</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INTRODUCTION TO MATHEMATICAL ECONOMICS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          (MATEMATİKSEL İKTİSADA GİRİŞ II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110487" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110487</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL> EXPERIMENTAL ECONOMICS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         (DENEYSEL İKTİSAT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110496" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110496</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>POLITICAL ECON.OF MIDDLE EAST&N.AFRICA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          (ORTA DOĞU VE KUZEY AFRİKA POLİTİK İKTİSADI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110499" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110499</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INTERNATIONAL MONEY, FINANCE AND BANKING                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        (ULUSLARARASI PARA, FİNANS VE BANKACILIK                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110503" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110503</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>MICROECONOMIC THEORY II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         (MİKROİKTİSAT KURAMI II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110504" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110504</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>MACROECONOMIC THEORY II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         (MAKROİKTİSAT KURAMI II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110508" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110508</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ECONOMETRIC METHODS II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          (EKONOMETRİK YÖNTEMLER II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110589" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110589</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>TERM PROJECT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    (DÖNEM PROJESİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>20.0                                    </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>0.00 (0.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Term Project / Dönem Projesi</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110595" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110595</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>SEMINAR                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         (SEMİNER                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>10.0                                    </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>0.00 (0.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Seminar / Seminer</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110599" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110599</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>MASTER'S THESIS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 (YÜKSEK LİSANS TEZİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>50.0                                    </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>0.00 (0.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master`s/Yüksek Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>M.S. Thesis / Yüksek Lisans Tez</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110603" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110603</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ECONOMICS OF CLIMATE CHANGE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     (İKLİM DEĞİŞİKLİĞİNİN EKONOMİSİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110624" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110624</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>FINANCIAL ECONOMICS I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           (FİNANSAL İKTİSAT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Doctoral/Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Doctoral / Doktora</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110691" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110691</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ECONOMICS OF TECHNOLOGY POLICY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  (TEKNOLOJİ POLİTİKASI İKTİSADI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Doctoral / Doktora</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110696" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110696</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GRADUATE SEMINAR IN ECONOMICS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   (LİSANSÜSTÜ İKTİSAT SEMİNERLERİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>0.00 (4.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Seminar / Seminer</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="3110699" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3110699</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>PH.D. DISSERTATION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              (DOKTORA TEZ SAVUNMASI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>130.0                                   </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>0.00 (0.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Doctoral/Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Ph.D Thesis / Doktora Tez</FONT></TD>
+</TR>
+</TABLE>
+<TABLE ALIGN="Center">
+
+           <TR>
+             <TD><INPUT TYPE="submit" NAME="SubmitThesisWork" VALUE="Thesis Work Courses"></TD>
+        </TR>
+
+</TABLE>
+
+
+<TABLE ALIGN="Center">
+        <TR>
+                <TD><INPUT TYPE="submit" NAME="SubmitCourseInfo" VALUE="Course Info"></TD>
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="DersBilgisi"></TD> -->
+                <TD><INPUT TYPE="submit" NAME="SubmitPrerequisite" VALUE="Prerequisite"></TD>
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="OnkosulDersler"></TD> -->
+                <TD><INPUT TYPE="submit" NAME="SubmitReplacement" VALUE="Auto Replacement"></TD>
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="DenkDersler"></TD> -->
+                 <TD ALIGN="Center">
+                <INPUT TYPE="submit" NAME="SubmitBack" VALUE="Back">
+                <!--INPUT TYPE="Submit"  NAME="SubmitName" VALUE="Back"-->
+
+                </TD>
+
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="GeriDon"></TD> -->
+                <TD><INPUT TYPE="reset" VALUE="Clear"></TD>
+                <!-- <TD><INPUT TYPE="submit" VALUE="Temizle"></TD> -->
+        </TR>
+</TABLE>
+
+<HR>
+<TABLE ALIGN="Center">
+<TR>
+        <TD><FONT COLOR=Red SIZE=3 FACE=ARIAL><U><B>Note:</B></U></FONT></TD>
+</TR>
+<TR>
+        <TD><FONT SIZE=3 FACE=ARIAL><LI>Press "Course Info" button to see course info</LI></FONT>
+        <FONT SIZE=3 FACE=ARIAL><LI>Press "Prerequisite" button to see prerequisite courses</LI></FONT>
+        <FONT SIZE=3 FACE=ARIAL><LI>Press "Auto Replacement" button to see auto replace courses</LI></FONT></TD>
+</TR>
+
+</table>
+
+<input type="hidden" name="hidden_redir" value="Course_List"></form>
+</div>
+
+			</div>
+		</div>
+		<div class="container-fluid hidden-print">
+
+			<hr>
+
+			<footer style="margin: 0px 0;">
+				<div class="bottomfeq" id="tourFaqId"></div>
+				<div class="row">
+					<div class="col-lg-10">
+						<p style=""> </p>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+		<!-- /.container -->
+
+	</body>
+
+</html>
+
+<script>
+
+		
+	$(document).ready(function() {
+	
+	
+		
+	});
+</script>
+

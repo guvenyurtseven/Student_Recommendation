@@ -22,12 +22,12 @@ from student_planner.sources.sais import (
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Scrape METU SAIS course offerings for selected programs and semesters."
+        description="Scrape METU SAIS course offerings for selected departments and semesters."
     )
     parser.add_argument(
         "--programs",
         nargs="*",
-        help="Program abbreviations to scrape. Defaults to all active engineering programs.",
+        help="Department/program abbreviations to scrape. Defaults to all active entries in the offering config.",
     )
     parser.add_argument(
         "--semesters",
@@ -37,8 +37,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--config",
-        default="config/engineering_programs.json",
-        help="Engineering program config path.",
+        default="config/offering_departments.json",
+        help="Offering department config path.",
     )
     parser.add_argument(
         "--raw-root",
@@ -85,7 +85,7 @@ def credentials_from_env(env_file: Path) -> tuple[str, str]:
 
 
 def write_combined_offerings_csv(payloads: list[dict[str, Any]], processed_root: Path) -> Path:
-    output_path = processed_root / "offerings" / "all_engineering_offerings.csv"
+    output_path = processed_root / "offerings" / "all_scraped_offerings.csv"
     output_path.parent.mkdir(parents=True, exist_ok=True)
     fieldnames = [
         "program_abbr",

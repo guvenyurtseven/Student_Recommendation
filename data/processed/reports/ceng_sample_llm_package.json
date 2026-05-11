@@ -1,0 +1,71 @@
+{
+  "task": "student_planner_semester_narrative",
+  "prompt_version": "student-planner-report-v1",
+  "system_prompt": "# Student Planner LLM Report Prompt v1\n\nYou are the narrative report layer for a METU student semester planner.\n\nYour job is to turn a deterministic planning report into a clear Turkish\nstudent-facing explanation. The deterministic report is the only source of\ntruth. You must not create new academic rules, add new courses, remove courses,\nchange prerequisite status, change ECTS values, reinterpret grades, or override\nwarnings.\n\n## Product Contract\n\n- The deterministic planner decides eligibility, remaining requirements,\n  offerings, elective placeholders, scenario course sets, ECTS totals, and\n  warnings.\n- You explain those decisions in plain Turkish for a student who is preparing\n  for the next semester.\n- You may compare scenarios, point out tradeoffs, and explain what the student\n  should double-check.\n- You must clearly separate confirmed course recommendations from placeholder\n  elective choices.\n- If a scenario contains a placeholder elective, say that the semester course\n  set can be discussed, but a weekly timetable cannot be finalized until the\n  concrete elective course is selected.\n- If the deterministic report says offering coverage is unknown or incomplete,\n  do not present the affected course availability as certain.\n- If the deterministic report contains blockers or warnings, preserve their\n  practical meaning.\n- If the deterministic report does not contain enough information for a claim,\n  say that the system cannot know it yet.\n\n## Privacy Contract\n\n- Do not ask for or expose student credentials.\n- Do not infer identity from the input.\n- Do not mention internal database IDs, hashes, raw scraper files, or\n  implementation details unless they are already student-visible in the report.\n- Do not include sensitive raw transcript data beyond the course/grade summary\n  already present in the deterministic report.\n\n## Output Contract\n\nWrite the answer in Turkish Markdown with these sections:\n\n1. Kisa Ozet\n2. Onerilen Yol\n3. Senaryolarin Karsilastirmasi\n4. Dikkat Edilecek Noktalar\n5. Elective ve Ders Programi Notu\n6. Sonraki Aksiyonlar\n\nKeep the tone calm, practical, and supportive. Avoid legalistic disclaimers, but\ninclude one short note that final registration decisions should still be checked\nagainst official METU systems and the department advisor when needed.\n\nUse concise paragraphs and short bullet lists. Do not produce raw JSON.\n\n## Deterministic Report\n\nThe next message will contain the deterministic planning report. Use only that\ncontent.",
+  "deterministic_report_markdown": "# CENG Next-Semester Planning Report\n\n## Summary\n\n- Target semester: 20252\n- Difficulty preference: balanced\n- Generated at: 2026-05-11T14:44:23+00:00\n- Preferred scenario: balanced\n- Eligible courses: 15\n- Blocked courses: 24\n- Recommendation scenarios: 3\n- Loaded target-semester offerings: 654\n- Known offered candidates: 14\n- Known not-offered candidates: 7\n- Unknown offering candidates: 0\n- Timetable readiness: incomplete\n- Timetable blockers: 1 placeholder elective selection(s)\n\n## Elective Fit\n\n| Category | Remaining | Requested | Matched | Unplanned Later | Extra |\n| --- | --- | --- | --- | --- | --- |\n| free_elective | 1 | 1 | 1 | 0 | 0 |\n| nontechnical_elective | 3 | 0 | 0 | 3 | 0 |\n| restricted_elective | 1 | 0 | 0 | 1 | 0 |\n| technical_elective | 5 | 1 | 1 | 4 | 0 |\n\n## Recommendation Scenarios\n\n| Scenario | Kind | ECTS | Difficulty | Courses |\n| --- | --- | --- | --- | --- |\n| Easy Load | easy | 28.5 | 0.4563 | FREE ELECTIVE, CENG 495, IS 100, OHS 101, BA 100, PHYS 106, ENG 101 |\n| Balanced Progress | balanced | 32 | 0.5605 | FREE ELECTIVE, CENG 495, MATH 120, CENG 213, PHYS 106 |\n| Aggressive Progress | aggressive | 34 | 0.5392 | FREE ELECTIVE, CENG 495, MATH 120, OHS 101, PHYS 106, CENG 213 |\n\n### Easy Load\n\n- Targets about 26 ECTS with a cap of 30 ECTS.\n- Selected 7 course(s), total 28.5 ECTS.\n- Average estimated difficulty is 0.46.\n\n| Course | ECTS | Difficulty | Requested | Timetable |\n| --- | --- | --- | --- | --- |\n| FREE ELECTIVE | 5 | 0.3625 | yes | needs course selection |\n| CENG 495 | 6.5 | 0.8075 | yes | concrete |\n| IS 100 | 1 | 0.1425 | no | concrete |\n| OHS 101 | 2 | 0.1975 | no | concrete |\n| BA 100 | 2 | 0.1975 | no | concrete |\n| PHYS 106 | 6 | 0.4175 | no | concrete |\n| ENG 101 | 6 | 0.4175 | no | concrete |\n\n### Balanced Progress\n\n- Targets about 30 ECTS with a cap of 34 ECTS.\n- Selected 5 course(s), total 32 ECTS.\n- Average estimated difficulty is 0.56.\n\n| Course | ECTS | Difficulty | Requested | Timetable |\n| --- | --- | --- | --- | --- |\n| FREE ELECTIVE | 5 | 0.3625 | yes | needs course selection |\n| CENG 495 | 6.5 | 0.8075 | yes | concrete |\n| MATH 120 | 7.5 | 0.5 | no | concrete |\n| CENG 213 | 7 | 0.66 | no | concrete |\n| PHYS 106 | 6 | 0.4175 | no | concrete |\n\n### Aggressive Progress\n\n- Targets about 34 ECTS with a cap of 34 ECTS.\n- Selected 6 course(s), total 34 ECTS.\n- Average estimated difficulty is 0.54.\n\n| Course | ECTS | Difficulty | Requested | Timetable |\n| --- | --- | --- | --- | --- |\n| FREE ELECTIVE | 5 | 0.3625 | yes | needs course selection |\n| CENG 495 | 6.5 | 0.8075 | yes | concrete |\n| MATH 120 | 7.5 | 0.5 | no | concrete |\n| OHS 101 | 2 | 0.1975 | no | concrete |\n| PHYS 106 | 6 | 0.4175 | no | concrete |\n| CENG 213 | 7 | 0.66 | no | concrete |\n\n## Warnings\n\n| Count | Severity | Code | Message |\n| --- | --- | --- | --- |\n| 1 | info | elective_course_selection_required | 1 elective placeholder(s) can be used for semester load planning, but a concrete course must be selected before a weekly timetable can be built. |\n| 1 | info | explicit_elective_category_requires_review | 1 explicit elective course selection(s) are treated under the student-selected category, but category validity is not yet verified against official elective pool lists. |\n| 1 | info | target_semester_not_offered | 7 eligible course(s) were excluded because they are not listed in loaded offerings for 20252. |\n| 10 | warning | requirement_needs_manual_matching | This curriculum requirement has no concrete course options in the current processed data, so it cannot be automatically marked satisfied. |\n\n## Blocked Courses\n\n| Course | Missing Prerequisites | Explanation |\n| --- | --- | --- |\n| ENG 102 | ENG 101, 359 101 | ENG 102 is blocked; missing or insufficient prerequisites in set 1: ENG 101; set 2: 359 101. |\n| MATH 219 | MATH 120, 357 120, MATH 118, MATH 130 | MATH 219 is blocked; missing or insufficient prerequisites in set 1: MATH 120; set 2: 357 120; set 3: MATH 118; set 4: MATH 130. |\n| EE 281 | MATH 120 | EE 281 is blocked; missing or insufficient prerequisites in set 1: MATH 120. |\n| ENG 211 | ENG 101, ENG 102, 359 101, 359 102 | ENG 211 is blocked; missing or insufficient prerequisites in set 2: ENG 101, ENG 102; set 3: 359 101, 359 102. |\n| CENG 222 | MATH 120 | CENG 222 is blocked; missing or insufficient prerequisites in set 1: MATH 120. |\n| CENG 242 | CENG 111, CENG 213, 355 111, 355 213 | CENG 242 is blocked; missing or insufficient prerequisites in set 1: CENG 111, CENG 213; set 2: 355 111, 355 213. |\n| CENG 280 | CENG 223 | CENG 280 is blocked; missing or insufficient prerequisites in set 1: CENG 223. |\n| HIST 2202 | HIST 2201, 362 201 | HIST 2202 is blocked; missing or insufficient prerequisites in set 1: HIST 2201; set 2: 362 201. |\n| HIST 2206 | HIST 2205 | HIST 2206 is blocked; missing or insufficient prerequisites in set 1: HIST 2205; set 2: HIST 2205. |\n| CENG 300 | OHS 101 | CENG 300 is blocked; missing or insufficient prerequisites in set 1: OHS 101. |\n| CENG 315 | CENG 213 | CENG 315 is blocked; missing or insufficient prerequisites in set 1: CENG 213. |\n| CENG 331 | CENG 232 | CENG 331 is blocked; missing or insufficient prerequisites in set 1: CENG 232. |\n| CENG 351 | CENG 213, CENG 301, CENG 310 | CENG 351 is blocked; missing or insufficient prerequisites in set 1: CENG 213; set 2: CENG 301; set 3: CENG 310. |\n| OHS 301 | OHS 101 | OHS 301 is blocked; missing or insufficient prerequisites in set 1: OHS 101. |\n| CENG 334 | CENG 331 | CENG 334 is blocked; missing or insufficient prerequisites in set 2: CENG 331. |\n| CENG 336 | CENG 232 | CENG 336 is blocked; missing or insufficient prerequisites in set 1: CENG 232. |\n| CENG 350 | CENG 213, CENG 301, CENG 310 | CENG 350 is blocked; missing or insufficient prerequisites in set 1: CENG 213; set 2: CENG 301; set 3: CENG 310. |\n| CENG 384 | MATH 219, MATH 260 | CENG 384 is blocked; missing or insufficient prerequisites in set 1: MATH 219, MATH 260. |\n| TURK 106 | TURK 105, TURK 201 | TURK 106 is blocked; missing or insufficient prerequisites in set 1: TURK 105; set 2: TURK 201. |\n| TURK 202 | TURK 201, TURK 105 | TURK 202 is blocked; missing or insufficient prerequisites in set 1: TURK 201; set 2: TURK 105. |\n| TURK 304 | TURK 303 | TURK 304 is blocked; missing or insufficient prerequisites in set 1: TURK 303. |\n| CENG 400 | OHS 301 | CENG 400 is blocked; missing or insufficient prerequisites in set 1: OHS 301. |\n| CENG 491 | CENG 350, 355 350 | CENG 491 is blocked; missing or insufficient prerequisites in set 1: CENG 350; set 2: 355 350. |\n| CENG 492 | CENG 491 | CENG 492 is blocked; missing or insufficient prerequisites in set 2: CENG 491. |\n\n## Curriculum Progress Snapshot\n\n| Status | Count |\n| --- | --- |\n| satisfied | 2 |\n| partially_satisfied | 0 |\n| unsatisfied | 38 |\n| needs_review | 10 |\n",
+  "response_contract": {
+    "format": "markdown",
+    "language": "tr",
+    "sections": [
+      "Kisa Ozet",
+      "Onerilen Yol",
+      "Senaryolarin Karsilastirmasi",
+      "Dikkat Edilecek Noktalar",
+      "Elective ve Ders Programi Notu",
+      "Sonraki Aksiyonlar"
+    ],
+    "must_not_return_json": true,
+    "must_not_change_deterministic_decisions": true
+  },
+  "model_policy": {
+    "api": "Responses API",
+    "primary_model_tier": "mini",
+    "recommended_primary_model": "gpt-5.4-mini",
+    "low_cost_fallback_model": "gpt-5-mini",
+    "quality_review_model": "gpt-5.5",
+    "reasoning_effort": "low",
+    "text_verbosity": "medium",
+    "temperature": 0.2,
+    "max_output_tokens_hint": 1600,
+    "execution_mode": "sync_when_capacity_allows_async_during_peak",
+    "fallback_behavior": "return_deterministic_markdown_if_llm_unavailable",
+    "cache_key_fields": [
+      "prompt_version",
+      "system_prompt_sha256",
+      "deterministic_report_sha256",
+      "language",
+      "model"
+    ]
+  },
+  "safety_contract": {
+    "llm_may": [
+      "summarize_scenarios",
+      "explain_tradeoffs",
+      "translate_warnings_to_student_language",
+      "suggest_double_checks_based_on_existing_warnings"
+    ],
+    "llm_must_not": [
+      "invent_courses",
+      "change_prerequisite_status",
+      "change_grades",
+      "change_ects",
+      "override_offering_availability",
+      "claim_timetable_is_ready_when_placeholders_exist",
+      "ask_for_or_expose_credentials"
+    ]
+  },
+  "metadata": {
+    "program_abbr": "CENG",
+    "target_semester_no": "20252",
+    "difficulty_preference": "balanced",
+    "generated_at_utc": "2026-05-11T14:44:23+00:00",
+    "preferred_scenario_kind": "balanced",
+    "scenario_count": 3,
+    "warning_count": 13,
+    "blocker_count": 0,
+    "placeholder_elective_count": 1,
+    "timetable_ready": false,
+    "deterministic_report_sha256": "c4190b83ed9fb8fb657cdfc623c0b0d49e7da219b9bdd3814545b80f34079851",
+    "system_prompt_sha256": "bed6c0148fd26987e8188c5787afa96ab10cd1e1ae983f2a335d10428a7335ca"
+  }
+}

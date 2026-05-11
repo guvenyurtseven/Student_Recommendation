@@ -4,3 +4,10 @@ __pycache__/
 data/db/*.sqlite
 data/db/*.sqlite3
 data/db/*.db
+data/uploads/
+data/tmp/
+data/private/
+*.pdf
+*transcript*.pdf
+web/node_modules/
+web/client/dist/

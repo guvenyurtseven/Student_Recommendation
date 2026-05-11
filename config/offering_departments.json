@@ -1,0 +1,209 @@
+{
+  "source": {
+    "name": "METU SAIS View Program Course Details",
+    "portal_url": "https://student.metu.edu.tr/portal/#/",
+    "notes": "Departments to scrape for target-semester offering snapshots used by the student planner."
+  },
+  "programs": [
+    {
+      "abbr": "CENG",
+      "catalog_program_id": "571",
+      "name_en": "Computer Engineering",
+      "name_tr": "Bilgisayar Muhendisligi",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "ENVE",
+      "catalog_program_id": "560",
+      "name_en": "Environmental Engineering",
+      "name_tr": "Cevre Muhendisligi",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "EEE",
+      "catalog_program_id": "567",
+      "name_en": "Electrical and Electronics Engineering",
+      "name_tr": "Elektrik ve Elektronik Muhendisligi",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "IE",
+      "catalog_program_id": "568",
+      "name_en": "Industrial Engineering",
+      "name_tr": "Endustri Muhendisligi",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "FDE",
+      "catalog_program_id": "573",
+      "name_en": "Food Engineering",
+      "name_tr": "Gida Muhendisligi",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "AE",
+      "catalog_program_id": "572",
+      "name_en": "Aerospace Engineering",
+      "name_tr": "Havacilik ve Uzay Muhendisligi",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "CE",
+      "catalog_program_id": "562",
+      "name_en": "Civil Engineering",
+      "name_tr": "Insaat Muhendisligi",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "GEOE",
+      "catalog_program_id": "564",
+      "name_en": "Geological Engineering",
+      "name_tr": "Jeoloji Muhendisligi",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "CHE",
+      "catalog_program_id": "563",
+      "name_en": "Chemical Engineering",
+      "name_tr": "Kimya Muhendisligi",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "MINE",
+      "catalog_program_id": "565",
+      "name_en": "Mining Engineering",
+      "name_tr": "Maden Muhendisligi",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "ME",
+      "catalog_program_id": "569",
+      "name_en": "Mechanical Engineering",
+      "name_tr": "Makina Muhendisligi",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "METE",
+      "catalog_program_id": "570",
+      "name_en": "Metallurgical and Materials Engineering",
+      "name_tr": "Metalurji ve Malzeme Muhendisligi",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "PETE",
+      "catalog_program_id": "566",
+      "name_en": "Petroleum and Natural Gas Engineering",
+      "name_tr": "Petrol ve Dogal Gaz Muhendisligi",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "BA",
+      "catalog_program_id": "312",
+      "name_en": "Business Administration",
+      "name_tr": "Isletme",
+      "faculty": "Administrative Sciences",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "ENG",
+      "catalog_program_id": "639",
+      "name_en": "Modern Languages (English)",
+      "name_tr": "Modern Diller (Ingilizce)",
+      "faculty": "Service",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "HIST",
+      "catalog_program_id": "240",
+      "name_en": "History",
+      "name_tr": "Tarih",
+      "faculty": "Arts and Sciences",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "IS",
+      "catalog_program_id": "901",
+      "name_en": "Information Systems",
+      "name_tr": "Bilisim Sistemleri",
+      "faculty": "Informatics",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "MATH",
+      "catalog_program_id": "236",
+      "name_en": "Mathematics",
+      "name_tr": "Matematik",
+      "faculty": "Arts and Sciences",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "OHS",
+      "catalog_program_id": "877",
+      "name_en": "Occupational Health and Safety",
+      "name_tr": "Is Sagligi ve Guvenligi",
+      "faculty": "Service",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "PHYS",
+      "catalog_program_id": "230",
+      "name_en": "Physics",
+      "name_tr": "Fizik",
+      "faculty": "Arts and Sciences",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "TURK",
+      "catalog_program_id": "642",
+      "name_en": "Turkish Language",
+      "name_tr": "Turk Dili",
+      "faculty": "Service",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "CHEM",
+      "catalog_program_id": "234",
+      "name_en": "Chemistry",
+      "name_tr": "Kimya",
+      "faculty": "Arts and Sciences",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "ES",
+      "catalog_program_id": "561",
+      "name_en": "Engineering Sciences",
+      "name_tr": "Muhendislik Bilimleri",
+      "faculty": "Engineering",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "ECON",
+      "catalog_program_id": "311",
+      "name_en": "Economics",
+      "name_tr": "Iktisat",
+      "faculty": "Administrative Sciences",
+      "is_active_undergraduate": true
+    },
+    {
+      "abbr": "BIOL",
+      "catalog_program_id": "238",
+      "name_en": "Biology",
+      "name_tr": "Biyoloji",
+      "faculty": "Arts and Sciences",
+      "is_active_undergraduate": true
+    }
+  ]
+}

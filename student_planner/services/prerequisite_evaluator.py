@@ -72,6 +72,9 @@ class EligibilityResult:
 
 CourseAliases = Mapping[str, str]
 CompletedInput = Mapping[str, Grade | str] | Iterable[CompletedCourse]
+SPACES_RE = re.compile(r"\s+")
+LETTER_COURSE_RE = re.compile(r"^([A-Z]+)\s*(\d+[A-Z]?)$")
+NUMERIC_SUBJECT_COURSE_RE = re.compile(r"^(\d+)\s+(\d+[A-Z]?)$")
 
 
 def normalize_course_code(value: str) -> str:
@@ -85,17 +88,17 @@ def normalize_course_code(value: str) -> str:
     - `5710140` -> `5710140`
     """
 
-    normalized = re.sub(r"\s+", " ", value.strip().upper())
+    normalized = SPACES_RE.sub(" ", value.strip().upper())
     if not normalized:
         raise ValueError("Course code cannot be empty.")
     if normalized.isdigit():
         return normalized
 
-    match = re.match(r"^([A-Z]+)\s*(\d+[A-Z]?)$", normalized)
+    match = LETTER_COURSE_RE.match(normalized)
     if match:
         return f"{match.group(1)} {match.group(2)}"
 
-    match = re.match(r"^(\d+)\s+(\d+[A-Z]?)$", normalized)
+    match = NUMERIC_SUBJECT_COURSE_RE.match(normalized)
     if match:
         return f"{match.group(1)} {match.group(2)}"
     return normalized
@@ -106,11 +109,18 @@ def canonicalize_course_code(value: str, aliases: CourseAliases | None = None) -
     if not aliases:
         return normalized
 
-    normalized_aliases = {
-        normalize_course_code(alias): normalize_course_code(canonical)
-        for alias, canonical in aliases.items()
-    }
-    return normalized_aliases.get(normalized, normalized)
+    canonical = aliases.get(normalized)
+    if canonical is not None:
+        return normalize_course_code(canonical)
+
+    raw_canonical = aliases.get(value)
+    if raw_canonical is not None:
+        return normalize_course_code(raw_canonical)
+
+    for alias, candidate in aliases.items():
+        if normalize_course_code(alias) == normalized:
+            return normalize_course_code(candidate)
+    return normalized
 
 
 def evaluate_eligibility(

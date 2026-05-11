@@ -1,0 +1,9 @@
+{
+  "source_name": "METU SAIS Course Details",
+  "source_url": "https://student.metu.edu.tr/proxy/View_Program_Course_Details_64/main.php",
+  "retrieved_at_utc": "2026-05-11T10:32:38+00:00",
+  "content_sha256": "9538715628022b3068b477cddf3d2cc65c08c1217a683c03e383ce1f69731aa3",
+  "parser_version": "metu_sais_offerings_v1",
+  "program_abbr": "ME",
+  "semester_no": "20242"
+}

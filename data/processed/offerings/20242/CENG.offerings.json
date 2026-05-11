@@ -13,8 +13,8 @@
   "source": {
     "source_name": "METU SAIS Course Details",
     "source_url": "https://student.metu.edu.tr/proxy/View_Program_Course_Details_64/main.php",
-    "retrieved_at_utc": "2026-05-10T19:41:24+00:00",
-    "content_path": "data\\raw\\sais\\offerings\\20242\\CENG\\20260510T194124Z\\program.html",
+    "retrieved_at_utc": "2026-05-11T10:32:37+00:00",
+    "content_path": "data\\raw\\sais\\offerings\\20242\\CENG\\20260511T103237Z\\program.html",
     "content_sha256": "d4bb4604957975e421c12b3ee1b9ab3a8591135f7fd9638985f295b1d009fe6e",
     "parser_version": "metu_sais_offerings_v1"
   },
@@ -667,6 +667,6 @@
   ],
   "summary": {
     "offering_count": 43,
-    "undergraduate_count": 30
+    "undergraduate_count": 31
   }
 }

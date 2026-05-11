@@ -262,6 +262,12 @@ class SQLiteRepositoryTests(unittest.TestCase):
     def test_count_offerings(self) -> None:
         self.assertEqual(self.repository.count_offerings(), 0)
 
+    def test_fetch_course_ects_estimates_from_curriculum_requirements(self) -> None:
+        estimates = self.repository.fetch_course_ects_estimates(("ceng140", "math219"))
+
+        self.assertEqual(estimates["CENG 140"], 6.0)
+        self.assertNotIn("MATH 219", estimates)
+
     def test_fetch_latest_curriculum_returns_requirements_and_options(self) -> None:
         curriculum = self.repository.fetch_latest_curriculum("ceng")
         self.assertEqual(curriculum.program.abbr, "CENG")

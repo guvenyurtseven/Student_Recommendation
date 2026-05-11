@@ -1,5 +1,12 @@
 """Domain models and pure planning logic."""
 
+from student_planner.domain.electives import (
+    DEFAULT_ECTS_BY_ELECTIVE_CATEGORY,
+    DIFFICULTY_RANK_BY_ELECTIVE_CATEGORY,
+    ElectiveCategory,
+    ElectiveIntent,
+    elective_category_for_requirement_type,
+)
 from student_planner.domain.grades import (
     Grade,
     compare_letter_grades,
@@ -37,6 +44,11 @@ __all__ = [
     "CoursePlanningStatus",
     "CourseRecommendation",
     "DifficultyPreference",
+    "DEFAULT_ECTS_BY_ELECTIVE_CATEGORY",
+    "DIFFICULTY_RANK_BY_ELECTIVE_CATEGORY",
+    "ElectiveCategory",
+    "ElectiveIntent",
+    "elective_category_for_requirement_type",
     "Grade",
     "InProgressCourse",
     "PlanningGoal",

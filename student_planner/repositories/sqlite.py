@@ -393,6 +393,42 @@ class SQLiteStudentPlannerRepository:
             )
         return tuple(row["subject_code"] for row in rows)
 
+    def fetch_course_ects_estimates(
+        self,
+        course_codes: list[str] | tuple[str, ...],
+        aliases: CourseAliases | None = None,
+    ) -> dict[str, float]:
+        aliases = aliases or self.fetch_alias_map()
+        targets = tuple(
+            sorted({canonicalize_course_code(course_code, aliases) for course_code in course_codes})
+        )
+        if not targets:
+            return {}
+
+        placeholders = ", ".join("?" for _ in targets)
+        with closing(self.connect()) as connection:
+            rows = list(
+                connection.execute(
+                    f"""
+                    SELECT c.display_code,
+                           MAX(cr.ects_min) AS ects_estimate
+                    FROM courses c
+                    JOIN requirement_options ro ON ro.course_id = c.id
+                    JOIN curriculum_requirements cr ON cr.id = ro.requirement_id
+                    WHERE c.display_code IN ({placeholders})
+                      AND cr.ects_min IS NOT NULL
+                    GROUP BY c.display_code
+                    ORDER BY c.display_code
+                    """,
+                    targets,
+                )
+            )
+        return {
+            canonicalize_course_code(row["display_code"], aliases): float(row["ects_estimate"])
+            for row in rows
+            if row["ects_estimate"] is not None
+        }
+
     def evaluate_course_eligibility(
         self,
         target_course_code: str,

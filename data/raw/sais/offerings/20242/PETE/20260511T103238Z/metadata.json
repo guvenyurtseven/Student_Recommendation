@@ -1,0 +1,9 @@
+{
+  "source_name": "METU SAIS Course Details",
+  "source_url": "https://student.metu.edu.tr/proxy/View_Program_Course_Details_64/main.php",
+  "retrieved_at_utc": "2026-05-11T10:32:38+00:00",
+  "content_sha256": "1dd2c9299ac365e5ca497f7a98173003e60d0d9a2b342925740a184dbdf42fbd",
+  "parser_version": "metu_sais_offerings_v1",
+  "program_abbr": "PETE",
+  "semester_no": "20242"
+}

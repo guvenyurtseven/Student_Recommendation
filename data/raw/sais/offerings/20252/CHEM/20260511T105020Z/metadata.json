@@ -1,0 +1,9 @@
+{
+  "source_name": "METU SAIS Course Details",
+  "source_url": "https://student.metu.edu.tr/proxy/View_Program_Course_Details_64/main.php",
+  "retrieved_at_utc": "2026-05-11T10:50:20+00:00",
+  "content_sha256": "cc26ea0a8e2d3715cbaf1ae724a0d38392491977f8375fffd98be7e88fda314e",
+  "parser_version": "metu_sais_offerings_v1",
+  "program_abbr": "CHEM",
+  "semester_no": "20252"
+}

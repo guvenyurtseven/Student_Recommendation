@@ -8,6 +8,7 @@ from pathlib import Path
 from types import MappingProxyType
 from typing import Any
 
+from student_planner.domain.electives import ElectiveIntent
 from student_planner.domain.planning import (
     CompletedCourseAttempt,
     InProgressCourse,
@@ -15,6 +16,8 @@ from student_planner.domain.planning import (
     PlanningReport,
     StudentPlanningInput,
 )
+from student_planner.services.llm_report_package import build_llm_report_package
+from student_planner.services.planning_report_markdown import planning_report_to_markdown
 
 
 def load_student_planning_input(path: str | Path) -> StudentPlanningInput:
@@ -45,10 +48,62 @@ def student_planning_input_from_dict(payload: Mapping[str, Any]) -> StudentPlann
         program_abbr=str(program_abbr),
         completed_courses=tuple(parse_completed_course(item) for item in completed_payload),
         in_progress_courses=tuple(parse_in_progress_course(item) for item in in_progress_payload),
+        elective_intents=parse_elective_intents(payload),
         goal=parse_goal(goal_payload),
         student_id=optional_string(payload.get("student_id")),
         curriculum_version_label=optional_string(payload.get("curriculum_version_label")),
         metadata=payload.get("metadata", {}) if isinstance(payload.get("metadata", {}), Mapping) else {},
+    )
+
+
+def parse_elective_intents(payload: Mapping[str, Any]) -> tuple[ElectiveIntent, ...]:
+    if "elective_intents" in payload:
+        raw_intents = payload["elective_intents"]
+        if not isinstance(raw_intents, list | tuple):
+            raise ValueError("`elective_intents` must be a list when provided.")
+        intents = tuple(parse_elective_intent(item) for item in raw_intents)
+        return tuple(intent for intent in intents if intent.wants_to_take)
+
+    raw_preferences = payload.get("elective_preferences") or payload.get("electives")
+    if raw_preferences is None:
+        return ()
+    if isinstance(raw_preferences, list | tuple):
+        intents = tuple(parse_elective_intent(item) for item in raw_preferences)
+        return tuple(intent for intent in intents if intent.wants_to_take)
+    if not isinstance(raw_preferences, Mapping):
+        raise ValueError("`elective_preferences` must be an object or list when provided.")
+
+    intents: list[ElectiveIntent] = []
+    for category, value in raw_preferences.items():
+        intent = parse_elective_preference_item(str(category), value)
+        if intent.wants_to_take:
+            intents.append(intent)
+    return tuple(intents)
+
+
+def parse_elective_preference_item(category: str, value: Any) -> ElectiveIntent:
+    if isinstance(value, bool | str | int):
+        return ElectiveIntent(category=category, wants_to_take=boolish(value))
+    if not isinstance(value, Mapping):
+        raise ValueError("Elective preference values must be booleans or objects.")
+    return parse_elective_intent(value, category_hint=category)
+
+
+def parse_elective_intent(payload: Mapping[str, Any] | str, category_hint: str | None = None) -> ElectiveIntent:
+    if isinstance(payload, str):
+        return ElectiveIntent(category=payload)
+    if not isinstance(payload, Mapping):
+        raise ValueError("Elective intent items must be objects or category strings.")
+    category = payload.get("category") or category_hint
+    if not category:
+        raise ValueError("Elective intent items must include `category`.")
+    wants_to_take = boolish(payload.get("wants_to_take", payload.get("selected", True)))
+    return ElectiveIntent(
+        category=str(category),
+        wants_to_take=wants_to_take,
+        course_code=optional_string(payload.get("course_code") or payload.get("course")),
+        requested_count=optional_int(payload.get("requested_count") or payload.get("count")) or 1,
+        notes=optional_string(payload.get("notes")) or "",
     )
 
 
@@ -107,6 +162,34 @@ def planning_report_to_dict(report: PlanningReport) -> dict[str, Any]:
     return payload
 
 
+def student_planning_input_to_dict(planning_input: StudentPlanningInput) -> dict[str, Any]:
+    payload = to_plain(planning_input)
+    if not isinstance(payload, dict):
+        raise TypeError("Student planning input serialization did not produce an object.")
+    return payload
+
+
+def planning_report_to_text(report: PlanningReport, output_format: str = "json", compact: bool = False) -> str:
+    normalized_format = output_format.strip().lower()
+    if normalized_format == "json":
+        return json.dumps(
+            planning_report_to_dict(report),
+            ensure_ascii=False,
+            indent=None if compact else 2,
+            sort_keys=False,
+        )
+    if normalized_format in {"markdown", "md"}:
+        return planning_report_to_markdown(report)
+    if normalized_format in {"llm-package", "llm_package"}:
+        return json.dumps(
+            build_llm_report_package(report).to_dict(),
+            ensure_ascii=False,
+            indent=None if compact else 2,
+            sort_keys=False,
+        )
+    raise ValueError(f"Unsupported planning report format: {output_format!r}")
+
+
 def to_plain(value: Any) -> Any:
     if dataclasses.is_dataclass(value) and not isinstance(value, type):
         return {
@@ -153,3 +236,17 @@ def optional_float(value: Any) -> float | None:
     if value is None or value == "":
         return None
     return float(value)
+
+
+def boolish(value: Any) -> bool:
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, int):
+        return value != 0
+    if isinstance(value, str):
+        normalized = value.strip().lower()
+        if normalized in {"1", "true", "yes", "y", "on"}:
+            return True
+        if normalized in {"0", "false", "no", "n", "off", ""}:
+            return False
+    return bool(value)

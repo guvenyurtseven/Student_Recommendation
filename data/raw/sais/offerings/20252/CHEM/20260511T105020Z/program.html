@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="favicon.ico">
+        <style type="text/css" title="currentStyle" media="screen">
+            @import "css/bootstrap.css";
+            @import "css/metu.css";
+            @import "css/bootstrap-tour.css";
+            @import "css/slider.css";
+            @import "css/dataTables.bootstrap.css";
+        </style>
+        <style type="text/css">
+            
+            div.DTTT { margin-bottom: 0.5em; float: right; }
+            div.dataTables_wrapper { clear: both; }
+            .dataTables_filter { float : left; }
+            td { border-color: #cccccc !important; padding: 4px; }
+            
+            
+</style>
+        <link href="css/datepicker.css" rel="stylesheet">
+        <!-- JavaScript -->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+                    <script src="js/localization/messages_en.js"></script>
+                <script src="js/jquery.bootstrap.wizard.js"></script>
+        <script src="js/validator.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/locales/bootstrap-datepicker.tr.js"></script>
+        <script src="js/bootstrap-tour.js"></script>
+        <script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap-slider.js"></script>
+	<script language="JavaScript" type="text/javascript" src="js/readmore.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/script.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/dataTables/js/jquery.dataTables.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/dataTables/js/dataTables.tableTools.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/dataTables/js/dataTables.bootstrap.js"></script>
+        <script>document.domain = 'metu.edu.tr';</script>
+        <title> </title>
+            </head>
+    <body>
+        <nav class="navbar navbar-default" role="navigation" id="top-navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="."><img src="img/logo.png" alt=""/></a>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-main">
+                    <h3></h3>
+			                </div>
+            </div>
+		
+        </nav>
+        <script>if (window.self !== window.top) document.getElementById('top-navbar').style.display = "none";</script>
+            <div class="container-fluid container-top noscriptClass">
+            <div class="row-fluid clearfix">
+
+<div id="single_content">
+
+
+
+<div id="formmessage">
+    <font size=3 color="red"><b></b></font>
+</div>
+
+<br />
+<b></b>
+<form method="POST" action="main.php">
+<BR>
+<BR>
+<TABLE ALIGN="CENTER" BORDER="0">
+  <TR>
+        <TD><FONT FACE=ARIAL><B>Department : </B>Chemistry/Kimya</FONT></TD>
+        <TD><FONT FACE=ARIAL><B>Semester : </B>20252</FONT></TD>
+  </TR>
+</TABLE>
+
+<TABLE ALIGN="Center">
+        <TR>
+                <TD><INPUT TYPE="submit" NAME="SubmitCourseInfo" VALUE="Course Info"></TD>
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="DersBilgisi"></TD> -->
+                <TD><INPUT TYPE="submit" NAME="SubmitPrerequisite" VALUE="Prerequisite"></TD>
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="OnkosulDersler"></TD> -->
+                <TD><INPUT TYPE="submit" NAME="SubmitReplacement" VALUE="Auto Replacement"></TD>
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="DenkDersler"></TD> -->
+                 <TD ALIGN="Center">
+                <INPUT TYPE="submit" NAME="SubmitBack" VALUE="Back">
+			    <!--INPUT TYPE="Submit"  NAME="SubmitName" VALUE="Back"-->
+                
+				</TD>   
+
+				<!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="GeriDon"></TD> -->
+                <TD><INPUT TYPE="reset" VALUE="Clear"></TD>
+                <!-- <TD><INPUT TYPE="submit" VALUE="Temizle"></TD> -->
+        </TR>
+</TABLE>
+<TABLE ALIGN="Center">
+        <TR>
+             <TD><INPUT TYPE="submit" NAME="SubmitThesisWork" VALUE="Thesis Work Courses"></TD>
+        </TR>
+
+</TABLE>
+<TABLE BORDER=1 ALIGN="Center" cellspacing=0  cellpadding=2>
+<TR>
+        <TD>&nbsp;</TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><B>Code </B></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><B>Name </B></FONT></TD>
+         <TD ALIGN="Center"><FONT FACE=ARIAL><B>ECTS Credit </B></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><B>Credit </B></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><B>Level </B></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><B>Type </B></FONT></TD>
+</TR>
+ <TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340102" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340102</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GENERAL CHEMISTRY II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            (Genel Kimya II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.00 (4.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340105" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340105</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GENERAL CHEMISTRY I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             (GENEL KIMYA I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>9.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (4.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340106" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340106</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GENERAL CHEMISTRY II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            (GENEL KIMYA II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>9.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (4.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340107" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340107</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GENERAL CHEMISTRY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               (Genel Kimya I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (3.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340112" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340112</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GENERAL CHEMISTRY II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            (Genel Kimya II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (3.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340115" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340115</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GENERAL CHEMISTRY LABORATORY I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  (GENEL KIMYA LABORATUVARI I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2.00 (,,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340116" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340116</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GENERAL CHEMISTRY LABORATORY II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 (GENEL KIMYA LABORATUVARI II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2.00 (,,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340220" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340220</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ORGANIC CHEMISTRY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               (Organik Kimya                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (3.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340221" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340221</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ANALYTICAL CHEMISTRY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            (ANALITIK KIMYA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (4.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340223" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340223</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ANALYTICAL CHEMISTRY LABORATORY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 (ANALITIK KIMYA LABORATUVARI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (0.00,6.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Labaratory / Laboratuvar</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340229" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340229</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ORGANIC CHEMISTRY FOR ENGINEERS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 (Mühendisler için Organik Kimya                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (3.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340230" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340230</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ANALYTICAL CHEMISTRY FOR ENGINEERS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              (Mühendisler için Analitik Kimya                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (3.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340231" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340231</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ORGANIC CHEMISTRY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               (Organik Kimya                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.00 (3.00,4.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340233" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340233</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INTRODUCTION TO ORGANIC CHEMISTY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                (Organik Kimyaya Giriş                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2.00 (,,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340234" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340234</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ORGANIC CHEMISTY I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              (Organik Kimya I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (4.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340236" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340236</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ORGANIC CHEMISTRY LAB. I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        (Organik Kimya Laboratuvarı I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2.00 (0.00,4.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Labaratory / Laboratuvar</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340252" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340252</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>PHYSICAL CHEMISTRY I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            (FIZIKOKIMYA I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (4.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340254" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340254</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>PHYSICAL CHEMISTRY LABORATORY I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 (Fizikokimya Laboratuvarı I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2.00 (0.00,4.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Labaratory / Laboratuvar</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340257" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340257</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>MATHEMATICS FOR CHEMISTS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        (Kimyagerler için Matematik                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (4.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340282" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340282</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>FUND.OF ORGANIC CHEMISTRY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       (Organik Kimyanın Temelleri                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340322" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340322</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INSTRUMENTAL ANALYSIS I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         (ENSTRÜMANTAL ANALIZ I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (4.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340324" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340324</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INSTRUMENTAL ANALYSIS LABORATORY I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              (ENSTRÜMANTAL ANALIZ LABORATUVARı I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (0.00,6.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Labaratory / Laboratuvar</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340353" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340353</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>PHYSICAL CHEMISTRY II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           (Fizikokimya II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (4.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340355" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340355</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>PHYSICAL CHEMISTRY LABORATORY II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                (Fizikokimya Laboratuvarı II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2.00 (0.00,4.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Labaratory / Laboratuvar</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340362" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340362</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INORGANIC CHEMISTRY II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          (Anorganik Kimya II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.00 (4.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340364" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340364</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INORGANIC CHEMISTRY LABORATORY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  (Anorganik Kimya Laboratuvarı                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>4.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2.00 (0.00,4.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Labaratory / Laboratuvar</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340401" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340401</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>SUMMER PRACTICE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 (STAJ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>0.00 (0.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate Practice / Lisans Staj</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340407" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340407</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ORGANIC CHEMISTRY III                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           (Organik Kimya III                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.5                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340408" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340408</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INSTRUMENTAL ANALYSIS II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        (ENSTRÜMANTAL ANALIZ II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>9.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340412" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340412</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>SPECIAL TOPICS IN CHEMISTRY: PATENTS IN CHEMICAL INNOVATIONS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    (Özel Konular: Kimyasal Buluşlarda Patent                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.5                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Elective / Seçmeli</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340413" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340413</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>BIOCHEMISTRY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    (Biyokimya                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.5                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340441" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340441</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>REACTION MECHANISMS IN ORGANIC CHEMISTRY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        (Organik Kimyada Reaksiyon Mekanizmaları                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.5                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340455" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340455</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>POLYMER CHEMISTRY I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             (Polimer Kimyası I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.5                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340465" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340465</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>POLIMER TECHNOLOGY&RELATED INDUSTRIES                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           (Polimer Teknolojisi ve İlgili Endüstrilerin Kimyası                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.5                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340471" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340471</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>SPECTROSCOPIC METHODS IN ORGANIC CHEM.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          (Organik Kimyada Spektroskopik Yöntemler                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>7.5                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340481" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340481</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INORGANIC CHEMISTRY III                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         (Anorganik Kimya III                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>9.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340499" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340499</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>UNDERGRADUATE RESEARCH                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          (Lisans Düzeyinde Araştırma                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>10.0                                    </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (1.00,4.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Seminar / Seminer</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340500" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340500</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>M.S. THESIS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     (YUKSEK LISANS TEZI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>50.0                                    </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>0.00 (0.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master`s/Yüksek Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>M.S. Thesis / Yüksek Lisans Tez</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340502" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340502</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>SEMINAR IN CHEMISTRY  II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        (KIMYA SEMINERI II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>10.0                                    </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>0.00 (0.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Seminar / Seminer</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340510" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340510</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>RESEARCH METHODS AND ETHICS IN CHEMISTRY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ( KİMYADA ARAŞTIRMA YÖNTEMLERİ VE ETİK                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>10.0                                    </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>0.00 (0.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Ethics / Etik</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340511" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340511</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>RADIATION CHEMISTRY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             (RADYASYON KIMYASI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340515" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340515</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>PHYSICAL ORGANIC CHEMISTRY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      (FIZIKSEL ORGANIK KIMYA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340525" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340525</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>MASS SPECTROMETRY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               (KÜTLE SPEKTROMETRESİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340533" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340533</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ORGANOMETALLIC CHEMISTRY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        (ORANOMETALİK KİMYA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340545" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340545</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>POLYMER SCIENCE AND TECHNOLOGY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ()</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (2.00,2.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340560" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340560</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INORGANIC REACTION MECHANISMS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   (ANORGANIK TEPKIME MEKANIZMALARI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340592" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340592</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ADVANCED CHEM. PERSECTIVES IN BIOCHEM.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          (BIYOKIMYADA ILERI SEVIYE KIMYASAL PERSPEKTIFLER                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340595" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340595</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ADVANCED TOPICS IN INORGANIC CHEMISTRY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          (ANORGANIK KIMYADA ILERI DUZEYDE KONULAR                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340597" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340597</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ADVANCED TOPICS IN PHYSICAL CHEMISTRY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           (ILERI SEVIYE FIZIKSEL KIMYA KONULARI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340600" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340600</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>PH.D. THESIS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    (DOKTORA TEZI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>130.0                                   </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>0.00 (0.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Doctoral/Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Ph.D Thesis / Doktora Tez</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2340602" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2340602</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>SEMINAR IN CHEMISTRY IV                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         (KIMYA SEMINERI IV                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>10.0                                    </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>0.00 (0.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Doctoral/Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Seminar / Seminer</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="2345555" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2345555</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INTERNATIONAL STUDENT PRACTICE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  (ULUSLARARASI ÖĞRENCİ STAJI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>1.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>0.00 (0.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate Practice / Lisans Staj</FONT></TD>
+</TR>
+</TABLE>
+<TABLE ALIGN="Center">
+
+           <TR>
+             <TD><INPUT TYPE="submit" NAME="SubmitThesisWork" VALUE="Thesis Work Courses"></TD>
+        </TR>
+
+</TABLE>
+
+
+<TABLE ALIGN="Center">
+        <TR>
+                <TD><INPUT TYPE="submit" NAME="SubmitCourseInfo" VALUE="Course Info"></TD>
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="DersBilgisi"></TD> -->
+                <TD><INPUT TYPE="submit" NAME="SubmitPrerequisite" VALUE="Prerequisite"></TD>
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="OnkosulDersler"></TD> -->
+                <TD><INPUT TYPE="submit" NAME="SubmitReplacement" VALUE="Auto Replacement"></TD>
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="DenkDersler"></TD> -->
+                 <TD ALIGN="Center">
+                <INPUT TYPE="submit" NAME="SubmitBack" VALUE="Back">
+                <!--INPUT TYPE="Submit"  NAME="SubmitName" VALUE="Back"-->
+
+                </TD>
+
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="GeriDon"></TD> -->
+                <TD><INPUT TYPE="reset" VALUE="Clear"></TD>
+                <!-- <TD><INPUT TYPE="submit" VALUE="Temizle"></TD> -->
+        </TR>
+</TABLE>
+
+<HR>
+<TABLE ALIGN="Center">
+<TR>
+        <TD><FONT COLOR=Red SIZE=3 FACE=ARIAL><U><B>Note:</B></U></FONT></TD>
+</TR>
+<TR>
+        <TD><FONT SIZE=3 FACE=ARIAL><LI>Press "Course Info" button to see course info</LI></FONT>
+        <FONT SIZE=3 FACE=ARIAL><LI>Press "Prerequisite" button to see prerequisite courses</LI></FONT>
+        <FONT SIZE=3 FACE=ARIAL><LI>Press "Auto Replacement" button to see auto replace courses</LI></FONT></TD>
+</TR>
+
+</table>
+
+<input type="hidden" name="hidden_redir" value="Course_List"></form>
+</div>
+
+			</div>
+		</div>
+		<div class="container-fluid hidden-print">
+
+			<hr>
+
+			<footer style="margin: 0px 0;">
+				<div class="bottomfeq" id="tourFaqId"></div>
+				<div class="row">
+					<div class="col-lg-10">
+						<p style=""> </p>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+		<!-- /.container -->
+
+	</body>
+
+</html>
+
+<script>
+
+		
+	$(document).ready(function() {
+	
+	
+		
+	});
+</script>
+

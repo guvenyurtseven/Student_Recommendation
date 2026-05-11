@@ -1,0 +1,14 @@
+Middle East Technical University
+Student Transcript
+
+2024-2025 Fall
+MATH 119 Calculus with Analytic Geometry I 4.0 7.5 DD
+CENG 140 C Programming 4.0 6.5 CC
+
+2024-2025 Spring
+MATH 120 Calculus with Analytic Geometry II 4.0 7.5 BA
+PHYS 105 General Physics I 4.0 6.0 BB
+
+2025-2026 Fall
+MATH 119 Calculus with Analytic Geometry I 4.0 7.5 FF
+CENG 213 Data Structures 4.0 7.0 IP

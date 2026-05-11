@@ -1,0 +1,9 @@
+{
+  "source_name": "METU SAIS Course Details",
+  "source_url": "https://student.metu.edu.tr/proxy/View_Program_Course_Details_64/main.php",
+  "retrieved_at_utc": "2026-05-11T10:32:40+00:00",
+  "content_sha256": "7c2b6be6d5b465d7f5079ff5d6a855a37e7012c2c8be4a0e70fcd67c1f1fe361",
+  "parser_version": "metu_sais_offerings_v1",
+  "program_abbr": "CHE",
+  "semester_no": "20251"
+}

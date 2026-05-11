@@ -29,9 +29,24 @@ def parse_args() -> argparse.Namespace:
         help="Directory containing *.offerings.json files.",
     )
     parser.add_argument(
+        "--semesters",
+        nargs="*",
+        help="Only load offering JSON files for these semester numbers.",
+    )
+    parser.add_argument(
+        "--programs",
+        nargs="*",
+        help="Only load offering JSON files for these program abbreviations.",
+    )
+    parser.add_argument(
         "--clear-existing",
         action="store_true",
         help="Delete all existing offerings before loading.",
+    )
+    parser.add_argument(
+        "--clear-semesters",
+        action="store_true",
+        help="Delete existing offerings for the selected --semesters before loading.",
     )
     parser.add_argument(
         "--prune-orphan-non-undergraduate-courses",
@@ -44,8 +59,24 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def offering_json_paths(offerings_dir: Path) -> list[Path]:
-    return sorted(offerings_dir.glob("*/*.offerings.json"))
+def offering_json_paths(
+    offerings_dir: Path,
+    semesters: list[str] | None = None,
+    programs: list[str] | None = None,
+) -> list[Path]:
+    wanted_semesters = {item.strip() for item in semesters or [] if item.strip()}
+    wanted_programs = {item.strip().upper() for item in programs or [] if item.strip()}
+    paths = sorted(offerings_dir.glob("*/*.offerings.json"))
+    filtered: list[Path] = []
+    for path in paths:
+        semester_no = path.parent.name
+        program_abbr = path.name.split(".", 1)[0].upper()
+        if wanted_semesters and semester_no not in wanted_semesters:
+            continue
+        if wanted_programs and program_abbr not in wanted_programs:
+            continue
+        filtered.append(path)
+    return filtered
 
 
 def upsert_source_document(connection: sqlite3.Connection, payload: dict[str, Any], path: Path) -> int:
@@ -271,6 +302,17 @@ def query_course_count(connection: sqlite3.Connection) -> int:
     return int(connection.execute("SELECT COUNT(*) FROM courses").fetchone()[0])
 
 
+def clear_offerings_for_semesters(connection: sqlite3.Connection, semesters: list[str]) -> None:
+    selected = sorted({semester.strip() for semester in semesters if semester.strip()})
+    if not selected:
+        raise RuntimeError("--clear-semesters requires at least one --semesters value.")
+    placeholders = ", ".join("?" for _ in selected)
+    connection.execute(
+        f"DELETE FROM offerings WHERE semester_no IN ({placeholders})",
+        tuple(selected),
+    )
+
+
 def is_undergraduate_offering(offering: dict[str, Any]) -> bool:
     _subject_code, course_number = parse_course_identity(
         clean_text(offering.get("display_code"), "display_code"),
@@ -298,7 +340,15 @@ def clean_optional_text(value: object) -> str | None:
 def main() -> int:
     args = parse_args()
     db_path = Path(args.db)
-    paths = offering_json_paths(Path(args.offerings_dir))
+    if args.clear_semesters and not args.semesters:
+        print("Error: --clear-semesters requires --semesters.", file=sys.stderr)
+        return 2
+
+    paths = offering_json_paths(
+        Path(args.offerings_dir),
+        semesters=args.semesters,
+        programs=args.programs,
+    )
     if not paths:
         print(f"No offering JSON files found in {args.offerings_dir}", file=sys.stderr)
         return 2
@@ -307,6 +357,8 @@ def main() -> int:
         connection.execute("PRAGMA foreign_keys = ON")
         if args.clear_existing:
             connection.execute("DELETE FROM offerings")
+        elif args.clear_semesters:
+            clear_offerings_for_semesters(connection, args.semesters)
 
         total_rows = 0
         for path in paths:

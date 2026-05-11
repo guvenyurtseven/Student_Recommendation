@@ -17,5 +17,14 @@
   "goal": {
     "target_semester_no": "20252",
     "difficulty_preference": "balanced"
-  }
+  },
+  "elective_intents": [
+    {
+      "category": "technical_elective",
+      "course_code": "CENG 495"
+    },
+    {
+      "category": "free_elective"
+    }
+  ]
 }

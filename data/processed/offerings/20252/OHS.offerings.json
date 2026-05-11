@@ -1,0 +1,87 @@
+{
+  "program": {
+    "abbr": "OHS",
+    "catalog_program_id": "877",
+    "name_en": "Occupational Health and Safety",
+    "name_tr": "Is Sagligi ve Guvenligi",
+    "faculty": "Service"
+  },
+  "semester": {
+    "semester_no": "20252",
+    "semester_text": "2025-2026 Spring"
+  },
+  "source": {
+    "source_name": "METU SAIS Course Details",
+    "source_url": "https://student.metu.edu.tr/proxy/View_Program_Course_Details_64/main.php",
+    "retrieved_at_utc": "2026-05-11T10:50:19+00:00",
+    "content_path": "data\\raw\\sais\\offerings\\20252\\OHS\\20260511T105019Z\\program.html",
+    "content_sha256": "4e3036bd6ca3060c4239f6f4364988497214ce7725db82a28656b88c2cceef31",
+    "parser_version": "metu_sais_offerings_v1"
+  },
+  "offerings": [
+    {
+      "program_abbr": "OHS",
+      "department_value": "877",
+      "department_text": "Occupational Health and Safety/İş Sağlığı ve Güvenliği",
+      "semester_no": "20252",
+      "semester_text": "2025-2026 Spring",
+      "numeric_code": "8770101",
+      "display_code": "OHS 101",
+      "course_number": 101,
+      "course_name": "OCCUPATIONAL HEALTH AND SAFETY-I (İŞ SAĞLIĞI VE GÜVENLİĞİ-I )",
+      "ects_credit": "2.0",
+      "credit": "0.00 (0.00,0.00,0.00)",
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "program_abbr": "OHS",
+      "department_value": "877",
+      "department_text": "Occupational Health and Safety/İş Sağlığı ve Güvenliği",
+      "semester_no": "20252",
+      "semester_text": "2025-2026 Spring",
+      "numeric_code": "8770301",
+      "display_code": "OHS 301",
+      "course_number": 301,
+      "course_name": "OCCUPATIONAL HEALTH AND SAFETY - II (İŞ SAĞLIĞI VE GÜVENLİĞİ-II )",
+      "ects_credit": "2.0",
+      "credit": "0.00 (0.00,0.00,0.00)",
+      "level": "Undergraduate/Lisans",
+      "type": "Undergraduate / Lisans"
+    },
+    {
+      "program_abbr": "OHS",
+      "department_value": "877",
+      "department_text": "Occupational Health and Safety/İş Sağlığı ve Güvenliği",
+      "semester_no": "20252",
+      "semester_text": "2025-2026 Spring",
+      "numeric_code": "8770500",
+      "display_code": "OHS 500",
+      "course_number": 500,
+      "course_name": "M.S.THESIS (YÜKSEK LİSANS TEZİ )",
+      "ects_credit": "50.0",
+      "credit": "0.00 (0.00,0.00,0.00)",
+      "level": "Graduate/Yüksek Lisans+Doktora",
+      "type": "M.S. Thesis / Yüksek Lisans Tez"
+    },
+    {
+      "program_abbr": "OHS",
+      "department_value": "877",
+      "department_text": "Occupational Health and Safety/İş Sağlığı ve Güvenliği",
+      "semester_no": "20252",
+      "semester_text": "2025-2026 Spring",
+      "numeric_code": "8770504",
+      "display_code": "OHS 504",
+      "course_number": 504,
+      "course_name": "WORKPLACE ACCIDENT INVESTIGATION AND PREVENTION (İŞYERİ KAZASI İNCELEMESİ VE ENGELLENMESİ )",
+      "ects_credit": "8.0",
+      "credit": "3.00 (0.00,3.00,0.00)",
+      "level": "Graduate/Yüksek Lisans+Doktora",
+      "type": "Master's / Yüksek Lisans"
+    }
+  ],
+  "summary": {
+    "offering_count": 4,
+    "undergraduate_count": 2
+  }
+}

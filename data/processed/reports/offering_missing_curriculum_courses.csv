@@ -1,0 +1,145 @@
+﻿program_abbr,course_code,subject_code,recommended_term,requirement_type,requirement_label
+AE,AEE 101,AEE,First Semester,required_course,AEE 101
+AE,AEE 202,AEE,Third Semester,required_course,AEE 202
+AE,AEE 231,AEE,Third Semester,required_course,AEE 231
+AE,AEE 266,AEE,Fourth Semester,required_course,AEE 266
+AE,AEE 301,AEE,Fifth Semester,required_course,AEE 301
+AE,AEE 302,AEE,Sixth Semester,required_course,AEE 302
+AE,AEE 331,AEE,Sixth Semester,required_course,AEE 331
+AE,AEE 338,AEE,Sixth Semester,required_course,AEE 338
+AE,AEE 345,AEE,Fifth Semester,required_course,AEE 345
+AE,AEE 346,AEE,Sixth Semester,required_course,AEE 346
+AE,AEE 361,AEE,Fifth Semester,required_course,AEE 361
+AE,AEE 364,AEE,Sixth Semester,required_course,AEE 364
+AE,AEE 371,AEE,Fifth Semester,required_course,AEE 371
+AE,AEE 385,AEE,Fifth Semester,required_course,AEE 385
+AE,AEE 451,AEE,Seventh Semester,required_course,AEE 451
+AE,PHYS 105,PHYS,First Semester,required_course,PHYS 105
+AE,TURK 105,TURK,Fifth Semester,course_choice,Any 1 of the following set ..
+CE,CE 231,CE,Third Semester,required_course,CE 231
+CE,CE 305,CE,Fifth Semester,required_course,CE 305
+CE,CE 353,CE,Fifth Semester,required_course,CE 353
+CE,PHYS 105,PHYS,First Semester,required_course,PHYS 105
+CE,TURK 105,TURK,Fifth Semester,course_choice,Any 1 of the following set ..
+CENG,BIOL 109,BIOL,First Semester,required_course,BIOL 109
+CENG,CENG 100,CENG,First Semester,required_course,CENG 100
+CENG,CENG 111,CENG,First Semester,required_course,CENG 111
+CENG,CENG 223,CENG,Third Semester,required_course,CENG 223
+CENG,CENG 315,CENG,Fifth Semester,required_course,CENG 315
+CENG,CENG 331,CENG,Fifth Semester,required_course,CENG 331
+CENG,CENG 351,CENG,Fifth Semester,required_course,CENG 351
+CENG,CENG 477,CENG,Seventh Semester,required_course,CENG 477
+CENG,CENG 491,CENG,Seventh Semester,required_course,CENG 491
+CENG,EE 281,EE,Third Semester,required_course,EE 281
+CENG,PHYS 105,PHYS,First Semester,required_course,PHYS 105
+CENG,TURK 105,TURK,Fifth Semester,course_choice,Any 1 of the following set ..
+CHE,CHE 203,CHE,Third Semester,required_course,CHE 203
+CHE,CHE 327,CHE,Fifth Semester,required_course,CHE 327
+CHE,CHE 407,CHE,Seventh Semester,required_course,CHE 407
+CHE,CHE 410,CHE,Seventh Semester,required_course,CHE 410
+CHE,CHE 417,CHE,Seventh Semester,required_course,CHE 417
+CHE,CHEM 111,CHEM,First Semester,required_course,CHEM 111
+CHE,PHYS 105,PHYS,First Semester,required_course,PHYS 105
+CHE,TURK 105,TURK,Fifth Semester,course_choice,Any 1 of the following set ..
+EEE,EE 213,EE,Third Semester,required_course,EE 213
+EEE,EE 301,EE,Fifth Semester,required_course,EE 301
+EEE,EE 303,EE,Fifth Semester,required_course,EE 303
+EEE,EE 311,EE,Fifth Semester,required_course,EE 311
+EEE,EE 313,EE,Fifth Semester,required_course,EE 313
+EEE,EE 361,EE,Fifth Semester,required_course,EE 361
+EEE,EE 493,EE,Seventh Semester,required_course,EE 493
+EEE,MATH 129,MATH,First Semester,required_course,MATH 129
+EEE,PHYS 105,PHYS,First Semester,required_course,PHYS 105
+EEE,TURK 105,TURK,Fifth Semester,course_choice,Any 1 of the following set ..
+ENVE,CE 375,CE,Fifth Semester,required_course,CE 375
+ENVE,ENVE 101,ENVE,First Semester,required_course,ENVE 101
+ENVE,ENVE 201,ENVE,Third Semester,required_course,ENVE 201
+ENVE,ENVE 208,ENVE,Third Semester,required_course,ENVE 208
+ENVE,ENVE 303,ENVE,Fifth Semester,required_course,ENVE 303
+ENVE,ENVE 309,ENVE,Fifth Semester,required_course,ENVE 309
+ENVE,ENVE 404,ENVE,Seventh Semester,required_course,ENVE 404
+ENVE,ENVE 407,ENVE,Seventh Semester,required_course,ENVE 407
+ENVE,ENVE 412,ENVE,Seventh Semester,required_course,ENVE 412
+ENVE,PHYS 105,PHYS,First Semester,required_course,PHYS 105
+ENVE,TURK 105,TURK,Fifth Semester,course_choice,Any 1 of the following set ..
+FDE,BIOL 107,BIOL,First Semester,required_course,BIOL 107
+FDE,FDE 101,FDE,First Semester,required_course,FDE 101
+FDE,FDE 305,FDE,Fifth Semester,required_course,FDE 305
+FDE,FDE 311,FDE,Fifth Semester,required_course,FDE 311
+FDE,FDE 425,FDE,Seventh Semester,required_course,FDE 425
+FDE,PHYS 105,PHYS,First Semester,required_course,PHYS 105
+FDE,TURK 105,TURK,Fifth Semester,course_choice,Any 1 of the following set ..
+GEOE,CHEM 111,CHEM,First Semester,required_course,CHEM 111
+GEOE,GEOE 105,GEOE,First Semester,required_course,GEOE 105
+GEOE,GEOE 209,GEOE,Third Semester,required_course,GEOE 209
+GEOE,GEOE 213,GEOE,Third Semester,required_course,GEOE 213
+GEOE,GEOE 303,GEOE,Fifth Semester,required_course,GEOE 303
+GEOE,GEOE 309,GEOE,Fifth Semester,required_course,GEOE 309
+GEOE,GEOE 313,GEOE,Fifth Semester,required_course,GEOE 313
+GEOE,GEOE 401,GEOE,Seventh Semester,required_course,GEOE 401
+GEOE,GEOE 407,GEOE,Seventh Semester,required_course,GEOE 407
+GEOE,GEOE 423,GEOE,Seventh Semester,required_course,GEOE 423
+GEOE,GEOE 425,GEOE,Seventh Semester,required_course,GEOE 425
+GEOE,GEOE 491,GEOE,Seventh Semester,required_course,GEOE 491
+GEOE,MINE 317,MINE,Fifth Semester,required_course,MINE 317
+GEOE,PHYS 105,PHYS,First Semester,required_course,PHYS 105
+GEOE,TURK 105,TURK,Fifth Semester,course_choice,Any 1 of the following set ..
+IE,ECON 211,ECON,Third Semester,required_course,ECON 211
+IE,EE 381,EE,Fifth Semester,required_course,EE 381
+IE,IE 241,IE,Third Semester,required_course,IE 241
+IE,IE 251,IE,Third Semester,required_course,IE 251
+IE,IE 265,IE,Third Semester,required_course,IE 265
+IE,IE 323,IE,Fifth Semester,required_course,IE 323
+IE,IE 333,IE,Fifth Semester,required_course,IE 333
+IE,IE 347,IE,Fifth Semester,required_course,IE 347
+IE,IE 361,IE,Fifth Semester,required_course,IE 361
+IE,IE 404,IE,Seventh Semester,required_course,IE 404
+IE,IE 422,IE,Seventh Semester,required_course,IE 422
+IE,IE 489,IE,Seventh Semester,required_course,IE 489
+IE,IE 497,IE,Seventh Semester,required_course,IE 497
+IE,PHYS 105,PHYS,First Semester,required_course,PHYS 105
+IE,TURK 105,TURK,Fifth Semester,course_choice,Any 1 of the following set ..
+ME,ME 203,ME,Third Semester,required_course,ME 203
+ME,ME 205,ME,Third Semester,required_course,ME 205
+ME,ME 301,ME,Fifth Semester,required_course,ME 301
+ME,ME 305,ME,Fifth Semester,required_course,ME 305
+ME,ME 307,ME,Fifth Semester,required_course,ME 307
+ME,ME 311,ME,Fifth Semester,required_course,ME 311
+ME,PHYS 105,PHYS,First Semester,required_course,PHYS 105
+ME,TURK 105,TURK,Fifth Semester,course_choice,Any 1 of the following set ..
+METE,CHEM 111,CHEM,First Semester,required_course,CHEM 111
+METE,METE 201,METE,Third Semester,required_course,METE 201
+METE,METE 203,METE,Third Semester,required_course,METE 203
+METE,METE 215,METE,Third Semester,required_course,METE 215
+METE,METE 301,METE,Fifth Semester,required_course,METE 301
+METE,METE 303,METE,Fifth Semester,required_course,METE 303
+METE,METE 305,METE,Fifth Semester,required_course,METE 305
+METE,METE 349,METE,Fifth Semester,required_course,METE 349
+METE,METE 401,METE,Seventh Semester,required_course,METE 401
+METE,METE 451,METE,Seventh Semester,required_course,METE 451
+METE,METE 453,METE,Seventh Semester,required_course,METE 453
+METE,PHYS 105,PHYS,First Semester,required_course,PHYS 105
+METE,TURK 105,TURK,Fifth Semester,course_choice,Any 1 of the following set ..
+MINE,CHEM 111,CHEM,First Semester,required_course,CHEM 111
+MINE,ES 225,ES,Third Semester,required_course,ES 225
+MINE,GEOE 207,GEOE,Third Semester,required_course,GEOE 207
+MINE,MINE 201,MINE,Third Semester,required_course,MINE 201
+MINE,MINE 309,MINE,Fifth Semester,required_course,MINE 309
+MINE,MINE 317,MINE,Fifth Semester,required_course,MINE 317
+MINE,MINE 407,MINE,Seventh Semester,required_course,MINE 407
+MINE,MINE 417,MINE,Seventh Semester,required_course,MINE 417
+MINE,MINE 419,MINE,Seventh Semester,required_course,MINE 419
+MINE,MINE 427,MINE,Seventh Semester,required_course,MINE 427
+MINE,PHYS 105,PHYS,First Semester,required_course,PHYS 105
+MINE,TURK 105,TURK,Fifth Semester,course_choice,Any 1 of the following set ..
+PETE,CHEM 111,CHEM,First Semester,required_course,CHEM 111
+PETE,GEOE 201,GEOE,Third Semester,required_course,GEOE 201
+PETE,PETE 220,PETE,Third Semester,required_course,PETE 220
+PETE,PETE 321,PETE,Fifth Semester,required_course,PETE 321
+PETE,PETE 331,PETE,Fifth Semester,required_course,PETE 331
+PETE,PETE 343,PETE,Fifth Semester,required_course,PETE 343
+PETE,PETE 411,PETE,Seventh Semester,required_course,PETE 411
+PETE,PETE 417,PETE,Seventh Semester,required_course,PETE 417
+PETE,PETE 461,PETE,Seventh Semester,required_course,PETE 461
+PETE,PHYS 105,PHYS,First Semester,required_course,PHYS 105
+PETE,TURK 105,TURK,Fifth Semester,course_choice,Any 1 of the following set ..

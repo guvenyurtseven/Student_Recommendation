@@ -35,6 +35,11 @@ class CourseLoadScore:
     difficulty_score: float
     priority_score: float
     rationale: tuple[str, ...]
+    is_placeholder: bool = False
+    is_user_requested: bool = False
+    is_new_course: bool = False
+    is_repeat_priority: bool = False
+    requires_course_selection_for_timetable: bool = False
 
     def to_recommendation(self) -> CourseRecommendation:
         return CourseRecommendation(
@@ -45,6 +50,11 @@ class CourseLoadScore:
             estimated_credits=self.estimated_credits,
             difficulty_score=self.difficulty_score,
             unlock_count=round(self.unlock_score),
+            is_placeholder=self.is_placeholder,
+            is_user_requested=self.is_user_requested,
+            is_new_course=self.is_new_course,
+            is_repeat_priority=self.is_repeat_priority,
+            requires_course_selection_for_timetable=self.requires_course_selection_for_timetable,
         )
 
 
@@ -104,8 +114,10 @@ class CourseScoringService:
         program_abbr: str,
     ) -> CourseLoadScore:
         estimated_ects = candidate.estimated_ects if candidate.estimated_ects is not None else DEFAULT_COURSE_ECTS
-        course_level = course_level_from_code(candidate.course_code)
-        is_major_course = subject_code(candidate.course_code) == program_abbr.upper()
+        course_level = candidate.difficulty_rank if candidate.difficulty_rank is not None else course_level_from_code(
+            candidate.course_code
+        )
+        is_major_course = subject_code(candidate.course_code) == program_abbr.upper() and not candidate.is_placeholder
         unlock_component = normalized_unlock_score(unlock_summary, max_unlock_score)
         semester_component = semester_alignment_score(candidate.recommended_term, goal.target_semester_no)
         difficulty = course_difficulty_score(
@@ -136,6 +148,11 @@ class CourseScoringService:
                 difficulty=difficulty,
                 semester_component=semester_component,
             ),
+            is_placeholder=candidate.is_placeholder,
+            is_user_requested=candidate.is_user_requested,
+            is_new_course=candidate.is_new_course,
+            is_repeat_priority=candidate.is_repeat_priority,
+            requires_course_selection_for_timetable=candidate.requires_course_selection_for_timetable,
         )
 
 
@@ -224,6 +241,10 @@ def normalize_term_label(value: str | None) -> str | None:
         return "spring"
     if normalized in {"3", "summer", "yaz"}:
         return "summer"
+    if normalized in {"first semester", "third semester", "fifth semester", "seventh semester"}:
+        return "fall"
+    if normalized in {"second semester", "fourth semester", "sixth semester", "eighth semester"}:
+        return "spring"
     return None
 
 
@@ -257,6 +278,7 @@ def score_rationale(
     semester_component: float,
 ) -> tuple[str, ...]:
     rationale = [
+        *candidate.rationale,
         f"estimated difficulty {difficulty:.2f}",
         f"semester alignment {semester_component:.2f}",
     ]
@@ -272,6 +294,14 @@ def score_rationale(
         rationale.append(f"uses curriculum ECTS estimate {candidate.estimated_ects:g}")
     if used_default_ects:
         rationale.append(f"ECTS missing; used default {DEFAULT_COURSE_ECTS:g}")
+    if candidate.requires_course_selection_for_timetable:
+        rationale.append("course selection is required before a weekly timetable can be built")
+    if candidate.is_user_requested:
+        rationale.append("user requested this course or elective category")
+    if candidate.is_new_course:
+        rationale.append("counts as a new course under METU registration rules")
+    if candidate.is_repeat_priority:
+        rationale.append("repeat-priority course under METU semester registration rules")
     return tuple(rationale)
 
 

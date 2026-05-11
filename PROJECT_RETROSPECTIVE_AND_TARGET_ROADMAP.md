@@ -234,15 +234,15 @@ Son kontrol edilen tablo sayıları:
 | Tablo | Satır |
 | --- | ---: |
 | programs | 14 |
-| courses | 393 |
+| courses | 971 |
 | curriculum_versions | 13 |
 | curriculum_requirements | 696 |
 | requirement_options | 652 |
 | prerequisite_edges | 504 |
-| source_documents | 16 |
+| source_documents | 80 |
 | course_aliases | 0 |
 | manual_correction_log | 0 |
-| offerings | 0 |
+| offerings | 654 |
 | student_profiles | 0 |
 | student_completed_courses | 0 |
 
@@ -250,8 +250,12 @@ Son kontrol edilen tablo sayıları:
 
 - Aktif lisans programı sayısı 13'tür.
 - `programs=14` görünmesinin nedeni ES'in pasif olarak config'te tutulmasıdır.
-- `offerings` henüz boş olduğu için sistem şimdilik hedef dönemde ders açılma
-  bilgisini DB üzerinden cevaplayamaz.
+- `offerings` tablosu product v1 icin aktif hedef donem snapshot modeliyle
+  doldurulur. Mevcut local DB'de 20252 hedef donemi icin 654 undergraduate
+  offering satiri vardir.
+- Offering coverage artik 13 muhendislik programina ek olarak MATH, PHYS, CHEM,
+  HIST, TURK, ENG, OHS, IS, BA, ES, ECON ve BIOL gibi servis bolumlerini de
+  kapsar.
 - `student_profiles` ve `student_completed_courses` boş olduğu için kalıcı
   öğrenci kaydı henüz kullanılmamaktadır.
 - Recommendation prototipi ilk etapta DB'ye öğrenci yazmadan, input JSON/CSV
@@ -653,21 +657,33 @@ Güvenlik ilkesi:
 
 Sorumluluk:
 
-- Derslerin hangi dönemlerde açıldığını toplamak.
+- Hedef dönem için SAIS'te güncellenmiş gerçek açılan ders snapshot'ını toplamak.
 - Hedef dönemde açılma bilgisini recommendation engine'e vermek.
-- Geçmiş dönemlerden fall/spring açılma sinyali üretmek.
+- Coverage yoksa tahmin üretmeden kullanıcıya açık uyarı vermek.
+
+Product v1 kararı:
+
+- Geçmiş dönemlerden fall/spring açılma sinyali üretilmeyecek.
+- Her semester başlamadan 2-3 hafta önce SAIS güncellendikten sonra manuel bir
+  scrape tetiklenecek.
+- SQLite `offerings` tablosu aktif hedef dönem snapshot'ı ile replace edilecek.
+- Historical processed offering dosyaları provenance/debug amacıyla kalabilir,
+  fakat recommendation kararında kullanılmayacak.
 
 Planlanan dosyalar:
 
 ```text
+config/offering_departments.json
 student_planner/sources/sais.py
 scripts/scrape_offerings.py
 scripts/load_offerings.py
+scripts/generate_offering_coverage_report.py
 student_planner/services/offering_availability.py
 ```
 
-Bu modül recommendation için çok önemlidir, fakat ilk planning contract ve
-curriculum progress servisinden sonra uygulanabilir.
+Bu modülün ilk versiyonu uygulanmıştır. Mevcut davranış conservative'dir:
+subject coverage varsa ve ders hedef snapshot'ta yoksa ders öneri havuzundan
+çıkarılır; subject coverage yoksa yanlış negatif üretmemek için uyarı verilir.
 
 ### 13.9 Schedule Provider Layer
 

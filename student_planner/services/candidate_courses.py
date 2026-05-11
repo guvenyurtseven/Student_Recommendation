@@ -30,6 +30,13 @@ class CandidateCourse:
     recommended_term: str | None = None
     estimated_ects: float | None = None
     estimated_credits: float | None = None
+    difficulty_rank: int | None = None
+    is_placeholder: bool = False
+    is_user_requested: bool = False
+    is_new_course: bool = False
+    is_repeat_priority: bool = False
+    requires_course_selection_for_timetable: bool = False
+    rationale: tuple[str, ...] = field(default_factory=tuple)
 
     @property
     def is_eligible(self) -> bool:

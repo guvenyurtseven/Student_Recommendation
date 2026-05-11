@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="favicon.ico">
+        <style type="text/css" title="currentStyle" media="screen">
+            @import "css/bootstrap.css";
+            @import "css/metu.css";
+            @import "css/bootstrap-tour.css";
+            @import "css/slider.css";
+            @import "css/dataTables.bootstrap.css";
+        </style>
+        <style type="text/css">
+            
+            div.DTTT { margin-bottom: 0.5em; float: right; }
+            div.dataTables_wrapper { clear: both; }
+            .dataTables_filter { float : left; }
+            td { border-color: #cccccc !important; padding: 4px; }
+            
+            
+</style>
+        <link href="css/datepicker.css" rel="stylesheet">
+        <!-- JavaScript -->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+                    <script src="js/localization/messages_en.js"></script>
+                <script src="js/jquery.bootstrap.wizard.js"></script>
+        <script src="js/validator.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/locales/bootstrap-datepicker.tr.js"></script>
+        <script src="js/bootstrap-tour.js"></script>
+        <script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap-slider.js"></script>
+	<script language="JavaScript" type="text/javascript" src="js/readmore.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/script.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/dataTables/js/jquery.dataTables.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/dataTables/js/dataTables.tableTools.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/dataTables/js/dataTables.bootstrap.js"></script>
+        <script>document.domain = 'metu.edu.tr';</script>
+        <title> </title>
+            </head>
+    <body>
+        <nav class="navbar navbar-default" role="navigation" id="top-navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="."><img src="img/logo.png" alt=""/></a>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-main">
+                    <h3></h3>
+			                </div>
+            </div>
+		
+        </nav>
+        <script>if (window.self !== window.top) document.getElementById('top-navbar').style.display = "none";</script>
+            <div class="container-fluid container-top noscriptClass">
+            <div class="row-fluid clearfix">
+
+<div id="single_content">
+
+
+
+<div id="formmessage">
+    <font size=3 color="red"><b></b></font>
+</div>
+
+<br />
+<b></b>
+<form method="POST" action="main.php">
+<BR>
+<BR>
+<TABLE ALIGN="CENTER" BORDER="0">
+  <TR>
+        <TD><FONT FACE=ARIAL><B>Department : </B>Geological Engineering/Jeoloji Mühendisliği</FONT></TD>
+        <TD><FONT FACE=ARIAL><B>Semester : </B>20252</FONT></TD>
+  </TR>
+</TABLE>
+
+<TABLE ALIGN="Center">
+        <TR>
+                <TD><INPUT TYPE="submit" NAME="SubmitCourseInfo" VALUE="Course Info"></TD>
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="DersBilgisi"></TD> -->
+                <TD><INPUT TYPE="submit" NAME="SubmitPrerequisite" VALUE="Prerequisite"></TD>
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="OnkosulDersler"></TD> -->
+                <TD><INPUT TYPE="submit" NAME="SubmitReplacement" VALUE="Auto Replacement"></TD>
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="DenkDersler"></TD> -->
+                 <TD ALIGN="Center">
+                <INPUT TYPE="submit" NAME="SubmitBack" VALUE="Back">
+			    <!--INPUT TYPE="Submit"  NAME="SubmitName" VALUE="Back"-->
+                
+				</TD>   
+
+				<!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="GeriDon"></TD> -->
+                <TD><INPUT TYPE="reset" VALUE="Clear"></TD>
+                <!-- <TD><INPUT TYPE="submit" VALUE="Temizle"></TD> -->
+        </TR>
+</TABLE>
+<TABLE ALIGN="Center">
+        <TR>
+             <TD><INPUT TYPE="submit" NAME="SubmitThesisWork" VALUE="Thesis Work Courses"></TD>
+        </TR>
+
+</TABLE>
+<TABLE BORDER=1 ALIGN="Center" cellspacing=0  cellpadding=2>
+<TR>
+        <TD>&nbsp;</TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><B>Code </B></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><B>Name </B></FONT></TD>
+         <TD ALIGN="Center"><FONT FACE=ARIAL><B>ECTS Credit </B></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><B>Credit </B></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><B>Level </B></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><B>Type </B></FONT></TD>
+</TR>
+ <TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640104" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640104</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GEOLOGY FOR CIVIL ENGINEERING                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   (İNŞAAT MÜHENDİSLİĞİ İÇİN JEOLOJİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640208" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640208</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>MAPWORK                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         (HARiTA ÇALIŞMASI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (2.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640210" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640210</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>PETROGRAPHY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     (PETROGRAFİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (1.00,4.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640214" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640214</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>PRINCIPLES OF STRATIGRAPHY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      (STRATİGRAFİ İLKELERİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (2.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640215" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640215</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>PRINCIPLES OF STRUCTURAL GEOLOGY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                (YAPISAL JEOLOJİ İLKELERİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (2.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640231" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640231</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ELEMENTS OF GEOLOGY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             (TEMEL JEOLOJİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640300" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640300</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>SUMMER PRACTICE I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               (YAZ STAJI I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>0.00 (0.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate Practice / Lisans Staj</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640318" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640318</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GEOCHEMICAL THERMODYNAMICS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      (JEOKİMYASAL TERMODİNAMİK                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640326" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640326</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>FIELD GEOLOGY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   (SAHA JEOLOJİSİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.5                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>2.00 (2.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640327" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640327</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>FIELD GEOLOGICAL MAPPING                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        (JEOLOJİK HARİTALAMA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.5                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (0.00,6.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640400" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640400</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>SUMMER PRACTICE II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              (YAZ STAJI II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>0.00 (0.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate Practice / Lisans Staj</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640404" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640404</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GEOLOGY OF TURKEY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               (TÜRKİYE JEOLOJİSİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640406" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640406</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>EARTHQUAKE GEOLOGY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              (DEPREM JEOLOJİSİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640410" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640410</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>PETROLEUM GEOLOGY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               (PETROL JEOLOJİSİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (2.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640424" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640424</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GEOTHERMAL SYSTEMS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              (JEOTERMAL SİSTEMLER                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640431" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640431</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>INTRODUCTION TO REMOTE SENSING                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  (UZAKTAN ALGILAMAYA GİRİŞ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640436" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640436</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>STRATIGRAP.&PALEONTOLO.ANALY. IN EXPLO                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          (ARAMADA STRATİGRAFİK VE PALEONTOLOJİK ANALİZLER                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (2.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640437" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640437</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GEOMECHANICS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    (JEOMEKANİK                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (2.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640439" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640439</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GEOLOGY AND PALEOBIOLOGY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        (JEOLOJİ VE PALEOBİYOLOJİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640447" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640447</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>DIGITAL TERRAIN ANALYSIS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        (SAYISAL ARAZİ ANALİZİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (2.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640492" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640492</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GEOLOGICAL ENGINEERING DESIGN II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                (JEOLOJİ MÜHENDİSLİĞİ TASARIMI II                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>6.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (1.00,4.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640494" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640494</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>EXPLORATION SEDIMENTOLOGY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       (ARAŞTIRMA  SEDİMANTOLOJİSİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (2.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate/Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Undergraduate / Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640500" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640500</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>M.S. THESIS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     (YL TEZİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>50.0                                    </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>0.00 (0.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master`s/Yüksek Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>M.S. Thesis / Yüksek Lisans Tez</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640501" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640501</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GLOBAL TECTONICS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                (KÜRESEL TEKTONİK                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640503" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640503</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ADVANCED IGNEOUS &METAMORPHIC PETROLOGY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         (İLERİ MAGMATİK VE METAMORFİK PETROLOJİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640512" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640512</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>PETROLEUM GEOCHEMISTRY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          (PETROL JEOKİMYASI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (2.00,2.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640516" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640516</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GEOCHRONOLOGY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   (JEOKRONOLOJİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640524" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640524</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ORE MICROSCOPY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  (CEVHER MİKROSKOPİSİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (2.00,2.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640530" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640530</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ECONOMICS OF ENERGY RESOURCES                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   (ENERJİ KAYNAKLARININ EKONOMİSİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640531" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640531</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>CARBONATE PETROLOGY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             (KARBONAT PETROLOJİSİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (2.00,2.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640544" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640544</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>STABILITY OF SOIL SLOPES IN ENG.PRACTICE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        (MÜHENDİSLİK UYGULAMALARINDA ZEMİN ŞEVLERİNİN DURAYLILIĞI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640554" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640554</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ENGINEERING GEOLOGY CASE STUDIES                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                (MÜHENDİSLİK JEOLOJİSİ VAKA ÇALIŞMALARI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640555" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640555</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>PRINCIPLES AND APPLICATIONS OF IMAGING RADAR SYSTEMS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            (GÖRÜNTÜLEYİCİ RADAR SİSTEMLERİNİN İLKELERİ VE UYGULAMALARI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master`s/Yüksek Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640557" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640557</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GEOGRAPHIC INFOR. SYS.IN EARTH SCIENCES                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         (YER BİLİMLERİNDE COĞRAFİ BİLGİ SİSTEMLERİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (2.00,2.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640590" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640590</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GRADUATE SEMINAR                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                (LİSANSÜSTÜ SEMİNERİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>10.0                                    </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>0.00 (0.00,2.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Seminar / Seminer</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640600" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640600</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>PH.D. THESIS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    (DOKTORA TEZİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>130.0                                   </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>0.00 (0.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Doctoral/Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Ph.D Thesis / Doktora Tez</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640610" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640610</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GEOLOGY OF CLAYS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ( KİL JEOLOJİSİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Doctoral / Doktora</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640697" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640697</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>ADVANCED SEMINAR I (PH.D.)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      (İLERİ DÜZEY SEMİNERLERİ I (DOKTORA)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>10.0                                    </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>0.00 (0.00,2.00,)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Seminar / Seminer</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640713" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640713</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>GPS IN ACTIVE TECTONICS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         (AKTİF TEKTONİK ARAŞTRMALARINDA GPS KULLANIMI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master`s/Yüksek Lisans</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Doctoral / Doktora</FONT></TD>
+</TR>
+<TR>
+        <TD ALIGN="Center"><FONT FACE=ARIAL><INPUT TYPE="radio" VALUE="5640737" NAME="text_course_code"></FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>5640737</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>CHEMOSTRATIGRAPHY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               (KEMOSTRATİGRAFİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                )</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>8.0                                     </FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>3.00 (3.00,0.00,0.00)</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Graduate/Yüksek Lisans+Doktora</FONT></TD>
+        <TD ALIGN="Center"><FONT FACE=ARIAL>Master's / Yüksek Lisans</FONT></TD>
+</TR>
+</TABLE>
+<TABLE ALIGN="Center">
+
+           <TR>
+             <TD><INPUT TYPE="submit" NAME="SubmitThesisWork" VALUE="Thesis Work Courses"></TD>
+        </TR>
+
+</TABLE>
+
+
+<TABLE ALIGN="Center">
+        <TR>
+                <TD><INPUT TYPE="submit" NAME="SubmitCourseInfo" VALUE="Course Info"></TD>
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="DersBilgisi"></TD> -->
+                <TD><INPUT TYPE="submit" NAME="SubmitPrerequisite" VALUE="Prerequisite"></TD>
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="OnkosulDersler"></TD> -->
+                <TD><INPUT TYPE="submit" NAME="SubmitReplacement" VALUE="Auto Replacement"></TD>
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="DenkDersler"></TD> -->
+                 <TD ALIGN="Center">
+                <INPUT TYPE="submit" NAME="SubmitBack" VALUE="Back">
+                <!--INPUT TYPE="Submit"  NAME="SubmitName" VALUE="Back"-->
+
+                </TD>
+
+                <!-- <TD><INPUT TYPE="submit" NAME="SubmitName" VALUE="GeriDon"></TD> -->
+                <TD><INPUT TYPE="reset" VALUE="Clear"></TD>
+                <!-- <TD><INPUT TYPE="submit" VALUE="Temizle"></TD> -->
+        </TR>
+</TABLE>
+
+<HR>
+<TABLE ALIGN="Center">
+<TR>
+        <TD><FONT COLOR=Red SIZE=3 FACE=ARIAL><U><B>Note:</B></U></FONT></TD>
+</TR>
+<TR>
+        <TD><FONT SIZE=3 FACE=ARIAL><LI>Press "Course Info" button to see course info</LI></FONT>
+        <FONT SIZE=3 FACE=ARIAL><LI>Press "Prerequisite" button to see prerequisite courses</LI></FONT>
+        <FONT SIZE=3 FACE=ARIAL><LI>Press "Auto Replacement" button to see auto replace courses</LI></FONT></TD>
+</TR>
+
+</table>
+
+<input type="hidden" name="hidden_redir" value="Course_List"></form>
+</div>
+
+			</div>
+		</div>
+		<div class="container-fluid hidden-print">
+
+			<hr>
+
+			<footer style="margin: 0px 0;">
+				<div class="bottomfeq" id="tourFaqId"></div>
+				<div class="row">
+					<div class="col-lg-10">
+						<p style=""> </p>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+		<!-- /.container -->
+
+	</body>
+
+</html>
+
+<script>
+
+		
+	$(document).ready(function() {
+	
+	
+		
+	});
+</script>
+

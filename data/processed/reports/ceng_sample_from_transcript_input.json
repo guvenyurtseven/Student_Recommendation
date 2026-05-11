@@ -1,0 +1,82 @@
+{
+  "program_abbr": "CENG",
+  "completed_courses": [
+    {
+      "course_code": "MATH 119",
+      "grade": "DD",
+      "completed_semester_no": "20241",
+      "attempt_order": 1,
+      "source": "transcript_pdf",
+      "ects": 7.5,
+      "credits": 4.0
+    },
+    {
+      "course_code": "CENG 140",
+      "grade": "CC",
+      "completed_semester_no": "20241",
+      "attempt_order": 2,
+      "source": "transcript_pdf",
+      "ects": 6.5,
+      "credits": 4.0
+    },
+    {
+      "course_code": "MATH 120",
+      "grade": "BA",
+      "completed_semester_no": "20242",
+      "attempt_order": 3,
+      "source": "transcript_pdf",
+      "ects": 7.5,
+      "credits": 4.0
+    },
+    {
+      "course_code": "PHYS 105",
+      "grade": "BB",
+      "completed_semester_no": "20242",
+      "attempt_order": 4,
+      "source": "transcript_pdf",
+      "ects": 6.0,
+      "credits": 4.0
+    },
+    {
+      "course_code": "MATH 119",
+      "grade": "FF",
+      "completed_semester_no": "20251",
+      "attempt_order": 5,
+      "source": "transcript_pdf",
+      "ects": 7.5,
+      "credits": 4.0
+    }
+  ],
+  "goal": {
+    "target_semester_no": "20252",
+    "difficulty_preference": "balanced",
+    "target_ects": null,
+    "min_ects": null,
+    "max_ects": null,
+    "target_term_gpa": null,
+    "target_cumulative_gpa": null,
+    "notes": ""
+  },
+  "student_id": null,
+  "curriculum_version_label": null,
+  "in_progress_courses": [
+    {
+      "course_code": "CENG 213",
+      "semester_no": "20251",
+      "source": "transcript_pdf"
+    }
+  ],
+  "elective_intents": [],
+  "metadata": {
+    "input_source": "transcript_pdf",
+    "transcript_parse": {
+      "source_format": "transcript_text",
+      "line_count": 14,
+      "attempted_course_line_count": 6,
+      "ignored_nonempty_line_count": 2,
+      "completed_course_count": 5,
+      "in_progress_course_count": 1,
+      "raw_transcript_retained": false
+    }
+  }
+}

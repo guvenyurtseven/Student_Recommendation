@@ -32,6 +32,11 @@ class OfferingAvailabilityServiceTests(unittest.TestCase):
             tuple(course.course_code for course in result.candidate_result.eligible_courses),
             ("CENG 213", "MATH 120"),
         )
+        self.assertEqual(
+            tuple(course.course_code for course in result.candidate_result.blocked_courses),
+            ("CENG 223",),
+        )
+        self.assertIn("not listed in loaded offerings", result.candidate_result.blocked_courses[0].eligibility.explanation)
         status_by_course = {item.course_code: item.status for item in result.availability}
         self.assertEqual(status_by_course["CENG 213"], OfferingAvailabilityStatus.OFFERED)
         self.assertEqual(status_by_course["CENG 223"], OfferingAvailabilityStatus.NOT_OFFERED)

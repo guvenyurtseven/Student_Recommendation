@@ -1,0 +1,9 @@
+{
+  "source_name": "METU SAIS Course Details",
+  "source_url": "https://student.metu.edu.tr/proxy/View_Program_Course_Details_64/main.php",
+  "retrieved_at_utc": "2026-05-11T10:32:39+00:00",
+  "content_sha256": "24f0b9e53cafdb3d4df6b98ee8d4917c84326f5fb66212aa4d15e2f2ede85181",
+  "parser_version": "metu_sais_offerings_v1",
+  "program_abbr": "FDE",
+  "semester_no": "20251"
+}

@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import argparse
-import json
 import sys
 from pathlib import Path
 
@@ -12,7 +11,7 @@ if str(PROJECT_ROOT) not in sys.path:
 from student_planner.repositories.sqlite import SQLiteStudentPlannerRepository
 from student_planner.services.planning_io import (
     load_student_planning_input,
-    planning_report_to_dict,
+    planning_report_to_text,
 )
 from student_planner.services.planning_pipeline import SemesterPlanningPipeline
 
@@ -33,7 +32,13 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--output",
-        help="Optional JSON output path. Prints to stdout when omitted.",
+        help="Optional output path. Prints to stdout when omitted.",
+    )
+    parser.add_argument(
+        "--format",
+        choices=("json", "markdown", "llm-package"),
+        default="json",
+        help="Output format.",
     )
     parser.add_argument(
         "--compact",
@@ -53,19 +58,13 @@ def main() -> int:
     planning_input = load_student_planning_input(project_path(args.input))
     repository = SQLiteStudentPlannerRepository(project_path(args.db))
     report = SemesterPlanningPipeline(repository).build_report(planning_input)
-    payload = planning_report_to_dict(report)
-    text = json.dumps(
-        payload,
-        ensure_ascii=False,
-        indent=None if args.compact else 2,
-        sort_keys=False,
-    )
+    text = planning_report_to_text(report, output_format=args.format, compact=args.compact)
 
     if args.output:
         output_path = project_path(args.output)
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(text + "\n", encoding="utf-8")
-        print(f"Wrote recommendation report to {output_path.resolve()}")
+        print(f"Wrote {args.format} recommendation report to {output_path.resolve()}")
     else:
         print(text)
     return 0

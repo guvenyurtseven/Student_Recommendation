@@ -1,0 +1,9 @@
+{
+  "source_name": "METU SAIS Course Details",
+  "source_url": "https://student.metu.edu.tr/proxy/View_Program_Course_Details_64/main.php",
+  "retrieved_at_utc": "2026-05-11T10:50:20+00:00",
+  "content_sha256": "fe304ed72ef53a7588d889cf82fefe73bfae33b69a2ec3b45d9327bcd4c95053",
+  "parser_version": "metu_sais_offerings_v1",
+  "program_abbr": "BIOL",
+  "semester_no": "20252"
+}

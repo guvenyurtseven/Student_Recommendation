@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>METU Semester Planner</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="planner-pane">
+        <div class="app-title">
+          <span class="mark">METU</span>
+          <div>
+            <h1>Semester Planner</h1>
+            <p>Deterministik ders önerisi</p>
+          </div>
+        </div>
+
+        <form id="planner-form" class="planner-form">
+          <div class="field-row">
+            <label>
+              Bölüm
+              <select id="program" name="program" required>
+                <option value="AE">AE</option>
+                <option value="CHE">CHE</option>
+                <option value="CE">CE</option>
+                <option value="CENG" selected>CENG</option>
+                <option value="EEE">EEE</option>
+                <option value="ENVE">ENVE</option>
+                <option value="FDE">FDE</option>
+                <option value="GEOE">GEOE</option>
+                <option value="IE">IE</option>
+                <option value="ME">ME</option>
+                <option value="METE">METE</option>
+                <option value="MINE">MINE</option>
+                <option value="PETE">PETE</option>
+              </select>
+            </label>
+
+            <label>
+              Hedef dönem
+              <input id="target-semester" name="target-semester" value="20252" required />
+            </label>
+          </div>
+
+          <fieldset class="segmented-field">
+            <legend>Semester yükü</legend>
+            <label><input type="radio" name="difficulty" value="easy" /> Kolay</label>
+            <label><input type="radio" name="difficulty" value="balanced" checked /> Dengeli</label>
+            <label><input type="radio" name="difficulty" value="hard" /> Zor</label>
+          </fieldset>
+
+          <div class="tabs" role="tablist" aria-label="Input tipi">
+            <button type="button" class="tab-button active" data-tab="pdf">Transcript PDF</button>
+            <button type="button" class="tab-button" data-tab="json">JSON</button>
+          </div>
+
+          <section class="tab-panel active" id="pdf-panel">
+            <label>
+              Transcript PDF
+              <input id="transcript-file" type="file" accept="application/pdf" />
+            </label>
+            <p class="privacy-note">PDF bellekte okunur; dosya ve raw transcript text saklanmaz.</p>
+          </section>
+
+          <section class="tab-panel" id="json-panel">
+            <label>
+              Planner JSON
+              <textarea id="json-input" spellcheck="false">{
+  "program_abbr": "CENG",
+  "completed_courses": [
+    {"course_code": "MATH 119", "grade": "DD", "completed_semester_no": "20241"}
+  ],
+  "goal": {
+    "target_semester_no": "20252",
+    "difficulty_preference": "balanced"
+  }
+}</textarea>
+            </label>
+          </section>
+
+          <section class="elective-box">
+            <h3>Elective Tercihleri</h3>
+            <div class="elective-grid">
+              <label class="elective-option">
+                <span><input type="checkbox" data-elective-category="technical_elective" /> Technical Elective</span>
+                <input type="text" data-elective-course="technical_elective" placeholder="Opsiyonel: CENG 495" />
+              </label>
+              <label class="elective-option">
+                <span><input type="checkbox" data-elective-category="restricted_elective" /> Restricted Elective</span>
+                <input type="text" data-elective-course="restricted_elective" placeholder="Opsiyonel ders kodu" />
+              </label>
+              <label class="elective-option">
+                <span><input type="checkbox" data-elective-category="nontechnical_elective" /> Non-Technical Elective</span>
+                <input type="text" data-elective-course="nontechnical_elective" placeholder="Opsiyonel ders kodu" />
+              </label>
+              <label class="elective-option">
+                <span><input type="checkbox" data-elective-category="free_elective" /> Free Elective</span>
+                <input type="text" data-elective-course="free_elective" placeholder="Opsiyonel ders kodu" />
+              </label>
+            </div>
+          </section>
+
+          <button class="primary-action" type="submit">Planı Oluştur</button>
+        </form>
+      </section>
+
+      <section class="result-pane">
+        <div class="result-header">
+          <div>
+            <h2>Öneri Raporu</h2>
+            <p id="result-status">Henüz rapor üretilmedi.</p>
+          </div>
+          <button id="clear-result" type="button" class="secondary-action">Temizle</button>
+        </div>
+
+        <div id="summary-grid" class="summary-grid" hidden></div>
+        <div id="parse-summary" class="parse-summary" hidden></div>
+        <article id="report-output" class="report-output"></article>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

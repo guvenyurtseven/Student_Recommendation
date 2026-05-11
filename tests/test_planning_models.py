@@ -22,6 +22,7 @@ from student_planner.domain.planning import (
     StudentPlanningInput,
     normalize_display_course_code,
 )
+from student_planner.domain.electives import ElectiveCategory, ElectiveIntent
 
 
 class PlanningModelTests(unittest.TestCase):
@@ -46,10 +47,12 @@ class PlanningModelTests(unittest.TestCase):
             ects=6,
         )
         in_progress = InProgressCourse("math219", "20252")
+        elective_intent = ElectiveIntent("technical_elective", course_code="ceng495")
         planning_input = StudentPlanningInput(
             program_abbr=" ceng ",
             completed_courses=[completed],
             in_progress_courses=[in_progress],
+            elective_intents=[elective_intent],
             goal=goal,
             metadata={"source": "unit-test"},
         )
@@ -61,6 +64,8 @@ class PlanningModelTests(unittest.TestCase):
         self.assertTrue(planning_input.completed_courses[0].earns_credit)
         self.assertEqual(planning_input.completed_course_codes, ("CENG 140",))
         self.assertEqual(planning_input.in_progress_course_codes, ("MATH 219",))
+        self.assertEqual(planning_input.requested_elective_intents[0].category, ElectiveCategory.TECHNICAL)
+        self.assertEqual(planning_input.requested_elective_intents[0].course_code, "CENG 495")
         with self.assertRaises(TypeError):
             planning_input.metadata["new"] = "value"
 

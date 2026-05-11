@@ -1,0 +1,9 @@
+{
+  "source_name": "METU SAIS Course Details",
+  "source_url": "https://student.metu.edu.tr/proxy/View_Program_Course_Details_64/main.php",
+  "retrieved_at_utc": "2026-05-11T10:32:40+00:00",
+  "content_sha256": "9d65bd7871c07604f8ab13c1fcab45477a098dbf78a070ff446fc4297c4e0db2",
+  "parser_version": "metu_sais_offerings_v1",
+  "program_abbr": "GEOE",
+  "semester_no": "20251"
+}

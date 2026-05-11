@@ -1,10 +1,10 @@
 from __future__ import annotations
 
 from collections.abc import Iterable
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from enum import StrEnum
 
-from student_planner.domain.planning import PlanningWarning, PlanningWarningSeverity
+from student_planner.domain.planning import CourseEligibilitySummary, PlanningWarning, PlanningWarningSeverity
 from student_planner.services.candidate_courses import CandidateCourse, CandidateCourseResult
 from student_planner.services.prerequisite_evaluator import CourseAliases, canonicalize_course_code
 
@@ -80,9 +80,14 @@ class OfferingAvailabilityService:
             for candidate, item in zip(candidate_result.eligible_courses, availability, strict=True)
             if item.status != OfferingAvailabilityStatus.NOT_OFFERED
         )
+        not_offered_candidates = tuple(
+            block_not_offered_candidate(candidate, target_semester_no)
+            for candidate, item in zip(candidate_result.eligible_courses, availability, strict=True)
+            if item.status == OfferingAvailabilityStatus.NOT_OFFERED
+        )
         filtered_result = CandidateCourseResult(
             eligible_courses=available_candidates,
-            blocked_courses=candidate_result.blocked_courses,
+            blocked_courses=(*candidate_result.blocked_courses, *not_offered_candidates),
             warnings=candidate_result.warnings,
         )
         return OfferingFilterResult(
@@ -102,6 +107,23 @@ def availability_status(
     if subject_code(candidate.course_code) in covered_subject_codes:
         return OfferingAvailabilityStatus.NOT_OFFERED
     return OfferingAvailabilityStatus.UNKNOWN
+
+
+def block_not_offered_candidate(candidate: CandidateCourse, target_semester_no: str) -> CandidateCourse:
+    return replace(
+        candidate,
+        eligibility=CourseEligibilitySummary(
+            course_code=candidate.course_code,
+            is_eligible=False,
+            explanation=(
+                f"{candidate.course_code} is not listed in loaded offerings for target semester "
+                f"{target_semester_no}."
+            ),
+            missing_prerequisite_codes=candidate.eligibility.missing_prerequisite_codes,
+            satisfied_set_nos=candidate.eligibility.satisfied_set_nos,
+            blocking_set_nos=candidate.eligibility.blocking_set_nos,
+        ),
+    )
 
 
 def subject_code(course_code: str) -> str:

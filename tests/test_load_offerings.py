@@ -7,7 +7,7 @@ import unittest
 from contextlib import closing
 from pathlib import Path
 
-from scripts.load_offerings import load_offerings_file
+from scripts.load_offerings import clear_offerings_for_semesters, load_offerings_file, offering_json_paths
 from student_planner.repositories.sqlite import SQLiteStudentPlannerRepository
 
 
@@ -76,6 +76,37 @@ class LoadOfferingsTests(unittest.TestCase):
             {"AEE 202", "CENG 140"},
         )
         self.assertEqual(repository.fetch_offering_subject_codes("20242"), ("AEE", "CENG"))
+
+    def test_offering_json_paths_can_filter_by_semester_and_program(self) -> None:
+        root = self.temp_path / "offerings"
+        (root / "20241").mkdir(parents=True)
+        (root / "20242").mkdir(parents=True)
+        (root / "20241" / "CENG.offerings.json").write_text("{}", encoding="utf-8")
+        (root / "20242" / "CENG.offerings.json").write_text("{}", encoding="utf-8")
+        (root / "20242" / "EEE.offerings.json").write_text("{}", encoding="utf-8")
+
+        paths = offering_json_paths(root, semesters=["20242"], programs=["CENG"])
+
+        self.assertEqual([path.name for path in paths], ["CENG.offerings.json"])
+        self.assertEqual(paths[0].parent.name, "20242")
+
+    def test_clear_offerings_for_semesters_only_deletes_selected_semester(self) -> None:
+        self.offering_path.write_text(json.dumps(offering_payload()), encoding="utf-8")
+        other_payload = offering_payload()
+        other_payload["semester"] = {"semester_no": "20241", "semester_text": "2024-2025 Fall"}
+        other_path = self.temp_path / "CENG-20241.offerings.json"
+        other_path.write_text(json.dumps(other_payload), encoding="utf-8")
+
+        with closing(sqlite3.connect(self.db_path)) as connection:
+            connection.execute("PRAGMA foreign_keys = ON")
+            load_offerings_file(connection, self.offering_path)
+            load_offerings_file(connection, other_path)
+            clear_offerings_for_semesters(connection, ["20242"])
+            connection.commit()
+
+        repository = SQLiteStudentPlannerRepository(self.db_path)
+        self.assertEqual(repository.count_offerings("20242"), 0)
+        self.assertEqual(repository.count_offerings("20241"), 2)
 
 
 def offering_payload() -> dict[str, object]:

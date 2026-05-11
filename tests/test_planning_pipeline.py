@@ -3,6 +3,7 @@ from __future__ import annotations
 import datetime as dt
 import unittest
 
+from student_planner.domain.electives import ElectiveIntent
 from student_planner.domain.models import (
     Course,
     CurriculumRequirementOption,
@@ -71,6 +72,38 @@ class SemesterPlanningPipelineTests(unittest.TestCase):
         self.assertIn("offering_coverage_unknown", warning_codes)
         self.assertNotIn("offerings_unavailable", warning_codes)
 
+    def test_build_report_adds_elective_placeholder_to_scenarios(self) -> None:
+        planning_input = StudentPlanningInput(
+            program_abbr="CENG",
+            completed_courses=(
+                CompletedCourseAttempt("MATH 119", "DD", attempt_order=1),
+                CompletedCourseAttempt("CENG 140", "CC", attempt_order=2),
+            ),
+            goal=PlanningGoal("20252", difficulty_preference="balanced"),
+            elective_intents=(ElectiveIntent("free_elective"),),
+        )
+
+        report = SemesterPlanningPipeline(
+            FakePlanningRepositoryWithOfferings(),
+            clock=lambda: dt.datetime(2026, 5, 10, tzinfo=dt.timezone.utc),
+        ).build_report(planning_input)
+
+        self.assertEqual(report.metadata["elective_placeholder_candidate_count"], 1)
+        self.assertEqual(report.metadata["elective_explicit_candidate_count"], 0)
+        self.assertEqual(report.metadata["elective_matched_counts_by_category"]["free_elective"], 1)
+        self.assertEqual(report.metadata["elective_extra_counts_by_category"]["free_elective"], 0)
+        self.assertIn("FREE_ELECTIVE", {course.course_code for course in report.eligible_courses})
+        self.assertTrue(
+            any(
+                recommendation.course_code == "FREE_ELECTIVE"
+                and recommendation.requires_course_selection_for_timetable
+                and recommendation.is_user_requested
+                for scenario in report.scenarios
+                for recommendation in scenario.courses
+            )
+        )
+        self.assertIn("elective_course_selection_required", {warning.code for warning in report.warnings})
+
 
 class FakePlanningRepository:
     def fetch_alias_map(self) -> dict[str, str]:
@@ -137,6 +170,7 @@ class FakePlanningRepositoryWithOfferings(FakePlanningRepository):
             requirements=(
                 *base.requirements,
                 required_course(5, "CENG 223", "5710223", "CENG", 223, 5),
+                elective_requirement(6, "Free Elective", RequirementType.FREE_ELECTIVE_POOL, 1),
             ),
         )
 
@@ -193,6 +227,25 @@ def required_course(
                 ),
             ),
         ),
+    )
+
+
+def elective_requirement(
+    requirement_id: int,
+    label: str,
+    requirement_type: RequirementType,
+    count: int,
+) -> CurriculumRequirementRecord:
+    return CurriculumRequirementRecord(
+        id=requirement_id,
+        requirement_type=requirement_type,
+        label=label,
+        recommended_year=4,
+        recommended_term="Spring",
+        course_count_min=count,
+        ects_min=5.0,
+        sort_order=requirement_id,
+        options=(),
     )
 
 

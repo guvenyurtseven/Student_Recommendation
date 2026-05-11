@@ -1,0 +1,9 @@
+{
+  "source_name": "METU SAIS Course Details",
+  "source_url": "https://student.metu.edu.tr/proxy/View_Program_Course_Details_64/main.php",
+  "retrieved_at_utc": "2026-05-11T10:32:35+00:00",
+  "content_sha256": "04559f4411373f9524e3228124aa589528be11b1f0afe3f856f220bb95efa60d",
+  "parser_version": "metu_sais_offerings_v1",
+  "program_abbr": "ENVE",
+  "semester_no": "20241"
+}

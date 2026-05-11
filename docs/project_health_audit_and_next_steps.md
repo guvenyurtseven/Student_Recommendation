@@ -690,7 +690,7 @@ python .\scripts\scrape_offerings.py --programs CENG EEE ME --semesters 20241 20
 ```text
 data/raw/sais/offerings/<semester>/<program>/...
 data/processed/offerings/<semester>/<program>.offerings.json
-data/processed/offerings/all_engineering_offerings.csv
+data/processed/offerings/all_scraped_offerings.csv
 ```
 
 5. Loader:

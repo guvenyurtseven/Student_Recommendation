@@ -7,6 +7,7 @@ from enum import StrEnum
 from types import MappingProxyType
 from typing import Any, TypeVar
 
+from student_planner.domain.electives import ElectiveIntent
 from student_planner.domain.grades import Grade, earns_credit, normalize_grade
 from student_planner.domain.models import RequirementType
 
@@ -119,12 +120,14 @@ class StudentPlanningInput:
     student_id: str | None = None
     curriculum_version_label: str | None = None
     in_progress_courses: tuple[InProgressCourse, ...] = field(default_factory=tuple)
+    elective_intents: tuple[ElectiveIntent, ...] = field(default_factory=tuple)
     metadata: Mapping[str, Any] = field(default_factory=dict)
 
     def __post_init__(self) -> None:
         object.__setattr__(self, "program_abbr", clean_text(self.program_abbr, "program_abbr").upper())
         object.__setattr__(self, "completed_courses", tuple(self.completed_courses))
         object.__setattr__(self, "in_progress_courses", tuple(self.in_progress_courses))
+        object.__setattr__(self, "elective_intents", tuple(self.elective_intents))
         object.__setattr__(self, "student_id", clean_optional_text(self.student_id))
         object.__setattr__(self, "curriculum_version_label", clean_optional_text(self.curriculum_version_label))
         object.__setattr__(self, "metadata", freeze_mapping(self.metadata))
@@ -136,6 +139,9 @@ class StudentPlanningInput:
         for course in self.in_progress_courses:
             if not isinstance(course, InProgressCourse):
                 raise TypeError("in_progress_courses must contain InProgressCourse items.")
+        for intent in self.elective_intents:
+            if not isinstance(intent, ElectiveIntent):
+                raise TypeError("elective_intents must contain ElectiveIntent items.")
 
     @property
     def completed_course_codes(self) -> tuple[str, ...]:
@@ -144,6 +150,10 @@ class StudentPlanningInput:
     @property
     def in_progress_course_codes(self) -> tuple[str, ...]:
         return tuple(course.course_code for course in self.in_progress_courses)
+
+    @property
+    def requested_elective_intents(self) -> tuple[ElectiveIntent, ...]:
+        return tuple(intent for intent in self.elective_intents if intent.wants_to_take)
 
 
 @dataclass(frozen=True)
@@ -181,6 +191,7 @@ class RequirementProgress:
     option_course_codes: tuple[str, ...] = field(default_factory=tuple)
     recommended_year: int | None = None
     recommended_term: str | None = None
+    course_count_min: int | None = None
     ects_min: float | None = None
     credits_min: float | None = None
     notes: str = ""
@@ -199,6 +210,7 @@ class RequirementProgress:
         )
         validate_optional_positive_int(self.requirement_id, "requirement_id")
         validate_optional_positive_int(self.recommended_year, "recommended_year")
+        validate_optional_positive_int(self.course_count_min, "course_count_min")
         validate_optional_non_negative_float(self.ects_min, "ects_min")
         validate_optional_non_negative_float(self.credits_min, "credits_min")
         object.__setattr__(self, "completed_course_codes", normalize_course_code_tuple(self.completed_course_codes))
@@ -238,6 +250,11 @@ class CourseRecommendation:
     estimated_credits: float | None = None
     difficulty_score: float | None = None
     unlock_count: int = 0
+    is_placeholder: bool = False
+    is_user_requested: bool = False
+    is_new_course: bool = False
+    is_repeat_priority: bool = False
+    requires_course_selection_for_timetable: bool = False
     status: CoursePlanningStatus | str = CoursePlanningStatus.RECOMMENDED
 
     def __post_init__(self) -> None:
@@ -247,6 +264,15 @@ class CourseRecommendation:
         validate_optional_non_negative_float(self.estimated_credits, "estimated_credits")
         validate_optional_non_negative_float(self.difficulty_score, "difficulty_score")
         validate_non_negative_int(self.unlock_count, "unlock_count")
+        object.__setattr__(self, "is_placeholder", bool(self.is_placeholder))
+        object.__setattr__(self, "is_user_requested", bool(self.is_user_requested))
+        object.__setattr__(self, "is_new_course", bool(self.is_new_course))
+        object.__setattr__(self, "is_repeat_priority", bool(self.is_repeat_priority))
+        object.__setattr__(
+            self,
+            "requires_course_selection_for_timetable",
+            bool(self.requires_course_selection_for_timetable),
+        )
         object.__setattr__(self, "rationale", clean_text_tuple(self.rationale))
         object.__setattr__(self, "status", coerce_enum(self.status, CoursePlanningStatus, "status"))
 

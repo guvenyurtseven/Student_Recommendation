@@ -113,6 +113,14 @@ Important fields:
 Operational notes:
 
 - Offering facts are loaded from processed SAIS offering JSON files.
+- Product recommendations should use a fresh target-semester offering snapshot,
+  scraped manually after METU SAIS publishes the upcoming semester course list.
+  The first product version does not predict offerings from historical opening
+  patterns.
+- The active planner database is expected to contain the target semester's
+  authoritative snapshot. Historical processed snapshots may remain under
+  `data/processed/offerings`, but loaders should use `--semesters <target>` when
+  preparing the app database.
 - The processed JSON may keep all SAIS rows, but the SQLite loader currently
   loads only undergraduate offerings for the student planner product.
 - The planner treats offering coverage conservatively. If a subject has no
