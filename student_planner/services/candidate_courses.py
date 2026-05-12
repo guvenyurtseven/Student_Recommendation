@@ -35,7 +35,9 @@ class CandidateCourse:
     is_user_requested: bool = False
     is_new_course: bool = False
     is_repeat_priority: bool = False
-    requires_course_selection_for_timetable: bool = False
+    elective_category: str | None = None
+    is_easy_priority_elective: bool = False
+    requires_explicit_course_selection: bool = False
     rationale: tuple[str, ...] = field(default_factory=tuple)
 
     @property

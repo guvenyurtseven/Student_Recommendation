@@ -3,7 +3,7 @@ from __future__ import annotations
 from collections.abc import Mapping
 from dataclasses import dataclass, field
 
-from student_planner.domain.electives import ElectiveIntent
+from student_planner.domain.electives import ElectiveCategory, ElectiveIntent
 from student_planner.domain.planning import (
     CourseEligibilitySummary,
     PlanningWarning,
@@ -96,7 +96,7 @@ class ElectiveCandidateService:
                     code="elective_course_selection_required",
                     message=(
                         f"{len(placeholders)} elective placeholder(s) can be used for semester load planning, "
-                        "but a concrete course must be selected before a weekly timetable can be built."
+                        "but a concrete course must be selected before exact course validation."
                     ),
                     severity=PlanningWarningSeverity.INFO,
                 )
@@ -147,34 +147,63 @@ class ElectiveCandidateService:
             eligibility=summary,
             requirement_labels=(intent.category.value,),
             estimated_ects=estimated_ects,
+            estimated_credits=intent.default_credits,
             difficulty_rank=intent.difficulty_rank,
             is_user_requested=True,
+            elective_category=intent.category.value,
             rationale=explicit_rationale(intent, index, target, target in course_ects_estimates),
         )
 
-    def placeholder_candidate(self, intent: ElectiveIntent, index: int) -> CandidateCourse:
+    def placeholder_candidate(
+        self,
+        intent: ElectiveIntent,
+        index: int,
+        *,
+        is_user_requested: bool = True,
+        is_easy_priority_elective: bool = False,
+    ) -> CandidateCourse:
         course_code = numbered_placeholder_code(intent.placeholder_code, index, intent.requested_count)
+        if is_easy_priority_elective:
+            explanation = (
+                f"Priority {intent.category.value} placeholder. The category still needs a concrete course choice."
+            )
+            rationale_prefix = "priority semester-balance elective"
+        else:
+            explanation = (
+                f"Requested {intent.category.value} placeholder. A concrete course has not been selected yet."
+            )
+            rationale_prefix = f"requested {intent.category.value}"
         summary = CourseEligibilitySummary(
             course_code=course_code,
             is_eligible=True,
-            explanation=(
-                f"Requested {intent.category.value} placeholder. A concrete course has not been selected yet."
-            ),
+            explanation=explanation,
         )
         return CandidateCourse(
             course_code=course_code,
             eligibility=summary,
             requirement_labels=(intent.category.value,),
             estimated_ects=intent.default_ects,
+            estimated_credits=intent.default_credits,
             difficulty_rank=intent.difficulty_rank,
             is_placeholder=True,
-            is_user_requested=True,
-            requires_course_selection_for_timetable=True,
+            is_user_requested=is_user_requested,
+            elective_category=intent.category.value,
+            is_easy_priority_elective=is_easy_priority_elective,
+            requires_explicit_course_selection=True,
             rationale=(
-                f"requested {intent.category.value}",
+                rationale_prefix,
                 f"uses category ECTS assumption {intent.default_ects:g}",
                 "placeholder elective; concrete course is not selected yet",
             ),
+        )
+
+    def auto_easy_priority_placeholder(self, category: ElectiveCategory) -> CandidateCourse:
+        intent = ElectiveIntent(category=category)
+        return self.placeholder_candidate(
+            intent,
+            index=1,
+            is_user_requested=False,
+            is_easy_priority_elective=True,
         )
 
 

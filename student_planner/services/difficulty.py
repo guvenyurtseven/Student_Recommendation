@@ -39,7 +39,9 @@ class CourseLoadScore:
     is_user_requested: bool = False
     is_new_course: bool = False
     is_repeat_priority: bool = False
-    requires_course_selection_for_timetable: bool = False
+    elective_category: str | None = None
+    is_easy_priority_elective: bool = False
+    requires_explicit_course_selection: bool = False
 
     def to_recommendation(self) -> CourseRecommendation:
         return CourseRecommendation(
@@ -54,7 +56,9 @@ class CourseLoadScore:
             is_user_requested=self.is_user_requested,
             is_new_course=self.is_new_course,
             is_repeat_priority=self.is_repeat_priority,
-            requires_course_selection_for_timetable=self.requires_course_selection_for_timetable,
+            elective_category=self.elective_category,
+            is_easy_priority_elective=self.is_easy_priority_elective,
+            requires_explicit_course_selection=self.requires_explicit_course_selection,
         )
 
 
@@ -152,7 +156,9 @@ class CourseScoringService:
             is_user_requested=candidate.is_user_requested,
             is_new_course=candidate.is_new_course,
             is_repeat_priority=candidate.is_repeat_priority,
-            requires_course_selection_for_timetable=candidate.requires_course_selection_for_timetable,
+            elective_category=candidate.elective_category,
+            is_easy_priority_elective=candidate.is_easy_priority_elective,
+            requires_explicit_course_selection=candidate.requires_explicit_course_selection,
         )
 
 
@@ -294,8 +300,8 @@ def score_rationale(
         rationale.append(f"uses curriculum ECTS estimate {candidate.estimated_ects:g}")
     if used_default_ects:
         rationale.append(f"ECTS missing; used default {DEFAULT_COURSE_ECTS:g}")
-    if candidate.requires_course_selection_for_timetable:
-        rationale.append("course selection is required before a weekly timetable can be built")
+    if candidate.requires_explicit_course_selection:
+        rationale.append("concrete elective course selection is required for exact course validation")
     if candidate.is_user_requested:
         rationale.append("user requested this course or elective category")
     if candidate.is_new_course:

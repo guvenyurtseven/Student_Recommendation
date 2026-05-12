@@ -84,7 +84,7 @@ def package_metadata(report: PlanningReport, deterministic_markdown: str, system
             course.course_code
             for scenario in report.scenarios
             for course in scenario.courses
-            if course.requires_course_selection_for_timetable
+            if course.requires_explicit_course_selection
         }
     )
     blocker_count = sum(1 for warning in report.warnings if warning.severity == PlanningWarningSeverity.BLOCKER)
@@ -98,7 +98,6 @@ def package_metadata(report: PlanningReport, deterministic_markdown: str, system
         "warning_count": len(report.warnings),
         "blocker_count": blocker_count,
         "placeholder_elective_count": placeholder_count,
-        "timetable_ready": placeholder_count == 0 and bool(report.scenarios),
         "deterministic_report_sha256": sha256_text(deterministic_markdown),
         "system_prompt_sha256": sha256_text(system_prompt),
     }
@@ -113,7 +112,7 @@ def response_contract() -> dict[str, Any]:
             "Onerilen Yol",
             "Senaryolarin Karsilastirmasi",
             "Dikkat Edilecek Noktalar",
-            "Elective ve Ders Programi Notu",
+            "Elective Notu",
             "Sonraki Aksiyonlar",
         ),
         "must_not_return_json": True,
@@ -158,7 +157,6 @@ def safety_contract() -> dict[str, Any]:
             "change_grades",
             "change_ects",
             "override_offering_availability",
-            "claim_timetable_is_ready_when_placeholders_exist",
             "ask_for_or_expose_credentials",
         ),
     }

@@ -35,7 +35,6 @@ class LLMReportPackageTests(unittest.TestCase):
         self.assertEqual(package.metadata["program_abbr"], "CENG")
         self.assertEqual(package.metadata["target_semester_no"], "20252")
         self.assertEqual(package.metadata["placeholder_elective_count"], 1)
-        self.assertFalse(package.metadata["timetable_ready"])
         self.assertEqual(package.model_policy["primary_model_tier"], "mini")
         self.assertTrue(package.response_contract["must_not_change_deterministic_decisions"])
 
@@ -88,7 +87,7 @@ def sample_report() -> PlanningReport:
                         estimated_ects=5,
                         is_placeholder=True,
                         is_user_requested=True,
-                        requires_course_selection_for_timetable=True,
+                        requires_explicit_course_selection=True,
                     ),
                 ),
             ),

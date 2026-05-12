@@ -24,6 +24,15 @@ class WebApiTests(unittest.TestCase):
         self.assertEqual(goal.difficulty_preference, "hard")
         self.assertEqual(goal.target_ects, 36)
 
+    def test_goal_from_payload_defaults_to_operation_semester(self) -> None:
+        with patch("student_planner.web.api.load_operation_semester") as load_operation_semester:
+            load_operation_semester.return_value.active_semester_no = "20252"
+
+            goal = goal_from_payload({"difficulty_preference": "easy"})
+
+        self.assertEqual(goal.target_semester_no, "20252")
+        self.assertEqual(goal.difficulty_preference, "easy")
+
     def test_decode_pdf_payload_accepts_plain_or_data_url_base64(self) -> None:
         pdf_bytes = b"%PDF-1.4\nminimal"
         encoded = base64.b64encode(pdf_bytes).decode("ascii")

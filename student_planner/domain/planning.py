@@ -254,7 +254,9 @@ class CourseRecommendation:
     is_user_requested: bool = False
     is_new_course: bool = False
     is_repeat_priority: bool = False
-    requires_course_selection_for_timetable: bool = False
+    elective_category: str | None = None
+    is_easy_priority_elective: bool = False
+    requires_explicit_course_selection: bool = False
     status: CoursePlanningStatus | str = CoursePlanningStatus.RECOMMENDED
 
     def __post_init__(self) -> None:
@@ -268,10 +270,12 @@ class CourseRecommendation:
         object.__setattr__(self, "is_user_requested", bool(self.is_user_requested))
         object.__setattr__(self, "is_new_course", bool(self.is_new_course))
         object.__setattr__(self, "is_repeat_priority", bool(self.is_repeat_priority))
+        object.__setattr__(self, "elective_category", clean_optional_text(self.elective_category))
+        object.__setattr__(self, "is_easy_priority_elective", bool(self.is_easy_priority_elective))
         object.__setattr__(
             self,
-            "requires_course_selection_for_timetable",
-            bool(self.requires_course_selection_for_timetable),
+            "requires_explicit_course_selection",
+            bool(self.requires_explicit_course_selection),
         )
         object.__setattr__(self, "rationale", clean_text_tuple(self.rationale))
         object.__setattr__(self, "status", coerce_enum(self.status, CoursePlanningStatus, "status"))

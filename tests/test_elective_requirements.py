@@ -5,6 +5,7 @@ import unittest
 from student_planner.domain.electives import ElectiveCategory, ElectiveIntent
 from student_planner.domain.models import RequirementType
 from student_planner.domain.planning import (
+    CompletedCourseAttempt,
     PlanningGoal,
     RequirementProgress,
     RequirementProgressStatus,
@@ -79,6 +80,52 @@ class ElectiveRequirementPlannerTests(unittest.TestCase):
 
         self.assertIn("explicit_elective_category_requires_review", {warning.code for warning in result.warnings})
 
+    def test_completed_transcript_electives_reduce_remaining_slots(self) -> None:
+        planning_input = StudentPlanningInput(
+            program_abbr="CENG",
+            completed_courses=(
+                CompletedCourseAttempt("PSYC 100", "CC", credits=3),
+                CompletedCourseAttempt("ECON 210", "BA", credits=3),
+                CompletedCourseAttempt("MATH 119", "AA", credits=4),
+            ),
+            goal=PlanningGoal("20252"),
+        )
+
+        result = ElectiveRequirementPlanner().build(
+            planning_input,
+            progress_result(
+                requirements=(
+                    regular_requirement("MATH 119"),
+                    elective_requirement("Non-Technical Elective", RequirementType.NONTECHNICAL_ELECTIVE_POOL, count=3),
+                    elective_requirement("Free Elective", RequirementType.FREE_ELECTIVE_POOL, count=1),
+                )
+            ),
+        )
+
+        by_category = {plan.category: plan for plan in result.category_plans}
+        self.assertEqual(by_category[ElectiveCategory.NONTECHNICAL].completed_count, 2)
+        self.assertEqual(by_category[ElectiveCategory.NONTECHNICAL].remaining_slots, 1)
+        self.assertIsNone(result.easy_priority_category)
+
+    def test_easy_priority_category_prefers_nontechnical_before_free(self) -> None:
+        planning_input = StudentPlanningInput(
+            program_abbr="CENG",
+            completed_courses=(),
+            goal=PlanningGoal("20252"),
+        )
+
+        result = ElectiveRequirementPlanner().build(
+            planning_input,
+            progress_result(
+                requirements=(
+                    elective_requirement("Non-Technical Elective", RequirementType.NONTECHNICAL_ELECTIVE_POOL, count=3),
+                    elective_requirement("Free Elective", RequirementType.FREE_ELECTIVE_POOL, count=1),
+                )
+            ),
+        )
+
+        self.assertEqual(result.easy_priority_category, ElectiveCategory.NONTECHNICAL)
+
 
 def progress_result(requirements: tuple[RequirementProgress, ...]) -> CurriculumProgressResult:
     return CurriculumProgressResult(
@@ -98,6 +145,17 @@ def elective_requirement(
         requirement_type=requirement_type,
         status=RequirementProgressStatus.NEEDS_REVIEW,
         course_count_min=count,
+    )
+
+
+def regular_requirement(course_code: str) -> RequirementProgress:
+    return RequirementProgress(
+        requirement_label=course_code,
+        requirement_type=RequirementType.REQUIRED_COURSE,
+        status=RequirementProgressStatus.SATISFIED,
+        completed_course_codes=(course_code,),
+        option_course_codes=(course_code,),
+        course_count_min=1,
     )
 
 

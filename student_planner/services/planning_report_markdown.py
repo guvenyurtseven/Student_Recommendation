@@ -30,7 +30,6 @@ def planning_report_to_markdown(report: PlanningReport) -> str:
     ]
     lines.extend(registration_policy_summary_lines(report.metadata))
     lines.extend(offering_summary_lines(report.metadata))
-    lines.extend(timetable_summary_lines(report.scenarios))
     lines.extend(elective_summary_lines(report.metadata))
     lines.extend(scenario_lines(report.scenarios))
     lines.extend(warning_lines(report.warnings))
@@ -63,25 +62,6 @@ def offering_summary_lines(metadata: Mapping[str, Any]) -> list[str]:
         f"- Known not-offered candidates: {metadata.get('not_offered_candidate_count', 0)}",
         f"- Unknown offering candidates: {metadata.get('unknown_offering_candidate_count', 0)}",
     ]
-
-
-def timetable_summary_lines(scenarios: tuple[RecommendationScenario, ...]) -> list[str]:
-    placeholder_count = len(
-        {
-            course.course_code
-            for scenario in scenarios
-            for course in scenario.courses
-            if course.requires_course_selection_for_timetable
-        }
-    )
-    if placeholder_count:
-        return [
-            "- Timetable readiness: incomplete",
-            f"- Timetable blockers: {placeholder_count} placeholder elective selection(s)",
-        ]
-    if scenarios:
-        return ["- Timetable readiness: course set is concrete"]
-    return ["- Timetable readiness: no recommended course set yet"]
 
 
 def elective_summary_lines(metadata: Mapping[str, Any]) -> list[str]:
@@ -166,7 +146,7 @@ def single_scenario_lines(scenario: RecommendationScenario) -> list[str]:
         return lines
     lines.append(
         markdown_table(
-            ("Course", "ECTS", "Difficulty", "Requested", "Timetable", "Policy"),
+            ("Course", "ECTS", "Difficulty", "Requested", "Course Selection", "Policy"),
             (course_row(course) for course in scenario.courses),
         )
     )
@@ -174,12 +154,12 @@ def single_scenario_lines(scenario: RecommendationScenario) -> list[str]:
 
 
 def course_row(course: CourseRecommendation) -> tuple[str, str, str, str, str, str]:
-    if course.requires_course_selection_for_timetable:
-        timetable = "needs course selection"
+    if course.requires_explicit_course_selection:
+        course_selection = "needs concrete course"
     elif course.is_placeholder:
-        timetable = "placeholder"
+        course_selection = "placeholder"
     else:
-        timetable = "concrete"
+        course_selection = "concrete"
     policy_flags = []
     if course.is_new_course:
         policy_flags.append("new")
@@ -190,7 +170,7 @@ def course_row(course: CourseRecommendation) -> tuple[str, str, str, str, str, s
         number_text(course.estimated_ects),
         number_text(course.difficulty_score),
         "yes" if course.is_user_requested else "no",
-        timetable,
+        course_selection,
         ", ".join(policy_flags) or "-",
     )
 

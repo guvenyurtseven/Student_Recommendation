@@ -35,6 +35,7 @@ Primary planning documents:
 - [Grade Model](docs/grade_model.md)
 - [Prerequisite Evaluator](docs/prerequisite_evaluator.md)
 - [Detailed Next Steps Plan](docs/next_steps_detailed_plan.md)
+- [Current Execution Plan](docs/current_execution_plan.md)
 
 ## Current Curriculum Pipeline
 
@@ -85,10 +86,18 @@ python .\scripts\scrape_offerings.py --semesters 20252
 python .\scripts\load_offerings.py --semesters 20252 --clear-existing --prune-orphan-non-undergraduate-courses
 ```
 
-Offerings are intended to be refreshed manually once per target semester after
-METU SAIS publishes that semester's course list. The planner should use this
-fresh target-semester snapshot as authoritative instead of predicting future
-offerings from historical patterns. The default offering config is
+Or run the admin refresh wrapper used by the web admin route:
+
+```powershell
+python .\scripts\admin_refresh_operation_semester.py --semester 20252
+```
+
+Offerings are intended to be refreshed once per target semester after METU SAIS
+publishes that semester's course list. The planner should use this fresh
+target-semester snapshot as authoritative instead of predicting future offerings
+from historical patterns. The active operation semester is stored in
+`config/operation.json`; the student-facing UI does not ask users to choose a
+target semester. The default offering config is
 `config/offering_departments.json`, which includes the 13 active engineering
 programs plus high-impact service departments such as MATH, PHYS, CHEM, HIST,
 TURK, ENG, OHS, IS, BA, ES, ECON, and BIOL.
@@ -172,12 +181,28 @@ Open:
 http://127.0.0.1:3000/
 ```
 
-The React UI includes transcript PDF upload, planner JSON input, target semester
-settings, difficulty preference, and elective category preferences. The Node
+The React UI is now centered on transcript PDF upload, difficulty preference,
+and optional elective category preferences. The active target semester is read
+from `config/operation.json`. The Node
 server calls the Python planner through `scripts/recommendation_api_bridge.py`,
-so the academic decision engine remains shared and deterministic.
-In transcript mode, the department/program is detected from the PDF; users do
-not need to choose their department manually.
+so the academic decision engine remains shared and deterministic. In transcript
+mode, the department/program is detected from the PDF; users do not need to
+choose their department manually. The API still returns the full deterministic
+planning report for debugging, but the React UI consumes the smaller
+`student_view` contract designed for student-facing route cards.
+
+Admin route:
+
+```text
+http://127.0.0.1:3000/admin
+```
+
+The admin page can start the semester refresh job after METU SAIS publishes the
+new offering data. The job scrapes current offerings, loads SQLite, regenerates
+coverage, and then updates the operation semester.
+The same admin page also contains the feedback inbox. Student feedback is stored
+in the local SQLite table `user_feedback`; admins can favorite or remove each
+entry. Admin credentials are stored in `admin_users` as PBKDF2 hashes.
 
 If offering data is missing, the planner keeps recommendations available but
 emits an explicit warning. If target-semester offering coverage is loaded for a
@@ -190,6 +215,10 @@ final recommendation scenarios are returned.
 For engineering curricula, Turkish language alternatives are normalized to
 `TURK 303` for fall-side planning and `TURK 304` for spring-side planning; older
 `TURK 105/106/201/202` alternatives are not recommended by the product layer.
+History alternatives are similarly normalized to `HIST 2201` and `HIST 2202`.
+Engineering summer practice rules are applied at planning time:
+`OHS 301 -> XXX 300 -> XXX 400` for curriculum courses marked as
+`summer_practice`.
 
 Important outputs:
 

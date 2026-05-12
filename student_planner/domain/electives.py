@@ -24,6 +24,15 @@ DEFAULT_ECTS_BY_ELECTIVE_CATEGORY = MappingProxyType(
     }
 )
 
+DEFAULT_CREDITS_BY_ELECTIVE_CATEGORY = MappingProxyType(
+    {
+        ElectiveCategory.TECHNICAL: 3.0,
+        ElectiveCategory.RESTRICTED: 3.0,
+        ElectiveCategory.NONTECHNICAL: 3.0,
+        ElectiveCategory.FREE: 3.0,
+    }
+)
+
 DIFFICULTY_RANK_BY_ELECTIVE_CATEGORY = MappingProxyType(
     {
         ElectiveCategory.TECHNICAL: 4,
@@ -84,6 +93,10 @@ class ElectiveIntent:
         return DEFAULT_ECTS_BY_ELECTIVE_CATEGORY[self.category]
 
     @property
+    def default_credits(self) -> float:
+        return DEFAULT_CREDITS_BY_ELECTIVE_CATEGORY[self.category]
+
+    @property
     def difficulty_rank(self) -> int:
         return DIFFICULTY_RANK_BY_ELECTIVE_CATEGORY[self.category]
 
@@ -96,7 +109,7 @@ class ElectiveIntent:
         return PLACEHOLDER_CODE_BY_ELECTIVE_CATEGORY[self.category]
 
     @property
-    def requires_course_selection_for_timetable(self) -> bool:
+    def requires_explicit_course_selection(self) -> bool:
         return self.wants_to_take and not self.has_explicit_course
 
 

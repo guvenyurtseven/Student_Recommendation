@@ -996,7 +996,8 @@ Onemli semantik notlar:
 - Input olarak yalnizca daha once hesaplanmis eligible course score'larini alir.
 - Bu standalone recommendation servisi tek basina offering sorgusu yapmaz.
   Pipeline seviyesinde Phase 3H ile offering-aware filtre eklenmistir.
-- Schedule/timetable optimizasyonu bu katmanda yoktur.
+- Haftalik ders programi optimizasyonu bu katmanda yoktur ve product v1
+  kapsamindan cikarilmistir.
 - En yuksek unlock sinyaline sahip kritik baglayici dersler ECTS cap icinde
   kaldiklari surece tum senaryolara once yerlestirilir. Bu sayede kolay/dengeli/
   zor tercihinden bagimsiz olarak bir sonraki ders zincirlerini acan dersler
@@ -1030,7 +1031,6 @@ student_planner/services/recommendation.py
 
 v1 kapsam dışı:
 
-- Tam timetable conflict çözümü
 - Section/saat planlama
 - Öğrencinin kişisel tercihleri
 - Mezuniyet optimizasyonu
@@ -1236,8 +1236,8 @@ Urun kararlari:
 - Explicit course DB'de yoksa veya ECTS bilinmiyorsa kategori varsayilani
   kullanilmali.
 - Ogrenci kategori secip course code vermezse, sistem course set onerisi
-  uretebilir; fakat haftalik ders programi uretemez. Bu durumda output'ta
-  timetable icin `needs_course_selection` uyarisi olmalidir.
+  uretebilir; fakat exact elective validation icin somut ders secimi gerekir.
+  Bu durumda output'ta `needs_course_selection` uyarisi olmalidir.
 - Birden fazla elective kategorisi ayni semester hedefinde secilebilir.
 
 Input contract:
@@ -1282,8 +1282,8 @@ Implementation sirasi:
    `TECHNICAL_ELECTIVE`, `RESTRICTED_ELECTIVE`, `NONTECHNICAL_ELECTIVE`,
    `FREE_ELECTIVE`. Tamamlandi.
 8. Scenario rationale icinde elective placeholder'in neden secildigini,
-   varsayilan ECTS kullanildigini ve timetable icin course selection gerektigini
-   acikla. Tamamlandi.
+   varsayilan ECTS kullanildigini ve exact validation icin course selection
+   gerektigini acikla. Tamamlandi.
 9. Elective intent'leri curriculum'daki remaining elective slot'larla sayisal
    olarak eslestir. Tamamlandi.
 10. Kategori bazinda remaining/requested/matched/unplanned/extra sayilarini
@@ -1308,7 +1308,7 @@ Mevcut davranis:
 - Category-only elective intent placeholder olarak scenario'ya girer ve
   `elective_course_selection_required` uyarisi uretir.
 - Placeholder recommendation output'unda `is_placeholder=true` ve
-  `requires_course_selection_for_timetable=true` olarak serilestirilir.
+  `requires_explicit_course_selection=true` olarak serilestirilir.
 - Explicit elective course selection'lari simdilik ogrencinin sectigi kategoriye
   guvenerek islenir; official elective pool list validation henuz olmadigi icin
   `explicit_elective_category_requires_review` info warning'i uretilebilir.
@@ -1331,7 +1331,7 @@ Output semantigi:
 - Course code bilinen elective, normal course gibi scenario'da gorunur.
 - Course code bilinmeyen elective, placeholder olarak gorunur.
 - Placeholder'li scenario semester course set olarak gecerlidir.
-- Placeholder'li scenario weekly timetable icin incomplete kabul edilir.
+- Placeholder'li scenario exact elective validation icin incomplete kabul edilir.
 - LLM rapor katmani bu farki aciklamali; kesin ders secilmemis placeholder'i
   gercek ders gibi anlatmamalidir.
 
@@ -1342,7 +1342,7 @@ Kabul kriterleri:
 - Course code varsa `CENG495` -> `CENG 495` normalize edilmeli.
 - Course code yoksa intent gecersiz sayilmamali.
 - Default ECTS ve difficulty rank testlenmeli.
-- Planner output'u elective placeholder nedeniyle timetable unavailable warning'i
+- Planner output'u elective placeholder nedeniyle course selection warning'i
   verebilmeli.
 - Elective intent'ler curriculum slotlariyla kategori bazinda eslesmeli.
 - Fazla/slot disi elective intent'ler info warning uretmeli.
@@ -1354,7 +1354,7 @@ Hala bilincli olarak ertelenenler:
   yazilmasi.
 - Bir explicit elective course'un hangi kategoriye kesin sayildigini official
   kaynakla dogrulama.
-- Timetable provider entegrasyonu.
+- Haftalik ders programi entegrasyonu product v1 kapsamindan cikarildi.
 
 ### Phase 3J: Student-Readable Deterministic Report
 
@@ -1398,7 +1398,7 @@ Rapor bolumleri:
 
 Onemli semantik:
 
-- Placeholder elective varsa timetable readiness `incomplete` olur.
+- Placeholder elective varsa exact elective validation incomplete olur.
 - Warning'ler ayni mesaj tekrarlarini sayacla gruplanmis halde gosterilir.
 - Markdown rapor, LLM'e verilecek sanitize deterministic input olarak
   kullanilabilir; LLM akademik kural uretmemeli, bu raporu yorumlamalidir.
@@ -1459,8 +1459,8 @@ Uretilen paket sunlari icerir:
 - `model_policy`: onerilen model sinifi, reasoning, verbosity, fallback ve cache
   stratejisi.
 - `safety_contract`: LLM'in yapabilecekleri ve kesinlikle yapmamasi gerekenler.
-- `metadata`: program, target semester, warning count, placeholder elective count,
-  timetable readiness ve hash alanlari.
+- `metadata`: program, target semester, warning count, placeholder elective count
+  ve hash alanlari.
 
 Preprompt sozlesmesi:
 
@@ -1468,7 +1468,8 @@ Preprompt sozlesmesi:
 - Prerequisite, grade, ECTS, offering ve scenario kararlarini degistiremez.
 - Placeholder elective'i concrete course gibi anlatamaz.
 - Offering coverage unknown ise kesinlik iddia edemez.
-- Haftalik program icin concrete elective secimi gerekiyorsa bunu acik soyler.
+- Exact elective validation icin concrete elective secimi gerekiyorsa bunu acik
+  soyler.
 - Kullanici credential'i istemez veya gostermeye calismaz.
 
 Model kullanim stratejisi:
@@ -1862,7 +1863,7 @@ Guncel kisa vadeli sira:
    ana rapor olarak kalacak.
 7. Transcript PDF input destegi gizlilik merkezli extraction katmaniyla
    gelistirilmeli; raw PDF/text kalici olarak tutulmamali.
-8. Elective pool logic, gercek transcript parsing fixture'lari ve timetable
+8. Elective pool logic ve gercek transcript parsing fixture'lari
    entegrasyonu sonraki product katmanlari olarak ele alinmali.
 
 Bu sıra, projenin amacına sadık kalır: önce doğru veri ve doğru anlam, sonra
@@ -1879,6 +1880,47 @@ Recommendation engine'e ciddi biçimde başlamadan önce şunlar hazır olmalı:
 - At least CENG pilot curriculum review: yapılmış
 - Offerings table: hedef donem SAIS snapshot'i ile dolu
 - Manual correction layer: çalışıyor
+
+## 2026-05-12 Product Rule Update
+
+Bu adimda planner davranisi ogrenciye gosterilecek gercek arayuze yaklastirildi.
+
+Uygulanan kurallar:
+
+- Engineering mufredatlarinda Turkish gibi History secenekleri de normalize
+  edildi: fall icin `HIST 2201`, spring icin `HIST 2202`.
+- Transcript'te gecilmis, somut zorunlu curriculum dersi olmayan kredi
+  dersleri elective tamamlama adayi olarak sayiliyor. Bu siniflandirma su an
+  deterministik heuristic ile calisiyor; official elective pool listeleri
+  yuklendiginde ayni servis daha guclu dogrulamaya baglanmali.
+- Henuz non-technical/free elective tamamlamamis ve slotu kalan ogrenciler icin
+  temel rotaya otomatik bir non-technical, yoksa free elective placeholder'i
+  ekleniyor.
+- Rota olusturma ECTS cap yerine METU credit tasiyan ders sayisina gore
+  calisiyor: temel rota 5, ana rota 5, hizli rota 6 kredili ders hedefliyor.
+- `estimated_credits == 0` olan uygun dersler tum rotalara ekleniyor ve kredili
+  ders sayisi limitini tuketmiyor.
+- Easy rota non-technical/free elective iceriyorsa ana rota ayni kategorileri
+  disliyor; boylece ana rota 5 kredili concrete/major-progress dersiyle temiz
+  bir alternatif olarak kalabiliyor.
+- React arayuzunde JSON input kaldirildi. Kullanici akisi transcript PDF,
+  hedef donem, zorluk tercihi ve opsiyonel elective tercihleri ile sinirlandi.
+- Arayuz Markdown debug raporu yerine sadece onerilen rotalari ve kisa uyarilari
+  gosteriyor; ECTS degerleri kullaniciya gosterilmiyor.
+- Engineering summer practice kurali planlama aninda synthetic prerequisite
+  edge olarak ekleniyor: curriculum'de `summer_practice` olarak isaretli
+  300-level staj varsa `OHS 301 -> XXX 300`, ayni subject altinda 300/400
+  cifti varsa `XXX 300 -> XXX 400` uygulanir. Bu sayede planner ayni donemde
+  iki staji birden onermez ve OHS tamamlanmadan ilk staji acmaz.
+- API response icinde `student_view` kontrati eklendi. Full `PlanningReport`
+  debug/makine sozlesmesi olarak kalirken React UI ogrenciye gosterilecek
+  sade rota kartlarini, uyari ozetlerini ve elective durumunu bu yeni
+  kontrattan okur.
+
+Sonraki dikkat noktasi:
+
+- Elective extraction heuristic, official elective pool/curriculum rule verisi
+  geldikten sonra kesin dogrulama katmanina donusturulmeli.
 
 Bu koşullar sağlanmadan recommendation engine yazılırsa sistem çalışır gibi
 görünebilir ama öğrenciye akademik olarak hatalı öneri verme riski yüksek olur.

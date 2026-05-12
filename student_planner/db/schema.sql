@@ -132,6 +132,25 @@ CREATE TABLE IF NOT EXISTS student_completed_courses (
     UNIQUE(student_profile_id, course_id)
 );
 
+CREATE TABLE IF NOT EXISTS admin_users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT NOT NULL UNIQUE,
+    password_hash TEXT NOT NULL,
+    salt TEXT NOT NULL,
+    iterations INTEGER NOT NULL,
+    created_at_utc TEXT NOT NULL,
+    last_login_at_utc TEXT
+);
+
+CREATE TABLE IF NOT EXISTS user_feedback (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    feedback_text TEXT NOT NULL,
+    is_favorite INTEGER NOT NULL DEFAULT 0,
+    favorited_at_utc TEXT,
+    created_at_utc TEXT NOT NULL,
+    updated_at_utc TEXT NOT NULL
+);
+
 CREATE INDEX IF NOT EXISTS idx_courses_subject_number
     ON courses(subject_code, course_number);
 
@@ -146,3 +165,6 @@ CREATE INDEX IF NOT EXISTS idx_prereq_edges_course
 
 CREATE INDEX IF NOT EXISTS idx_prereq_edges_prerequisite
     ON prerequisite_edges(prerequisite_course_id);
+
+CREATE INDEX IF NOT EXISTS idx_user_feedback_order
+    ON user_feedback(is_favorite, favorited_at_utc, created_at_utc);

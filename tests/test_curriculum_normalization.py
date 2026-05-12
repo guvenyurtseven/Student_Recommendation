@@ -44,6 +44,35 @@ class CurriculumNormalizationTests(unittest.TestCase):
         self.assertEqual(normalized.requirements[1].option_course_codes, ("TURK 304",))
         self.assertEqual(normalized.requirements[1].recommended_term, "Spring")
 
+    def test_engineering_history_choices_are_reduced_to_2201_and_2202(self) -> None:
+        curriculum = CurriculumSnapshot(
+            program=Program(
+                abbr="CENG",
+                catalog_program_id="571",
+                name_en="Computer Engineering",
+                name_tr="Bilgisayar Muhendisligi",
+                faculty="Engineering",
+            ),
+            version_id=1,
+            version_label="latest",
+            is_latest=True,
+            review_status=ReviewStatus.SCRAPED,
+            requirements=(
+                choice_requirement(1, ("HIST 2201", "HIST 2205")),
+                choice_requirement(2, ("HIST 2202", "HIST 2206")),
+            ),
+        )
+
+        normalized = normalize_curriculum_for_planning(curriculum)
+
+        self.assertEqual(normalized.requirements[0].label, "HIST 2201")
+        self.assertEqual(normalized.requirements[0].requirement_type, RequirementType.REQUIRED_COURSE)
+        self.assertEqual(normalized.requirements[0].option_course_codes, ("HIST 2201",))
+        self.assertEqual(normalized.requirements[0].recommended_term, "Fall")
+        self.assertEqual(normalized.requirements[1].label, "HIST 2202")
+        self.assertEqual(normalized.requirements[1].option_course_codes, ("HIST 2202",))
+        self.assertEqual(normalized.requirements[1].recommended_term, "Spring")
+
     def test_non_engineering_curriculum_is_left_unchanged(self) -> None:
         curriculum = CurriculumSnapshot(
             program=Program(

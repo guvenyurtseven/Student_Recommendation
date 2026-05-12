@@ -19,6 +19,10 @@ from student_planner.services.curriculum_progress import CurriculumProgressServi
 from student_planner.services.difficulty import CourseScoringService
 from student_planner.services.elective_candidates import ElectiveCandidateService
 from student_planner.services.elective_requirements import ElectiveRequirementPlan, ElectiveRequirementPlanner
+from student_planner.services.engineering_practice_rules import (
+    augment_all_prerequisite_edges,
+    augment_prerequisite_edges_by_course,
+)
 from student_planner.services.offering_availability import OfferingAvailabilityService, OfferingFilterResult
 from student_planner.services.prerequisite_evaluator import CourseAliases, PrerequisiteEdge
 from student_planner.services.recommendation import RecommendationService
@@ -71,7 +75,7 @@ class SemesterPlanningPipeline:
             self.repository.fetch_latest_curriculum(planning_input.program_abbr)
         )
         progress = CurriculumProgressService(aliases).evaluate(planning_input, curriculum)
-        elective_requirement_plan = ElectiveRequirementPlanner().build(planning_input, progress)
+        elective_requirement_plan = ElectiveRequirementPlanner().build(planning_input, progress, aliases)
         explicit_elective_course_codes = tuple(
             intent.course_code
             for intent in planning_input.requested_elective_intents
@@ -81,6 +85,7 @@ class SemesterPlanningPipeline:
             (*progress.remaining_concrete_course_codes, *explicit_elective_course_codes),
             aliases,
         )
+        candidate_edges = augment_prerequisite_edges_by_course(candidate_edges, curriculum, aliases)
         raw_candidate_result = CandidateCourseGenerator(aliases).generate(
             planning_input=planning_input,
             progress=progress,
@@ -95,6 +100,7 @@ class SemesterPlanningPipeline:
                 aliases,
             ),
         )
+        auto_easy_elective_result = build_auto_easy_elective_result(elective_requirement_plan, aliases)
         raw_candidate_result = merge_candidate_results(
             raw_candidate_result,
             elective_result.explicit_result,
@@ -108,6 +114,7 @@ class SemesterPlanningPipeline:
         candidate_result = merge_candidate_results(
             offering_result.candidate_result,
             elective_result.placeholder_result,
+            auto_easy_elective_result,
         )
         registration_policy_service = AcademicRegistrationPolicyService(aliases)
         registration_policy_result = registration_policy_service.apply_to_candidates(
@@ -118,7 +125,11 @@ class SemesterPlanningPipeline:
         candidate_result = registration_policy_result.candidate_result
         unlock_result = UnlockAnalysisService(aliases).analyze(
             candidate_course_codes=candidate_result.eligible_course_codes,
-            prerequisite_edges=self.repository.fetch_all_prerequisite_edges(),
+            prerequisite_edges=augment_all_prerequisite_edges(
+                self.repository.fetch_all_prerequisite_edges(),
+                curriculum,
+                aliases,
+            ),
             curriculum_course_codes=curriculum.concrete_course_codes,
         )
         scoring_result = CourseScoringService().score_eligible_candidates(
@@ -163,7 +174,9 @@ class SemesterPlanningPipeline:
                 not_offered_candidate_count=len(offering_result.not_offered_course_codes),
                 unknown_offering_candidate_count=len(offering_result.unknown_course_codes),
                 elective_explicit_candidate_count=elective_result.explicit_count,
-                elective_placeholder_candidate_count=elective_result.placeholder_count,
+                elective_placeholder_candidate_count=(
+                    elective_result.placeholder_count + len(auto_easy_elective_result.eligible_courses)
+                ),
                 elective_requirement_plan=elective_requirement_plan,
                 registration_policy_metadata=registration_policy_result.state.metadata,
             ),
@@ -181,6 +194,30 @@ def filter_candidates_by_offerings(
         target_semester_no=target_semester_no,
         offered_course_codes=safe_fetch_offered_course_codes(repository, target_semester_no, aliases),
         covered_subject_codes=safe_fetch_offering_subject_codes(repository, target_semester_no),
+    )
+
+
+def build_auto_easy_elective_result(
+    elective_requirement_plan: ElectiveRequirementPlan,
+    aliases: CourseAliases,
+) -> CandidateCourseResult:
+    category = elective_requirement_plan.easy_priority_category
+    if category is None:
+        return CandidateCourseResult(eligible_courses=(), blocked_courses=(), warnings=())
+    candidate = ElectiveCandidateService(aliases).auto_easy_priority_placeholder(category)
+    return CandidateCourseResult(
+        eligible_courses=(candidate,),
+        blocked_courses=(),
+        warnings=(
+            PlanningWarning(
+                code="easy_plan_elective_priority_added",
+                message=(
+                    f"A {category.value} placeholder was added for easy-plan balancing because no completed "
+                    "non-technical/free elective was detected and a matching slot remains."
+                ),
+                severity=PlanningWarningSeverity.INFO,
+            ),
+        ),
     )
 
 
@@ -322,6 +359,7 @@ def report_metadata(
         metadata.update(
             {
                 "elective_remaining_slots_by_category": elective_requirement_plan.remaining_slots_by_category,
+                "elective_completed_counts_by_category": elective_requirement_plan.completed_counts_by_category,
                 "elective_requested_counts_by_category": elective_requirement_plan.requested_counts_by_category,
                 "elective_matched_counts_by_category": elective_requirement_plan.matched_counts_by_category,
                 "elective_unplanned_counts_by_category": elective_requirement_plan.unplanned_counts_by_category,

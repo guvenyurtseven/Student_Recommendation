@@ -58,7 +58,7 @@ class PlanningIOTests(unittest.TestCase):
         self.assertEqual(len(planning_input.elective_intents), 2)
         self.assertEqual(planning_input.elective_intents[0].category, ElectiveCategory.TECHNICAL)
         self.assertEqual(planning_input.elective_intents[0].course_code, "CENG 495")
-        self.assertTrue(planning_input.elective_intents[1].requires_course_selection_for_timetable)
+        self.assertTrue(planning_input.elective_intents[1].requires_explicit_course_selection)
 
     def test_student_planning_input_from_dict_accepts_checkbox_style_elective_preferences(self) -> None:
         planning_input = student_planning_input_from_dict(
@@ -148,7 +148,7 @@ class PlanningIOTests(unittest.TestCase):
                             difficulty_score=0.2,
                             is_placeholder=True,
                             is_user_requested=True,
-                            requires_course_selection_for_timetable=True,
+                            requires_explicit_course_selection=True,
                         ),
                     ),
                 ),
@@ -179,7 +179,7 @@ class PlanningIOTests(unittest.TestCase):
         self.assertIn("# CENG Next-Semester Planning Report", markdown)
         self.assertIn("## Elective Fit", markdown)
         self.assertIn("FREE_ELECTIVE", markdown)
-        self.assertIn("needs course selection", markdown)
+        self.assertIn("needs concrete course", markdown)
         self.assertIn("elective_course_selection_required", markdown)
 
     def test_invalid_payloads_raise_clear_errors(self) -> None:

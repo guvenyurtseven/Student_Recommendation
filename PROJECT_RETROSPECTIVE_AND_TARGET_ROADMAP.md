@@ -38,10 +38,10 @@ Sistem bu inputu kullanarak şunları üretmeli:
 - Her ders sepeti için ECTS / kredi yükü ve risk yorumunu.
 - Sonuçların öğrenciye anlaşılır bir rapor olarak açıklamasını.
 
-Bu ürünün çekirdeği haftalık ders programı çizmek değildir. Haftalık ders
-programı, section saatleri ve robotdegilim.xyz gibi servislerden alınabilecek
-schedule görünümü ileride eklenebilir bir özelliktir. Temel hedef, öğrenciye
-kişisel akademik durumuna göre bir dönemlik yol haritası sunmaktır.
+Bu ürünün çekirdeği haftalık ders programı çizmek değildir. Son ürün kapsamı
+öğrenciye kişisel akademik durumuna göre bir dönemlik yol haritası sunmaktır;
+haftalık ders programı üretimi ve dış ders programı servisleri ürün kapsamından
+çıkarılmıştır.
 
 ## 2. Temel Ürün Prensibi
 
@@ -685,23 +685,11 @@ Bu modülün ilk versiyonu uygulanmıştır. Mevcut davranış conservative'dir:
 subject coverage varsa ve ders hedef snapshot'ta yoksa ders öneri havuzundan
 çıkarılır; subject coverage yoksa yanlış negatif üretmemek için uyarı verilir.
 
-### 13.9 Schedule Provider Layer
+### 13.9 Ders Programı Katmanı
 
-Sorumluluk:
-
-- Ders stack'i için haftalık program şeması üretmek.
-- İleride robotdegilim.xyz gibi dış kaynaklardan schedule almak.
-
-Planlanan arayüz:
-
-```text
-ScheduleProvider
-RobotDegilimScheduleProvider
-MockScheduleProvider
-```
-
-Bu modül core ürün hedefi değildir. Recommendation engine schedule olmadan da
-çalışmalıdır.
+Bu katman ürün kapsamından çıkarılmıştır. Recommendation engine yalnızca
+akademik olarak geçerli dönem rotaları üretmelidir; dış ders programı servisleriyle
+iletişim kurulmayacaktır.
 
 ## 14. Yakın Vadeli Teknik Sıra
 

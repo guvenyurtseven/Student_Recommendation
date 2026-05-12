@@ -44,6 +44,7 @@ class SemesterPlanningPipelineTests(unittest.TestCase):
         self.assertEqual(report.metadata["blocked_candidate_count"], 0)
         self.assertEqual(report.metadata["offerings_count"], 0)
         self.assertEqual({course.course_code for course in report.eligible_courses}, {"MATH 120", "CENG 213"})
+        self.assertEqual(report.metadata["elective_placeholder_candidate_count"], 0)
         self.assertEqual(len(report.scenarios), 3)
         self.assertIn("offerings_unavailable", {warning.code for warning in report.warnings})
 
@@ -61,7 +62,8 @@ class SemesterPlanningPipelineTests(unittest.TestCase):
             clock=lambda: dt.datetime(2026, 5, 10, tzinfo=dt.timezone.utc),
         ).build_report(planning_input)
 
-        self.assertEqual({course.course_code for course in report.eligible_courses}, {"MATH 120", "CENG 213"})
+        self.assertEqual({course.course_code for course in report.eligible_courses}, {"MATH 120", "CENG 213", "FREE_ELECTIVE"})
+        self.assertEqual(report.metadata["elective_placeholder_candidate_count"], 1)
         self.assertEqual(report.metadata["offerings_count"], 2)
         self.assertEqual(report.metadata["target_semester_offerings_count"], 2)
         self.assertEqual(report.metadata["offered_candidate_count"], 1)
@@ -96,13 +98,50 @@ class SemesterPlanningPipelineTests(unittest.TestCase):
         self.assertTrue(
             any(
                 recommendation.course_code == "FREE_ELECTIVE"
-                and recommendation.requires_course_selection_for_timetable
+                and recommendation.requires_explicit_course_selection
                 and recommendation.is_user_requested
                 for scenario in report.scenarios
                 for recommendation in scenario.courses
             )
         )
         self.assertIn("elective_course_selection_required", {warning.code for warning in report.warnings})
+
+    def test_engineering_practice_rules_block_300_before_ohs_and_400_before_300(self) -> None:
+        report = SemesterPlanningPipeline(
+            FakePlanningRepositoryWithPracticeRules(),
+            clock=lambda: dt.datetime(2026, 5, 10, tzinfo=dt.timezone.utc),
+        ).build_report(
+            StudentPlanningInput(
+                program_abbr="CENG",
+                completed_courses=(),
+                goal=PlanningGoal("20252", difficulty_preference="balanced"),
+            )
+        )
+
+        self.assertEqual({course.course_code for course in report.eligible_courses}, {"OHS 301"})
+        self.assertEqual({course.course_code for course in report.blocked_courses}, {"CENG 300", "CENG 400"})
+        ceng300 = next(course for course in report.blocked_courses if course.course_code == "CENG 300")
+        ceng400 = next(course for course in report.blocked_courses if course.course_code == "CENG 400")
+        self.assertEqual(ceng300.missing_prerequisite_codes, ("OHS 301",))
+        self.assertEqual(ceng400.missing_prerequisite_codes, ("CENG 300",))
+
+    def test_engineering_practice_400_becomes_eligible_after_ohs_and_300_are_completed(self) -> None:
+        report = SemesterPlanningPipeline(
+            FakePlanningRepositoryWithPracticeRules(),
+            clock=lambda: dt.datetime(2026, 5, 10, tzinfo=dt.timezone.utc),
+        ).build_report(
+            StudentPlanningInput(
+                program_abbr="CENG",
+                completed_courses=(
+                    CompletedCourseAttempt("OHS 301", "S", attempt_order=1),
+                    CompletedCourseAttempt("CENG 300", "S", attempt_order=2),
+                ),
+                goal=PlanningGoal("20252", difficulty_preference="balanced"),
+            )
+        )
+
+        self.assertEqual({course.course_code for course in report.eligible_courses}, {"CENG 400"})
+        self.assertEqual(report.blocked_courses, ())
 
 
 class FakePlanningRepository:
@@ -197,6 +236,47 @@ class FakePlanningRepositoryWithOfferings(FakePlanningRepository):
         return ("CENG",)
 
 
+class FakePlanningRepositoryWithPracticeRules(FakePlanningRepository):
+    def fetch_alias_map(self) -> dict[str, str]:
+        return {
+            "OHS 301": "OHS 301",
+            "CENG 300": "CENG 300",
+            "CENG 400": "CENG 400",
+        }
+
+    def fetch_latest_curriculum(self, program_abbr: str) -> CurriculumSnapshot:
+        if program_abbr != "CENG":
+            raise LookupError(program_abbr)
+        return CurriculumSnapshot(
+            program=Program(
+                abbr="CENG",
+                catalog_program_id="571",
+                name_en="Computer Engineering",
+                name_tr="Bilgisayar Muhendisligi",
+                faculty="Engineering",
+            ),
+            version_id=1,
+            version_label="latest",
+            is_latest=True,
+            review_status=ReviewStatus.SCRAPED,
+            requirements=(
+                required_course(1, "OHS 301", "8770301", "OHS", 301, 2, credits=0),
+                summer_practice(2, "CENG 300", "5710300", "CENG", 300),
+                summer_practice(3, "CENG 400", "5710400", "CENG", 400),
+            ),
+        )
+
+    def fetch_prerequisite_edges_for_courses(
+        self,
+        target_course_codes: list[str] | tuple[str, ...],
+        aliases: dict[str, str] | None = None,
+    ) -> dict[str, list[PrerequisiteEdge]]:
+        return {course_code: [] for course_code in target_course_codes}
+
+    def fetch_all_prerequisite_edges(self) -> list[PrerequisiteEdge]:
+        return []
+
+
 def required_course(
     requirement_id: int,
     display_code: str,
@@ -204,6 +284,7 @@ def required_course(
     subject_code: str,
     course_number: int,
     ects: float,
+    credits: float | None = None,
 ) -> CurriculumRequirementRecord:
     return CurriculumRequirementRecord(
         id=requirement_id,
@@ -213,7 +294,39 @@ def required_course(
         recommended_term="Spring",
         course_count_min=1,
         ects_min=ects,
-        credits_min=ects / 1.5,
+        credits_min=ects / 1.5 if credits is None else credits,
+        sort_order=requirement_id,
+        options=(
+            CurriculumRequirementOption(
+                id=requirement_id,
+                course=Course(
+                    numeric_code=numeric_code,
+                    subject_code=subject_code,
+                    course_number=course_number,
+                    display_code=display_code,
+                    title_en=display_code,
+                ),
+            ),
+        ),
+    )
+
+
+def summer_practice(
+    requirement_id: int,
+    display_code: str,
+    numeric_code: str,
+    subject_code: str,
+    course_number: int,
+) -> CurriculumRequirementRecord:
+    return CurriculumRequirementRecord(
+        id=requirement_id,
+        requirement_type=RequirementType.SUMMER_PRACTICE,
+        label=display_code,
+        recommended_year=3 if course_number == 300 else 4,
+        recommended_term="Fifth Semester" if course_number == 300 else "Seventh Semester",
+        course_count_min=1,
+        ects_min=5.0,
+        credits_min=0,
         sort_order=requirement_id,
         options=(
             CurriculumRequirementOption(

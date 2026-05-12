@@ -44,7 +44,7 @@ class ElectiveDomainTests(unittest.TestCase):
         self.assertEqual(intent.category, ElectiveCategory.TECHNICAL)
         self.assertEqual(intent.course_code, "CENG 495")
         self.assertTrue(intent.has_explicit_course)
-        self.assertFalse(intent.requires_course_selection_for_timetable)
+        self.assertFalse(intent.requires_explicit_course_selection)
         self.assertEqual(intent.default_ects, 6.5)
         self.assertEqual(intent.difficulty_rank, 4)
         self.assertEqual(intent.requirement_type, RequirementType.TECHNICAL_ELECTIVE_POOL)
@@ -54,7 +54,7 @@ class ElectiveDomainTests(unittest.TestCase):
 
         self.assertEqual(intent.placeholder_code, "FREE_ELECTIVE")
         self.assertFalse(intent.has_explicit_course)
-        self.assertTrue(intent.requires_course_selection_for_timetable)
+        self.assertTrue(intent.requires_explicit_course_selection)
         self.assertEqual(intent.default_ects, 5.0)
 
     def test_invalid_category_and_count_raise(self) -> None:

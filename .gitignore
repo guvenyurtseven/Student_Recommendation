@@ -7,6 +7,7 @@ data/db/*.db
 data/uploads/
 data/tmp/
 data/private/
+data/cache/
 *.pdf
 *transcript*.pdf
 web/node_modules/

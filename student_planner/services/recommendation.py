@@ -24,10 +24,11 @@ class ScenarioSortMode(StrEnum):
 class ScenarioConfig:
     name: str
     kind: RecommendationScenarioKind
-    target_ects: float
-    max_ects: float
-    warning_min_ects: float
+    target_credit_course_count: int
+    max_credit_course_count: int
     sort_mode: ScenarioSortMode
+    include_easy_priority_elective: bool = False
+    excluded_elective_categories: frozenset[str] = frozenset()
 
 
 @dataclass(frozen=True)
@@ -61,9 +62,22 @@ class RecommendationService:
                 preferred_kind=preferred_kind_for(scoring_result.load_target.difficulty_preference),
             )
 
-        scenarios = tuple(
-            self.build_scenario(scoring_result.course_scores, config)
-            for config in scenario_configs(scoring_result.load_target)
+        easy_config, balanced_config, aggressive_config = scenario_configs(scoring_result.load_target)
+        easy_scenario = self.build_scenario(scoring_result.course_scores, easy_config)
+        if scenario_has_nontech_or_free_elective(easy_scenario):
+            balanced_config = ScenarioConfig(
+                name=balanced_config.name,
+                kind=balanced_config.kind,
+                target_credit_course_count=balanced_config.target_credit_course_count,
+                max_credit_course_count=balanced_config.max_credit_course_count,
+                sort_mode=balanced_config.sort_mode,
+                include_easy_priority_elective=balanced_config.include_easy_priority_elective,
+                excluded_elective_categories=frozenset({"nontechnical_elective", "free_elective"}),
+            )
+        scenarios = (
+            easy_scenario,
+            self.build_scenario(scoring_result.course_scores, balanced_config),
+            self.build_scenario(scoring_result.course_scores, aggressive_config),
         )
         return RecommendationResult(
             scenarios=scenarios,
@@ -77,11 +91,11 @@ class RecommendationService:
         config: ScenarioConfig,
     ) -> RecommendationScenario:
         sorted_scores = sort_scores(course_scores, config.sort_mode)
-        selected_scores = select_course_basket(sorted_scores, config.target_ects, config.max_ects)
+        selected_scores = select_course_basket(sorted_scores, config)
         total_ects = sum(score.estimated_ects for score in selected_scores)
         total_credits = total_known_credits(selected_scores)
         average_difficulty = weighted_average_difficulty(selected_scores)
-        warnings = scenario_warnings(config, sorted_scores, selected_scores, total_ects)
+        warnings = scenario_warnings(config, sorted_scores, selected_scores)
         return RecommendationScenario(
             name=config.name,
             kind=config.kind,
@@ -97,27 +111,25 @@ class RecommendationService:
 def scenario_configs(load_target: SemesterLoadTarget) -> tuple[ScenarioConfig, ...]:
     return (
         ScenarioConfig(
-            name="Easy Load",
+            name="Temel Rota",
             kind=RecommendationScenarioKind.EASY,
-            target_ects=load_target.min_ects,
-            max_ects=min(load_target.target_ects, load_target.max_ects),
-            warning_min_ects=load_target.min_ects,
+            target_credit_course_count=5,
+            max_credit_course_count=5,
             sort_mode=ScenarioSortMode.LOW_LOAD,
+            include_easy_priority_elective=True,
         ),
         ScenarioConfig(
-            name="Balanced Progress",
+            name="Ana Rota",
             kind=RecommendationScenarioKind.BALANCED,
-            target_ects=load_target.target_ects,
-            max_ects=load_target.max_ects,
-            warning_min_ects=load_target.min_ects,
+            target_credit_course_count=5,
+            max_credit_course_count=5,
             sort_mode=ScenarioSortMode.BALANCED_PRIORITY,
         ),
         ScenarioConfig(
-            name="Aggressive Progress",
+            name="Hizli Rota",
             kind=RecommendationScenarioKind.AGGRESSIVE,
-            target_ects=load_target.max_ects,
-            max_ects=load_target.max_ects,
-            warning_min_ects=load_target.target_ects,
+            target_credit_course_count=6,
+            max_credit_course_count=6,
             sort_mode=ScenarioSortMode.UNLOCK_FIRST,
         ),
     )
@@ -173,29 +185,24 @@ def sort_scores(
 
 def select_course_basket(
     sorted_scores: tuple[CourseLoadScore, ...],
-    target_ects: float,
-    max_ects: float,
+    config: ScenarioConfig,
 ) -> tuple[CourseLoadScore, ...]:
     selected: list[CourseLoadScore] = []
-    total_ects = 0.0
-    for score in mandatory_first(sorted_scores):
-        if total_ects >= target_ects:
-            if must_include_score(score, sorted_scores):
-                pass
-            else:
-                break
+    credit_course_count = 0
+    for score in mandatory_first(sorted_scores, config):
         if score in selected:
             continue
-        if must_include_score(score, sorted_scores) and total_ects + score.estimated_ects > max_ects:
+        mandatory = must_include_score(score, sorted_scores, config)
+        if should_exclude_for_scenario(score, config, mandatory):
             continue
-        if not must_include_score(score, sorted_scores) and total_ects >= target_ects:
-            break
-        if total_ects + score.estimated_ects > max_ects and selected:
+        counts_for_load = counts_as_credit_course(score)
+        if not mandatory and credit_course_count >= config.target_credit_course_count:
             continue
-        if total_ects + score.estimated_ects > max_ects and not selected:
+        if not mandatory and counts_for_load and credit_course_count >= config.max_credit_course_count:
             continue
         selected.append(score)
-        total_ects += score.estimated_ects
+        if counts_for_load:
+            credit_course_count += 1
     return tuple(selected)
 
 
@@ -205,27 +212,69 @@ def requested_first(sorted_scores: tuple[CourseLoadScore, ...]) -> tuple[CourseL
     return requested + regular
 
 
-def mandatory_first(sorted_scores: tuple[CourseLoadScore, ...]) -> tuple[CourseLoadScore, ...]:
+def mandatory_first(
+    sorted_scores: tuple[CourseLoadScore, ...],
+    config: ScenarioConfig,
+) -> tuple[CourseLoadScore, ...]:
+    zero_credit = tuple(score for score in sorted_scores if is_zero_credit_score(score))
+    zero_credit_codes = {score.course_code for score in zero_credit}
+    easy_priority = tuple(
+        score
+        for score in sorted_scores
+        if config.include_easy_priority_elective and score.is_easy_priority_elective and score.course_code not in zero_credit_codes
+    )
+    easy_priority_codes = {score.course_code for score in easy_priority}
     repeat_priority = tuple(score for score in sorted_scores if score.is_repeat_priority)
+    repeat_priority = tuple(score for score in repeat_priority if score.course_code not in zero_credit_codes | easy_priority_codes)
     repeat_codes = {score.course_code for score in repeat_priority}
     requested = tuple(
         score
         for score in sorted_scores
-        if score.is_user_requested and score.course_code not in repeat_codes
+        if score.is_user_requested and score.course_code not in zero_credit_codes | easy_priority_codes | repeat_codes
     )
     requested_codes = {score.course_code for score in requested}
     critical = tuple(
         score
         for score in critical_unlock_scores(sorted_scores)
-        if score.course_code not in repeat_codes and score.course_code not in requested_codes
+        if score.course_code not in zero_credit_codes | easy_priority_codes | repeat_codes | requested_codes
     )
-    mandatory_codes = repeat_codes | requested_codes | {score.course_code for score in critical}
+    mandatory_codes = (
+        zero_credit_codes
+        | easy_priority_codes
+        | repeat_codes
+        | requested_codes
+        | {score.course_code for score in critical}
+    )
     regular = tuple(score for score in sorted_scores if score.course_code not in mandatory_codes)
-    return repeat_priority + requested + critical + regular
+    return zero_credit + easy_priority + repeat_priority + requested + critical + regular
 
 
-def must_include_score(score: CourseLoadScore, sorted_scores: tuple[CourseLoadScore, ...]) -> bool:
-    return score.is_repeat_priority or score.is_user_requested or is_critical_unlock_score(score, sorted_scores)
+def must_include_score(
+    score: CourseLoadScore,
+    sorted_scores: tuple[CourseLoadScore, ...],
+    config: ScenarioConfig,
+) -> bool:
+    return (
+        is_zero_credit_score(score)
+        or score.is_repeat_priority
+        or score.is_user_requested
+        or (config.include_easy_priority_elective and score.is_easy_priority_elective)
+        or is_critical_unlock_score(score, sorted_scores)
+    )
+
+
+def should_exclude_for_scenario(score: CourseLoadScore, config: ScenarioConfig, mandatory: bool) -> bool:
+    if not score.elective_category or score.elective_category not in config.excluded_elective_categories:
+        return False
+    return not (is_zero_credit_score(score) or score.is_repeat_priority)
+
+
+def counts_as_credit_course(score: CourseLoadScore) -> bool:
+    return score.estimated_credits is None or score.estimated_credits > 0
+
+
+def is_zero_credit_score(score: CourseLoadScore) -> bool:
+    return score.estimated_credits == 0
 
 
 def critical_unlock_scores(sorted_scores: tuple[CourseLoadScore, ...]) -> tuple[CourseLoadScore, ...]:
@@ -264,9 +313,11 @@ def to_recommendation(score: CourseLoadScore, config: ScenarioConfig) -> CourseR
         unlock_count=base.unlock_count,
         is_placeholder=base.is_placeholder,
         is_user_requested=base.is_user_requested,
-        requires_course_selection_for_timetable=base.requires_course_selection_for_timetable,
+        requires_explicit_course_selection=base.requires_explicit_course_selection,
         is_new_course=base.is_new_course,
         is_repeat_priority=base.is_repeat_priority,
+        elective_category=base.elective_category,
+        is_easy_priority_elective=base.is_easy_priority_elective,
         status=base.status,
     )
 
@@ -291,24 +342,35 @@ def scenario_warnings(
     config: ScenarioConfig,
     sorted_scores: tuple[CourseLoadScore, ...],
     selected_scores: tuple[CourseLoadScore, ...],
-    total_ects: float,
 ) -> tuple[PlanningWarning, ...]:
     warnings: list[PlanningWarning] = []
+    credit_count = credit_course_count(selected_scores)
     if not selected_scores:
         warnings.append(
             PlanningWarning(
                 code="empty_recommendation_scenario",
-                message=f"{config.name} could not include any course within its ECTS cap.",
+                message=f"{config.name} could not include any eligible course.",
                 severity=PlanningWarningSeverity.WARNING,
             )
         )
-    elif total_ects < config.warning_min_ects:
+    elif credit_count < config.target_credit_course_count:
         warnings.append(
             PlanningWarning(
                 code="scenario_below_minimum_load",
                 message=(
-                    f"{config.name} totals {total_ects:g} ECTS, below the "
-                    f"{config.warning_min_ects:g} ECTS target for this scenario."
+                    f"{config.name} contains {credit_count} credit course(s), below the "
+                    f"{config.target_credit_course_count}-course target for this route."
+                ),
+                severity=PlanningWarningSeverity.INFO,
+            )
+        )
+    elif credit_count > config.max_credit_course_count:
+        warnings.append(
+            PlanningWarning(
+                code="scenario_above_route_credit_course_count",
+                message=(
+                    f"{config.name} contains {credit_count} credit course(s) because mandatory "
+                    f"items exceeded the route cap of {config.max_credit_course_count}."
                 ),
                 severity=PlanningWarningSeverity.INFO,
             )
@@ -324,7 +386,7 @@ def scenario_warnings(
                 code="user_requested_course_excluded_by_load_cap",
                 message=(
                     f"{len(missed_requested)} user-requested course/elective item(s) could not fit within "
-                    f"the {config.name} ECTS cap."
+                    f"the {config.name} course-count target."
                 ),
                 severity=PlanningWarningSeverity.WARNING,
             )
@@ -340,7 +402,7 @@ def scenario_warnings(
                 code="repeat_priority_course_excluded_by_load_cap",
                 message=(
                     f"{len(missed_repeat_priority)} repeat-priority course(s) could not fit within "
-                    f"the {config.name} ECTS cap."
+                    f"the {config.name} course-count target."
                 ),
                 severity=PlanningWarningSeverity.WARNING,
             )
@@ -356,7 +418,7 @@ def scenario_warnings(
                 code="critical_unlock_course_excluded_by_load_cap",
                 message=(
                     f"{len(missed_critical)} critical unlock course(s) could not fit within "
-                    f"the {config.name} ECTS cap."
+                    f"the {config.name} course-count target."
                 ),
                 severity=PlanningWarningSeverity.WARNING,
             )
@@ -372,12 +434,25 @@ def scenario_rationale(
 ) -> tuple[str, ...]:
     if not selected_scores:
         return (
-            f"Targets up to {config.max_ects:g} ECTS.",
+            f"Targets {config.target_credit_course_count} credit-bearing course(s).",
             "No eligible course fit within the scenario constraints.",
         )
     difficulty_text = "unknown" if average_difficulty is None else f"{average_difficulty:.2f}"
+    zero_credit_count = sum(1 for score in selected_scores if is_zero_credit_score(score))
+    credit_count = credit_course_count(selected_scores)
     return (
-        f"Targets about {config.target_ects:g} ECTS with a cap of {config.max_ects:g} ECTS.",
-        f"Selected {len(selected_scores)} course(s), total {total_ects:g} ECTS.",
+        f"Targets {config.target_credit_course_count} credit-bearing course(s).",
+        f"Selected {credit_count} credit-bearing course(s) and {zero_credit_count} zero-credit item(s).",
         f"Average estimated difficulty is {difficulty_text}.",
+    )
+
+
+def credit_course_count(scores: tuple[CourseLoadScore, ...]) -> int:
+    return sum(1 for score in scores if counts_as_credit_course(score))
+
+
+def scenario_has_nontech_or_free_elective(scenario: RecommendationScenario) -> bool:
+    return any(
+        course.elective_category in {"nontechnical_elective", "free_elective"}
+        for course in scenario.courses
     )

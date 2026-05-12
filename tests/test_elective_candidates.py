@@ -29,7 +29,7 @@ class ElectiveCandidateServiceTests(unittest.TestCase):
         self.assertEqual(placeholder.estimated_ects, 5.0)
         self.assertTrue(placeholder.is_placeholder)
         self.assertTrue(placeholder.is_user_requested)
-        self.assertTrue(placeholder.requires_course_selection_for_timetable)
+        self.assertTrue(placeholder.requires_explicit_course_selection)
         self.assertEqual(result.warnings[0].code, "elective_course_selection_required")
 
     def test_builds_explicit_candidate_with_db_ects_and_prerequisites(self) -> None:

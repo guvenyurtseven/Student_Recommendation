@@ -8,6 +8,7 @@ from typing import Any
 
 from student_planner.domain.planning import PlanningGoal, StudentPlanningInput
 from student_planner.repositories.sqlite import SQLiteStudentPlannerRepository
+from student_planner.services.operation_semester import load_operation_semester
 from student_planner.services.planning_io import (
     parse_elective_intents,
     planning_report_to_dict,
@@ -15,6 +16,7 @@ from student_planner.services.planning_io import (
     student_planning_input_from_dict,
 )
 from student_planner.services.planning_pipeline import SemesterPlanningPipeline
+from student_planner.services.student_view import planning_report_to_student_view
 from student_planner.services.transcript_ingestion import (
     TranscriptTextParser,
     extract_text_from_pdf_bytes,
@@ -67,12 +69,18 @@ def recommendation_from_transcript_payload(payload: Mapping[str, Any], db_path: 
 def recommendation_response(planning_input: StudentPlanningInput, db_path: str | Path) -> dict[str, Any]:
     repository = SQLiteStudentPlannerRepository(db_path)
     report = SemesterPlanningPipeline(repository).build_report(planning_input)
+    operation_semester = load_operation_semester()
     return {
         "ok": True,
         "program_abbr": report.program_abbr,
         "target_semester_no": report.goal.target_semester_no,
+        "operation_semester": {
+            "active_semester_no": operation_semester.active_semester_no,
+            "active_semester_label": operation_semester.active_semester_label,
+        },
         "report_markdown": planning_report_to_text(report, output_format="markdown"),
         "report": planning_report_to_dict(report),
+        "student_view": planning_report_to_student_view(report),
         "summary": {
             "scenario_count": len(report.scenarios),
             "eligible_course_count": len(report.eligible_courses),
@@ -95,7 +103,7 @@ def goal_from_payload(payload: Mapping[str, Any]) -> PlanningGoal:
         source = payload
 
     if not target_semester_no:
-        raise ValueError("Transcript recommendation payload must include target_semester_no.")
+        target_semester_no = load_operation_semester().active_semester_no
 
     return PlanningGoal(
         target_semester_no=str(target_semester_no),
